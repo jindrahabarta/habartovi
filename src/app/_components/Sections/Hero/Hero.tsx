@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import BgImg from '@/../public/images/Ubytování.jpg'
+import Button from '@/_components/Buttons/Button'
 
 const Hero = () => {
 	return (
@@ -13,7 +14,7 @@ const Hero = () => {
 					height={2000}
 					className='w-full h-full object-cover'
 				></Image>
-				<div className='absolute top-0 left-0 w-full h-full bg-black/20'></div>
+				<div className='absolute top-0 left-0 w-full h-full bg-black/30'></div>
 			</div>
 			<div className='container relative flex items-end  h-full'>
 				<div className='text-left pb-20 text-white '>
@@ -24,7 +25,7 @@ const Hero = () => {
 						Soukromé ubytování v Červené Vodě
 					</p>
 
-					<button>Zavolejte nám</button>
+					<Button link={'#'} text={'Rezervovat termín'}></Button>
 				</div>
 			</div>
 		</section>

@@ -9,7 +9,7 @@
 }
 
 body {
-	background-color: #fefae0;
+	@apply bg-background;
 }
 
 p {

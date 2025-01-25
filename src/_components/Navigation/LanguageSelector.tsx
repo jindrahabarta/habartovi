@@ -15,7 +15,7 @@ const LanguageSelector = () => {
 						<button
 							onClick={() => setIsOpen(!isOpen)}
 							type='button'
-							className='inline-flex gap-1 items-center justify-center w-full rounded-md  px-2 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none'
+							className='inline-flex gap-1 items-center justify-center w-full rounded-md  px-2 py-2  text-sm font-medium text-gray-700  focus:outline-none'
 							aria-haspopup='true'
 							aria-expanded={isOpen}
 						>
