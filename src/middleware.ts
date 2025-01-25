@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import acceptLanguage from 'accept-language'
-import { cookieName, defaultLang, languages } from '@/_i18n/settings'
+import { cookieName, defaultLng, languages } from '@/_i18n/settings'
 
 acceptLanguage.languages(languages)
 
@@ -16,7 +16,7 @@ export function middleware(req: NextRequest) {
 	if (req.cookies.has(cookieName))
 		lng = acceptLanguage.get(req.cookies.get(cookieName)!.value)
 	if (!lng) lng = acceptLanguage.get(req.headers.get('Accept-Language'))
-	if (!lng) lng = defaultLang
+	if (!lng) lng = defaultLng
 
 	// Redirect if lng in path is not supported
 	if (
