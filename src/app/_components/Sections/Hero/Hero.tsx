@@ -12,7 +12,7 @@ const Hero = () => {
 					alt='uvodni fotka'
 					width={2000}
 					height={2000}
-					className='w-full h-full object-cover'
+					className='w-full h-full object-cover bg-fixed'
 				></Image>
 				<div className='absolute top-0 left-0 w-full h-full bg-black/30'></div>
 			</div>

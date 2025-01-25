@@ -10,6 +10,7 @@ import { usePathname } from 'next/navigation'
 import IconButton from '../Buttons/IconButton'
 import MailIcon from '../Icons/MailIcon'
 import PhoneIcon from '../Icons/PhoneIcon'
+import ChevronIcon from '../Icons/ChevronIcon'
 
 const links = [
 	{
@@ -62,26 +63,59 @@ const Navigation = () => {
 	}, [path])
 
 	return (
-		<nav className='py-4 z-50 shadow-lg border-b border-black/10 fixed w-screen bg-background'>
+		<nav
+			id='navigation'
+			className='z-50 shadow-lg border-b border-black/10 fixed w-screen bg-background'
+		>
 			<div className='container mx-auto'>
 				<div className='flex gap-2 items-center justify-between'>
-					<Link href={'/'} className='brightness-0'>
+					<Link href={'/'} className='brightness-0 w-[170px]'>
 						<Image
 							src={LogoImg}
-							width={150}
+							width={170}
 							height={80}
 							alt='Habartovi logo'
+							id='navLogo'
 						></Image>
 					</Link>
 
-					<div className='flex items-center gap-4'>
-						<ul className='flex items-center gap-4'>
+					<div id='navUl' className='flex items-center gap-4 h-20'>
+						<ul className='flex items-center gap-4 h-full'>
 							{links.map((link, i) => {
 								if (link.submenu) {
 									return (
-										<React.Fragment
-											key={i}
-										></React.Fragment>
+										<React.Fragment key={i}>
+											<div className='group/subMenu h-full flex relative'>
+												<div className='flex items-center gap-1 cursor-pointer'>
+													<NavLink
+														link={link.link}
+														text={link.text}
+													></NavLink>
+													<ChevronIcon className='w-3 group-hover/subMenu:text-secondary group-hover/subMenu:pt-1 duration-200'></ChevronIcon>
+												</div>
+
+												<div className='absolute -left-2 -bottom-0 pt-1 translate-y-full opacity-0 pointer-events-none group-hover/subMenu:opacity-100 group-hover/subMenu:pointer-events-auto duration-300'>
+													<div className=' flex flex-col gap-1  bg-background p-5 '>
+														{link.submenu.map(
+															(subLink, i) => (
+																<React.Fragment
+																	key={i}
+																>
+																	<NavLink
+																		link={
+																			subLink.link
+																		}
+																		text={
+																			subLink.text
+																		}
+																	/>
+																</React.Fragment>
+															)
+														)}
+													</div>
+												</div>
+											</div>
+										</React.Fragment>
 									)
 								} else {
 									return (
