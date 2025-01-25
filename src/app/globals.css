@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container {
+	max-width: 1350px;
+	padding: 0 1rem;
+	margin: auto;
+}
+
+body {
+	background-color: #fefae0;
+}
+
+p {
+}
+
+a {
+	text-decoration: none;
+	@apply text-secondary hover:text-primary duration-200;
+}
+
+h1 {
+	@apply text-7xl font-bold;
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+/*HERO*/
+
+#uvod {
+	/* background-image: url('https://rajaampatbiodiversity.com/wp-content/uploads/2020/07/DSC00447.jpg');
+
+	background-attachment: fixed;
+
+	background-repeat: no-repeat;
+	object-fit: cover;
+	background-size: cover; */
+}
