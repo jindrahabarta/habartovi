@@ -6,34 +6,40 @@ const gsapInit = (path: string) => {
 	gsap.registerPlugin(ScrollTrigger)
 
 	//GLOBAL
-	ScrollTrigger.create({
-		trigger: document.body,
-		start: 'top+=10px top',
-		end: 'top+=10px top',
 
-		onEnter: () => {
-			gsap.to('#navUl', {
-				duration: 0.333,
-				height: '3.7rem',
-			})
+	//Navigation
+	if (window.innerWidth > 640) {
+		ScrollTrigger.create({
+			trigger: document.body,
+			start: 'top+=10px top',
+			end: 'top+=10px top',
 
-			gsap.to('#navLogo', {
-				width: 150,
-				duration: 0.333,
-			})
-		},
-		onEnterBack: () => {
-			gsap.to('#navUl', {
-				duration: 0.333,
-				height: '5rem',
-			})
+			onEnter: () => {
+				gsap.to('#navUl', {
+					duration: 0.333,
+					height: '3.7rem',
+				})
 
-			gsap.to('#navLogo', {
-				width: 170,
-				duration: 0.333,
-			})
-		},
-	})
+				gsap.to('#navLogo', {
+					width: 150,
+					duration: 0.333,
+				})
+			},
+			onEnterBack: () => {
+				gsap.to('#navUl', {
+					duration: 0.333,
+					height: '5rem',
+				})
+
+				gsap.to('#navLogo', {
+					width: 170,
+					duration: 0.333,
+				})
+			},
+		})
+	} else {
+		console.log('mobile nav')
+	}
 
 	// gsap.to('#navigation', {
 	// 	scrollTrigger: {

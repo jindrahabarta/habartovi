@@ -94,8 +94,8 @@ const Navigation = () => {
 													<ChevronIcon className='w-3 group-hover/subMenu:text-secondary group-hover/subMenu:pt-1 duration-200'></ChevronIcon>
 												</div>
 
-												<div className='absolute -left-2 -bottom-0 pt-1 translate-y-full opacity-0 pointer-events-none group-hover/subMenu:opacity-100 group-hover/subMenu:pointer-events-auto duration-300'>
-													<div className=' flex flex-col gap-1  bg-background p-5 '>
+												<div className='absolute -left-2 -bottom-0 pt-0 translate-y-full opacity-0 pointer-events-none group-hover/subMenu:opacity-100 group-hover/subMenu:pointer-events-auto duration-300'>
+													<div className=' flex flex-col gap-1  bg-background shadow-md border border-black/20 p-5 '>
 														{link.submenu.map(
 															(subLink, i) => (
 																<React.Fragment
@@ -133,6 +133,7 @@ const Navigation = () => {
 
 					<div className='flex items-center gap-2'>
 						<LanguageSelector></LanguageSelector>
+
 						<IconButton link='#'>
 							<MailIcon className='w-6 text-white'></MailIcon>
 						</IconButton>

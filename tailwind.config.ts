@@ -16,10 +16,11 @@ const config: Config = {
 			},
 
 			colors: {
-				primary: '#61311b',
+				primary: '#523620',
 				secondary: '#A6B37D',
 				secondaryAccent: '#C0C78C',
 				background: '#fefae0',
+				backgroundAccent: '#ebebba',
 			},
 		},
 	},

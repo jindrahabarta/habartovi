@@ -1,5 +1,5 @@
 export const defaultLng = 'cs'
-export const languages = [defaultLng, 'en']
+export const languages = [defaultLng, 'en', 'de', 'pl']
 export const defaultNS = 'translation'
 export const cookieName = 'i18next'
 

@@ -8,15 +8,15 @@ interface Props {
 
 const NavLink = ({ link, text }: Props) => {
 	return (
-		<Link href={link} className='flex flex-col group/navLink'>
+		<Link href={link} className='flex flex-col group'>
 			<li
 				data-custom
-				className='text-base text-black group-hover/navLink:text-secondary duration-200 font-bold text-nowrap'
+				className='text-sm sm:text-sm md:text-base text-black group-hover:text-secondary duration-200 font-bold text-nowrap'
 			>
 				{text}
 			</li>
 
-			<div className='w-0 group-hover/navLink:w-full duration-200 bg-black group-hover/navLink:bg-secondary h-0.5'></div>
+			<div className='w-0 group-hover:w-full duration-200 bg-black group-hover:bg-secondary h-0.5'></div>
 		</Link>
 	)
 }
