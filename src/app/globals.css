@@ -8,6 +8,11 @@
 	margin: auto;
 }
 
+.denyScroll {
+	height: 100vh;
+	overflow-y: hidden;
+}
+
 body {
 	@apply bg-background;
 }
@@ -17,7 +22,7 @@ p {
 
 a {
 	text-decoration: none;
-	@apply text-secondary hover:text-primary duration-200;
+	@apply text-secondary hover:text-secondaryAccent duration-200;
 }
 
 h1 {
