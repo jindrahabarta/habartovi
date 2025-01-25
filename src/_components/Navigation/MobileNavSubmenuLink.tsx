@@ -6,30 +6,34 @@ import { Link as LinkType } from '@/_types/navigation'
 interface props {
 	id: number
 	link: LinkType
-	handleClick: () => void
+	handleClose: () => void
+	handleExpand: (id: number) => void
+	isOpened: boolean
 }
 
-const MobileNavSubmenuLink = ({ link, id, handleClick }: props) => {
-	const [isOpened, setIsOpened] = useState(false)
-
+const MobileNavSubmenuLink = ({
+	link,
+	id,
+	handleClose,
+	handleExpand,
+	isOpened,
+}: props) => {
 	const submenuHeight = document.getElementById('subMenu' + id)?.clientHeight
 
 	return (
 		<div className='flex flex-col' key={id}>
 			<Link
-				onClick={(e) => {
-					e.stopPropagation()
-					setIsOpened((prev) => !prev)
-				}}
+				onClick={() => handleExpand(id)}
 				className='text-xl py-2 text-white hover:text-white flex justify-between items-center select-none'
 				href={link.link}
 			>
 				{link.text}
 
 				<ChevronIcon
-					className={`${
-						isOpened ? 'rotate-180' : 'rotate-0'
-					} duration-200 w-5`}
+					className={`
+                        ${isOpened ? 'rotate-180' : 'rotate-0'} 
+                    
+                    duration-200 w-5`}
 				/>
 			</Link>
 
@@ -43,7 +47,7 @@ const MobileNavSubmenuLink = ({ link, id, handleClick }: props) => {
 							<Link
 								className='text-white hover:text-white select-none'
 								href={subLink.link}
-								onClick={handleClick}
+								onClick={handleClose}
 							>
 								{subLink.text}
 							</Link>

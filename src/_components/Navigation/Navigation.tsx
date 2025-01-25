@@ -99,10 +99,16 @@ const Navigation = () => {
 					<div className='flex items-center gap-2'>
 						<LanguageSelector></LanguageSelector>
 
-						<IconButton link='#' className='hidden md:flex'>
+						<IconButton
+							link='#'
+							className='hidden md:flex bg-secondary hover:bg-secondaryAccent'
+						>
 							<MailIcon className='w-6 text-white'></MailIcon>
 						</IconButton>
-						<IconButton link='#' className='hidden md:flex'>
+						<IconButton
+							link='#'
+							className='hidden md:flex bg-secondary hover:bg-secondaryAccent'
+						>
 							<PhoneIcon className='w-6 text-white'></PhoneIcon>
 						</IconButton>
 

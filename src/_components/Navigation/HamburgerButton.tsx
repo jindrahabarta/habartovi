@@ -11,7 +11,7 @@ const HamburgerButton = ({
 		<button
 			onClick={handleClick}
 			aria-label='Otevírání mobilního menu'
-			className='w-12 h-12 px-2 relative z-50 sm:hidden flex flex-col justify-center items-center gap-[7px] bg-secondary rounded-xl'
+			className='w-12 h-12 px-2 relative z-50 md:hidden flex flex-col justify-center items-center gap-[7px] bg-secondary rounded-lg'
 		>
 			<div
 				className={` h-0.5 bg-white rounded-full duration-200 ${
