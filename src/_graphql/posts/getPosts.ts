@@ -3,42 +3,35 @@ import { client } from '@/_graphql/apollo'
 import { gql } from '@apollo/client'
 import { IPost, postAttributes } from './post.interface'
 
-interface IPostsResponse {
+export interface IPostsResponse {
 	posts: {
-		edges: {
-			node: IPost
-		}[]
+		nodes: IPost[]
 		pageInfo: {
-			startCursor: string
-			endCursor: string
-			hasPreviousPage: boolean
-			hasNextPage: boolean
+			offsetPagination: {
+				hasMore: boolean
+				hasPrevious: boolean
+				total: number
+			}
 		}
 	}
 }
 
-function getPostsQuery(prev?: string, next?: string) {
-	let query = '(first: 5)'
-	if (prev) {
-		query = `(last: 5, before: "${prev}")`
-	}
-	if (next) {
-		query = `(first: 5, after: "${next}")`
-	}
+function getPostsQuery(page: number, size: number) {
+	const offset = page > 1 ? (page - 1) * size : 0
+	const query = `where: {offsetPagination: {size: ${size}, offset: ${offset}}}`
 
 	return gql`
 		query getPosts {
-			posts${query} {
-				edges {
-					node {
-						${postAttributes}
-					}
+			posts(${query}) {
+				nodes {
+					${postAttributes}
 				}
 				pageInfo {
-					startCursor
-					endCursor
-					hasPreviousPage
-					hasNextPage
+					offsetPagination {
+						hasMore
+						hasPrevious
+						total
+					}
 				}
 			}
 		}
@@ -46,17 +39,17 @@ function getPostsQuery(prev?: string, next?: string) {
 }
 
 export const getPosts = unstable_cache(
-	async (prev?: string, next?: string) => {
+	async (page: number, size: number) => {
 		try {
 			const data = await client.query<IPostsResponse>({
-				query: getPostsQuery(prev, next),
+				query: getPostsQuery(page, size),
 			})
 
 			if (
 				!data ||
 				!data.data ||
 				!data.data.posts ||
-				!data.data.posts.edges ||
+				!data.data.posts.nodes ||
 				!data.data.posts.pageInfo
 			) {
 				return null

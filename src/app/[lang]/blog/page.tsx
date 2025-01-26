@@ -1,14 +1,15 @@
 import { getPosts } from '@/_graphql/posts/getPosts'
 import { Metadata, NextPage } from 'next'
 import Link from 'next/link'
+import Pagination from './_components/Pagination'
+import PostList from './_components/PostList'
 
 interface IParams {
 	lang: string
 }
 
 interface IQuery {
-	prev: string
-	next: string
+	page?: string
 }
 
 export const metadata: Metadata = {
@@ -21,48 +22,29 @@ const Blog: NextPage<{ params: IParams; searchParams: IQuery }> = async ({
 	searchParams,
 }) => {
 	const { lang } = params
-	const { prev, next } = searchParams
+	const { page } = searchParams
 
-	const posts = await getPosts(prev, next)
+	const pageInt = parseInt(page ?? '1', 10)
+	const size = 6
+
+	const posts = await getPosts(pageInt, size)
 
 	return (
 		<div className='pt-20'>
 			<section className='container'>
 				<h1>Blog</h1>
-				{posts &&
-					posts.edges.map(({ node: post }) => (
-						<article key={post.id}>
-							<Link href={`/${lang}/blog/${post.slug}`}>
-								<h2>{post.title}</h2>
-							</Link>
-						</article>
-					))}
-				<div className='flex items-center justify-between'>
-					<section>
-						{posts && posts.pageInfo.hasPreviousPage && (
-							<Link
-								href={{
-									pathname: `/${lang}/blog`,
-									query: { prev: posts.pageInfo.startCursor },
-								}}
-							>
-								&lt; Prev
-							</Link>
-						)}
-					</section>
-					<section>
-						{posts && posts.pageInfo.hasNextPage && (
-							<Link
-								href={{
-									pathname: `/${lang}/blog`,
-									query: { next: posts.pageInfo.endCursor },
-								}}
-							>
-								Next &gt;
-							</Link>
-						)}
-					</section>
-				</div>
+				{posts && (
+					<div className='flex flex-col'>
+						<PostList lang={lang} posts={posts.nodes} />
+
+						<Pagination
+							lang={lang}
+							page={pageInt}
+							size={size}
+							pageInfo={posts.pageInfo}
+						/>
+					</div>
+				)}
 			</section>
 		</div>
 	)
