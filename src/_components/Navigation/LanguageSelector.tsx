@@ -1,12 +1,12 @@
 'use client'
-import React, { useState } from 'react'
 
-import GBFlagIcon from '../Icons/Flags/GB'
+import React, { useState } from 'react'
 import { useParams, usePathname, useRouter } from 'next/navigation'
 import GB from '../Icons/Flags/GB'
 import CZ from '../Icons/Flags/CZ'
 import PL from '../Icons/Flags/PL'
 import DE from '../Icons/Flags/DE'
+import Link from 'next/link'
 
 const languages: { [key: string]: JSX.Element } = {
 	cs: <CZ className='w-5 rounded-sm shadow-sm'></CZ>,
@@ -19,13 +19,8 @@ const LanguageSelector = () => {
 	const [isOpen, setIsOpen] = useState(false)
 
 	const path = usePathname()
-	const router = useRouter()
+	// const router = useRouter()
 	const { lang } = useParams<{ lang: string }>()
-
-	const handleLanguageChange = (e: React.MouseEvent, language: string) => {
-		e.preventDefault()
-		router.push(path.replace(lang, language))
-	}
 
 	return (
 		<>
@@ -66,19 +61,16 @@ const LanguageSelector = () => {
 								{Object.keys(languages).map((l) => {
 									if (l !== lang) {
 										return (
-											<button
+											<Link
 												key={l}
-												onClick={(e) =>
-													handleLanguageChange(e, l)
-												}
-												className={`w-full text-gray-700 px-2 py-2 text-sm text-left items-center inline-flex gap-2 hover:bg-backgroundAccent duration-300`}
-												role='menuitem'
+												href={path.replace(lang, l)}
+												className='w-full text-gray-700 px-2 py-2 text-sm text-left items-center inline-flex gap-2 hover:bg-backgroundAccent duration-300'
 											>
 												{languages[l]}
 												<span className='uppercase'>
 													{l}
 												</span>
-											</button>
+											</Link>
 										)
 									}
 

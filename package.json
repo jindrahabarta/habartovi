@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@apollo/client": "^3.12.7",
     "accept-language": "^3.0.20",
     "gsap": "^3.12.5",
     "i18next": "^24.2.2",
