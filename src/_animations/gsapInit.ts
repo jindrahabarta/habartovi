@@ -19,7 +19,7 @@ const gsapInit = (path: string) => {
 			onEnter: () => {
 				gsap.to('#navUl', {
 					duration: 0.333,
-					height: '3.7rem',
+					height: '4rem',
 				})
 
 				gsap.to('#navLogo', {
@@ -85,21 +85,21 @@ const gsapInit = (path: string) => {
 			},
 		})
 
-		aboutTl
-			.to('#aboutVerticalLine', {
-				height: '100%',
-			})
-			.to('#aboutHorizontalLine', {
-				width: '100%',
-			})
-			.to(
-				'.aboutContent',
-				{
-					opacity: 1,
-					stagger: 0.1,
-				},
-				'<'
-			)
+		// aboutTl
+		// 	.to('#aboutVerticalLine', {
+		// 		height: '100%',
+		// 	})
+		// 	.to('#aboutHorizontalLine', {
+		// 		width: '100%',
+		// 	})
+		// 	.to(
+		// 		'.aboutContent',
+		// 		{
+		// 			opacity: 1,
+		// 			stagger: 0.1,
+		// 		},
+		// 		'<'
+		// 	)
 	}
 }
 

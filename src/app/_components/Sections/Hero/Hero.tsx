@@ -14,18 +14,30 @@ const Hero = () => {
 					height={2000}
 					className='w-full h-full object-cover bg-fixed'
 				></Image>
-				<div className='absolute top-0 left-0 w-full h-full bg-black/30'></div>
+				<div className='absolute top-0 left-0 w-full h-full bg-black/40'></div>
 			</div>
 			<div className='container relative flex items-end  h-full'>
 				<div className='text-left pb-20 text-white '>
-					<h1 className='text-5xl'>
+					<h1 className='text-6xl font-oswald leading-tight'>
 						Ubytování a Keramická dílna Habartovi
 					</h1>
-					<p className='text-2xl'>
-						Soukromé ubytování v Červené Vodě
-					</p>
 
-					<Button link={'#'} text={'Rezervovat termín'}></Button>
+					<p className='text-2xl max-w-[500px] '>
+						Přijeďte si odpočinout do našeho soukromé ubytováná
+						nedaleko Červené Vody.
+					</p>
+					<div className='mt-4 flex items-center gap-4'>
+						<Button
+							className='bg-secondary hover:bg-secondaryAccent text-white '
+							link={'/#o-nas'}
+							text={'O nás'}
+						></Button>
+						<Button
+							className='bg-secondary hover:bg-secondaryAccent text-white '
+							link={'/rezervace'}
+							text={'Rezervovat termín'}
+						></Button>
+					</div>
 				</div>
 			</div>
 		</section>
