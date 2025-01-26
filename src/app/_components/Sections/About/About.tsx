@@ -11,7 +11,7 @@ const About = () => {
 			id='o-nas'
 			className='container py-10 sm:h-screen h-fit flex flex-col justify-center items-center'
 		>
-			<h1 className='text-center  text-golden/50 leading-tight text-[5rem] sm:text-[7rem]'>
+			<h1 className='text-center font-oswald text-golden/50 leading-tight text-[4rem] sm:text-[6rem]'>
 				O nás
 			</h1>
 			<h2 className='font-oswald'>Vítejte na našich stránkách </h2>

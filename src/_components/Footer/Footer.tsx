@@ -15,8 +15,8 @@ const Footer = () => {
 	return (
 		<footer className='bg-secondary pt-12 w-full text-white'>
 			<div className='container w-full'>
-				<div className='flex gap-10 justify-between'>
-					<div className='flex-1 flex flex-col justify-between'>
+				<div className='flex flex-col flex-wrap sm:flex-row gap-10 justify-between'>
+					<div className='flex-1 flex flex-col justify-between gap-8'>
 						<Link className='w-fit' href={'/'}>
 							<Image
 								src={LogoImg}
@@ -27,7 +27,7 @@ const Footer = () => {
 
 						<div>
 							<ul>
-								<li className='flex gap-2 items-center'>
+								<li className='flex  gap-2 items-center'>
 									<Link
 										className='flex gap-2 items-center group'
 										href={'/'}
@@ -80,9 +80,17 @@ const Footer = () => {
 						<h3 className=' font-bold'>Menu</h3>
 
 						<ul className='max-w-xs'>
-							<li className='w-full py-1 bg-white/50'>
+							<li className='w-full py-1 '>
 								<Link
-									className='text-white font-bold'
+									className='text-white text-lg  w-full inline-block font-bold'
+									href={'/'}
+								>
+									Domů
+								</Link>
+							</li>
+							<li className='w-full py-1 '>
+								<Link
+									className='text-white text-lg  w-full inline-block font-bold'
 									href={'/'}
 								>
 									Domů
@@ -91,7 +99,7 @@ const Footer = () => {
 						</ul>
 					</div>
 
-					<div className='flex-1'>
+					<div className='w-full md:flex-1'>
 						<div className='rounded-2xl bg-white overflow-hidden h-44 w-full'>
 							<iframe
 								width='100%'
@@ -136,12 +144,20 @@ const Footer = () => {
 				</div>
 				<div className='w-full h-[1px] bg-background mt-8'></div>
 				<div className='mt-2 pb-1 flex justify-between'>
-					<p>all rights</p>
+					<p className='text-base'>
+						&copy; {new Date().getFullYear()} |{' '}
+						<Link
+							className='text-orange-500 font-semibold hover:underline '
+							href='/'
+						>
+							habartovi.cz
+						</Link>
+					</p>
 
 					<p className='text-base'>
 						Web vytvořilo studio{' '}
 						<Link
-							className='text-orange-500 hover:underline '
+							className='text-orange-500 font-semibold hover:underline '
 							href='/'
 						>
 							MotionLabs

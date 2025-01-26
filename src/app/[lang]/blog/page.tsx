@@ -25,7 +25,7 @@ const Blog: NextPage<{ params: IParams; searchParams: IQuery }> = async ({
 	const { page } = searchParams
 
 	const pageInt = parseInt(page ?? '1', 10)
-	const size = 6
+	const size = 1
 
 	const posts = await getPosts(pageInt, size)
 

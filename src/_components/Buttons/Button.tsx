@@ -11,7 +11,7 @@ const Button = ({ link, text, className }: props) => {
 	return (
 		<Link
 			href={link}
-			className={`${className} py-4 px-8 inline-block font-bold duration-200 shadow-md`}
+			className={`${className} py-3 px-4 sm:py-4 sm:px-8 inline-block font-bold duration-200 shadow-md`}
 		>
 			{text}
 		</Link>
