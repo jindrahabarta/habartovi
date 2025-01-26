@@ -31,11 +31,11 @@ const Blog: NextPage<{ params: IParams; searchParams: IQuery }> = async ({
 				<h1>Blog</h1>
 				{posts &&
 					posts.edges.map(({ node: post }) => (
-						<div key={post.id}>
+						<article key={post.id}>
 							<Link href={`/${lang}/blog/${post.slug}`}>
 								<h2>{post.title}</h2>
 							</Link>
-						</div>
+						</article>
 					))}
 				<div className='flex items-center justify-between'>
 					<section>
