@@ -9,6 +9,7 @@ import MailIcon from '../Icons/MailIcon'
 import MapPinIcon from '../Icons/MapPinIcon'
 import InstagramIcon from '../Icons/InstagramIcon'
 import FacebookIcon from '../Icons/FacebookIcon'
+import MegaUbytkoIcon from '../Icons/MegaUbytkoIcon'
 
 const Footer = () => {
 	return (
@@ -16,7 +17,7 @@ const Footer = () => {
 			<div className='container w-full'>
 				<div className='flex gap-10 justify-between'>
 					<div className='flex-1 flex flex-col justify-between'>
-						<Link href={'/'}>
+						<Link className='w-fit' href={'/'}>
 							<Image
 								src={LogoImg}
 								alt='Habartovi logo'
@@ -32,9 +33,9 @@ const Footer = () => {
 										href={'/'}
 									>
 										<div
-											className={`duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent`}
+											className={`duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md`}
 										>
-											<PhoneIcon className='w-4 text-white'></PhoneIcon>
+											<PhoneIcon className='w-5 text-white'></PhoneIcon>
 										</div>
 										<span className='text-white group-hover:text-goldenAccent duration-300 font-bold'>
 											777 777 777
@@ -47,9 +48,9 @@ const Footer = () => {
 										href={'/'}
 									>
 										<div
-											className={`duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent`}
+											className={`duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md`}
 										>
-											<MailIcon className='w-4 text-white'></MailIcon>
+											<MailIcon className='w-5 text-white'></MailIcon>
 										</div>
 										<span className='text-white group-hover:text-goldenAccent duration-300 font-bold'>
 											habartovi@email.cz
@@ -62,9 +63,9 @@ const Footer = () => {
 										href={'/'}
 									>
 										<div
-											className={`duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent`}
+											className={`duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md`}
 										>
-											<MapPinIcon className='w-4 text-white'></MapPinIcon>
+											<MapPinIcon className='w-5 text-white'></MapPinIcon>
 										</div>
 										<span className='text-white group-hover:text-goldenAccent duration-300 font-bold'>
 											Moravský Karlov 103
@@ -105,9 +106,9 @@ const Footer = () => {
 								href={'/'}
 							>
 								<div
-									className={`duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent`}
+									className={`duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md`}
 								>
-									<InstagramIcon className='w-4 text-white' />
+									<InstagramIcon className='w-5 text-white' />
 								</div>
 							</Link>
 							<Link
@@ -115,16 +116,28 @@ const Footer = () => {
 								href={'/'}
 							>
 								<div
-									className={`duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent`}
+									className={`duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md`}
 								>
-									<FacebookIcon className='w-4 text-white'></FacebookIcon>
+									<FacebookIcon className='w-6 text-white' />
+								</div>
+							</Link>
+							<Link
+								className='flex gap-2 items-center group'
+								href={'/'}
+							>
+								<div
+									className={`duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md`}
+								>
+									<MegaUbytkoIcon className='w-6 h-fit' />
 								</div>
 							</Link>
 						</div>
 					</div>
 				</div>
 				<div className='w-full h-[1px] bg-background mt-8'></div>
-				<div className='mt-2 pb-1 text-center '>
+				<div className='mt-2 pb-1 flex justify-between'>
+					<p>all rights</p>
+
 					<p className='text-base'>
 						Web vytvořilo studio{' '}
 						<Link

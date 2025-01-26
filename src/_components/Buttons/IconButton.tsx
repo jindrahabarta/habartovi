@@ -11,7 +11,7 @@ const IconButton = ({ children, link, className }: props) => {
 	return (
 		<Link
 			href={link}
-			className={`duration-300 flex justify-center items-center w-12 h-12 rounded-lg ${className}`}
+			className={`duration-300 flex justify-center items-center w-12 h-12 rounded-lg shadow-md ${className}`}
 		>
 			{children}
 		</Link>
