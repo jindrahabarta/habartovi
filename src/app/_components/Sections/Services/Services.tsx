@@ -5,7 +5,7 @@ import Button from '@/_components/Buttons/Button'
 
 const Services = () => {
 	return (
-		<section className='rounded-t-2xl mt-4 overflow-hidden'>
+		<section className='rounded-t-2xl overflow-hidden'>
 			<div className='bg-green1 py-20'>
 				<div className='container flex gap-10 items-center'>
 					<div className='flex-1 '>
@@ -33,7 +33,7 @@ const Services = () => {
 						</p>
 
 						<Button
-							className='bg-golden mt-8 '
+							className='bg-golden hover:bg-transparent border-2 border-golden hover:text-golden text-white mt-8 '
 							link={'/ubytovani'}
 							text={'Přejít na ubytování'}
 						></Button>
@@ -55,9 +55,9 @@ const Services = () => {
 						</p>
 
 						<Button
-							className='bg-golden mt-8 '
-							link={'/ubytovani'}
-							text={'Přejít na ubytování'}
+							className='bg-golden text-white hover:bg-goldenAccent mt-8 '
+							link={'/keramicka-dilna'}
+							text={'Keramická dílna'}
 						></Button>
 					</div>
 					<div className='flex-1 '>

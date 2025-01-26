@@ -26,7 +26,7 @@ const config: Config = {
 				background: '#fefae0',
 				backgroundAccent: '#ebebba',
 				golden: '#dda753',
-				goldenAccent: '#dda753',
+				goldenAccent: '#fac472',
 				green1: '#425c44',
 				green2: '#082d35',
 			},

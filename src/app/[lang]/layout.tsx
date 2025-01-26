@@ -18,7 +18,10 @@ const oswald = Oswald({
 })
 
 export const metadata: Metadata = {
-	title: '%s | Ubytování a Keramická dílna Habartovi',
+	title: {
+		template: '%s | Ubytování a Keramická dílna Habartovi',
+		default: 'Úvod',
+	},
 	description: 'Stránka',
 }
 
