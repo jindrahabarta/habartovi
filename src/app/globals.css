@@ -18,6 +18,7 @@ body {
 }
 
 p {
+	@apply text-base sm:text-lg;
 }
 
 a {
@@ -30,6 +31,7 @@ h1 {
 }
 
 h2 {
+	@apply text-5xl font-bold;
 }
 
 h3 {

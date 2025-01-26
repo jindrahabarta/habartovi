@@ -15,12 +15,20 @@ const config: Config = {
 					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 			},
 
+			fontFamily: {
+				oswald: 'var(--font-oswald)',
+			},
+
 			colors: {
 				primary: '#523620',
 				secondary: '#A6B37D',
 				secondaryAccent: '#C0C78C',
 				background: '#fefae0',
 				backgroundAccent: '#ebebba',
+				golden: '#dda753',
+				goldenAccent: '#dda753',
+				green1: '#425c44',
+				green2: '#082d35',
 			},
 		},
 	},

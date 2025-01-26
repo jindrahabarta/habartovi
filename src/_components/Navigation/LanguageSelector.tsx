@@ -22,7 +22,8 @@ const LanguageSelector = () => {
 	const router = useRouter()
 	const { lang } = useParams<{ lang: string }>()
 
-	const handleLanguageChange = (language: string) => {
+	const handleLanguageChange = (e: React.MouseEvent, language: string) => {
+		e.preventDefault()
 		router.push(path.replace(lang, language))
 	}
 
@@ -67,8 +68,8 @@ const LanguageSelector = () => {
 										return (
 											<button
 												key={l}
-												onClick={() =>
-													handleLanguageChange(l)
+												onClick={(e) =>
+													handleLanguageChange(e, l)
 												}
 												className={`w-full text-gray-700 px-2 py-2 text-sm text-left items-center inline-flex gap-2 hover:bg-backgroundAccent duration-300`}
 												role='menuitem'

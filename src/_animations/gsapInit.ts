@@ -5,6 +5,8 @@ const gsapInit = (path: string) => {
 	ScrollTrigger.killAll()
 	gsap.registerPlugin(ScrollTrigger)
 
+	const pathWithoutLang = path.slice(3)
+
 	//GLOBAL
 
 	//Navigation
@@ -68,21 +70,8 @@ const gsapInit = (path: string) => {
 		})
 	}
 
-	// gsap.to('#navigation', {
-	// 	scrollTrigger: {
-	// 		trigger: document.body,
-	// 		start: 'top+=10px top',
-	// 		end: 'top+=10px top',
-	// 		markers: true,
-	// 		toggleActions: 'play none none reverse ',
-	// 	},
-	// 	duration: 0.333,
-	// 	paddingTop: '0.5rem',
-	// 	paddingBottom: '0.5rem',
-	// })
-
 	//SELECTED PAGE
-	if (path === '/') {
+	if (pathWithoutLang === '') {
 		const aboutTl = gsap.timeline({
 			defaults: {
 				duration: 0.5,

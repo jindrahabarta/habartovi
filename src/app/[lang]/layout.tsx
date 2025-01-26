@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { dir } from 'i18next'
 import { languages } from '@/_i18n/settings'
-import { Open_Sans } from 'next/font/google'
+import { Open_Sans, Oswald } from 'next/font/google'
 import './../globals.css'
 import Navigation from '@/_components/Navigation/Navigation'
 import Footer from '@/_components/Footer/Footer'
@@ -9,6 +9,12 @@ import Footer from '@/_components/Footer/Footer'
 const openSans = Open_Sans({
 	subsets: ['latin'],
 	weight: ['400', '500', '600', '700'],
+})
+
+const oswald = Oswald({
+	subsets: ['latin'],
+	weight: ['200', '300', '400', '500', '600', '700'],
+	variable: '--font-oswald',
 })
 
 export const metadata: Metadata = {
@@ -30,7 +36,9 @@ export default function RootLayout({
 	return (
 		<html lang={lang} dir={dir(lang)}>
 			<body
-				className={`${openSans.className} flex flex-col justify-between items-center min-h-screen`}
+				className={`${
+					(openSans.className, oswald.variable)
+				} flex flex-col justify-between items-center min-h-screen`}
 			>
 				<Navigation></Navigation>
 

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import ChevronIcon from '../Icons/ChevronIcon'
 import { Link as LinkType } from '@/_types/navigation'
 
@@ -18,7 +18,10 @@ const MobileNavSubmenuLink = ({
 	handleExpand,
 	isOpened,
 }: props) => {
-	const submenuHeight = document.getElementById('subMenu' + id)?.clientHeight
+	let submenuHeight
+	if (typeof document !== 'undefined') {
+		submenuHeight = document.getElementById('subMenu' + id)?.clientHeight
+	}
 
 	return (
 		<div className='flex flex-col' key={id}>
