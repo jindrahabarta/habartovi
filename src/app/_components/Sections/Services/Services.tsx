@@ -33,7 +33,7 @@ const Services = () => {
 						</p>
 
 						<Button
-							className='bg-golden hover:bg-transparent border-2 border-golden hover:text-golden text-white mt-8 '
+							className='bg-golden hover:bg-transparent border-2 border-golden hover:text-golden text-white mt-8'
 							link={'/ubytovani'}
 							text={'Přejít na ubytování'}
 						></Button>
@@ -55,7 +55,7 @@ const Services = () => {
 						</p>
 
 						<Button
-							className='bg-golden text-white hover:bg-goldenAccent mt-8 '
+							className='bg-golden hover:bg-transparent border-2 border-golden hover:text-golden text-white mt-8'
 							link={'/keramicka-dilna'}
 							text={'Keramická dílna'}
 						></Button>

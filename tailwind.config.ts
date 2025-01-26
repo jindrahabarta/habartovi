@@ -20,13 +20,12 @@ const config: Config = {
 			},
 
 			colors: {
-				primary: '#523620',
 				secondary: '#A6B37D',
 				secondaryAccent: '#C0C78C',
 				background: '#fefae0',
 				backgroundAccent: '#ebebba',
 				golden: '#dda753',
-				goldenAccent: '#fac472',
+				goldenAccent: '#dda753',
 				green1: '#425c44',
 				green2: '#082d35',
 			},

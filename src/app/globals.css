@@ -4,7 +4,8 @@
 
 .container {
 	max-width: 1350px;
-	padding: 0 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 	margin: auto;
 }
 
@@ -27,11 +28,11 @@ a {
 }
 
 h1 {
-	@apply text-5xl font-bold;
+	@apply text-4xl sm:text-5xl font-bold;
 }
 
 h2 {
-	@apply text-4xl font-bold;
+	@apply text-3xl sm:text-4xl font-bold;
 }
 
 h3 {
@@ -44,11 +45,4 @@ h4 {
 /*HERO*/
 
 #uvod {
-	/* background-image: url('https://rajaampatbiodiversity.com/wp-content/uploads/2020/07/DSC00447.jpg');
-
-	background-attachment: fixed;
-
-	background-repeat: no-repeat;
-	object-fit: cover;
-	background-size: cover; */
 }
