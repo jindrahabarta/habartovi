@@ -1,17 +1,10 @@
 import type { Metadata } from 'next'
 import { dir } from 'i18next'
 import { languages } from '@/_i18n/settings'
-import { Inter, Poppins, Open_Sans } from 'next/font/google'
+import { Open_Sans } from 'next/font/google'
 import './../globals.css'
 import Navigation from '@/_components/Navigation/Navigation'
 import Footer from '@/_components/Footer/Footer'
-
-const inter = Inter({ subsets: ['latin'] })
-
-const poppins = Poppins({
-	subsets: ['latin'],
-	weight: ['400'],
-})
 
 const openSans = Open_Sans({
 	subsets: ['latin'],

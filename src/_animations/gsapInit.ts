@@ -38,7 +38,34 @@ const gsapInit = (path: string) => {
 			},
 		})
 	} else {
-		console.log('mobile nav')
+		ScrollTrigger.create({
+			trigger: document.body,
+			start: 'top+=10px top',
+			end: 'top+=10px top',
+
+			onEnter: () => {
+				gsap.to('#navWrapper', {
+					duration: 0.333,
+					height: '4.2rem',
+				})
+
+				gsap.to('#navLogo', {
+					width: 120,
+					duration: 0.333,
+				})
+			},
+			onEnterBack: () => {
+				gsap.to('#navWrapper', {
+					duration: 0.333,
+					height: '5rem',
+				})
+
+				gsap.to('#navLogo', {
+					width: 130,
+					duration: 0.333,
+				})
+			},
+		})
 	}
 
 	// gsap.to('#navigation', {

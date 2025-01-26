@@ -3,6 +3,7 @@ import { Metadata, NextPage } from 'next'
 import Hero from '../_components/Sections/Hero/Hero'
 import About from '../_components/Sections/About/About'
 import { useTranslation } from '@/_i18n'
+import Services from '../_components/Sections/Services/Services'
 
 export const metadata: Metadata = {
 	title: 'Úvod | Ubytování a Keramická dílna Habartovi',
@@ -18,7 +19,9 @@ const Home: NextPage<{ params: { lang: string } }> = async ({
 		<div>
 			<Hero></Hero>
 			<About></About>
-			<section className='h-screen'>{t('some_text')}</section>
+			<Services></Services>
+
+			{/* <section className='h-screen'>{t('some_text')}</section> */}
 		</div>
 	)
 }

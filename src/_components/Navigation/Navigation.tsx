@@ -13,11 +13,10 @@ import NavigationLinks from './NavigationLinks'
 import HamburgerButton from './HamburgerButton'
 import MobileNavigationLinks from './MobileNavigationLinks'
 import { Link as LinkType } from '@/_types/navigation'
-import gsap from 'gsap'
 
 const links: LinkType[] = [
 	{
-		link: '#',
+		link: '/',
 		text: 'Domů',
 		submenu: [
 			{
@@ -28,32 +27,51 @@ const links: LinkType[] = [
 				link: '#',
 				text: 'O nás',
 			},
+			{
+				link: '#',
+				text: 'Služby',
+			},
 		],
 	},
 	{
-		link: '#',
+		link: '/ubytovani',
 		text: 'Ubytování',
 		submenu: [
 			{
-				link: '#',
+				link: '/ubytovani/maly-byt',
 				text: 'Malý byt',
 			},
 			{
-				link: '#',
+				link: '/ubytovani/velky-byt',
 				text: 'Velký byt',
+			},
+			{
+				link: '/ubytovani/rezervace',
+				text: 'Rezervace',
 			},
 		],
 	},
 	{
-		link: '#',
+		link: '/keramicka-dilna',
 		text: 'Keramická dílna',
+		submenu: [
+			{
+				link: '#',
+				text: 'Eshop',
+			},
+			{
+				link: '#',
+				text: 'Tvořivá setkání',
+			},
+		],
 	},
 	{
-		link: '#',
+		link: '/vylety-do-okoli',
 		text: 'Okolí',
 	},
+
 	{
-		link: '#',
+		link: '/blog',
 		text: 'Blog',
 	},
 ]
@@ -77,7 +95,10 @@ const Navigation = () => {
 			className='z-50 shadow-lg border-b border-black/10 fixed w-screen bg-background'
 		>
 			<div className='container mx-auto'>
-				<div className='flex gap-2 items-center justify-between h-20 md:h-fit'>
+				<div
+					id='navWrapper'
+					className='flex gap-2 items-center justify-between h-20 md:h-fit'
+				>
 					<Link href={'/'} className='z-50 md:w-[170px] w-[130px]'>
 						<Image
 							src={LogoImg}
