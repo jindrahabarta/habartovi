@@ -5,7 +5,7 @@ import { INode } from '@/_types/graphql'
 
 interface IPostsResponse {
 	posts: {
-		edges: INode<{ title: string; content: string }>[]
+		edges: INode<{ id: string; title: string; content: string }>[]
 	}
 }
 
@@ -15,6 +15,7 @@ function getPostsQuery() {
 			posts {
 				edges {
 					node {
+						id
 						title
 						content
 					}
