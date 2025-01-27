@@ -3,6 +3,8 @@ import { Metadata, NextPage } from 'next'
 import Link from 'next/link'
 import Pagination from './_components/Pagination'
 import PostList from './_components/PostList'
+import { getCategories } from '@/_graphql/categories/getCategories'
+import CategoryList from './_components/CategoryList'
 
 interface IParams {
 	lang: string
@@ -25,26 +27,38 @@ const Blog: NextPage<{ params: IParams; searchParams: IQuery }> = async ({
 	const { page } = searchParams
 
 	const pageInt = parseInt(page ?? '1', 10)
-	const size = 1
+	const size = 6
 
 	const posts = await getPosts(pageInt, size)
+	const categories = await getCategories()
 
 	return (
-		<div className='pt-20'>
-			<section className='container'>
-				<h1>Blog</h1>
-				{posts && (
-					<div className='flex flex-col'>
-						<PostList lang={lang} posts={posts.nodes} />
-
-						<Pagination
+		<div className='flex-1 flex flex-col pt-28'>
+			<section className='container flex-1 flex flex-col md:flex-row-reverse'>
+				<aside className='bg-red'>
+					<h2>Rubriky blogu</h2>
+					{categories && (
+						<CategoryList
 							lang={lang}
-							page={pageInt}
-							size={size}
-							pageInfo={posts.pageInfo}
+							categories={categories.nodes}
 						/>
-					</div>
-				)}
+					)}
+				</aside>
+				<main className='flex-1 flex flex-col pb-12'>
+					<h1>Blog</h1>
+					{posts && (
+						<div className='flex-1 flex flex-col'>
+							<PostList lang={lang} posts={posts.nodes} />
+
+							<Pagination
+								lang={lang}
+								page={pageInt}
+								size={size}
+								pageInfo={posts.pageInfo}
+							/>
+						</div>
+					)}
+				</main>
 			</section>
 		</div>
 	)

@@ -4,7 +4,9 @@ import { IPost, postAttributes } from './post.interface'
 import { unstable_cache } from 'next/cache'
 
 interface IPostResponse {
-	post: IPost
+	post: IPost & {
+		content: string
+	}
 }
 
 function getPostQuery(slug: string) {
@@ -12,6 +14,7 @@ function getPostQuery(slug: string) {
 		{
 			post( id: "${slug}", idType: SLUG ) {
 				${postAttributes}
+				content
 			}
 		}
 	`
