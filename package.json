@@ -11,6 +11,8 @@
   "dependencies": {
     "@apollo/client": "^3.12.7",
     "accept-language": "^3.0.20",
+    "embla-carousel-autoplay": "^8.5.2",
+    "embla-carousel-react": "^8.5.2",
     "gsap": "^3.12.5",
     "i18next": "^24.2.2",
     "i18next-resources-to-backend": "^1.2.1",

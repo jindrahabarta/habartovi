@@ -46,3 +46,8 @@ h4 {
 
 #uvod {
 }
+
+.embla__slide {
+	flex: 0 0 33%; /* Slide covers 50% of the viewport */
+	min-width: 0;
+}
