@@ -1,4 +1,3 @@
-import { getPost } from '@/_graphql/posts/getPost'
 import { NextPage } from 'next'
 
 interface IParams {
@@ -10,27 +9,21 @@ export const generateMetadata = ({ params }: { params: IParams }) => {
 	const { slug } = params
 
 	return {
-		title: `Článek ${slug}`,
+		title: `Kategorie ${slug}`,
 		description: 'description',
 	}
 }
 
-const Post: NextPage<{ params: IParams }> = async ({ params }) => {
-	const { slug } = params
-
-	const post = await getPost(slug)
+const Category: NextPage<{ params: IParams }> = async ({ params }) => {
+	const { lang, slug } = params
 
 	return (
 		<div className='pt-28'>
 			<section className='container'>
-				{post && (
-					<article>
-						<h1>{post.title}</h1>
-					</article>
-				)}
+				<h1>{slug}</h1>
 			</section>
 		</div>
 	)
 }
 
-export default Post
+export default Category

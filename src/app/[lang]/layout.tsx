@@ -41,11 +41,13 @@ export default function RootLayout({
 			<body
 				className={`${
 					(openSans.className, oswald.variable)
-				} flex flex-col justify-between items-center min-h-screen`}
+				} flex flex-col items-center min-h-screen`}
 			>
 				<Navigation></Navigation>
 
-				<main className='flex-1 w-full'>{children}</main>
+				<main className='flex-1 w-full flex flex-col justify-start'>
+					{children}
+				</main>
 
 				<Footer></Footer>
 			</body>

@@ -18,15 +18,8 @@ const Pagination: React.FC<{
 			)}
 
 			<span className='flex gap-2'>
-				{page !== 1 &&
-					page - 3 !== 0 &&
-					page - 2 !== 0 &&
-					page - 1 !== 0 && (
-						<>
-							<Link href={`/${lang}/blog?page=1`}>1</Link>
-							<span>...</span>
-						</>
-					)}
+				{page > 3 && <Link href={`/${lang}/blog?page=1`}>1</Link>}
+				{page > 4 && <span>...</span>}
 				{page - 2 > 0 && (
 					<Link href={`/${lang}/blog?page=${page - 2}`}>
 						{page - 2}
@@ -48,16 +41,12 @@ const Pagination: React.FC<{
 						{page + 2}
 					</Link>
 				)}
-				{page !== totalPages &&
-					page + 2 !== totalPages &&
-					page + 1 !== totalPages && (
-						<>
-							<span>...</span>
-							<Link href={`/${lang}/blog?page=${totalPages}`}>
-								{totalPages}
-							</Link>
-						</>
-					)}
+				{page < totalPages - 3 && <span>...</span>}
+				{page < totalPages - 2 && (
+					<Link href={`/${lang}/blog?page=${totalPages}`}>
+						{totalPages}
+					</Link>
+				)}
 			</span>
 
 			{hasMore && (
