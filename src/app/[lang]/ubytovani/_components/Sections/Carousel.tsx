@@ -3,6 +3,7 @@ import React from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Image from 'next/image'
 import ImgSample from '@/../public/images/Ubytování.jpg'
+import ImgSample2 from '@/../public/images/testimg.jpg'
 import Autoplay from 'embla-carousel-autoplay'
 
 const Carousel = () => {
@@ -13,7 +14,7 @@ const Carousel = () => {
 				<div className='embla__container w-full flex '>
 					<div className='embla__slide flex-[0 0 50%]'>
 						<Image
-							src={ImgSample}
+							src={ImgSample2}
 							width={1000}
 							height={800}
 							alt='CarouselImage'
@@ -31,7 +32,7 @@ const Carousel = () => {
 					</div>
 					<div className='embla__slide flex-[0 0 50%]'>
 						<Image
-							src={ImgSample}
+							src={ImgSample2}
 							width={1000}
 							height={800}
 							alt='CarouselImage'
