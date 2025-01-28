@@ -38,12 +38,12 @@ const links: LinkType[] = [
 		text: 'Ubytování',
 		submenu: [
 			{
-				link: '/ubytovani/maly-byt',
-				text: 'Malý byt',
+				link: '/ubytovani/maly-apartman',
+				text: 'Malý apartmán',
 			},
 			{
-				link: '/ubytovani/velky-byt',
-				text: 'Velký byt',
+				link: '/ubytovani/velky-apartman',
+				text: 'Velký apartmán',
 			},
 			{
 				link: '/ubytovani/rezervace',
