@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { IPostsResponse } from '@/_graphql/posts/getPosts'
+import PageLink from '@/app/_components/Pagination/PageLink'
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 
 const Pagination: React.FC<{
 	lang: string
@@ -14,43 +16,51 @@ const Pagination: React.FC<{
 	return (
 		<div className='flex items-center justify-center gap-4'>
 			{hasPrevious && (
-				<Link href={`/${lang}/blog?page=${page - 1}`}>&lt;</Link>
+				<PageLink href={`/${lang}/blog?page=${page - 1}`}>
+					<FiChevronLeft />
+				</PageLink>
 			)}
 
 			<span className='flex gap-2'>
-				{page > 3 && <Link href={`/${lang}/blog?page=1`}>1</Link>}
+				{page > 3 && (
+					<PageLink href={`/${lang}/blog?page=1`}>1</PageLink>
+				)}
 				{page > 4 && <span>...</span>}
 				{page - 2 > 0 && (
-					<Link href={`/${lang}/blog?page=${page - 2}`}>
+					<PageLink href={`/${lang}/blog?page=${page - 2}`}>
 						{page - 2}
-					</Link>
+					</PageLink>
 				)}
 				{page - 1 > 0 && (
-					<Link href={`/${lang}/blog?page=${page - 1}`}>
+					<PageLink href={`/${lang}/blog?page=${page - 1}`}>
 						{page - 1}
-					</Link>
+					</PageLink>
 				)}
-				<span>{page}</span>
+				<PageLink href={`/${lang}/blog?page=${page}`} active>
+					{page}
+				</PageLink>
 				{page + 1 <= totalPages && (
-					<Link href={`/${lang}/blog?page=${page + 1}`}>
+					<PageLink href={`/${lang}/blog?page=${page + 1}`}>
 						{page + 1}
-					</Link>
+					</PageLink>
 				)}
 				{page + 2 <= totalPages && (
-					<Link href={`/${lang}/blog?page=${page + 2}`}>
+					<PageLink href={`/${lang}/blog?page=${page + 2}`}>
 						{page + 2}
-					</Link>
+					</PageLink>
 				)}
 				{page < totalPages - 3 && <span>...</span>}
 				{page < totalPages - 2 && (
-					<Link href={`/${lang}/blog?page=${totalPages}`}>
+					<PageLink href={`/${lang}/blog?page=${totalPages}`}>
 						{totalPages}
-					</Link>
+					</PageLink>
 				)}
 			</span>
 
 			{hasMore && (
-				<Link href={`/${lang}/blog?page=${page + 1}`}>&gt;</Link>
+				<PageLink href={`/${lang}/blog?page=${page + 1}`}>
+					<FiChevronRight />
+				</PageLink>
 			)}
 		</div>
 	)

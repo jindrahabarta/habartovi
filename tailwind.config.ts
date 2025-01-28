@@ -29,6 +29,10 @@ const config: Config = {
 				green1: '#425c44',
 				green2: '#082d35',
 			},
+
+			gridTemplateColumns: {
+				fluid: 'repeat(auto-fit, minmax(20rem, 1fr))',
+			},
 		},
 	},
 	plugins: [],

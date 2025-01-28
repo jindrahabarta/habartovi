@@ -11,7 +11,7 @@ interface IPostResponse {
 
 function getPostQuery(slug: string) {
 	return gql`
-		{
+		query getPost {
 			post( id: "${slug}", idType: SLUG ) {
 				${postAttributes}
 				content

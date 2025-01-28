@@ -1,8 +1,7 @@
 import { getPosts } from '@/_graphql/posts/getPosts'
 import { Metadata, NextPage } from 'next'
-import Link from 'next/link'
-import Pagination from './_components/Pagination'
-import PostList from './_components/PostList'
+import Pagination from '../../_components/Pagination/Pagination'
+import BlogList from './_components/BlogList'
 import { getCategories } from '@/_graphql/categories/getCategories'
 import CategoryList from './_components/CategoryList'
 
@@ -33,10 +32,12 @@ const Blog: NextPage<{ params: IParams; searchParams: IQuery }> = async ({
 	const categories = await getCategories()
 
 	return (
-		<div className='flex-1 flex flex-col pt-28'>
-			<section className='container flex-1 flex flex-col md:flex-row-reverse'>
-				<aside className='bg-red'>
-					<h2>Rubriky blogu</h2>
+		<div className='flex-1 flex flex-col pt-32'>
+			<section className='container flex-1 flex flex-col lg:flex-row-reverse gap-4'>
+				<aside>
+					<h2 className='font-oswald opacity-50 text-4xl leading-tight text-golden'>
+						Rubriky blogu
+					</h2>
 					{categories && (
 						<CategoryList
 							lang={lang}
@@ -44,11 +45,13 @@ const Blog: NextPage<{ params: IParams; searchParams: IQuery }> = async ({
 						/>
 					)}
 				</aside>
-				<main className='flex-1 flex flex-col pb-12'>
-					<h1>Blog</h1>
+				<main className='flex-1 flex flex-col pb-8 gap-4'>
+					<h1 className='font-oswald opacity-50 text-[8rem] leading-tight text-golden'>
+						Blog
+					</h1>
 					{posts && (
-						<div className='flex-1 flex flex-col'>
-							<PostList lang={lang} posts={posts.nodes} />
+						<div className='flex-1 flex flex-col gap-8'>
+							<BlogList lang={lang} posts={posts.nodes} />
 
 							<Pagination
 								lang={lang}
