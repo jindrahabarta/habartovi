@@ -147,7 +147,7 @@ const Footer = () => {
 					<p className='text-base'>
 						&copy; {new Date().getFullYear()} |{' '}
 						<Link
-							className='text-orange-500 font-semibold hover:underline '
+							className='text-orange hover:text-orangeAccent duration-300 font-semibold hover:underline '
 							href='/'
 						>
 							habartovi.cz
@@ -157,7 +157,7 @@ const Footer = () => {
 					<p className='text-base'>
 						Web vytvořilo studio{' '}
 						<Link
-							className='text-orange-500 font-semibold hover:underline '
+							className='text-orange hover:text-orangeAccent duration-300 font-semibold hover:underline '
 							href='/'
 						>
 							MotionLabs

@@ -42,6 +42,29 @@ const features = [
 	},
 ]
 
+const prices = [
+	{
+		price: 350,
+		text: 'za osobu/noc v letní sezóně 1.5.-31.10.',
+	},
+	{
+		price: 350,
+		text: 'za osobu/noc v zimní sezóně 1.11.-30.4.',
+	},
+	{
+		price: 50,
+		text: 'za jednoho psa a noc.',
+	},
+	{
+		price: 50,
+		text: 'za jednoho psa a noc.',
+	},
+	{
+		price: 10,
+		text: 'Rekreační poplatek v obci Červená Voda na jednu noc pro osobu starší 18 let.',
+	},
+]
+
 const MalyByt = () => {
 	return (
 		<div className='pt-14'>
@@ -80,22 +103,24 @@ const MalyByt = () => {
 
 					<div className='w-full h-[1px] bg-golden/50 mt-8 mb-4'></div>
 
-					<Pricelist></Pricelist>
+					<Pricelist prices={prices}></Pricelist>
 
 					<div className='w-full h-[1px] bg-golden/50 mt-8 mb-4'></div>
 					<h2 className='font-oswald opacity-50 text-4xl leading-tight text-golden'>
 						Rezervace
 					</h2>
 
-					<div className='mt-5 grid grid-cols-2 gap-4'>
-						<p>
-							Na závaznou objednávku vystavíme fakturu převodem.
-							Stornovací podmínky Nebudete-li moci nastoupit na
-							ubytování z Vaší příčiny, vrátíme 70% fakturované
-							částky zpět. Při zrušení pobytu z nařízení státu
-							vracíme celou fakturovanou částku.
-						</p>
-					</div>
+					<p className='mt-5'>
+						Na závaznou objednávku vystavíme fakturu převodem.
+					</p>
+					<p className='mt-2'>
+						Nebudete-li moci nastoupit na ubytování z Vaší příčiny,
+						vrátíme 70% fakturované částky zpět.
+					</p>
+					<p className='mt-2'>
+						Při zrušení pobytu z nařízení státu vracíme celou
+						fakturovanou částku.
+					</p>
 				</div>
 
 				<OrderForm></OrderForm>

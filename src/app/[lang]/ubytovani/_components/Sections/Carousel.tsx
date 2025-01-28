@@ -10,9 +10,12 @@ const Carousel = () => {
 	const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
 	return (
 		<section>
-			<div className='embla overflow-hidden w-full' ref={emblaRef}>
-				<div className='embla__container w-full flex '>
-					<div className='embla__slide flex-[0 0 50%]'>
+			<div
+				className='embla overflow-hidden h-[380px] w-full'
+				ref={emblaRef}
+			>
+				<div className='embla__container w-full h-full flex '>
+					<div className='embla__slide'>
 						<Image
 							src={ImgSample2}
 							width={1000}
@@ -21,7 +24,7 @@ const Carousel = () => {
 							className='w-full h-full object-cover'
 						></Image>
 					</div>
-					<div className='embla__slide flex-[0 0 50%]'>
+					<div className='embla__slide '>
 						<Image
 							src={ImgSample}
 							width={1000}
@@ -30,7 +33,7 @@ const Carousel = () => {
 							className='w-full h-full object-cover'
 						></Image>
 					</div>
-					<div className='embla__slide flex-[0 0 50%]'>
+					<div className='embla__slide '>
 						<Image
 							src={ImgSample2}
 							width={1000}
@@ -39,7 +42,7 @@ const Carousel = () => {
 							className='w-full h-full object-cover'
 						></Image>
 					</div>
-					<div className='embla__slide flex-[0 0 50%]'>
+					<div className='embla__slide '>
 						<Image
 							src={ImgSample}
 							width={1000}
@@ -48,7 +51,7 @@ const Carousel = () => {
 							className='w-full h-full object-cover'
 						></Image>
 					</div>
-					<div className='embla__slide flex-[0 0 50%]'>
+					<div className='embla__slide '>
 						<Image
 							src={ImgSample}
 							width={1000}

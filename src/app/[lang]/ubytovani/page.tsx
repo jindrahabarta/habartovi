@@ -1,11 +1,17 @@
 import React from 'react'
+import ApartmentSelection from './_components/Sections/ApartmentSelection/ApartmentSelection'
 
 const Ubytovani = () => {
 	return (
-		<div className='pt-14'>
+		<div className='pt-20'>
 			<section className='container'>
-				<h1>Ubytovani</h1>
+				<h1 className='font-oswald  md:text-[6rem] leading-tight text-golden/60'>
+					Ubytování
+				</h1>
+
+				<p>Nabízíme k pronájmu 2 apartmány</p>
 			</section>
+			<ApartmentSelection></ApartmentSelection>
 		</div>
 	)
 }
