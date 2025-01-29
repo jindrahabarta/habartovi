@@ -74,6 +74,10 @@ const links: LinkType[] = [
 		link: '/blog',
 		text: 'Blog',
 	},
+	{
+		link: '/kontakt',
+		text: 'Kontakt',
+	},
 ]
 
 const Navigation = () => {
@@ -121,13 +125,13 @@ const Navigation = () => {
 						<LanguageSelector></LanguageSelector>
 
 						<IconButton
-							link='#'
+							link='mailto:habartovi@email.cz'
 							className='hidden md:flex bg-secondary hover:bg-secondaryAccent'
 						>
 							<MailIcon className='w-6 text-white'></MailIcon>
 						</IconButton>
 						<IconButton
-							link='#'
+							link='tel:+420775180052'
 							className='hidden md:flex bg-secondary hover:bg-secondaryAccent'
 						>
 							<PhoneIcon className='w-6 text-white'></PhoneIcon>

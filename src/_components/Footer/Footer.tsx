@@ -3,7 +3,6 @@ import Image from 'next/image'
 import React from 'react'
 
 import LogoImg from '@/../public/images/habartovi-logo.png'
-import IconButton from '../Buttons/IconButton'
 import PhoneIcon from '../Icons/PhoneIcon'
 import MailIcon from '../Icons/MailIcon'
 import MapPinIcon from '../Icons/MapPinIcon'
@@ -30,26 +29,22 @@ const Footer = () => {
 								<li className='flex  gap-2 items-center'>
 									<Link
 										className='flex gap-2 items-center group'
-										href={'/'}
+										href={'tel:+420775180052'}
 									>
-										<div
-											className={`duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md`}
-										>
+										<div className='duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md'>
 											<PhoneIcon className='w-5 text-white'></PhoneIcon>
 										</div>
 										<span className='text-white group-hover:text-goldenAccent duration-300 font-bold'>
-											777 777 777
+											+420 775 180 052
 										</span>
 									</Link>
 								</li>
 								<li className='flex gap-2 items-center mt-2'>
 									<Link
 										className='flex gap-2 items-center group'
-										href={'/'}
+										href={'mailto:habartovi@email.cz'}
 									>
-										<div
-											className={`duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md`}
-										>
+										<div className='duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md'>
 											<MailIcon className='w-5 text-white'></MailIcon>
 										</div>
 										<span className='text-white group-hover:text-goldenAccent duration-300 font-bold'>
@@ -60,11 +55,12 @@ const Footer = () => {
 								<li className='flex gap-2 items-center mt-2'>
 									<Link
 										className='flex gap-2 items-center group'
-										href={'/'}
+										href={
+											'https://www.google.com/maps/place/Ubytov%C3%A1n%C3%AD+a+Keramick%C3%A1+d%C3%ADlna+Habartovi/@50.0283912,16.7724516,17z/data=!3m1!4b1!4m6!3m5!1s0x471206db20b953a9:0xc2a7d302ae1b4e1d!8m2!3d50.0283878!4d16.7750265!16s%2Fg%2F11ggs8kp5l?entry=ttu&g_ep=EgoyMDI1MDEyNi4wIKXMDSoASAFQAw%3D%3D'
+										}
+										target='_blank'
 									>
-										<div
-											className={`duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md`}
-										>
+										<div className='duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md'>
 											<MapPinIcon className='w-5 text-white'></MapPinIcon>
 										</div>
 										<span className='text-white group-hover:text-goldenAccent duration-300 font-bold'>
@@ -111,31 +107,35 @@ const Footer = () => {
 						<div className='flex justify-end gap-2 items-center mt-4'>
 							<Link
 								className='flex gap-2 items-center group'
-								href={'/'}
+								href={
+									'https://www.instagram.com/ubytovani_habartovi/'
+								}
+								target='_blank'
 							>
-								<div
-									className={`duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md`}
-								>
+								<div className='duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md'>
 									<InstagramIcon className='w-5 text-white' />
 								</div>
 							</Link>
+
 							<Link
 								className='flex gap-2 items-center group'
-								href={'/'}
+								href={
+									'https://www.facebook.com/profile.php?id=61562748149456'
+								}
+								target='_blank'
 							>
-								<div
-									className={`duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md`}
-								>
+								<div className='duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md'>
 									<FacebookIcon className='w-6 text-white' />
 								</div>
 							</Link>
 							<Link
 								className='flex gap-2 items-center group '
-								href={'/'}
+								href={
+									'https://www.megaubytko.cz/ubytovani-a-keramicka-dilna-habartovi'
+								}
+								target='_blank'
 							>
-								<div
-									className={`duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md`}
-								>
+								<div className='duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md'>
 									<MegaUbytkoIcon className='w-6 h-6' />
 								</div>
 							</Link>
@@ -158,7 +158,8 @@ const Footer = () => {
 						Web vytvořilo studio{' '}
 						<Link
 							className='text-orange hover:text-orangeAccent duration-300 font-semibold hover:underline '
-							href='/'
+							href='http://motionlabs.cz/'
+							target='_blank'
 						>
 							MotionLabs
 						</Link>

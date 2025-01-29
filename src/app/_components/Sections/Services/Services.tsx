@@ -5,8 +5,8 @@ import Button from '@/_components/Buttons/Button'
 
 const Services = () => {
 	return (
-		<section className='rounded-t-2xl overflow-hidden'>
-			<div className='bg-green1 py-20'>
+		<section className='bg-green1 rounded-2xl'>
+			<div className='bg-green1 rounded-2xl py-20 sticky top-10'>
 				<div className='container flex-col-reverse md:flex-row flex gap-5 sm:gap-10 items-center'>
 					<div className='flex-1 '>
 						<div className='aspect-video rounded-md overflow-hidden'>
@@ -40,7 +40,7 @@ const Services = () => {
 					</div>
 				</div>
 			</div>
-			<div className='bg-green2 py-20'>
+			<div className='bg-green2 rounded-2xl py-20 sticky top-10'>
 				<div className='container flex-col md:flex-row flex gap-5 sm:gap-10 items-center'>
 					<div className='flex-1'>
 						<h2 className='font-oswald text-golden text-2xl sm:text-3xl uppercase font-bold'>

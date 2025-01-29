@@ -1,11 +1,13 @@
 import React from 'react'
+import Hero from './_components/Sections/Hero/Hero'
+import AboutMe from './_components/AboutMe/AboutMe'
 
 const KeramickaDilna = () => {
 	return (
-		<div className='pt-20'>
-			<section className='container'>
-				<h1>Keramická dílna</h1>
-			</section>
+		<div className=''>
+			<Hero></Hero>
+
+			<AboutMe></AboutMe>
 		</div>
 	)
 }

@@ -23,8 +23,8 @@ const Hero = () => {
 					</h1>
 
 					<p className='text-2xl max-w-[500px] '>
-						Přijeďte si odpočinout do našeho soukromé ubytováná
-						nedaleko Červené Vody.
+						Přijeďte si odpočinout do soukromé ubytování nedaleko
+						Červené Vody.
 					</p>
 					<div className='mt-4 flex items-center gap-4'>
 						<Button
@@ -34,7 +34,7 @@ const Hero = () => {
 						></Button>
 						<Button
 							className='bg-secondary hover:bg-secondaryAccent text-white '
-							link={'/rezervace'}
+							link={'/ubytovani/rezervace'}
 							text={'Rezervovat termín'}
 						></Button>
 					</div>
