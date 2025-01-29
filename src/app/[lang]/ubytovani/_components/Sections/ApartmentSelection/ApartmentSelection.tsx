@@ -7,7 +7,7 @@ import ApartmentCard from './ApartmentCard'
 
 const ApartmentSelection = () => {
 	return (
-		<section className='container flex gap-10  py-10'>
+		<section className='container flex flex-col md:flex-row gap-10  py-10'>
 			<ApartmentCard
 				title={'Malý apartmán'}
 				text={

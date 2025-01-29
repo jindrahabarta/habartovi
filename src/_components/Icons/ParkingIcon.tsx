@@ -8,7 +8,7 @@ const ParkingIcon = ({ className }: { className: string }) => {
 			text-rendering='geometricPrecision'
 			image-rendering='optimizeQuality'
 			fill-rule='evenodd'
-			clip-rule='evenodd'
+			clipRule='evenodd'
 			viewBox='0 0 512 498.226'
 			fill='currentColor'
 			className={className}

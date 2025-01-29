@@ -9,7 +9,7 @@ const Ubytovani = () => {
 					Ubytování
 				</h1>
 
-				<p>Nabízíme k pronájmu 2 apartmány</p>
+				<p></p>
 			</section>
 			<ApartmentSelection></ApartmentSelection>
 		</div>

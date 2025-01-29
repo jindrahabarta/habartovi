@@ -35,7 +35,7 @@ const Blog: NextPage<{ params: IParams; searchParams: IQuery }> = async ({
 		<div className='flex-1 flex flex-col pt-32'>
 			<section className='container flex-1 flex flex-col lg:flex-row-reverse gap-4'>
 				<aside>
-					<h2 className='font-oswald opacity-50 text-4xl leading-tight text-golden'>
+					<h2 className='font-oswald text-4xl leading-tight text-golden/60'>
 						Rubriky blogu
 					</h2>
 					{categories && (
@@ -46,7 +46,7 @@ const Blog: NextPage<{ params: IParams; searchParams: IQuery }> = async ({
 					)}
 				</aside>
 				<main className='flex-1 flex flex-col pb-8 gap-4'>
-					<h1 className='font-oswald opacity-50 text-[8rem] leading-tight text-golden'>
+					<h1 className='font-oswald text-[8rem] leading-tight text-golden/60'>
 						Blog
 					</h1>
 					{posts && (

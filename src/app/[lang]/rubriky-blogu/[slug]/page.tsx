@@ -28,7 +28,7 @@ const Category: NextPage<{ params: IParams }> = async ({ params }) => {
 		<div className='flex flex-col pt-32'>
 			<section className='container flex-1 flex flex-col lg:flex-row-reverse gap-4'>
 				<aside>
-					<h2 className='font-oswald opacity-50 text-4xl leading-tight text-golden'>
+					<h2 className='font-oswald opacity-60 text-4xl leading-tight text-golden'>
 						Rubriky blogu
 					</h2>
 					{categories && (
@@ -41,7 +41,7 @@ const Category: NextPage<{ params: IParams }> = async ({ params }) => {
 				<main className='flex-1 flex flex-col pb-8 gap-4'>
 					{category && (
 						<>
-							<h1 className='font-oswald opacity-50 text-5xl leading-tight text-golden'>
+							<h1 className='font-oswald opacity-60 text-5xl leading-tight text-golden'>
 								{category.name}
 							</h1>
 							{category.posts && (

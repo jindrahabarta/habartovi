@@ -72,7 +72,7 @@ const MalyByt = () => {
 
 			<section className='container py-10 flex flex-col xl:flex-row gap-10'>
 				<div className='flex-[3] relative '>
-					<h1 className='font-oswald opacity-50  md:text-[6rem] leading-tight text-golden'>
+					<h1 className='font-oswald opacity-60  md:text-[6rem] leading-tight text-golden'>
 						Malý apartmán
 					</h1>
 
@@ -97,16 +97,16 @@ const MalyByt = () => {
 						úložné prostory.
 					</p>
 
-					<div className='w-full h-[1px] bg-golden/50 mt-8 mb-4'></div>
+					<div className='w-full h-[1px] bg-golden/60 mt-8 mb-4'></div>
 
 					<Features features={features}></Features>
 
-					<div className='w-full h-[1px] bg-golden/50 mt-8 mb-4'></div>
+					<div className='w-full h-[1px] bg-golden/60 mt-8 mb-4'></div>
 
 					<Pricelist prices={prices}></Pricelist>
 
-					<div className='w-full h-[1px] bg-golden/50 mt-8 mb-4'></div>
-					<h2 className='font-oswald opacity-50 text-4xl leading-tight text-golden'>
+					<div className='w-full h-[1px] bg-golden/60 mt-8 mb-4'></div>
+					<h2 className='font-oswald opacity-60 text-4xl leading-tight text-golden'>
 						Rezervace
 					</h2>
 

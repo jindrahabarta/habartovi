@@ -25,7 +25,7 @@ const BlogCard: React.FC<{ lang: string; post: IPost }> = ({ lang, post }) => {
 					</section>
 
 					<section className='flex-1 py-6 px-4'>
-						<h2 className='font-oswald text-opacity-50 text-3xl leading-tight text-golden'>
+						<h2 className='font-oswald text-opacity-60 text-3xl leading-tight text-golden'>
 							{post.title}
 						</h2>
 						<time className='text-grey-400 mt-2'>

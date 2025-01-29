@@ -130,20 +130,20 @@ const Footer = () => {
 								</div>
 							</Link>
 							<Link
-								className='flex gap-2 items-center group'
+								className='flex gap-2 items-center group '
 								href={'/'}
 							>
 								<div
 									className={`duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md`}
 								>
-									<MegaUbytkoIcon className='w-6 h-fit' />
+									<MegaUbytkoIcon className='w-6 h-6' />
 								</div>
 							</Link>
 						</div>
 					</div>
 				</div>
 				<div className='w-full h-[1px] bg-background mt-8'></div>
-				<div className='mt-2 pb-1 flex justify-between'>
+				<div className='mt-2 pb-1 flex justify-between items-center flex-col sm:flex-row'>
 					<p className='text-base'>
 						&copy; {new Date().getFullYear()} |{' '}
 						<Link

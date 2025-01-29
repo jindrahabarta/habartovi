@@ -11,7 +11,7 @@ const Features = ({
 }) => {
 	return (
 		<>
-			<h2 className='font-oswald opacity-50 text-4xl leading-tight text-golden'>
+			<h2 className='font-oswald opacity-60 text-4xl leading-tight text-golden'>
 				Služby
 			</h2>
 
