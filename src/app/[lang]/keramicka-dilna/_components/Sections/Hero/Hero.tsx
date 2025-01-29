@@ -31,12 +31,12 @@ const Hero = () => {
 					<div className='mt-4 flex items-center gap-4'>
 						<Button
 							className='bg-secondary border-2 border-secondary sm:hover:bg-secondaryAccent text-white '
-							link={'/#tvoriva-setkani'}
+							link={'#tvoriva-setkani'}
 							text={'Tvořivá setkání'}
 						></Button>
 						<Button
 							className='bg-transparent border-2 border-secondary sm:hover:bg-secondary text-secondary sm:hover:text-white '
-							link={'/#o-me'}
+							link={'#o-mne'}
 							text={'O mě'}
 						></Button>
 					</div>

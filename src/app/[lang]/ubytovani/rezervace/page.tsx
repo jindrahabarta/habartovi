@@ -2,8 +2,13 @@ import IconButton from '@/_components/Buttons/IconButton'
 import MailIcon from '@/_components/Icons/MailIcon'
 import MapPinIcon from '@/_components/Icons/MapPinIcon'
 import PhoneIcon from '@/_components/Icons/PhoneIcon'
+import { Metadata } from 'next'
 import Link from 'next/link'
 import React from 'react'
+
+export const metadata: Metadata = {
+	title: 'Rezervace',
+}
 
 const Rezervace = () => {
 	return (

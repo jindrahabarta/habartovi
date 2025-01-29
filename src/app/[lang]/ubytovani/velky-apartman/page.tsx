@@ -10,6 +10,11 @@ import BedIcon from '@/_components/Icons/BedIcon'
 import TVIcon from '@/_components/Icons/TVIcon'
 import BicycleIcon from '@/_components/Icons/BicycleIcon'
 import ParkingIcon from '@/_components/Icons/ParkingIcon'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+	title: 'Velký apartmán',
+}
 
 const features = [
 	{
