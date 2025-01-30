@@ -20,16 +20,16 @@ const links: LinkType[] = [
 		text: 'Domů',
 		submenu: [
 			{
-				link: '#',
+				link: '/#uvod',
 				text: 'Úvod',
 			},
 			{
-				link: '#',
+				link: '/#o-nas',
 				text: 'O nás',
 			},
 			{
-				link: '#',
-				text: 'Služby',
+				link: '/#sluzby',
+				text: 'Naše služby',
 			},
 		],
 	},
@@ -37,6 +37,10 @@ const links: LinkType[] = [
 		link: '/ubytovani',
 		text: 'Ubytování',
 		submenu: [
+			{
+				link: '/ubytovani',
+				text: 'Apartmány',
+			},
 			{
 				link: '/ubytovani/maly-apartman',
 				text: 'Malý apartmán',
@@ -55,6 +59,10 @@ const links: LinkType[] = [
 		link: '/keramicka-dilna',
 		text: 'Keramická dílna',
 		submenu: [
+			{
+				link: '/keramicka-dilna',
+				text: 'Úvod',
+			},
 			{
 				link: '#',
 				text: 'Eshop',

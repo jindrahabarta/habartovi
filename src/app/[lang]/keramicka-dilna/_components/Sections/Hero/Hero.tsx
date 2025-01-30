@@ -20,15 +20,15 @@ const Hero = () => {
 
 			<div className='container relative flex items-end h-full pb-20'>
 				<div className='text-left text-white '>
-					<h1 className='text-6xl font-oswald leading-tight'>
+					<h1 className='text-5xl sm:text-6xl font-oswald leading-tight'>
 						Keramická dílna
 					</h1>
 
-					<p className='text-2xl max-w-[500px] '>
+					<p className='text-xl sm:text-2xl max-w-[500px] '>
 						Vyzkoušejte si práci jako keramik a nebo se prostě
 						přijďte pokochat výrobkama
 					</p>
-					<div className='mt-4 flex items-center gap-4'>
+					<div className='mt-4 flex flex-wrap items-center gap-4'>
 						<Button
 							className='bg-secondary border-2 border-secondary sm:hover:bg-secondaryAccent text-white '
 							link={'#tvoriva-setkani'}

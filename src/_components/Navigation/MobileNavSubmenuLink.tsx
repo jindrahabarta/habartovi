@@ -24,11 +24,10 @@ const MobileNavSubmenuLink = ({
 	}
 
 	return (
-		<div className='flex flex-col' key={id}>
-			<Link
+		<div className='flex flex-col cursor-pointer' key={id}>
+			<p
 				onClick={() => handleExpand(id)}
-				className='text-xl py-2 text-white hover:text-white flex justify-between items-center select-none'
-				href={link.link}
+				className='text-2xl py-2 text-white hover:text-white flex justify-between items-center select-none'
 			>
 				{link.text}
 
@@ -38,7 +37,7 @@ const MobileNavSubmenuLink = ({
                     
                     duration-200 w-5`}
 				/>
-			</Link>
+			</p>
 
 			<div
 				className={` pl-2 overflow-hidden duration-200 `}
@@ -48,7 +47,7 @@ const MobileNavSubmenuLink = ({
 					{link.submenu?.map((subLink, y) => (
 						<React.Fragment key={id + '.' + y}>
 							<Link
-								className='text-white hover:text-white select-none'
+								className='text-white text-xl py-1 hover:text-white select-none'
 								href={subLink.link}
 								onClick={handleClose}
 							>
