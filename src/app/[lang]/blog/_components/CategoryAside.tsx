@@ -11,7 +11,7 @@ interface IParams {
 
 const CategoryAside: React.FC<IParams> = ({ lang, categories }) => {
 	return (
-		<aside className='lg:max-w-72 self-start border border-black/10 shadow-md rounded-lg p-4'>
+		<aside className='w-full lg:max-w-72 self-start border border-black/10 shadow-md rounded-lg p-4'>
 			<h2 className='font-oswald otext-4xl leading-tight text-golden/60'>
 				Rubriky blogu
 			</h2>

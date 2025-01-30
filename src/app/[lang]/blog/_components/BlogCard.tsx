@@ -26,8 +26,8 @@ const BlogCard: React.FC<{ lang: string; post: IPost }> = ({ lang, post }) => {
 						<h2 className='font-oswald text-opacity-60 text-3xl leading-tight text-golden'>
 							{post.title}
 						</h2>
-						<time className='text-grey-400 mt-2'>
-							{moment(post.date).format('DD/MM/YYYY')}
+						<time className='text-gray-400 italic text-sm mt-2'>
+							{moment(post.date).format('DD. MM. YYYY')}
 						</time>
 						{post.blog.introduction && (
 							<p className='text-black line-clamp-4 mt-4'>
