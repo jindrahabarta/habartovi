@@ -9,6 +9,13 @@ const CategoryList: React.FC<{
 }> = ({ lang, categories }) => {
 	return (
 		<ul className='flex flex-col gap-2 mt-4'>
+			<li>
+				<Link href={`/blog`}>
+					<h3 className='font-oswald text-2xl leading-tight text-golden/60'>
+						Všechny články
+					</h3>
+				</Link>
+			</li>
 			{categories.map((category) => (
 				<CategoryLink
 					key={category.id}

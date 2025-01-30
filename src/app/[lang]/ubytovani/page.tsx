@@ -3,7 +3,7 @@ import ApartmentSelection from './_components/Sections/ApartmentSelection/Apartm
 
 const Ubytovani = () => {
 	return (
-		<div className='pt-20'>
+		<div className='pt-32'>
 			<section className='container'>
 				<h1 className='font-oswald  md:text-[6rem] leading-tight text-golden/60'>
 					Ubytování

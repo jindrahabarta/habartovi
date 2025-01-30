@@ -4,6 +4,7 @@ import BlogList from '../../blog/_components/BlogList'
 import { getCategories } from '@/_graphql/categories/getCategories'
 import CategoryList from '../../blog/_components/CategoryList'
 import CategoryAside from '../../blog/_components/CategoryAside'
+import Link from 'next/link'
 
 interface IParams {
 	lang: string
@@ -35,7 +36,13 @@ const Category: NextPage<{ params: IParams }> = async ({ params }) => {
 					{category && (
 						<>
 							<h1 className='font-oswald opacity-60 text-5xl leading-tight text-golden'>
-								{category.name}
+								<Link
+									className='text-golden hover:text-goldenAccent'
+									href={'/blog'}
+								>
+									Blog
+								</Link>{' '}
+								- {category.name}
 							</h1>
 							{category.posts && (
 								<div className='flex-1 flex flex-col gap-8'>

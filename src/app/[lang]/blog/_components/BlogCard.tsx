@@ -3,11 +3,13 @@ import Image from 'next/image'
 import { IPost } from '@/_graphql/posts/post.interface'
 import moment from 'moment'
 
+import ImgPlaceholder from '@/../public/images/BlogPlaceholderImage.webp'
+
 const BlogCard: React.FC<{ lang: string; post: IPost }> = ({ lang, post }) => {
 	return (
 		<li key={post.id} className='w-full h-full'>
 			<Link href={`/${lang}/blog/${post.slug}`}>
-				<article className='w-full h-full flex flex-col border border-black/10 shadow-md rounded-lg overflow-hidden'>
+				<article className='w-full h-full flex flex-col border border-black/10 shadow-md rounded-lg overflow-hidden group'>
 					<section>
 						{post.featuredImage ? (
 							<Image
@@ -15,10 +17,18 @@ const BlogCard: React.FC<{ lang: string; post: IPost }> = ({ lang, post }) => {
 								alt={post.title}
 								width={712}
 								height={400}
-								className='w-full aspect-video object-cover'
+								className='w-full aspect-video object-cover group-hover:scale-105 duration-300'
 							/>
 						) : (
-							<div className='w-full aspect-video object-cover border-b border-b-black/10'></div>
+							<div className='w-full flex justify-center items-center aspect-video object-cover border-b border-b-black/10'>
+								<Image
+									src={ImgPlaceholder}
+									alt={post.title}
+									width={300}
+									height={300}
+									className='w-1/2 aspect-square object-cover group-hover:scale-105 duration-300'
+								/>
+							</div>
 						)}
 					</section>
 

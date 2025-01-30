@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 const Kontakt = () => {
 	return (
-		<div className='pt-20'>
+		<div className='pt-32'>
 			<section className='container'>
 				<h1 className='font-oswald text-center md:text-[6rem] leading-tight text-golden/60'>
 					Kontakt
