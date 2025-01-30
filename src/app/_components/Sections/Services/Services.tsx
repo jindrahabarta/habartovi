@@ -5,7 +5,7 @@ import Button from '@/_components/Buttons/Button'
 
 const Services = () => {
 	return (
-		<section className='bg-green1 rounded-2xl'>
+		<section id='nase-sluzby' className='bg-green1 rounded-2xl'>
 			<div className='bg-green1 rounded-2xl py-20 sticky top-10'>
 				<div className='container flex-col-reverse md:flex-row flex gap-5 sm:gap-10 items-center'>
 					<div className='flex-1 '>

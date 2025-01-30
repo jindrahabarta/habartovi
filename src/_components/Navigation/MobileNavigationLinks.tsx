@@ -1,6 +1,6 @@
 import { Link as LinkType } from '@/_types/navigation'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import MobileNavSubmenuLink from './MobileNavSubmenuLink'
 import IconButton from '../Buttons/IconButton'
@@ -17,6 +17,10 @@ const MobileNavigationLinks = ({
 	handleClose: () => void
 }) => {
 	const [expand, setExpand] = useState<null | number>(null)
+
+	useEffect(() => {
+		setExpand(null)
+	}, [isOpened])
 
 	return (
 		<aside

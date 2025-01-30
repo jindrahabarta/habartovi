@@ -23,8 +23,8 @@ const LanguageSelector = () => {
 	const { lang } = useParams<{ lang: string }>()
 
 	return (
-		<>
-			<div className='flex items-center '>
+		<div>
+			<div className='flex items-center'>
 				<div className='relative inline-block text-left'>
 					<div>
 						<button
@@ -50,6 +50,7 @@ const LanguageSelector = () => {
 							</svg>
 						</button>
 					</div>
+
 					{isOpen && (
 						<div
 							className='origin-top-right w-full absolute right-0 mt-2 rounded-md shadow-lg bg-background ring-1 ring-black ring-opacity-5'
@@ -81,7 +82,7 @@ const LanguageSelector = () => {
 					)}
 				</div>
 			</div>
-		</>
+		</div>
 	)
 }
 

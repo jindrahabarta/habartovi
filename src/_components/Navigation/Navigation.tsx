@@ -28,7 +28,7 @@ const links: LinkType[] = [
 				text: 'O nás',
 			},
 			{
-				link: '/#sluzby',
+				link: '/#nase-sluzby',
 				text: 'Naše služby',
 			},
 		],

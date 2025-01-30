@@ -18,7 +18,7 @@ const Hero = () => {
 				<div className='absolute top-0 left-0 w-full h-full bg-black/40'></div>
 			</div>
 
-			<div className='container relative flex items-end h-full pb-20'>
+			<div className='container relative flex items-end h-full'>
 				<div className='text-left text-white '>
 					<h1 className='text-5xl sm:text-6xl font-oswald leading-tight'>
 						Keramická dílna
@@ -28,7 +28,7 @@ const Hero = () => {
 						Vyzkoušejte si práci jako keramik a nebo se prostě
 						přijďte pokochat výrobkama
 					</p>
-					<div className='mt-4 flex flex-wrap items-center gap-4'>
+					<div className='mt-4 flex flex-wrap items-center gap-4 pb-20'>
 						<Button
 							className='bg-secondary border-2 border-secondary sm:hover:bg-secondaryAccent text-white '
 							link={'#tvoriva-setkani'}
