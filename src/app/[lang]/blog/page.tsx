@@ -4,6 +4,8 @@ import Pagination from '../../_components/Pagination/Pagination'
 import BlogList from './_components/BlogList'
 import { getCategories } from '@/_graphql/categories/getCategories'
 import CategoryList from './_components/CategoryList'
+import Link from 'next/link'
+import CategoryAside from './_components/CategoryAside'
 
 interface IParams {
 	lang: string
@@ -34,19 +36,11 @@ const Blog: NextPage<{ params: IParams; searchParams: IQuery }> = async ({
 	return (
 		<div className='flex-1 flex flex-col pt-32'>
 			<section className='container flex-1 flex flex-col lg:flex-row-reverse gap-4'>
-				<aside>
-					<h2 className='font-oswald text-4xl leading-tight text-golden/60'>
-						Rubriky blogu
-					</h2>
-					{categories && (
-						<CategoryList
-							lang={lang}
-							categories={categories.nodes}
-						/>
-					)}
-				</aside>
+				{categories && (
+					<CategoryAside lang={lang} categories={categories.nodes} />
+				)}
 				<main className='flex-1 flex flex-col pb-8 gap-4'>
-					<h1 className='font-oswald text-[8rem] leading-tight text-golden/60'>
+					<h1 className='font-oswald text-[6rem] leading-tight text-golden/60'>
 						Blog
 					</h1>
 					{posts && (

@@ -14,14 +14,14 @@ const Pagination: React.FC<{
 	const totalPages = Math.ceil(total / size)
 
 	return (
-		<div className='flex items-center justify-center gap-4'>
+		<div className='flex items-center justify-center gap-3'>
 			{hasPrevious && (
 				<PageLink href={`/${lang}/blog?page=${page - 1}`}>
 					<FiChevronLeft />
 				</PageLink>
 			)}
 
-			<span className='flex gap-2'>
+			<span className='flex gap-1'>
 				{page > 3 && (
 					<PageLink href={`/${lang}/blog?page=1`}>1</PageLink>
 				)}

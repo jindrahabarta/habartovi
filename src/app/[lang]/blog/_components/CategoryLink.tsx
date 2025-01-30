@@ -9,7 +9,9 @@ const CategoryLink: React.FC<{
 	return (
 		<li>
 			<Link href={`/${lang}/rubriky-blogu/${category.slug}`}>
-				{category.name}
+				<h3 className='font-oswald text-2xl leading-tight text-golden/60'>
+					{category.name}
+				</h3>
 			</Link>
 		</li>
 	)

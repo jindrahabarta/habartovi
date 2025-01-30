@@ -8,7 +8,7 @@ const CategoryList: React.FC<{
 	categories: ICategory[]
 }> = ({ lang, categories }) => {
 	return (
-		<ul>
+		<ul className='flex flex-col gap-2 mt-4'>
 			{categories.map((category) => (
 				<CategoryLink
 					key={category.id}

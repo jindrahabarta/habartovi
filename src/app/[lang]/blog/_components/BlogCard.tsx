@@ -18,9 +18,7 @@ const BlogCard: React.FC<{ lang: string; post: IPost }> = ({ lang, post }) => {
 								className='w-full aspect-video object-cover'
 							/>
 						) : (
-							<div className='w-full aspect-video object-cover border-b border-b-black/10'>
-								placeholder image
-							</div>
+							<div className='w-full aspect-video object-cover border-b border-b-black/10'></div>
 						)}
 					</section>
 

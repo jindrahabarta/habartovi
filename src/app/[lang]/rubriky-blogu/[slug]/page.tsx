@@ -3,6 +3,7 @@ import { NextPage } from 'next'
 import BlogList from '../../blog/_components/BlogList'
 import { getCategories } from '@/_graphql/categories/getCategories'
 import CategoryList from '../../blog/_components/CategoryList'
+import CategoryAside from '../../blog/_components/CategoryAside'
 
 interface IParams {
 	lang: string
@@ -27,17 +28,9 @@ const Category: NextPage<{ params: IParams }> = async ({ params }) => {
 	return (
 		<div className='flex flex-col pt-32'>
 			<section className='container flex-1 flex flex-col lg:flex-row-reverse gap-4'>
-				<aside>
-					<h2 className='font-oswald opacity-60 text-4xl leading-tight text-golden'>
-						Rubriky blogu
-					</h2>
-					{categories && (
-						<CategoryList
-							lang={lang}
-							categories={categories.nodes}
-						/>
-					)}
-				</aside>
+				{categories && (
+					<CategoryAside lang={lang} categories={categories.nodes} />
+				)}
 				<main className='flex-1 flex flex-col pb-8 gap-4'>
 					{category && (
 						<>
