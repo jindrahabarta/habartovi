@@ -2,6 +2,7 @@ import { getPost } from '@/_graphql/posts/getPost'
 import { NextPage } from 'next'
 import Image from 'next/image'
 import './wp-blog-content.css'
+import moment from 'moment'
 
 interface IParams {
 	lang: string
@@ -27,9 +28,12 @@ const Post: NextPage<{ params: IParams }> = async ({ params }) => {
 			<section className='container flex flex-col items-center'>
 				{post && (
 					<article className='max-w-[70ch]'>
-						<h1 className='font-oswald text-4xl leading-tight text-golden/60'>
+						<h1 className='font-oswald text-5xl leading-tight text-golden/60'>
 							{post.title}
 						</h1>
+						<time className='text-gray-400 italic text-sm'>
+							{moment(post.date).format('DD. MM. YYYY')}
+						</time>
 						{post.blog.introduction && (
 							<p className='indent-4 text-justify mt-2'>
 								{post.blog.introduction}
