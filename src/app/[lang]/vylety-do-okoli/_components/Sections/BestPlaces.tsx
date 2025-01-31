@@ -6,8 +6,8 @@ import Img from '@/../public/images/testimg.jpg'
 const bestPlaces = [
 	{
 		title: 'Křížová hora',
-		link: 'xdxdxdd',
-		desc: 'sldjflsdfj',
+		link: 'https://www.kudyznudy.cz/aktivity/rozhledna-krizova-hora',
+		desc: 'Východně od Červené Vody na jednom z vrcholů Jeřábské vrchoviny v nadmořské výšce 735 m stojí na starobylém poutním místě věž s vyhlídkovým ochozem ve výšce 25 m.',
 		img: Img,
 	},
 	{

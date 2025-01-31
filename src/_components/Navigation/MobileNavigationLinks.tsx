@@ -10,11 +10,9 @@ import PhoneIcon from '../Icons/PhoneIcon'
 const MobileNavigationLinks = ({
 	isOpened,
 	links,
-	handleClose,
 }: {
 	isOpened: boolean
 	links: LinkType[]
-	handleClose: () => void
 }) => {
 	const [expand, setExpand] = useState<null | number>(null)
 
@@ -39,7 +37,6 @@ const MobileNavigationLinks = ({
 								id={i}
 								key={i}
 								link={link}
-								handleClose={handleClose}
 								handleExpand={(id) => {
 									if (id === expand) {
 										setExpand(null)
@@ -54,9 +51,8 @@ const MobileNavigationLinks = ({
 						return (
 							<div className='flex flex-col' key={i}>
 								<Link
-									className='text-xl py-2 mt-2 text-white hover:text-white flex justify-between items-center select-none'
+									className='text-2xl py-2 mt-2 text-white hover:text-white hover:underline flex justify-between items-center select-none'
 									href={link.link}
-									onClick={handleClose}
 								>
 									{link.text}
 								</Link>

@@ -12,7 +12,10 @@ import MegaUbytkoIcon from '../Icons/MegaUbytkoIcon'
 
 const Footer = () => {
 	return (
-		<footer className='bg-secondary pt-12 w-full text-white'>
+		<footer
+			id='footer'
+			className='bg-secondary rounded-b-2xl md:rounded-b-none pt-12 w-full text-white'
+		>
 			<div className='container w-full'>
 				<div className='flex flex-col flex-wrap sm:flex-row gap-10 justify-between'>
 					<div className='flex-1 flex flex-col justify-between gap-8'>
@@ -34,7 +37,7 @@ const Footer = () => {
 										<div className='duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md'>
 											<PhoneIcon className='w-5 text-white'></PhoneIcon>
 										</div>
-										<span className='text-white group-hover:text-goldenAccent duration-300 font-bold'>
+										<span className='text-white group-hover:text-orange duration-300 font-bold'>
 											+420 775 180 052
 										</span>
 									</Link>
@@ -47,7 +50,7 @@ const Footer = () => {
 										<div className='duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md'>
 											<MailIcon className='w-5 text-white'></MailIcon>
 										</div>
-										<span className='text-white group-hover:text-goldenAccent duration-300 font-bold'>
+										<span className='text-white group-hover:text-orange duration-300 font-bold'>
 											habartovi@email.cz
 										</span>
 									</Link>
@@ -63,7 +66,7 @@ const Footer = () => {
 										<div className='duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md'>
 											<MapPinIcon className='w-5 text-white'></MapPinIcon>
 										</div>
-										<span className='text-white group-hover:text-goldenAccent duration-300 font-bold'>
+										<span className='text-white group-hover:text-orange duration-300 font-bold'>
 											Moravský Karlov 103
 										</span>
 									</Link>
@@ -75,28 +78,61 @@ const Footer = () => {
 					<div className='flex-1'>
 						<h3 className=' font-bold'>Menu</h3>
 
-						<ul className='max-w-xs'>
-							<li className='w-full py-1 '>
+						<ul className='max-w-xs mt-2'>
+							<li className='w-full  '>
 								<Link
-									className='text-white text-lg  w-full inline-block font-bold'
+									className='text-white py-0.5 text-lg hover:text-orange w-full inline-block font-bold'
 									href={'/'}
 								>
 									Domů
 								</Link>
 							</li>
-							<li className='w-full py-1 '>
+							<li className='w-full  '>
 								<Link
-									className='text-white text-lg  w-full inline-block font-bold'
-									href={'/'}
+									className='text-white py-0.5 text-lg hover:text-orange w-full inline-block font-bold'
+									href={'/ubytovani'}
 								>
-									Domů
+									Ubytování
+								</Link>
+							</li>
+							<li className='w-full  '>
+								<Link
+									className='text-white py-0.5 text-lg hover:text-orange w-full inline-block font-bold'
+									href={'/keramicka-dilna'}
+								>
+									Keramická dílna
+								</Link>
+							</li>
+							<li className='w-full  '>
+								<Link
+									className='text-white py-0.5 text-lg hover:text-orange w-full inline-block font-bold'
+									href={'/okoli'}
+								>
+									Okolí
+								</Link>
+							</li>
+							<li className='w-full  '>
+								<Link
+									className='text-white py-0.5 text-lg hover:text-orange w-full inline-block font-bold'
+									href={'/blog'}
+								>
+									Blog
+								</Link>
+							</li>
+							<li className='w-full  '>
+								<Link
+									className='text-white py-0.5 text-lg hover:text-orange w-full inline-block font-bold'
+									href={'/kontakt'}
+								>
+									Kontakt
 								</Link>
 							</li>
 						</ul>
 					</div>
 
 					<div className='w-full md:flex-1'>
-						<div className='rounded-2xl bg-white overflow-hidden h-44 w-full'>
+						<h3 className=' font-bold'>Kde nás najdete</h3>
+						<div className='rounded-2xl mt-2 bg-white overflow-hidden h-44 w-full'>
 							<iframe
 								width='100%'
 								height='100%'

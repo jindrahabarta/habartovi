@@ -5,6 +5,7 @@ import { Open_Sans, Oswald } from 'next/font/google'
 import './../globals.css'
 import Navigation from '@/_components/Navigation/Navigation'
 import Footer from '@/_components/Footer/Footer'
+import FooterEasterEgg from '@/_components/Footer/FooterEasterEgg'
 
 const openSans = Open_Sans({
 	subsets: ['latin'],
@@ -49,6 +50,7 @@ export default function RootLayout({
 					{children}
 				</main>
 
+				<FooterEasterEgg></FooterEasterEgg>
 				<Footer></Footer>
 			</body>
 		</html>

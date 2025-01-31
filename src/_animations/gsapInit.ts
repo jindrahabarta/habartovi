@@ -40,6 +40,7 @@ const gsapInit = (path: string) => {
 			},
 		})
 	} else {
+		//MOBILE Navigation
 		ScrollTrigger.create({
 			trigger: document.body,
 			start: 'top+=10px top',
@@ -68,10 +69,58 @@ const gsapInit = (path: string) => {
 				})
 			},
 		})
+
+		//MOBILE Footer easter egg
+
+		ScrollTrigger.create({
+			trigger: 'footer',
+			start: '80% bottom',
+			end: '80% bottom',
+			markers: true,
+			onEnter: () => {
+				gsap.set('#footerEasterEgg', {
+					display: 'flex',
+				})
+			},
+			onEnterBack: () => {
+				gsap.set('#footerEasterEgg', {
+					display: 'none',
+				})
+			},
+		})
 	}
 
-	//SELECTED PAGE
+	//HERO
+
+	if (pathWithoutLang === '' || pathWithoutLang === '/keramicka-dilna') {
+		const heroTl = gsap.timeline({
+			defaults: { duration: 0.7, ease: 'power1.inOut' },
+		})
+
+		heroTl
+			.to('#heroShade', {
+				backgroundColor: 'rgb(0 0 0 / 0.4)',
+			})
+			.to('.heroPart', {
+				translateX: 0,
+				opacity: 1,
+				stagger: 0.2,
+			})
+
+		gsap.to('#heroImage', {
+			scrollTrigger: {
+				trigger: '#hero',
+				start: 'top top',
+				end: 'bottom top',
+				scrub: 1,
+			},
+
+			scale: 1.2,
+		})
+	}
+
 	if (pathWithoutLang === '') {
+		//SELECTED PAGE
 		const aboutTl = gsap.timeline({
 			defaults: {
 				duration: 0.5,
@@ -100,6 +149,14 @@ const gsapInit = (path: string) => {
 		// 		},
 		// 		'<'
 		// 	)
+	} else if (pathWithoutLang === '/blog') {
+		console.log('losdafjlasjkda')
+
+		gsap.to('.blogCard', {
+			opacity: 1,
+			stagger: 0.2,
+			duration: 0.3,
+		})
 	}
 }
 

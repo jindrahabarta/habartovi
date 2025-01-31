@@ -6,7 +6,7 @@ import { Link as LinkType } from '@/_types/navigation'
 interface props {
 	id: number
 	link: LinkType
-	handleClose: () => void
+
 	handleExpand: (id: number) => void
 	isOpened: boolean
 }
@@ -14,7 +14,7 @@ interface props {
 const MobileNavSubmenuLink = ({
 	link,
 	id,
-	handleClose,
+
 	handleExpand,
 	isOpened,
 }: props) => {
@@ -47,9 +47,8 @@ const MobileNavSubmenuLink = ({
 					{link.submenu?.map((subLink, y) => (
 						<React.Fragment key={id + '.' + y}>
 							<Link
-								className='text-white text-xl py-1 hover:text-white select-none'
+								className='text-white text-xl py-1 hover:underline select-none'
 								href={subLink.link}
-								onClick={handleClose}
 							>
 								{subLink.text}
 							</Link>

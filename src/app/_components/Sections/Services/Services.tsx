@@ -57,7 +57,7 @@ const Services = () => {
 						<Button
 							className='bg-golden hover:bg-transparent border-2 border-golden hover:text-golden text-white mt-4 sm:mt-8'
 							link={'/keramicka-dilna'}
-							text={'Keramická dílna'}
+							text={'Přejít na keramickou dílnu'}
 						></Button>
 					</div>
 					<div className='flex-1 '>

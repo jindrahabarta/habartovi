@@ -18,20 +18,6 @@ const links: LinkType[] = [
 	{
 		link: '/',
 		text: 'Domů',
-		submenu: [
-			{
-				link: '/#uvod',
-				text: 'Úvod',
-			},
-			{
-				link: '/#o-nas',
-				text: 'O nás',
-			},
-			{
-				link: '/#nase-sluzby',
-				text: 'Naše služby',
-			},
-		],
 	},
 	{
 		link: '/ubytovani',
@@ -58,20 +44,6 @@ const links: LinkType[] = [
 	{
 		link: '/keramicka-dilna',
 		text: 'Keramická dílna',
-		submenu: [
-			{
-				link: '/keramicka-dilna',
-				text: 'Úvod',
-			},
-			{
-				link: '#',
-				text: 'Eshop',
-			},
-			{
-				link: '#',
-				text: 'Tvořivá setkání',
-			},
-		],
 	},
 	{
 		link: '/vylety-do-okoli',
@@ -94,6 +66,8 @@ const Navigation = () => {
 
 	useEffect(() => {
 		gsapInit(path)
+		setIsOpened(false)
+		document.body.classList.remove('denyScroll')
 	}, [path])
 
 	const handleMenu = () => {
@@ -126,7 +100,6 @@ const Navigation = () => {
 					<MobileNavigationLinks
 						links={links}
 						isOpened={isOpened}
-						handleClose={handleMenu}
 					></MobileNavigationLinks>
 
 					<div className='flex items-center gap-2'>

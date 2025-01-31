@@ -6,7 +6,7 @@ import AboutMeImg from '@/../public/images/Keramická dílna/bg1.jpg'
 const AboutMe = () => {
 	return (
 		<section id='o-mne' className='container py-16 '>
-			<div className='flex gap-32'>
+			<div className='flex flex-col-reverse md:flex-row gap-10 xl:gap-32'>
 				<div className='flex-1'>
 					<Image
 						src={AboutMeImg}
@@ -43,7 +43,7 @@ const AboutMe = () => {
 				</div>
 			</div>
 
-			<div className='flex flex-row-reverse mt-16 gap-32'>
+			<div className='flex flex-col-reverse md:flex-row-reverse mt-16 gap-10 xl:gap-32'>
 				<div className='flex-1'>
 					<Image
 						src={AboutMeImg}
