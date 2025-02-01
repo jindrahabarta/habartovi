@@ -1,5 +1,5 @@
 import { gql } from '@apollo/client'
-import { client } from '@/_graphql/apollo'
+import { wpClient } from '@/_graphql/apollo'
 import { IPost, postAttributes } from './post.interface'
 import { unstable_cache } from 'next/cache'
 
@@ -23,7 +23,7 @@ function getPostQuery(slug: string) {
 export const getPost = unstable_cache(
 	async (slug: string) => {
 		try {
-			const data = await client.query<IPostResponse>({
+			const data = await wpClient.query<IPostResponse>({
 				query: getPostQuery(slug),
 			})
 			if (!data || !data.data || !data.data.post) {

@@ -2,7 +2,7 @@ import { gql } from '@apollo/client'
 import { IPost, postAttributes } from '../posts/post.interface'
 import { categoryAttributes, ICategory } from './category.interface'
 import { unstable_cache } from 'next/cache'
-import { client } from '../apollo'
+import { wpClient } from '../apollo'
 
 export interface ICategoryResponse {
 	category: ICategory & {
@@ -30,7 +30,7 @@ function getCategoryQuery(slug: string) {
 export const getCategory = unstable_cache(
 	async (slug: string) => {
 		try {
-			const data = await client.query<ICategoryResponse>({
+			const data = await wpClient.query<ICategoryResponse>({
 				query: getCategoryQuery(slug),
 			})
 			if (!data || !data.data || !data.data.category) {

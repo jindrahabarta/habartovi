@@ -10,7 +10,7 @@ const BlogCard: React.FC<{ lang: string; post: IPost }> = ({ lang, post }) => {
 		<li key={post.id} className='w-full h-full blogCard opacity-0'>
 			<Link href={`/${lang}/blog/${post.slug}`}>
 				<article className='w-full h-full flex flex-col border border-black/10 shadow-md rounded-lg overflow-hidden group'>
-					<section>
+					<section className='overflow-hidden'>
 						{post.featuredImage ? (
 							<Image
 								src={post.featuredImage.node.mediaItemUrl}

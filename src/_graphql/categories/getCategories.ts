@@ -1,7 +1,7 @@
 import { gql } from '@apollo/client'
 import { categoryAttributes, ICategory } from './category.interface'
 import { unstable_cache } from 'next/cache'
-import { client } from '../apollo'
+import { wpClient } from '../apollo'
 
 interface ICategoryResponse {
 	categories: {
@@ -22,7 +22,7 @@ const categoriesQuery = gql`
 export const getCategories = unstable_cache(
 	async () => {
 		try {
-			const data = await client.query<ICategoryResponse>({
+			const data = await wpClient.query<ICategoryResponse>({
 				query: categoriesQuery,
 			})
 
