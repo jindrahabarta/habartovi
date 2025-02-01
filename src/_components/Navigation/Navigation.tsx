@@ -13,6 +13,7 @@ import NavigationLinks from './NavigationLinks'
 import HamburgerButton from './HamburgerButton'
 import MobileNavigationLinks from './MobileNavigationLinks'
 import { Link as LinkType } from '@/_types/navigation'
+import LogoOrangeBlack from '../../../public/images/LogoOrangeBlack'
 
 const links: LinkType[] = [
 	{
@@ -85,14 +86,12 @@ const Navigation = () => {
 					id='navWrapper'
 					className='flex gap-2 items-center justify-between h-20 md:h-fit'
 				>
-					<Link href={'/'} className='z-50 md:w-[170px] w-[130px]'>
-						<Image
-							src={LogoImg}
-							width={170}
-							height={80}
-							alt='Habartovi logo'
-							id='navLogo'
-						></Image>
+					<Link
+						href={'/'}
+						id='navLogo'
+						className='z-50 md:w-[170px] w-[150px]'
+					>
+						<LogoOrangeBlack className=' w-full text-black' />
 					</Link>
 
 					<NavigationLinks links={links}></NavigationLinks>

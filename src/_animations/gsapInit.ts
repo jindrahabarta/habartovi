@@ -9,8 +9,9 @@ const gsapInit = (path: string) => {
 
 	//GLOBAL
 
-	//Navigation
 	if (window.innerWidth > 640) {
+		//FOR PC
+		//Navigation
 		ScrollTrigger.create({
 			trigger: document.body,
 			start: 'top+=10px top',
@@ -53,7 +54,7 @@ const gsapInit = (path: string) => {
 				})
 
 				gsap.to('#navLogo', {
-					width: 120,
+					width: 130,
 					duration: 0.333,
 				})
 			},
@@ -64,13 +65,17 @@ const gsapInit = (path: string) => {
 				})
 
 				gsap.to('#navLogo', {
-					width: 130,
+					width: 150,
 					duration: 0.333,
 				})
 			},
 		})
 
 		//MOBILE Footer easter egg
+
+		gsap.set('#footerEasterEgg', {
+			display: 'none',
+		})
 
 		ScrollTrigger.create({
 			trigger: 'footer',
@@ -121,19 +126,18 @@ const gsapInit = (path: string) => {
 
 	if (pathWithoutLang === '') {
 		//SELECTED PAGE
-		const aboutTl = gsap.timeline({
-			defaults: {
-				duration: 0.5,
-				ease: 'power1.inOut',
-			},
-			scrollTrigger: {
-				trigger: '#about',
-				start: 'top center',
-				end: 'bottom center',
-				toggleActions: 'play none none none',
-			},
-		})
-
+		// const aboutTl = gsap.timeline({
+		// 	defaults: {
+		// 		duration: 0.5,
+		// 		ease: 'power1.inOut',
+		// 	},
+		// 	scrollTrigger: {
+		// 		trigger: '#about',
+		// 		start: 'top center',
+		// 		end: 'bottom center',
+		// 		toggleActions: 'play none none none',
+		// 	},
+		// })
 		// aboutTl
 		// 	.to('#aboutVerticalLine', {
 		// 		height: '100%',
@@ -149,9 +153,7 @@ const gsapInit = (path: string) => {
 		// 		},
 		// 		'<'
 		// 	)
-	} else if (pathWithoutLang === '/blog') {
-		console.log('losdafjlasjkda')
-
+	} else if (pathWithoutLang.split('/')[1] === 'blog') {
 		gsap.to('.blogCard', {
 			opacity: 1,
 			stagger: 0.2,

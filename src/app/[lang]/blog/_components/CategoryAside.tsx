@@ -1,6 +1,4 @@
 import { ICategory } from '@/_graphql/categories/category.interface'
-import { NextPage } from 'next'
-import Link from 'next/link'
 import React from 'react'
 import CategoryList from './CategoryList'
 

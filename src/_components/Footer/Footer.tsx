@@ -9,6 +9,7 @@ import MapPinIcon from '../Icons/MapPinIcon'
 import InstagramIcon from '../Icons/InstagramIcon'
 import FacebookIcon from '../Icons/FacebookIcon'
 import MegaUbytkoIcon from '../Icons/MegaUbytkoIcon'
+import LogoOrangeBlack from '../../../public/images/LogoOrangeBlack'
 
 const Footer = () => {
 	return (
@@ -17,14 +18,10 @@ const Footer = () => {
 			className='bg-secondary rounded-b-2xl md:rounded-b-none pt-12 w-full text-white'
 		>
 			<div className='container w-full'>
-				<div className='flex flex-col flex-wrap sm:flex-row gap-10 justify-between'>
+				<div className='flex flex-col md:flex-wrap sm:flex-row gap-6 sm:gap-10 justify-between'>
 					<div className='flex-1 flex flex-col justify-between gap-8'>
-						<Link className='w-fit' href={'/'}>
-							<Image
-								src={LogoImg}
-								alt='Habartovi logo'
-								width={200}
-							></Image>
+						<Link href={'/'}>
+							<LogoOrangeBlack className='w-2/3 sm:w-4/5 lg:w-2/3 text-white' />
 						</Link>
 
 						<div>
