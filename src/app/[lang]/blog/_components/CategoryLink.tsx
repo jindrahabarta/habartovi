@@ -13,7 +13,9 @@ const CategoryLink: React.FC<{
 			<Link href={`/${lang}/blog/rubriky/${category.slug}`}>
 				<h3
 					className={`font-oswald text-2xl leading-tight ${
-						selected ? 'text-secondary underline' : 'text-golden/60'
+						selected
+							? 'text-secondary underline'
+							: 'text-golden opacity-60 duration-300 hover:opacity-100 hover:text-goldenAccent'
 					}`}
 				>
 					{category.name}

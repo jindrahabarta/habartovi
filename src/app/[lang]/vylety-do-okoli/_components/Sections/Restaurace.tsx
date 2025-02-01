@@ -9,7 +9,7 @@ const Restaurace = () => {
 	return (
 		<section className='bg-green2 py-20'>
 			<div className='container'>
-				<h2 className='font-oswald text-4xl leading-tight text-golden'>
+				<h2 className='font-oswald sm:text-4xl leading-tight text-golden'>
 					Tipy na zařízení
 				</h2>
 

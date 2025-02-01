@@ -13,8 +13,13 @@ const BackLink = () => {
 	}
 
 	return (
-		<a href='#' onClick={handleClick} className='flex items-center'>
-			<FiChevronLeft /> zpět
+		<a
+			href='#'
+			onClick={handleClick}
+			className='flex items-center w-fit font-semibold text-base group hover:underline'
+		>
+			<FiChevronLeft className='relative left-0 group-hover:-left-0.5 duration-300' />{' '}
+			Zpět
 		</a>
 	)
 }

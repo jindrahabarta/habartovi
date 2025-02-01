@@ -36,25 +36,30 @@ const Blog: NextPage<{ params: IParams; searchParams: IQuery }> = async ({
 	return (
 		<div className='flex-1 flex flex-col pt-32'>
 			<section className='container flex-1 flex flex-col lg:flex-row-reverse gap-4'>
-				{categories && (
-					<CategoryAside lang={lang} categories={categories.nodes} />
-				)}
 				<main className='flex-1 flex flex-col pb-8 gap-4'>
-					<h1 className='font-oswald text-[6rem] leading-tight text-golden/60'>
+					<h1 className='font-oswald text-[4rem] sm:text-[5rem] leading-tight text-golden/60'>
 						Blog
 					</h1>
-					{posts && (
-						<div className='flex-1 flex flex-col gap-8'>
-							<BlogList lang={lang} posts={posts.nodes} />
+					<div className='flex flex-col-reverse md:flex-row gap-5 md:gap-10'>
+						{posts && (
+							<div className='flex-1 flex flex-col gap-8'>
+								<BlogList lang={lang} posts={posts.nodes} />
 
-							<Pagination
+								<Pagination
+									lang={lang}
+									page={pageInt}
+									size={size}
+									pageInfo={posts.pageInfo}
+								/>
+							</div>
+						)}
+						{categories && (
+							<CategoryAside
 								lang={lang}
-								page={pageInt}
-								size={size}
-								pageInfo={posts.pageInfo}
+								categories={categories.nodes}
 							/>
-						</div>
-					)}
+						)}
+					</div>
 				</main>
 			</section>
 		</div>

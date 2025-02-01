@@ -12,15 +12,13 @@ const Services = async () => {
 			<div className='bg-green1 rounded-2xl py-20 sticky top-10'>
 				<div className='container flex-col-reverse md:flex-row flex gap-5 sm:gap-10 items-center'>
 					<div className='flex-1 '>
-						<div className='aspect-video rounded-md overflow-hidden'>
-							<Image
-								src={UbytovaniImg}
-								width={1000}
-								height={800}
-								alt={'Ubytování'}
-								className=' object-cover'
-							></Image>
-						</div>
+						<Image
+							src={UbytovaniImg}
+							width={700}
+							height={400}
+							alt={'Ubytování'}
+							className=' object-cover aspect-video rounded-md '
+						></Image>
 					</div>
 
 					<div className='flex-1'>
@@ -65,15 +63,13 @@ const Services = async () => {
 						></Button>
 					</div>
 					<div className='flex-1 '>
-						<div className='aspect-video rounded-md overflow-hidden'>
-							<Image
-								src={UbytovaniImg}
-								width={1000}
-								height={800}
-								alt={'Ubytování'}
-								className=' object-cover'
-							></Image>
-						</div>
+						<Image
+							src={UbytovaniImg}
+							width={700}
+							height={400}
+							alt={'Ubytování'}
+							className=' object-cover aspect-video rounded-md'
+						></Image>
 					</div>
 				</div>
 			</div>
@@ -100,9 +96,9 @@ const Services = async () => {
 													  )}...`
 													: post.caption
 											}
-											width={240}
-											height={240}
-											className='w-full aspect-square object-cover object-center'
+											width={300}
+											height={300}
+											className='w-full aspect-square object-cover object-center bg-goldenAccent/10'
 										/>
 									</Link>
 								</li>

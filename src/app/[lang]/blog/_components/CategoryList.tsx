@@ -24,7 +24,7 @@ const CategoryList: React.FC<{
 						className={`font-oswald text-2xl leading-tight ${
 							blogPath === 'blog'
 								? 'text-secondary underline'
-								: 'text-golden/60'
+								: 'text-golden opacity-60 duration-300 hover:opacity-100 hover:text-goldenAccent'
 						}`}
 					>
 						Všechny články

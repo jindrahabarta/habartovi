@@ -5,6 +5,8 @@ const gsapInit = (path: string) => {
 	ScrollTrigger.killAll()
 	gsap.registerPlugin(ScrollTrigger)
 
+	const mm = gsap.matchMedia()
+
 	const pathWithoutLang = path.slice(3)
 
 	//GLOBAL
@@ -72,26 +74,27 @@ const gsapInit = (path: string) => {
 		})
 
 		//MOBILE Footer easter egg
+		mm.add('(max-width: 639px)', () => {
+			gsap.set('#footerEasterEgg', {
+				display: 'none',
+			})
 
-		gsap.set('#footerEasterEgg', {
-			display: 'none',
-		})
-
-		ScrollTrigger.create({
-			trigger: 'footer',
-			start: '80% bottom',
-			end: '80% bottom',
-			markers: true,
-			onEnter: () => {
-				gsap.set('#footerEasterEgg', {
-					display: 'flex',
-				})
-			},
-			onEnterBack: () => {
-				gsap.set('#footerEasterEgg', {
-					display: 'none',
-				})
-			},
+			ScrollTrigger.create({
+				trigger: 'footer',
+				start: '80% bottom',
+				end: '80% bottom',
+				markers: true,
+				onEnter: () => {
+					gsap.set('#footerEasterEgg', {
+						display: 'flex',
+					})
+				},
+				onEnterBack: () => {
+					gsap.set('#footerEasterEgg', {
+						display: 'none',
+					})
+				},
+			})
 		})
 	}
 
@@ -159,6 +162,18 @@ const gsapInit = (path: string) => {
 			stagger: 0.2,
 			duration: 0.3,
 		})
+
+		if (
+			!path.split('/').includes('rubriky') &&
+			path.split('/').length > 3
+		) {
+			gsap.to('#blogArticle', {
+				translateY: 0,
+				ease: 'power1.out',
+				duration: 0.4,
+				opacity: 1,
+			})
+		}
 	}
 }
 

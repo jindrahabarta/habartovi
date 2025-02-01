@@ -28,9 +28,6 @@ const Category: NextPage<{ params: IParams }> = async ({ params }) => {
 	return (
 		<div className='flex flex-col pt-32'>
 			<section className='container flex-1 flex flex-col lg:flex-row-reverse gap-4'>
-				{categories && (
-					<CategoryAside lang={lang} categories={categories.nodes} />
-				)}
 				<main className='flex-1 flex flex-col pb-8 gap-4'>
 					{category && (
 						<>
@@ -43,14 +40,22 @@ const Category: NextPage<{ params: IParams }> = async ({ params }) => {
 								</Link>{' '}
 								- {category.name}
 							</h1>
-							{category.posts && (
-								<div className='flex-1 flex flex-col gap-8'>
-									<BlogList
+							<div className='flex flex-col-reverse md:flex-row gap-5 md:gap-10'>
+								{category.posts && (
+									<div className='flex-1 flex flex-col gap-8'>
+										<BlogList
+											lang={lang}
+											posts={category.posts.nodes}
+										/>
+									</div>
+								)}
+								{categories && (
+									<CategoryAside
 										lang={lang}
-										posts={category.posts.nodes}
+										categories={categories.nodes}
 									/>
-								</div>
-							)}
+								)}
+							</div>
 						</>
 					)}
 				</main>

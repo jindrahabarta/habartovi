@@ -9,7 +9,7 @@ const BlogCard: React.FC<{ lang: string; post: IPost }> = ({ lang, post }) => {
 	return (
 		<li key={post.id} className='w-full h-full blogCard opacity-0'>
 			<Link href={`/${lang}/blog/${post.slug}`}>
-				<article className='w-full h-full flex flex-col border border-black/10 shadow-md rounded-lg overflow-hidden group'>
+				<article className='w-full h-full flex flex-col overflow-hidden group'>
 					<section className='overflow-hidden'>
 						{post.featuredImage ? (
 							<Image
@@ -20,7 +20,7 @@ const BlogCard: React.FC<{ lang: string; post: IPost }> = ({ lang, post }) => {
 								className='w-full aspect-video object-cover group-hover:scale-105 duration-300'
 							/>
 						) : (
-							<div className='w-full flex justify-center items-center aspect-video object-cover border-b border-b-black/10'>
+							<div className='w-full flex justify-center items-center aspect-video object-cover'>
 								<Image
 									src={ImgPlaceholder}
 									alt={post.title}
@@ -32,8 +32,8 @@ const BlogCard: React.FC<{ lang: string; post: IPost }> = ({ lang, post }) => {
 						)}
 					</section>
 
-					<section className='flex-1 py-6 px-4'>
-						<h2 className='font-oswald text-opacity-60 text-3xl leading-tight text-golden'>
+					<section className='flex-1 py-6'>
+						<h2 className='font-oswald text-opacity-60 text-3xl leading-tight text-golden group-hover:text-secondary group-hover:underline duration-300'>
 							{post.title}
 						</h2>
 						<time className='text-gray-400 italic text-sm mt-2'>
