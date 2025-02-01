@@ -1,5 +1,5 @@
 import React from 'react'
-import Carousel from '../_components/Sections/Carousel'
+import Carousel from '../_components/Carousel/Carousel'
 import Pricelist from '../_components/Sections/Pricelist/Pricelist'
 import OrderForm from '../_components/Sections/OrderForm/OrderForm'
 import Features from '../_components/Sections/Features/Features'
