@@ -1,9 +1,12 @@
-import React from 'react'
 import Image from 'next/image'
 import UbytovaniImg from '@/../public/images/Ubytování.jpg'
 import Button from '@/_components/Buttons/Button'
+import { getIGPosts } from '@/_axios/instagram/getIGPosts'
+import Link from 'next/link'
 
-const Services = () => {
+const Services = async () => {
+	const instagramPosts = await getIGPosts()
+
 	return (
 		<section id='nase-sluzby' className='bg-green1 rounded-2xl'>
 			<div className='bg-green1 rounded-2xl py-20 sticky top-10'>
@@ -40,6 +43,7 @@ const Services = () => {
 					</div>
 				</div>
 			</div>
+
 			<div className='bg-green2 rounded-2xl py-20 sticky top-10'>
 				<div className='container flex-col md:flex-row flex gap-5 sm:gap-10 items-center'>
 					<div className='flex-1'>
@@ -71,6 +75,39 @@ const Services = () => {
 							></Image>
 						</div>
 					</div>
+				</div>
+			</div>
+
+			<div className='bg-background rounded-t-2xl py-20 sticky top-10'>
+				<div className='container'>
+					<h2 className='font-oswald text-golden text-2xl sm:text-3xl uppercase font-bold'>
+						Instagram
+					</h2>
+					<ul className='grid grid-cols-2 md:grid-cols-4 gap-4 mt-4'>
+						{instagramPosts &&
+							instagramPosts.slice(0, 4).map((post) => (
+								<li key={post.id}>
+									<Link href={post.permalink} target='_blank'>
+										<Image
+											key={post.id}
+											src={post.media_url}
+											title={post.caption}
+											alt={
+												post.caption.length > 20
+													? `${post.caption.slice(
+															0,
+															20
+													  )}...`
+													: post.caption
+											}
+											width={240}
+											height={240}
+											className='w-full aspect-square object-cover object-center'
+										/>
+									</Link>
+								</li>
+							))}
+					</ul>
 				</div>
 			</div>
 		</section>
