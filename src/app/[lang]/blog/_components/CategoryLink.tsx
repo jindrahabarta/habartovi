@@ -8,7 +8,7 @@ const CategoryLink: React.FC<{
 }> = ({ lang, category }) => {
 	return (
 		<li>
-			<Link href={`/${lang}/rubriky-blogu/${category.slug}`}>
+			<Link href={`/${lang}/blog/rubriky/${category.slug}`}>
 				<h3 className='font-oswald text-2xl leading-tight text-golden/60'>
 					{category.name}
 				</h3>

@@ -1,10 +1,9 @@
 import { getCategory } from '@/_graphql/categories/getCateogry'
 import { NextPage } from 'next'
-import BlogList from '../../blog/_components/BlogList'
 import { getCategories } from '@/_graphql/categories/getCategories'
-import CategoryList from '../../blog/_components/CategoryList'
-import CategoryAside from '../../blog/_components/CategoryAside'
 import Link from 'next/link'
+import CategoryAside from '../../_components/CategoryAside'
+import BlogList from '../../_components/BlogList'
 
 interface IParams {
 	lang: string
