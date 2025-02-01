@@ -1,8 +1,8 @@
 import React from 'react'
 import { Metadata, NextPage } from 'next'
+import { useTranslation } from '@/_i18n'
 import Hero from '../_components/Sections/Hero/Hero'
 import About from '../_components/Sections/About/About'
-import { useTranslation } from '@/_i18n'
 import Services from '../_components/Sections/Services/Services'
 
 export const metadata: Metadata = {
