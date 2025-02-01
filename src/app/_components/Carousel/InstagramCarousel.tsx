@@ -40,8 +40,8 @@ const InstagramCarousel: React.FC<{ instagramPosts: IInstagramPost[] }> = ({
 												  )}...`
 												: post.caption
 										}
-										width={240}
-										height={240}
+										width={300}
+										height={300}
 										onLoad={() => console.log('loaded')}
 										className='w-full aspect-square object-cover object-center'
 									/>
