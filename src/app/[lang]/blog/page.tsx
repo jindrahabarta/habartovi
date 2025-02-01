@@ -1,11 +1,9 @@
 import { getPosts } from '@/_graphql/posts/getPosts'
 import { Metadata, NextPage } from 'next'
-import Pagination from '../../_components/Pagination/Pagination'
 import BlogList from './_components/BlogList'
 import { getCategories } from '@/_graphql/categories/getCategories'
-import CategoryList from './_components/CategoryList'
-import Link from 'next/link'
 import CategoryAside from './_components/CategoryAside'
+import Pagination from '@/_components/Pagination/Pagination'
 
 interface IParams {
 	lang: string
@@ -46,7 +44,7 @@ const Blog: NextPage<{ params: IParams; searchParams: IQuery }> = async ({
 								<BlogList lang={lang} posts={posts.nodes} />
 
 								<Pagination
-									lang={lang}
+									baseUrl={`/${lang}/blog`}
 									page={pageInt}
 									size={size}
 									pageInfo={posts.pageInfo}

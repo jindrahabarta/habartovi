@@ -3,6 +3,7 @@ import UbytovaniImg from '@/../public/images/Ubytování.jpg'
 import Button from '@/_components/Buttons/Button'
 import { getIGPosts } from '@/_axios/instagram/getIGPosts'
 import Link from 'next/link'
+import InstagramCarousel from '../../Carousel/InstagramCarousel'
 
 const Services = async () => {
 	const instagramPosts = await getIGPosts()
@@ -79,31 +80,9 @@ const Services = async () => {
 					<h2 className='font-oswald text-golden text-2xl sm:text-3xl uppercase font-bold'>
 						Instagram
 					</h2>
-					<ul className='grid grid-cols-2 md:grid-cols-4 gap-4 mt-4'>
-						{instagramPosts &&
-							instagramPosts.slice(0, 4).map((post) => (
-								<li key={post.id}>
-									<Link href={post.permalink} target='_blank'>
-										<Image
-											key={post.id}
-											src={post.media_url}
-											title={post.caption}
-											alt={
-												post.caption.length > 20
-													? `${post.caption.slice(
-															0,
-															20
-													  )}...`
-													: post.caption
-											}
-											width={300}
-											height={300}
-											className='w-full aspect-square object-cover object-center bg-goldenAccent/10'
-										/>
-									</Link>
-								</li>
-							))}
-					</ul>
+					{instagramPosts && (
+						<InstagramCarousel instagramPosts={instagramPosts} />
+					)}
 				</div>
 			</div>
 		</section>

@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+
 import useEmblaCarousel from 'embla-carousel-react'
 import Image from 'next/image'
 import ImgSample from '@/../public/images/Ubytování.jpg'
@@ -22,7 +22,7 @@ const Carousel = () => {
 				ref={emblaRef}
 			>
 				<div className='embla__container w-full h-full flex'>
-					<div className='embla__slide w-60'>
+					<div className='embla__slide'>
 						<Image
 							src={ImgSample2}
 							width={1000}
@@ -31,7 +31,7 @@ const Carousel = () => {
 							className='w-full h-full object-cover'
 						></Image>
 					</div>
-					<div className='embla__slide w-96'>
+					<div className='embla__slide'>
 						<Image
 							src={ImgSample}
 							width={1000}
@@ -40,7 +40,7 @@ const Carousel = () => {
 							className='w-full h-full object-cover'
 						></Image>
 					</div>
-					<div className='embla__slide w-36'>
+					<div className='embla__slide'>
 						<Image
 							src={ImgSample2}
 							width={1000}

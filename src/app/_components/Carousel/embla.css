@@ -1,0 +1,26 @@
+.embla {
+	&.instagram {
+		position: relative;
+		left: -25%;
+	}
+}
+
+.embla__slide {
+	&.instagram {
+		flex: 0 0 50%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.embla {
+		&.instagram {
+			left: -12.5%;
+		}
+	}
+
+	.embla__slide {
+		&.instagram {
+			flex: 0 0 25%;
+		}
+	}
+}
