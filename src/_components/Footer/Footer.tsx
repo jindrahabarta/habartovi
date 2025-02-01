@@ -9,7 +9,7 @@ import MapPinIcon from '../Icons/MapPinIcon'
 import InstagramIcon from '../Icons/InstagramIcon'
 import FacebookIcon from '../Icons/FacebookIcon'
 import MegaUbytkoIcon from '../Icons/MegaUbytkoIcon'
-import LogoOrangeBlack from '../../../public/images/LogoOrangeBlack'
+import LogoOrangeBlack from '../Icons/Logos/LogoOrangeBlack'
 
 const Footer = () => {
 	return (
@@ -103,7 +103,7 @@ const Footer = () => {
 							<li className='w-full  '>
 								<Link
 									className='text-white py-0.5 text-lg hover:text-orange w-full inline-block font-bold'
-									href={'/okoli'}
+									href={'/vylety-do-okoli'}
 								>
 									Okolí
 								</Link>

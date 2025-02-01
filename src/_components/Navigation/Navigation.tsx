@@ -1,8 +1,6 @@
 'use client'
 import Link from 'next/link'
-import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import LogoImg from '@/../public/images/habartovi-logo.png'
 import LanguageSelector from './LanguageSelector'
 import gsapInit from '@/_animations/gsapInit'
 import { usePathname } from 'next/navigation'
@@ -13,7 +11,7 @@ import NavigationLinks from './NavigationLinks'
 import HamburgerButton from './HamburgerButton'
 import MobileNavigationLinks from './MobileNavigationLinks'
 import { Link as LinkType } from '@/_types/navigation'
-import LogoOrangeBlack from '../../../public/images/LogoOrangeBlack'
+import LogoGolden from '../Icons/Logos/LogoGolden'
 
 const links: LinkType[] = [
 	{
@@ -89,9 +87,9 @@ const Navigation = () => {
 					<Link
 						href={'/'}
 						id='navLogo'
-						className='z-50 md:w-[170px] w-[150px]'
+						className='z-50 md:w-[170px] w-[150px] group'
 					>
-						<LogoOrangeBlack className=' w-full text-black' />
+						<LogoGolden className=' w-full text-golden  group-hover:text-orange duration-300' />
 					</Link>
 
 					<NavigationLinks links={links}></NavigationLinks>
