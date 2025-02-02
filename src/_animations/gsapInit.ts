@@ -127,35 +127,70 @@ const gsapInit = (path: string) => {
 		})
 	}
 
+	//SELECTED PAGES
 	if (pathWithoutLang === '') {
-		//SELECTED PAGE
-		// const aboutTl = gsap.timeline({
-		// 	defaults: {
-		// 		duration: 0.5,
-		// 		ease: 'power1.inOut',
-		// 	},
-		// 	scrollTrigger: {
-		// 		trigger: '#about',
-		// 		start: 'top center',
-		// 		end: 'bottom center',
-		// 		toggleActions: 'play none none none',
-		// 	},
-		// })
-		// aboutTl
-		// 	.to('#aboutVerticalLine', {
-		// 		height: '100%',
-		// 	})
-		// 	.to('#aboutHorizontalLine', {
-		// 		width: '100%',
-		// 	})
-		// 	.to(
-		// 		'.aboutContent',
-		// 		{
-		// 			opacity: 1,
-		// 			stagger: 0.1,
-		// 		},
-		// 		'<'
-		// 	)
+		const ZdenekAHelenaTl = gsap.timeline({
+			paused: true,
+			defaults: { duration: 0.3, ease: 'power1.inOut' },
+		})
+
+		ZdenekAHelenaTl.to('#ZaHBckdropLeft', {
+			opacity: 0,
+		}).to(
+			'#ZaHBckdropRight',
+			{
+				opacity: 0.8,
+			},
+			'<'
+		)
+
+		ScrollTrigger.create({
+			trigger: '#ZdenekAHelena',
+			start: 'center center',
+			end: 'center center',
+
+			onEnter: () => {
+				ZdenekAHelenaTl.play()
+			},
+			onEnterBack: () => {
+				ZdenekAHelenaTl.reverse()
+			},
+		})
+
+		gsap.to('#ZdenekAHelena', {
+			scrollTrigger: {
+				trigger: '#ZdenekAHelena',
+				start: 'top bottom',
+				end: 'bottom top',
+				scrub: 5,
+			},
+
+			backgroundSize: '110% auto',
+		})
+
+		gsap.to('.ZaHScrollSpeedLeft', {
+			scrollTrigger: {
+				trigger: '#ZaHLeft',
+				start: 'top center',
+				end: 'bottom center',
+				markers: true,
+				scrub: 1,
+			},
+			opacity: 1,
+			translateY: 0,
+		})
+
+		gsap.to('.ZaHScrollSpeedRight', {
+			scrollTrigger: {
+				trigger: '#ZaHRight',
+				start: 'top center',
+				end: 'bottom center',
+				markers: true,
+				scrub: 1,
+			},
+			opacity: 1,
+			translateY: 0,
+		})
 	} else if (pathWithoutLang.split('/')[1] === 'blog') {
 		gsap.to('.blogCard', {
 			opacity: 1,

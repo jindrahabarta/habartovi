@@ -6,6 +6,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import './embla.css'
+import Button from '@/_components/Buttons/Button'
 
 const InstagramCarousel: React.FC<{ instagramPosts: IInstagramPost[] }> = ({
 	instagramPosts,
@@ -42,13 +43,20 @@ const InstagramCarousel: React.FC<{ instagramPosts: IInstagramPost[] }> = ({
 										}
 										width={300}
 										height={300}
-										onLoad={() => console.log('loaded')}
-										className='w-full aspect-square object-cover object-center'
+										className='w-full aspect-square object-cover object-center bg-goldenAccent/10'
 									/>
 								</Link>
 							</li>
 						))}
 				</ul>
+			</div>
+			<div className='flex justify-center'>
+				<Button
+					className='bg-golden hover:bg-transparent border-2 border-golden hover:text-golden text-white mt-4 sm:mt-8'
+					link={'https://www.instagram.com/ubytovani_habartovi/'}
+					target='_blank'
+					text={'Sledujte nás'}
+				></Button>
 			</div>
 		</div>
 	)

@@ -128,7 +128,7 @@ const Footer = () => {
 					</div>
 
 					<div className='w-full md:flex-1'>
-						<h3 className=' font-bold'>Kde nás najdete</h3>
+						<h3 className=' font-bold'>Mapa</h3>
 						<div className='rounded-2xl mt-2 bg-white overflow-hidden h-44 w-full'>
 							<iframe
 								width='100%'

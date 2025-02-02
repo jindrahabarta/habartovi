@@ -1,7 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import BgImg from '@/../public/images/Ubytování.jpg'
 import Button from '@/_components/Buttons/Button'
+
+import BgImg from '@/../public/images/Keramická dílna/bg1.jpg'
 
 const Hero = () => {
 	return (

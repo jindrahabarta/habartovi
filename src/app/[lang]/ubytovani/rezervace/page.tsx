@@ -59,9 +59,9 @@ const Rezervace = () => {
 									</IconButton>
 									<Link
 										className='text-lg sm:text-xl font-bold font-oswald group-hover:text-golden duration-300'
-										href={'sdfs'}
+										href={'mailto:habartovi@email.cz'}
 									>
-										Email.: habartovi@email.cz
+										Email: habartovi@email.cz
 									</Link>
 								</li>
 
@@ -87,7 +87,7 @@ const Rezervace = () => {
 								</li>
 							</ul>
 
-							<div className='rounded-2xl bg-white overflow-hidden h-96 mt-8 w-full'>
+							<div className='rounded-2xl bg-goldenAccent/10 overflow-hidden h-96 mt-8 w-full'>
 								<iframe
 									width='100%'
 									height='100%'

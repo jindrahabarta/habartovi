@@ -30,10 +30,9 @@ const ApartmentCard = ({ title, text, image, link, className }: props) => {
 
 			<div className='p-8'>
 				<div className='w-fit flex flex-col'>
-					<h2 className='font-oswald leading-[0.5rem] text-golden duration-300 px-0 group-hover:px-2'>
+					<h2 className='font-oswald text-golden duration-300'>
 						{title}
 					</h2>
-					<span className='bg-golden h-[0.2rem] duration-300 w-0 group-hover:w-full'></span>
 				</div>
 				<p className='text-white mt-4'>{text}</p>
 				<div className='flex justify-end mt-4'>

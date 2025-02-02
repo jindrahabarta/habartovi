@@ -102,18 +102,27 @@ const Navigation = () => {
 					<div className='flex items-center gap-2'>
 						<LanguageSelector></LanguageSelector>
 
-						<IconButton
+						{/* <IconButton
 							link='mailto:habartovi@email.cz'
-							className='hidden md:flex bg-secondary hover:bg-secondaryAccent'
+							className='hidden  sm:flex lg:hidden bg-secondary hover:bg-secondaryAccent'
 						>
 							<MailIcon className='w-6 text-white'></MailIcon>
 						</IconButton>
 						<IconButton
 							link='tel:+420775180052'
-							className='hidden md:flex bg-secondary hover:bg-secondaryAccent'
+							className='hidden sm:flex lg:hidden bg-secondary hover:bg-secondaryAccent'
 						>
 							<PhoneIcon className='w-6 text-white'></PhoneIcon>
-						</IconButton>
+						</IconButton> */}
+
+						<Link
+							href={'tel:+420775180052'}
+							className='hidden sm:flex duration-300 px-4 justify-center items-center gap-2 h-12 rounded-lg shadow-md text-sm lg:text-base text-white text-nowrap font-semibold bg-secondary hover:bg-secondaryAccent'
+						>
+							<PhoneIcon className='w-6 text-white'></PhoneIcon>
+							<span className='hidden lg:block'>+ 420</span> 775
+							180 052
+						</Link>
 
 						<HamburgerButton
 							isOpened={isOpened}
