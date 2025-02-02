@@ -2,15 +2,17 @@ import Image from 'next/image'
 import UbytovaniImg from '@/../public/images/Ubytování.jpg'
 import Button from '@/_components/Buttons/Button'
 import { getIGPosts } from '@/_axios/instagram/getIGPosts'
-import Link from 'next/link'
 import InstagramCarousel from '../../Carousel/InstagramCarousel'
 
 const Services = async () => {
 	const instagramPosts = await getIGPosts()
 
 	return (
-		<section id='nase-sluzby' className='bg-green1 rounded-2xl'>
-			<div className='bg-green1 rounded-2xl py-20 sticky top-10'>
+		<section
+			id='nase-sluzby'
+			className='bg-green1 rounded-t-2xl md:rounded'
+		>
+			<div className='bg-green1 rounded-t-2xl md:rounded py-20 sticky top-10'>
 				<div className='container flex-col-reverse md:flex-row flex gap-5 sm:gap-10 items-center'>
 					<div className='flex-1 '>
 						<Image

@@ -20,9 +20,8 @@ const Home: NextPage<{ params: { lang: string } }> = async ({
 		<div>
 			<Hero></Hero>
 			<About></About>
-			<Services></Services>
-
 			<ZdenekAHelena></ZdenekAHelena>
+			<Services></Services>
 		</div>
 	)
 }
