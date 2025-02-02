@@ -21,37 +21,41 @@ const Blog: React.FC<IParams> = ({ lang, defaultPage }) => {
 	const [error, setError] = useState(false)
 	const [loading, setLoading] = useState(true)
 
-	const fetchBlogs = async () => {
+	useEffect(() => {
 		setLoading(true)
 		setError(false)
 
 		nextClient
 			.get<IPostsResponse['posts'] | null>(
-				`/posts?page=${page}&size=${size}`
+				`/post?page=${page}&size=${size}`
 			)
 			.then((res) => setPostData(res.data))
 			.catch(() => setError(true))
-			.finally(() => setLoading(false))
-	}
-
-	useEffect(() => {
-		fetchBlogs()
+			.finally(() => {
+				setLoading(false)
+			})
 	}, [page, size])
 
 	return (
-		<div className='flex flex-col-reverse md:flex-row gap-5 md:gap-10'>
-			{postData && (
-				<div className='flex-1 flex flex-col gap-8'>
-					<BlogList lang={lang} posts={postData.nodes} />
+		<div className='flex-1 flex flex-col-reverse md:flex-row gap-5 md:gap-10'>
+			<div className='flex-1 flex flex-col items-center justify-center gap-8'>
+				{loading ? (
+					<span>Načítání...</span>
+				) : (
+					postData && (
+						<>
+							<BlogList lang={lang} posts={postData.nodes} />
 
-					<Pagination
-						baseUrl={`/${lang}/blog`}
-						page={page}
-						size={size}
-						pageInfo={postData.pageInfo}
-					/>
-				</div>
-			)}
+							<Pagination
+								baseUrl={`/${lang}/blog`}
+								page={page}
+								size={size}
+								pageInfo={postData.pageInfo}
+							/>
+						</>
+					)
+				)}
+			</div>
 			<CategoryAside lang={lang} />
 		</div>
 	)

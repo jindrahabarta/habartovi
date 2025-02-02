@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react'
 import { ICategory } from '@/_graphql/categories/category.interface'
 import CategoryList from './CategoryList'
-import { ICategoryResponse } from '@/_graphql/categories/getCateogry'
 import { nextClient } from '@/_axios/axios'
 
 interface IParams {
@@ -17,7 +16,7 @@ const CategoryAside: React.FC<IParams> = ({ lang }) => {
 
 	useEffect(() => {
 		nextClient
-			.get<ICategory[]>(`/categories`)
+			.get<ICategory[]>(`/category`)
 			.then((res) => setCategoryData(res.data))
 			.catch(() => setError(true))
 			.finally(() => setLoading(false))

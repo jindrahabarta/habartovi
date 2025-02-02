@@ -11,6 +11,8 @@ const Pagination: React.FC<{
 	const { hasMore, hasPrevious, total } = pageInfo.offsetPagination
 	const totalPages = Math.ceil(total / size)
 
+	if (pageInfo.offsetPagination.total <= size) return null
+
 	return (
 		<div className='flex items-center justify-center gap-3'>
 			{hasPrevious && (
@@ -21,12 +23,8 @@ const Pagination: React.FC<{
 
 			<span className='flex gap-1'>
 				{page > 3 && <PageLink href={`${baseUrl}?page=1`}>1</PageLink>}
-				{page > 4 && <span>...</span>}
-				{page - 2 > 0 && (
-					<PageLink href={`${baseUrl}?page=${page - 2}`}>
-						{page - 2}
-					</PageLink>
-				)}
+				{page > 2 && <span>...</span>}
+
 				{page - 1 > 0 && (
 					<PageLink href={`${baseUrl}?page=${page - 1}`}>
 						{page - 1}
@@ -40,12 +38,8 @@ const Pagination: React.FC<{
 						{page + 1}
 					</PageLink>
 				)}
-				{page + 2 <= totalPages && (
-					<PageLink href={`${baseUrl}?page=${page + 2}`}>
-						{page + 2}
-					</PageLink>
-				)}
-				{page < totalPages - 3 && <span>...</span>}
+
+				{page < totalPages - 2 && <span>...</span>}
 				{page < totalPages - 2 && (
 					<PageLink href={`${baseUrl}?page=${totalPages}`}>
 						{totalPages}
