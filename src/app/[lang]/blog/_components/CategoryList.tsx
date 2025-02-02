@@ -1,9 +1,11 @@
 'use client'
+
 import { ICategory } from '@/_graphql/categories/category.interface'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect } from 'react'
 import CategoryLink from './CategoryLink'
 import { usePathname } from 'next/navigation'
+import { animateCategoryList } from '@/_animations/blogAnimations'
 
 const CategoryList: React.FC<{
 	lang: string
@@ -16,9 +18,13 @@ const CategoryList: React.FC<{
 		blogPath = path[4]
 	}
 
+	useEffect(() => {
+		if (categories.length > 0) animateCategoryList()
+	}, [categories])
+
 	return (
 		<ul className='flex flex-col gap-2 mt-4'>
-			<li>
+			<li className='blogCategoryLink opacity-0'>
 				<Link href={`/blog`}>
 					<h3
 						className={`font-oswald text-2xl leading-tight ${

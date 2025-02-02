@@ -201,12 +201,6 @@ const gsapInit = (path: string) => {
 			})
 		})
 	} else if (pathWithoutLang.split('/')[1] === 'blog') {
-		gsap.to('.blogCard', {
-			opacity: 1,
-			stagger: 0.2,
-			duration: 0.3,
-		})
-
 		if (
 			!path.split('/').includes('rubriky') &&
 			path.split('/').length > 3
