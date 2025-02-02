@@ -6,7 +6,6 @@ import './../globals.css'
 import Navigation from '@/_components/Navigation/Navigation'
 import Footer from '@/_components/Footer/Footer'
 import FooterEasterEgg from '@/_components/Footer/FooterEasterEgg'
-import { getNavigation } from '@/_constants/navigation'
 import { useTranslation } from '@/_i18n'
 
 const openSans = Open_Sans({
