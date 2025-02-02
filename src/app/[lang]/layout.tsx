@@ -6,6 +6,7 @@ import './../globals.css'
 import Navigation from '@/_components/Navigation/Navigation'
 import Footer from '@/_components/Footer/Footer'
 import FooterEasterEgg from '@/_components/Footer/FooterEasterEgg'
+import { getNavigation } from '@/_constants/navigation'
 
 const openSans = Open_Sans({
 	subsets: ['latin'],
@@ -30,7 +31,7 @@ export async function generateStaticParams() {
 	return languages.map((lang) => ({ lang }))
 }
 
-export default function RootLayout({
+export default async function RootLayout({
 	children,
 	params: { lang },
 }: Readonly<{
@@ -44,7 +45,7 @@ export default function RootLayout({
 					(openSans.className, oswald.variable)
 				} flex flex-col items-center min-h-screen`}
 			>
-				<Navigation></Navigation>
+				<Navigation links={await getNavigation(lang)}></Navigation>
 
 				<main className='flex-1 w-full flex flex-col justify-start'>
 					{children}

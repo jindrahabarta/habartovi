@@ -1,65 +1,18 @@
 'use client'
+
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import LanguageSelector from './LanguageSelector'
 import gsapInit from '@/_animations/gsapInit'
 import { usePathname } from 'next/navigation'
-import IconButton from '../Buttons/IconButton'
-import MailIcon from '../Icons/MailIcon'
 import PhoneIcon from '../Icons/PhoneIcon'
 import NavigationLinks from './NavigationLinks'
 import HamburgerButton from './HamburgerButton'
 import MobileNavigationLinks from './MobileNavigationLinks'
-import { Link as LinkType } from '@/_types/navigation'
 import LogoGolden from '../Icons/Logos/LogoGolden'
+import { Link as LinkType } from '@/_types/navigation'
 
-const links: LinkType[] = [
-	{
-		link: '/',
-		text: 'Domů',
-	},
-	{
-		link: '/ubytovani',
-		text: 'Ubytování',
-		submenu: [
-			{
-				link: '/ubytovani',
-				text: 'Apartmány',
-			},
-			{
-				link: '/ubytovani/maly-apartman',
-				text: 'Malý apartmán',
-			},
-			{
-				link: '/ubytovani/velky-apartman',
-				text: 'Velký apartmán',
-			},
-			{
-				link: '/ubytovani/rezervace',
-				text: 'Rezervace',
-			},
-		],
-	},
-	{
-		link: '/keramicka-dilna',
-		text: 'Keramická dílna',
-	},
-	{
-		link: '/vylety-do-okoli',
-		text: 'Okolí',
-	},
-
-	{
-		link: '/blog',
-		text: 'Blog',
-	},
-	{
-		link: '/kontakt',
-		text: 'Kontakt',
-	},
-]
-
-const Navigation = () => {
+const Navigation: React.FC<{ links: LinkType[] }> = ({ links }) => {
 	const [isOpened, setIsOpened] = useState(false)
 	const path = usePathname()
 

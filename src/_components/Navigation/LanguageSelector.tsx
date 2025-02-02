@@ -6,7 +6,6 @@ import GB from '../Icons/Flags/GB'
 import CZ from '../Icons/Flags/CZ'
 import PL from '../Icons/Flags/PL'
 import DE from '../Icons/Flags/DE'
-import Link from 'next/link'
 
 const languages: { [key: string]: JSX.Element } = {
 	cs: <CZ className='w-5 rounded-sm shadow-sm'></CZ>,
@@ -19,7 +18,7 @@ const LanguageSelector = () => {
 	const [isOpen, setIsOpen] = useState(false)
 
 	const path = usePathname()
-	// const router = useRouter()
+
 	const { lang } = useParams<{ lang: string }>()
 
 	return (
@@ -62,7 +61,7 @@ const LanguageSelector = () => {
 								{Object.keys(languages).map((l) => {
 									if (l !== lang) {
 										return (
-											<Link
+											<a
 												key={l}
 												href={path.replace(lang, l)}
 												className='w-full text-gray-700 px-2 py-2 text-sm text-left items-center inline-flex gap-2 hover:bg-backgroundAccent duration-300'
@@ -71,7 +70,7 @@ const LanguageSelector = () => {
 												<span className='uppercase'>
 													{l}
 												</span>
-											</Link>
+											</a>
 										)
 									}
 
