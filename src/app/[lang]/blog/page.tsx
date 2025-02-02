@@ -4,6 +4,7 @@ import BlogList from './_components/BlogList'
 import { getCategories } from '@/_graphql/categories/getCategories'
 import CategoryAside from './_components/CategoryAside'
 import Pagination from '@/_components/Pagination/Pagination'
+import Blog from './_components/Blog'
 
 interface IParams {
 	lang: string
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
 	description: 'Stránka',
 }
 
-const Blog: NextPage<{ params: IParams; searchParams: IQuery }> = async ({
+const BlogPage: NextPage<{ params: IParams; searchParams: IQuery }> = async ({
 	params,
 	searchParams,
 }) => {
@@ -26,10 +27,6 @@ const Blog: NextPage<{ params: IParams; searchParams: IQuery }> = async ({
 	const { page } = searchParams
 
 	const pageInt = parseInt(page ?? '1', 10)
-	const size = 6
-
-	const posts = await getPosts(pageInt, size)
-	const categories = await getCategories()
 
 	return (
 		<div className='flex-1 flex flex-col pt-32'>
@@ -38,30 +35,11 @@ const Blog: NextPage<{ params: IParams; searchParams: IQuery }> = async ({
 					<h1 className='font-oswald text-[4rem] sm:text-[5rem] leading-tight text-golden/60'>
 						Blog
 					</h1>
-					<div className='flex flex-col-reverse md:flex-row gap-5 md:gap-10'>
-						{posts && (
-							<div className='flex-1 flex flex-col gap-8'>
-								<BlogList lang={lang} posts={posts.nodes} />
-
-								<Pagination
-									baseUrl={`/${lang}/blog`}
-									page={pageInt}
-									size={size}
-									pageInfo={posts.pageInfo}
-								/>
-							</div>
-						)}
-						{categories && (
-							<CategoryAside
-								lang={lang}
-								categories={categories.nodes}
-							/>
-						)}
-					</div>
+					<Blog lang={lang} defaultPage={pageInt} />
 				</main>
 			</section>
 		</div>
 	)
 }
 
-export default Blog
+export default BlogPage

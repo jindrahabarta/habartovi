@@ -8,7 +8,7 @@ export async function GET(req: NextRequest) {
 
 		const data = await getPosts(page, size)
 		if (!data) {
-			return NextResponse.json([], { status: 404 })
+			return NextResponse.json(null, { status: 404 })
 		}
 
 		return NextResponse.json(data, { status: 200 })
