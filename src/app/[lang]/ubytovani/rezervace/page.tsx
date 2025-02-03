@@ -3,17 +3,22 @@ import ArrowIcon from '@/_components/Icons/ArrowIcon'
 import MailIcon from '@/_components/Icons/MailIcon'
 import MapPinIcon from '@/_components/Icons/MapPinIcon'
 import PhoneIcon from '@/_components/Icons/PhoneIcon'
-import { Metadata } from 'next'
+import { Metadata, NextPage } from 'next'
 import Link from 'next/link'
 import React from 'react'
 
 import './style.css'
+import OrderForm from '../_components/Sections/OrderForm/OrderForm'
 
 export const metadata: Metadata = {
 	title: 'Rezervace',
 }
 
-const Rezervace = () => {
+interface IParams {
+	lang: string
+}
+
+const Rezervace: NextPage<{ params: IParams }> = ({ params: { lang } }) => {
 	return (
 		<div className='pt-32'>
 			<section className='container'>
@@ -100,14 +105,7 @@ const Rezervace = () => {
 						<h2 className='font-oswald opacity-60 text-3xl sm:text-4xl leading-tight text-golden'>
 							Rezervační formulář
 						</h2>
-						<iframe
-							id='embed-4pKpEM_bOPm67oIBNWVPI'
-							src='https://www.megaubytko.cz/embed/booking?id=embed-4pKpEM_bOPm67oIBNWVPI&amp;accommodationId=8116&amp;token=4f03dee24d9dcfadc8403440fbfffef7&amp;primary_color=rgba%28166%2C179%2C125%2C1%29&amp;secondary_color=%23f0a559&amp;background_color=rgba%28255%2C255%2C255%2C1%29&amp;text_color=rgba%2824%2C29%2C34%2C1%29'
-							width='100%'
-							height='900px'
-							scrolling='no'
-							className='mt-8'
-						></iframe>
+						<OrderForm lang={lang} />
 					</div>
 				</div>
 			</section>

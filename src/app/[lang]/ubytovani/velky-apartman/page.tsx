@@ -10,7 +10,7 @@ import BedIcon from '@/_components/Icons/BedIcon'
 import TVIcon from '@/_components/Icons/TVIcon'
 import BicycleIcon from '@/_components/Icons/BicycleIcon'
 import ParkingIcon from '@/_components/Icons/ParkingIcon'
-import { Metadata } from 'next'
+import { Metadata, NextPage } from 'next'
 
 export const metadata: Metadata = {
 	title: 'Velký apartmán',
@@ -62,7 +62,11 @@ const prices = [
 	},
 ]
 
-const VelkyByt = () => {
+interface IParams {
+	lang: string
+}
+
+const VelkyByt: NextPage<{ params: IParams }> = ({ params: { lang } }) => {
 	return (
 		<div className='pt-14'>
 			<Carousel></Carousel>
@@ -134,7 +138,9 @@ const VelkyByt = () => {
 					</p>
 				</div>
 
-				<OrderForm></OrderForm>
+				<div className='flex-[2] sticky top-10 h-full'>
+					<OrderForm lang={lang}></OrderForm>
+				</div>
 			</section>
 		</div>
 	)
