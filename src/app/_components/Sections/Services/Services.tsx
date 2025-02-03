@@ -1,12 +1,9 @@
 import Image from 'next/image'
 import UbytovaniImg from '@/../public/images/Ubytování.jpg'
 import Button from '@/_components/Buttons/Button'
-import { getIGPosts } from '@/_axios/instagram/getIGPosts'
-import InstagramCarousel from '../../Carousel/InstagramCarousel'
+import InstagramHabartovi from '@/_components/Instagram/InstagramHabartovi'
 
-const Services = async () => {
-	const instagramPosts = await getIGPosts()
-
+const Services = () => {
 	return (
 		<section
 			id='nase-sluzby'
@@ -77,15 +74,8 @@ const Services = async () => {
 				</div>
 			</div>
 
-			<div className='bg-background rounded-t-2xl py-20 sticky top-10'>
-				<div className='container'>
-					<h2 className='font-oswald text-golden text-2xl sm:text-3xl uppercase font-bold'>
-						Instagram
-					</h2>
-					{instagramPosts && (
-						<InstagramCarousel instagramPosts={instagramPosts} />
-					)}
-				</div>
+			<div className='bg-background rounded-t-2xl sticky top-10'>
+				<InstagramHabartovi />
 			</div>
 		</section>
 	)
