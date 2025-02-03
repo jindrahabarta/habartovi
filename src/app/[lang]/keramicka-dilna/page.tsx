@@ -2,10 +2,11 @@ import React from 'react'
 import Hero from './_components/Sections/Hero/Hero'
 import AboutMe from './_components/Sections/AboutMe/AboutMe'
 import { Metadata } from 'next'
-import Instagram from './_components/Sections/Instagram/Instagram'
+import InstagramHabartovi from '../../../_components/Instagram/InstagramHabartovi'
 import Eshop from './_components/Sections/Eshop/Eshop'
 import BackgroundLine from './_components/BackgroundLine'
 import TvorivaSetkani from './_components/Sections/TvorivaSetkani/TvorivaSetkani'
+import InstagramPottery from '@/_components/Instagram/InstagramPottery'
 
 export const metadata: Metadata = {
 	title: 'Keramická dílna',
@@ -24,7 +25,7 @@ const KeramickaDilna = () => {
 
 				<Eshop></Eshop>
 
-				<Instagram></Instagram>
+				<InstagramPottery />
 			</div>
 		</div>
 	)
