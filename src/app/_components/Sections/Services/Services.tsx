@@ -20,7 +20,7 @@ const Services = async () => {
 							width={700}
 							height={400}
 							alt={'Ubytování'}
-							className=' object-cover aspect-video rounded-md '
+							className=' object-cover aspect-video '
 						></Image>
 					</div>
 
@@ -71,7 +71,7 @@ const Services = async () => {
 							width={700}
 							height={400}
 							alt={'Ubytování'}
-							className=' object-cover aspect-video rounded-md'
+							className=' object-cover aspect-video'
 						></Image>
 					</div>
 				</div>

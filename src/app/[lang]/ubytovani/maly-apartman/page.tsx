@@ -61,10 +61,6 @@ const prices = [
 		text: 'za jednoho psa a noc.',
 	},
 	{
-		price: 50,
-		text: 'za jednoho psa a noc.',
-	},
-	{
 		price: 10,
 		text: 'Rekreační poplatek v obci Červená Voda na jednu noc pro osobu starší 18 let.',
 	},

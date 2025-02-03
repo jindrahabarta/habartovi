@@ -81,9 +81,9 @@ const gsapInit = (path: string) => {
 
 			ScrollTrigger.create({
 				trigger: 'footer',
-				start: '80% bottom',
-				end: '80% bottom',
-				markers: true,
+				start: 'bottom-=10px bottom',
+				end: 'bottom-=10px bottom',
+
 				onEnter: () => {
 					gsap.set('#footerEasterEgg', {
 						display: 'flex',
