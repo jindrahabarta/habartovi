@@ -29,13 +29,13 @@ const Footer = () => {
 								<li className='flex  gap-2 items-center'>
 									<Link
 										className='flex gap-2 items-center group'
-										href={'tel:+420775180052'}
+										href={'tel:+420777815909'}
 									>
 										<div className='duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md'>
 											<PhoneIcon className='w-5 text-white'></PhoneIcon>
 										</div>
 										<span className='text-white group-hover:text-orange duration-300 font-bold'>
-											+420 775 180 052
+											+420 777 815 909
 										</span>
 									</Link>
 								</li>

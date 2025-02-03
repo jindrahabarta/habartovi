@@ -9,7 +9,7 @@ const TvorivaSetkani = () => {
 		<section className='container py-10 md:py-20'>
 			<div className='flex flex-col md:flex-row gap-10 xl:gap-32'>
 				<div className='flex-[2] relative'>
-					<h2 className='font-oswald md:text-[6rem] leading-none text-[#f1d9a8]'>
+					<h2 className='font-oswald text-[3rem] leading-none md:text-[6rem] text-golden md:text-[#f1d9a8]'>
 						Tvořivá setkání
 					</h2>
 					<p className='mt-10'>
@@ -59,7 +59,7 @@ const TvorivaSetkani = () => {
 						možnosti{' '}
 						<Link
 							className='text-black hover:text-secondary'
-							href={'mailto:habartovi@email.cz'}
+							href={'/ubytovani'}
 						>
 							<strong>ubytování v soukromí</strong>
 						</Link>{' '}

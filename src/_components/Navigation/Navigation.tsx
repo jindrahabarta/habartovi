@@ -55,26 +55,13 @@ const Navigation: React.FC<{ links: LinkType[] }> = ({ links }) => {
 					<div className='flex items-center gap-2'>
 						<LanguageSelector></LanguageSelector>
 
-						{/* <IconButton
-							link='mailto:habartovi@email.cz'
-							className='hidden  sm:flex lg:hidden bg-secondary hover:bg-secondaryAccent'
-						>
-							<MailIcon className='w-6 text-white'></MailIcon>
-						</IconButton>
-						<IconButton
-							link='tel:+420775180052'
-							className='hidden sm:flex lg:hidden bg-secondary hover:bg-secondaryAccent'
-						>
-							<PhoneIcon className='w-6 text-white'></PhoneIcon>
-						</IconButton> */}
-
 						<Link
-							href={'tel:+420775180052'}
+							href={'tel:+420777815909'}
 							className='hidden sm:flex duration-300 px-4 justify-center items-center gap-2 h-12 rounded-lg shadow-md text-sm lg:text-base text-white text-nowrap font-semibold bg-secondary hover:bg-secondaryAccent'
 						>
 							<PhoneIcon className='w-6 text-white'></PhoneIcon>
-							<span className='hidden lg:block'>+ 420</span> 775
-							180 052
+							<span className='hidden lg:block'>+ 420</span>
+							777 815 909
 						</Link>
 
 						<HamburgerButton

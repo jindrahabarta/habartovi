@@ -25,7 +25,7 @@ const Restaurace = () => {
 						<ul className='mt-8'>
 							<li>
 								<Link
-									className='text-white mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
+									className='text-white w-fit mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
 									href={'/'}
 									target='_blank'
 								>
@@ -38,7 +38,7 @@ const Restaurace = () => {
 
 							<li>
 								<Link
-									className='text-white mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
+									className='text-white w-fit mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
 									href={'/'}
 									target='_blank'
 								>
@@ -50,7 +50,7 @@ const Restaurace = () => {
 							</li>
 							<li>
 								<Link
-									className='text-white mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
+									className='text-white w-fit mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
 									href={'/'}
 									target='_blank'
 								>
@@ -73,7 +73,7 @@ const Restaurace = () => {
 						<ul className='mt-8'>
 							<li>
 								<Link
-									className='text-white mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
+									className='text-white w-fit mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
 									href={'/'}
 									target='_blank'
 								>
@@ -96,7 +96,7 @@ const Restaurace = () => {
 						<ul className='mt-8'>
 							<li>
 								<Link
-									className='text-white mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
+									className='text-white w-fit mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
 									href={'/'}
 									target='_blank'
 								>
@@ -108,7 +108,7 @@ const Restaurace = () => {
 							</li>
 							<li>
 								<Link
-									className='text-white mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
+									className='text-white w-fit mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
 									href={'/'}
 									target='_blank'
 								>
@@ -120,7 +120,7 @@ const Restaurace = () => {
 							</li>
 							<li>
 								<Link
-									className='text-white mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
+									className='text-white w-fit mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
 									href={'/'}
 									target='_blank'
 								>
@@ -132,7 +132,7 @@ const Restaurace = () => {
 							</li>
 							<li>
 								<Link
-									className='text-white mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
+									className='text-white w-fit mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
 									href={'/'}
 									target='_blank'
 								>

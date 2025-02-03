@@ -42,16 +42,16 @@ const Rezervace: NextPage<{ params: IParams }> = ({ params: { lang } }) => {
 							<ul className='flex flex-col gap-4 mt-8'>
 								<li className='flex items-center gap-4 group'>
 									<IconButton
-										link={'tel:775180052'}
+										link={'tel:777815909'}
 										className='bg-secondary group-hover:bg-golden duration-300'
 									>
 										<PhoneIcon className='w-8 text-white'></PhoneIcon>
 									</IconButton>
 									<Link
 										className='text-lg sm:text-xl font-bold font-oswald group-hover:text-golden duration-300'
-										href={'tel:775180052'}
+										href={'tel:777815909'}
 									>
-										Tel.: +420 775 180 052
+										Tel.: +420 777 815 909
 									</Link>
 								</li>
 

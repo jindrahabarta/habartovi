@@ -49,7 +49,7 @@ const AboutMe = () => {
 
 			<div className='mt-10 sm:mt-20 relative'>
 				<div className='max-w-3xl'>
-					<h2 className='font-oswald italic  md:text-[6rem] text-[#f1d9a8]'>
+					<h2 className='font-oswald italic text-[3rem] leading-none md:text-[6rem] text-golden md:text-[#f1d9a8]'>
 						&quot;Spirála&quot;
 					</h2>
 
