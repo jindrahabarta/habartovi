@@ -6,10 +6,10 @@ import Link from 'next/link'
 
 const TvorivaSetkani = () => {
 	return (
-		<section className='container py-20'>
-			<div className='flex flex-col-reverse md:flex-row gap-10 xl:gap-32'>
+		<section className='container py-10 md:py-20'>
+			<div className='flex flex-col md:flex-row gap-10 xl:gap-32'>
 				<div className='flex-[2] relative'>
-					<h2 className='font-oswald md:text-[6rem] text-[#f1d9a8]'>
+					<h2 className='font-oswald md:text-[6rem] leading-none text-[#f1d9a8]'>
 						Tvořivá setkání
 					</h2>
 					<p className='mt-10'>
@@ -72,7 +72,7 @@ const TvorivaSetkani = () => {
 						alt={'O mě'}
 						width={800}
 						height={800}
-						className='rounded-2xl aspect-[4/5] object-cover'
+						className='rounded-2xl aspect-[4/5] object-cover md:-translate-y-56'
 					></Image>
 				</div>
 			</div>

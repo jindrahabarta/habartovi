@@ -1,9 +1,19 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Eshop = () => {
 	return (
-		<section className='py-20 container'>
+		<section className=' container relative'>
 			<h2 className='font-oswald md:text-[6rem] text-[#f1d9a8]'>Eshop</h2>
+			<p className='mt-10'>
+				Nakoupit mé již hotové produkty můžete na E-shopu s keramikou{' '}
+				<Link
+					className='text-black hover:text-secondary'
+					href={'mailto:habartovi@email.cz'}
+				>
+					<strong>www.helenpottery.cz</strong>
+				</Link>
+			</p>
 		</section>
 	)
 }

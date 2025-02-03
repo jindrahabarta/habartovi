@@ -17,7 +17,7 @@ const KeramickaDilna = () => {
 			<Hero></Hero>
 
 			<div className='svgContainer relative overflow-hidden'>
-				<BackgroundLine className='absolute select-none pointer-events-none z-0 top-0 left-1/2 -translate-x-1/2 w-full md:h-full md:w-auto text-golden/20'></BackgroundLine>
+				<BackgroundLine className='absolute select-none pointer-events-none z-0 top-0 left-1/2 -translate-x-1/2 h-full md:h-full md:w-auto text-[#f7e9c4]'></BackgroundLine>
 				<AboutMe></AboutMe>
 
 				<TvorivaSetkani></TvorivaSetkani>

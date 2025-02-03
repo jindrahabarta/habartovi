@@ -5,7 +5,7 @@ import AboutMeImg from '@/../public/images/Keramická dílna/bg1.jpg'
 
 const AboutMe = () => {
 	return (
-		<section id='o-mne' className='container py-20'>
+		<section id='o-mne' className='container py-10 md:py-20'>
 			<div className='flex flex-col-reverse md:flex-row gap-10 xl:gap-32'>
 				<div className='flex-1'>
 					<Image
@@ -17,10 +17,10 @@ const AboutMe = () => {
 					></Image>
 				</div>
 				<div className='flex-[2] relative'>
-					<h1 className='font-oswald md:text-[8rem] text-[#f1d9a8]'>
+					<h1 className='font-oswald text-[5rem] leading-none md:text-[8rem] text-[#f1d9a8]'>
 						About
 					</h1>
-					<h1 className='pl-16 relative font-oswald '>
+					<h1 className='pl-8 md:pl-16 relative font-oswald '>
 						Helena Habartová
 					</h1>
 
@@ -31,21 +31,25 @@ const AboutMe = () => {
 						dílnách jsem se naučila pracovat na hrnčířském kruhu.
 						Měla jsem štěstí na výborné učitele, jimž vděčím za to,
 						co dnes umím. Práce s mokrou hlínou ve mě probouzí
-						fantazii a lásku k přírodě. I když je keramická hlína
-						speciálně upravovaná pro modelování, točení i pálení -
-						celý ten výrobní postup, kterým musí keramická nádoba
-						projít, než-li se dostane do vašich rukou - je to stále
-						kus země, přírodní materiál, kterému se učím rozumět a
-						spolupracovat s ním. Je to nekonečný příběh vzájemného
-						poznávání a zrání. Neustálé objevování nových možností,
-						jak s tímto krásným a živým materiálem pracovat.
+						fantazii a lásku k přírodě.
+					</p>
+
+					<p className='mt-4'>
+						I když je keramická hlína speciálně upravovaná pro
+						modelování, točení i pálení - celý ten výrobní postup,
+						kterým musí keramická nádoba projít, než-li se dostane
+						do vašich rukou - je to stále kus země, přírodní
+						materiál, kterému se učím rozumět a spolupracovat s ním.
+						Je to nekonečný příběh vzájemného poznávání a zrání.
+						Neustálé objevování nových možností, jak s tímto krásným
+						a živým materiálem pracovat.
 					</p>
 				</div>
 			</div>
 
-			<div className='mt-20 flex justify-center gap-10 xl:gap-32 relative'>
-				<div className='max-w-4xl'>
-					<h2 className='font-oswald italic text-center  md:text-[6rem] text-[#f1d9a8]'>
+			<div className='mt-10 sm:mt-20 relative'>
+				<div className='max-w-3xl'>
+					<h2 className='font-oswald italic  md:text-[6rem] text-[#f1d9a8]'>
 						&quot;Spirála&quot;
 					</h2>
 

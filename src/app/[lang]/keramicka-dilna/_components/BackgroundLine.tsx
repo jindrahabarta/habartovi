@@ -27,9 +27,9 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>) => {
 
 				scrollTrigger: {
 					trigger: '.svgContainer',
-					start: 'top center',
-					end: 'bottom center',
-					scrub: 1,
+					start: 'top 20%',
+					end: 'bottom 20%',
+					scrub: 2,
 				},
 			}
 		)
