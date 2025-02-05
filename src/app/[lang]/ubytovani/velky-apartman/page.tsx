@@ -12,6 +12,17 @@ import BicycleIcon from '@/_components/Icons/BicycleIcon'
 import ParkingIcon from '@/_components/Icons/ParkingIcon'
 import { Metadata, NextPage } from 'next'
 
+import image1 from '@/../public/images/velky-apartman/1.jpg'
+import image2 from '@/../public/images/velky-apartman/2.jpg'
+import image3 from '@/../public/images/velky-apartman/3.jpg'
+import image4 from '@/../public/images/velky-apartman/4.jpg'
+import image5 from '@/../public/images/velky-apartman/5.jpg'
+import image6 from '@/../public/images/velky-apartman/6.jpg'
+import image7 from '@/../public/images/velky-apartman/7.jpg'
+import image8 from '@/../public/images/velky-apartman/8.jpg'
+import image9 from '@/../public/images/velky-apartman/9.jpg'
+import image10 from '@/../public/images/velky-apartman/10.jpg'
+
 export const metadata: Metadata = {
 	title: 'Velký apartmán',
 }
@@ -62,6 +73,19 @@ const prices = [
 	},
 ]
 
+const images = [
+	image1,
+	image2,
+	image3,
+	image4,
+	image5,
+	image6,
+	image7,
+	image8,
+	image9,
+	image10,
+]
+
 interface IParams {
 	lang: string
 }
@@ -69,7 +93,7 @@ interface IParams {
 const VelkyByt: NextPage<{ params: IParams }> = ({ params: { lang } }) => {
 	return (
 		<div className='pt-14'>
-			<Carousel></Carousel>
+			<Carousel images={images}></Carousel>
 
 			<section className='container py-10 flex flex-col xl:flex-row gap-10'>
 				<div className='flex-[3] relative '>

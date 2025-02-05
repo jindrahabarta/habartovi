@@ -13,7 +13,7 @@ const ParkingIcon = ({ className }: { className: string }) => {
 			fill='currentColor'
 			className={className}
 		>
-			<g fill-rule='nonzero'>
+			<g fillRule='nonzero'>
 				<path
 					fill='currentColor'
 					d='M84.662 0h342.676C473.934 0 512 38.065 512 84.662v328.902c0 46.596-38.066 84.662-84.662 84.662H84.662C38.065 498.226 0 460.16 0 413.564V84.662C0 38.065 38.065 0 84.662 0z'

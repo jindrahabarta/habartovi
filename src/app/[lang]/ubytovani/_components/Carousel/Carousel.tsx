@@ -1,13 +1,11 @@
 'use client'
 
 import useEmblaCarousel from 'embla-carousel-react'
-import Image from 'next/image'
-import ImgSample from '@/../public/images/Ubytování.jpg'
-import ImgSample2 from '@/../public/images/testimg.jpg'
+import Image, { StaticImageData } from 'next/image'
 import Autoplay from 'embla-carousel-autoplay'
 import './embla.css'
 
-const Carousel = () => {
+const Carousel = ({ images }: { images: StaticImageData[] }) => {
 	const [emblaRef] = useEmblaCarousel(
 		{
 			loop: true,
@@ -22,51 +20,17 @@ const Carousel = () => {
 				ref={emblaRef}
 			>
 				<div className='embla__container w-full h-full flex'>
-					<div className='embla__slide'>
-						<Image
-							src={ImgSample2}
-							width={1000}
-							height={800}
-							alt='CarouselImage'
-							className='w-full h-full object-cover'
-						></Image>
-					</div>
-					<div className='embla__slide'>
-						<Image
-							src={ImgSample}
-							width={1000}
-							height={800}
-							alt='CarouselImage'
-							className='w-full h-full object-cover'
-						></Image>
-					</div>
-					<div className='embla__slide'>
-						<Image
-							src={ImgSample2}
-							width={1000}
-							height={800}
-							alt='CarouselImage'
-							className='w-full h-full object-cover'
-						></Image>
-					</div>
-					<div className='embla__slide'>
-						<Image
-							src={ImgSample}
-							width={1000}
-							height={800}
-							alt='CarouselImage'
-							className='w-full h-full object-cover'
-						></Image>
-					</div>
-					<div className='embla__slide'>
-						<Image
-							src={ImgSample}
-							width={1000}
-							height={800}
-							alt='CarouselImage'
-							className='w-full h-full object-cover'
-						></Image>
-					</div>
+					{images.map((image, i) => (
+						<div key={i} className='embla__slide'>
+							<Image
+								src={image}
+								width={1000}
+								height={800}
+								alt={`Obrázek apartmánu ${i}`}
+								className='w-full h-full object-cover'
+							></Image>
+						</div>
+					))}
 				</div>
 			</div>
 		</section>
