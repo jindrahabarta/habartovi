@@ -1,12 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
 
-import AboutMeImg from '@/../public/images/Keramická dílna/bg1.jpg'
+import TvorivaSetkaniImg from '@/../public/images/Keramická dílna/TvorivaSetkani.jpg'
 import Link from 'next/link'
 
 const TvorivaSetkani = () => {
 	return (
-		<section className='container py-10 md:py-20'>
+		<section id='tvoriva-setkani' className='container py-10 md:py-20'>
 			<div className='flex flex-col md:flex-row gap-10 xl:gap-32'>
 				<div className='flex-[2] relative'>
 					<h2 className='font-oswald text-[3rem] leading-none md:text-[6rem] text-golden md:text-[#f1d9a8]'>
@@ -22,14 +22,14 @@ const TvorivaSetkani = () => {
 					</p>
 
 					<p className='mt-10'>
-						<strong>1 Hodina</strong> s odborným vedením stojí
-						<strong> 90,-Kč</strong>
+						<strong>1 hodina</strong> s odborným vedením stojí
+						<strong> 400,-Kč</strong>
 					</p>
 
 					<p className='mt-4'>
 						<strong>Dokončení a vypálení</strong> jednoho výrobku o
 						hmotnosti do 1kg stojí stojí
-						<strong> 400,-Kč</strong>
+						<strong> 90,-Kč</strong>
 					</p>
 
 					<p className='mt-4'>
@@ -68,7 +68,7 @@ const TvorivaSetkani = () => {
 				</div>
 				<div className='flex-1'>
 					<Image
-						src={AboutMeImg}
+						src={TvorivaSetkaniImg}
 						alt={'O mě'}
 						width={800}
 						height={800}

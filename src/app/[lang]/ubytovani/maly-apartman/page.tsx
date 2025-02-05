@@ -50,18 +50,15 @@ const features = [
 const prices = [
 	{
 		price: 350,
-		text: 'za osobu/noc v letní sezóně 1.5.-31.10.',
+		text: 'za osobu a noc.',
 	},
-	{
-		price: 350,
-		text: 'za osobu/noc v zimní sezóně 1.11.-30.4.',
-	},
+
 	{
 		price: 50,
 		text: 'za jednoho psa a noc.',
 	},
 	{
-		price: 10,
+		price: 20,
 		text: 'Rekreační poplatek v obci Červená Voda na jednu noc pro osobu starší 18 let.',
 	},
 ]

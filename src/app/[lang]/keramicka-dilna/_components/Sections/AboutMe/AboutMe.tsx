@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-import AboutMeImg from '@/../public/images/Keramická dílna/bg1.jpg'
+import AboutMeImg from '@/../public/images/Keramická dílna/AboutHelena.jpg'
 
 const AboutMe = () => {
 	return (
