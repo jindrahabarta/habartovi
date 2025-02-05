@@ -24,7 +24,9 @@ const CategoryBlog: React.FC<IParams> = ({ lang, slug }) => {
 			.get<ICategoryResponse['category']>(`/category/${slug}`)
 			.then((res) => setCategoryData(res.data))
 			.catch(() => setError(true))
-			.finally(() => setLoading(false))
+			.finally(() => {
+				setTimeout(() => setLoading(false), 400)
+			})
 	}, [slug])
 
 	return (
@@ -36,13 +38,19 @@ const CategoryBlog: React.FC<IParams> = ({ lang, slug }) => {
 				>
 					Blog
 				</Link>{' '}
-				- {categoryData && categoryData.name}
+				<span
+					className={`${
+						!loading && categoryData ? 'opacity-100' : 'opacity-0'
+					} duration-200`}
+				>
+					- {!loading && categoryData ? categoryData.name : ''}
+				</span>
 			</h1>
 
 			<div className='flex-1 flex flex-col-reverse md:flex-row gap-5 md:gap-10'>
-				<div className='flex-1 flex flex-col gap-8'>
+				<div className='flex-1 flex flex-col items-center justify-center gap-8'>
 					{loading ? (
-						<span>Načítání...</span>
+						<span className='font-oswald text-xl'>Načítání...</span>
 					) : (
 						categoryData && (
 							<BlogList

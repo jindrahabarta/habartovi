@@ -16,7 +16,7 @@ const Carousel = ({ images }: { images: StaticImageData[] }) => {
 	return (
 		<section>
 			<div
-				className='embla overflow-hidden h-[380px] w-full'
+				className='embla overflow-hidden h-[380px] w-full hover:cursor-grab'
 				ref={emblaRef}
 			>
 				<div className='embla__container w-full h-full flex'>

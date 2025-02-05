@@ -28,22 +28,30 @@ const InstagramCarousel: React.FC<{ instagramPosts: IInstagramPost[] }> = ({
 								className='embla__slide instagram p-1'
 							>
 								<Link href={post.permalink} target='_blank'>
-									<Image
-										key={post.id}
-										src={post.media_url}
-										title={post.caption}
-										alt={
-											post.caption.length > 20
-												? `${post.caption.slice(
-														0,
-														20
-												  )}...`
-												: post.caption
-										}
-										width={300}
-										height={300}
-										className='w-full aspect-square object-cover object-center bg-goldenAccent/10'
-									/>
+									<figure>
+										<Image
+											key={post.id}
+											src={post.media_url}
+											title={post.caption}
+											alt={
+												post.caption.length > 20
+													? `${post.caption.slice(
+															0,
+															20
+													  )}...`
+													: post.caption
+											}
+											width={300}
+											height={300}
+											className='w-full aspect-square object-cover object-center bg-goldenAccent/10'
+										/>
+										<figcaption
+											aria-hidden
+											className='hidden'
+										>
+											{post.caption}
+										</figcaption>
+									</figure>
 								</Link>
 							</li>
 						))}

@@ -2,7 +2,7 @@
 
 import { nextClient } from '@/_axios/axios'
 import { IPostsResponse } from '@/_graphql/posts/getPosts'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import BlogList from '@/app/[lang]/blog/_components/BlogList'
 import CategoryAside from '@/app/[lang]/blog/_components/CategoryAside'
 import Pagination from '@/_components/Pagination/Pagination'
@@ -32,7 +32,9 @@ const Blog: React.FC<IParams> = ({ lang, defaultPage }) => {
 			.then((res) => setPostData(res.data))
 			.catch(() => setError(true))
 			.finally(() => {
-				setLoading(false)
+				setTimeout(() => {
+					setLoading(false)
+				}, 400)
 			})
 	}, [page, size])
 
@@ -40,7 +42,7 @@ const Blog: React.FC<IParams> = ({ lang, defaultPage }) => {
 		<div className='flex-1 flex flex-col-reverse md:flex-row gap-5 md:gap-10'>
 			<div className='flex-1 flex flex-col items-center justify-center gap-8'>
 				{loading ? (
-					<span>Načítání...</span>
+					<span className='font-oswald text-xl'>Načítání...</span>
 				) : (
 					postData && (
 						<>
