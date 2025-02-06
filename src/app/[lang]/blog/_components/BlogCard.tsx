@@ -33,7 +33,7 @@ const BlogCard: React.FC<{ lang: string; post: IPost }> = ({ lang, post }) => {
 					</section>
 
 					<section className='flex-1 py-6'>
-						<h2 className='font-oswald text-opacity-60 text-3xl leading-tight text-golden group-hover:text-secondary group-hover:underline duration-300'>
+						<h2 className='font-oswald text-opacity-60 text-3xl h-[2.5em] max-h-[2.5em] line-clamp-2 text-ellipsis leading-tight text-golden group-hover:text-secondary group-hover:underline duration-300'>
 							{post.title}
 						</h2>
 						<time className='text-gray-400 italic text-sm mt-2'>
