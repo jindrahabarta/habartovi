@@ -29,31 +29,30 @@ function getSiteConfig(
 }
 
 export default async function sitemap() {
+	const BASE_URL = 'https://habartovi.cz'
+
 	const map: MetadataRoute.Sitemap = [
-		getSiteConfig(`${process.env.BASE_URL}/`),
+		getSiteConfig(`${BASE_URL}/`),
 
-		getSiteConfig(`${process.env.BASE_URL}/ubytovani`),
-		getSiteConfig(`${process.env.BASE_URL}/ubytovani/maly-apartman`),
-		getSiteConfig(`${process.env.BASE_URL}/ubytovani/velky-apartman`),
-		getSiteConfig(`${process.env.BASE_URL}/ubytovani/rezervace`),
+		getSiteConfig(`${BASE_URL}/ubytovani`),
+		getSiteConfig(`${BASE_URL}/ubytovani/maly-apartman`),
+		getSiteConfig(`${BASE_URL}/ubytovani/velky-apartman`),
+		getSiteConfig(`${BASE_URL}/ubytovani/rezervace`),
 
-		getSiteConfig(`${process.env.BASE_URL}/keramicka-dilna`),
+		getSiteConfig(`${BASE_URL}/keramicka-dilna`),
 
-		getSiteConfig(`${process.env.BASE_URL}/vylety-do-okoli`),
+		getSiteConfig(`${BASE_URL}/vylety-do-okoli`),
 
-		getSiteConfig(`${process.env.BASE_URL}/blog`),
+		getSiteConfig(`${BASE_URL}/blog`),
 
-		getSiteConfig(`${process.env.BASE_URL}/kontakt`),
+		getSiteConfig(`${BASE_URL}/kontakt`),
 	]
 
 	const posts = await getPosts(1, 100)
 	if (posts) {
 		for (let i = 0; i < posts.nodes.length; i++) {
 			map.push(
-				getSiteConfig(
-					`${process.env.BASE_URL}/blog/${posts.nodes[i].slug}`,
-					8
-				)
+				getSiteConfig(`${BASE_URL}/blog/${posts.nodes[i].slug}`, 8)
 			)
 		}
 	}
@@ -63,7 +62,7 @@ export default async function sitemap() {
 		for (let i = 0; i < categories.nodes.length; i++) {
 			map.push(
 				getSiteConfig(
-					`${process.env.BASE_URL}/blog/rubriky/${categories.nodes[i].slug}`,
+					`${BASE_URL}/blog/rubriky/${categories.nodes[i].slug}`,
 					6
 				)
 			)
