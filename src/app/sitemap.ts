@@ -48,7 +48,6 @@ export default async function sitemap() {
 
 	const posts = await getPosts(1, 100)
 	if (posts) {
-		console.log(posts.nodes.map((p) => p.slug))
 		for (let i = 0; i < posts.nodes.length; i++) {
 			map.push(getSiteConfig(`/blog/${posts.nodes[i].slug}`, 8))
 		}
