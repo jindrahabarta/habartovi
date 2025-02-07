@@ -32,11 +32,13 @@ const Blog: React.FC<IParams> = ({ lang, defaultPage }) => {
 			.then((res) => setPostData(res.data))
 			.catch(() => setError(true))
 			.finally(() => {
-				setTimeout(() => {
-					setLoading(false)
-				}, 400)
+				setLoading(false)
 			})
 	}, [page, size])
+
+	const handleSetPage = (p: number) => {
+		setPage(p)
+	}
 
 	return (
 		<div className='flex-1 flex flex-col-reverse md:flex-row gap-5 md:gap-10'>
@@ -52,6 +54,7 @@ const Blog: React.FC<IParams> = ({ lang, defaultPage }) => {
 								baseUrl={`/${lang}/blog`}
 								page={page}
 								size={size}
+								setPage={handleSetPage}
 								pageInfo={postData.pageInfo}
 							/>
 						</>

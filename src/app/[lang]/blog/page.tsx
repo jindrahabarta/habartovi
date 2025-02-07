@@ -1,9 +1,4 @@
-import { getPosts } from '@/_graphql/posts/getPosts'
 import { Metadata, NextPage } from 'next'
-import BlogList from './_components/BlogList'
-import { getCategories } from '@/_graphql/categories/getCategories'
-import CategoryAside from './_components/CategoryAside'
-import Pagination from '@/_components/Pagination/Pagination'
 import Blog from './_components/Blog'
 
 interface IParams {

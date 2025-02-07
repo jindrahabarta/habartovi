@@ -25,7 +25,7 @@ const CategoryBlog: React.FC<IParams> = ({ lang, slug }) => {
 			.then((res) => setCategoryData(res.data))
 			.catch(() => setError(true))
 			.finally(() => {
-				setTimeout(() => setLoading(false), 400)
+				setLoading(false)
 			})
 	}, [slug])
 

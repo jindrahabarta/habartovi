@@ -16,13 +16,16 @@ export interface IPostsResponse {
 	}
 }
 
-function getPostsQuery(page: number, size: number) {
-	const offset = page > 1 ? (page - 1) * size : 0
-	const query = `where: {offsetPagination: {size: ${size}, offset: ${offset}}}`
+function getPostsQuery(page?: number, size?: number) {
+	let query = ''
+	if (typeof page === 'number' && typeof size === 'number') {
+		const offset = page > 1 ? (page - 1) * size : 0
+		query = `(where: {offsetPagination: {size: ${size}, offset: ${offset}}})`
+	}
 
 	return gql`
 		query getPosts {
-			posts(${query}) {
+			posts${query} {
 				nodes {
 					${postAttributes}
 				}
@@ -39,7 +42,7 @@ function getPostsQuery(page: number, size: number) {
 }
 
 export const getPosts = unstable_cache(
-	async (page: number, size: number) => {
+	async (page?: number, size?: number) => {
 		try {
 			const data = await wpClient.query<IPostsResponse>({
 				query: getPostsQuery(page, size),
