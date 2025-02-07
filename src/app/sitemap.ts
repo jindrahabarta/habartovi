@@ -29,27 +29,31 @@ function getSiteConfig(
 }
 
 export default async function sitemap() {
+	const BASE_URL = process.env.BASE_URL
+
 	const map: MetadataRoute.Sitemap = [
-		getSiteConfig('/'),
+		getSiteConfig(`${BASE_URL}/`),
 
-		getSiteConfig('/ubytovani'),
-		getSiteConfig('/ubytovani/maly-apartman'),
-		getSiteConfig('/ubytovani/velky-apartman'),
-		getSiteConfig('/ubytovani/rezervace'),
+		getSiteConfig(`${BASE_URL}/ubytovani`),
+		getSiteConfig(`${BASE_URL}/ubytovani/maly-apartman`),
+		getSiteConfig(`${BASE_URL}/ubytovani/velky-apartman`),
+		getSiteConfig(`${BASE_URL}/ubytovani/rezervace`),
 
-		getSiteConfig('/keramicka-dilna'),
+		getSiteConfig(`${BASE_URL}/keramicka-dilna`),
 
-		getSiteConfig('/vylety-do-okoli'),
+		getSiteConfig(`${BASE_URL}/vylety-do-okoli`),
 
-		getSiteConfig('/blog'),
+		getSiteConfig(`${BASE_URL}/blog`),
 
-		getSiteConfig('/kontakt'),
+		getSiteConfig(`${BASE_URL}/kontakt`),
 	]
 
 	const posts = await getPosts(1, 100)
 	if (posts) {
 		for (let i = 0; i < posts.nodes.length; i++) {
-			map.push(getSiteConfig(`/blog/${posts.nodes[i].slug}`, 8))
+			map.push(
+				getSiteConfig(`${BASE_URL}/blog/${posts.nodes[i].slug}`, 8)
+			)
 		}
 	}
 
@@ -57,7 +61,10 @@ export default async function sitemap() {
 	if (categories) {
 		for (let i = 0; i < categories.nodes.length; i++) {
 			map.push(
-				getSiteConfig(`/blog/rubriky/${categories.nodes[i].slug}`, 6)
+				getSiteConfig(
+					`${BASE_URL}/blog/rubriky/${categories.nodes[i].slug}`,
+					6
+				)
 			)
 		}
 	}
