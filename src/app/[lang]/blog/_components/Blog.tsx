@@ -32,9 +32,7 @@ const Blog: React.FC<IParams> = ({ lang, defaultPage }) => {
 			.then((res) => setPostData(res.data))
 			.catch(() => setError(true))
 			.finally(() => {
-				setTimeout(() => {
-					setLoading(false)
-				}, 400)
+				setLoading(false)
 			})
 	}, [page, size])
 

@@ -74,9 +74,7 @@ const Services = () => {
 				</div>
 			</div>
 
-			<div className='bg-background rounded-t-2xl sticky top-10'>
-				<InstagramHabartovi />
-			</div>
+			<InstagramHabartovi />
 		</section>
 	)
 }
