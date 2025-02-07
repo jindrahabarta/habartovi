@@ -37,7 +37,7 @@ const Trip = ({
 					alt={'Obrázek ' + title}
 					width={400}
 					height={300}
-					className='absolute w-full h-full '
+					className='absolute w-full h-full object-cover'
 				></Image>
 
 				<div className='relative w-full h-full bg-black/20 flex items-center justify-center '>

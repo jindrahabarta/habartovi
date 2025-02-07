@@ -12,6 +12,8 @@ import OrderForm from '../_components/Sections/OrderForm/OrderForm'
 
 export const metadata: Metadata = {
 	title: 'Rezervace',
+	description:
+		'Zarezervujte si svůj termín v jednom za našich apartmánů v Moravském Karlově. Spolu s ubytováním nabízíme i keramickou dílnu, kde si můžete vyzkoušet řemeslo.',
 }
 
 interface IParams {

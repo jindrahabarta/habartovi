@@ -11,7 +11,8 @@ const Eshop = () => {
 				Nakoupit mé již hotové produkty můžete na E-shopu s keramikou{' '}
 				<Link
 					className='text-black hover:text-secondary'
-					href={'mailto:habartovi@email.cz'}
+					target='_blank'
+					href={'https://www.helenpottery.cz/'}
 				>
 					<strong>www.helenpottery.cz</strong>
 				</Link>

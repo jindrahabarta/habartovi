@@ -1,7 +1,9 @@
 import Image from 'next/image'
-import UbytovaniImg from '@/../public/images/Ubytování.jpg'
 import Button from '@/_components/Buttons/Button'
 import InstagramHabartovi from '@/_components/Instagram/InstagramHabartovi'
+
+import UbytovaniImg from '@/../public/images/Ubytování.jpg'
+import KeramickaDilnaImg from '@/../public/images/Homepage/KeramickáDílna.webp'
 
 const Services = () => {
 	return (
@@ -16,7 +18,7 @@ const Services = () => {
 							src={UbytovaniImg}
 							width={700}
 							height={400}
-							alt={'Ubytování'}
+							alt={'Ubytování¨v Moravské Karlově'}
 							className=' object-cover aspect-video '
 						></Image>
 					</div>
@@ -26,11 +28,9 @@ const Services = () => {
 							Soukromé ubytování v přírodě
 						</h2>
 						<p className='mt-4 sm:mt-8 text-white'>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Similique facere corporis cum adipisci
-							temporibus quis delectus debitis eum laudantium
-							illum, voluptate laboriosam repudiandae. Voluptas
-							totam, accusamus est doloremque vel laborum?
+							Nabízíme k pronájmu malý byt, který je součástí
+							staré venkovské usedlosti postavené německou rodinou
+							na přelomu 18. a 19. století
 						</p>
 
 						<Button
@@ -49,11 +49,12 @@ const Services = () => {
 							Keramická dílna
 						</h2>
 						<p className='mt-4 sm:mt-8 text-white'>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Similique facere corporis cum adipisci
-							temporibus quis delectus debitis eum laudantium
-							illum, voluptate laboriosam repudiandae. Voluptas
-							totam, accusamus est doloremque vel laborum?
+							Navštivte naši hrnčířskou dílnu, kde se vyrábí
+							keramika pro dům i zahradu. Nabízíme také možnost
+							tvorby na zakázku, podle vašeho přání. V naší dílně
+							vítáme všechny, kteří by si rádi vyzkoušeli práci s
+							hlínou – modelování, točení na hrnčířském kruhu a
+							relaxační tvoření.
 						</p>
 
 						<Button
@@ -64,10 +65,10 @@ const Services = () => {
 					</div>
 					<div className='flex-1 '>
 						<Image
-							src={UbytovaniImg}
+							src={KeramickaDilnaImg}
 							width={700}
 							height={400}
-							alt={'Ubytování'}
+							alt={'Keramická dílna v Moravské Karlově'}
 							className=' object-cover aspect-video'
 						></Image>
 					</div>

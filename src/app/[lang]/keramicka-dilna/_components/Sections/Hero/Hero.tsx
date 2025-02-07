@@ -2,17 +2,17 @@ import React from 'react'
 import Image from 'next/image'
 import Button from '@/_components/Buttons/Button'
 
-import backgroundImage from '@/../public/images/Keramická dílna/bg1.jpg'
+import HeroImage from '@/../public/images/Keramická dílna/HeroImage.webp'
 
 const Hero = () => {
 	return (
 		<section id='hero' className='h-[100svh] w-full pb-20'>
 			<div className='absolute top-0 w-full h-full overflow-hidden'>
 				<Image
-					src={backgroundImage}
-					alt='uvodni fotka'
-					width={2000}
-					height={2000}
+					src={HeroImage}
+					alt='Habartovi Keramická dílna foto'
+					width={1500}
+					height={1000}
 					className='w-full h-full object-cover'
 					id='heroImage'
 				></Image>

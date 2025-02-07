@@ -8,7 +8,8 @@ import ZdenekAHelena from '../_components/Sections/ZdenekAHelena/ZdenekAHelena'
 
 export const metadata: Metadata = {
 	title: 'Úvod | Ubytování a Keramická dílna Habartovi',
-	description: 'Stránka',
+	description:
+		'Vítejte na stránkách našeho Ubytování a Keramické dílny v Moravském Karlově, vesnici nedaleko Červené Vody. ',
 }
 
 const Home: NextPage<{ params: { lang: string } }> = async ({

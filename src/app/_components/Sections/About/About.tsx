@@ -17,26 +17,36 @@ const About = () => {
 			<h2 className='font-oswald'>Vítejte na našich stránkách </h2>
 
 			<p className='max-w-4xl mt-5'>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-				omnis inventore placeat, voluptatum illum eveniet odit adipisci
-				beatae voluptates, animi ullam soluta impedit, delectus culpa
-				quisquam excepturi reiciendis minima a!
+				Venkovský styl bydlení v historickém domě s keramickou dílnou,
+				kde se můžete na chvíli stát hrnčířem.
 			</p>
 
 			<div className='grid grid-cols-2 gap-y-4 md:grid-cols-4 w-full max-w-5xl mt-20'>
-				<GridElement title='Ubytování v přírodě'>
+				<GridElement title='Ubytování v přírodě' link='/ubytovani'>
 					<LeafIcon className='h-12 sm:h-14 md:h-16 text-secondary group-hover:text-secondaryAccent duration-300'></LeafIcon>
 				</GridElement>
 				<GridElement
 					className='md:border-solid border-none'
 					title='Horská turistika'
+					link='/vylety-do-okoli'
 				>
 					<HikingIcon className='h-12 sm:h-14 md:h-16 text-secondary group-hover:text-secondaryAccent duration-300'></HikingIcon>
 				</GridElement>
-				<GridElement title='Rodinné zázemí'>
+
+				<div
+					className={`flex flex-col items-center  py-2 px-8  group border-golden/60 border-r`}
+				>
 					<FamilyIcon className='h-12 sm:h-14 md:h-16 text-secondary group-hover:text-secondaryAccent duration-300'></FamilyIcon>
-				</GridElement>
-				<GridElement className='border-none' title='Keramická dílna'>
+					<p className='text-sm sm:text-base text-nowrap font-bold text-secondary text-center mt-4'>
+						Rodinné zázemí
+					</p>
+				</div>
+
+				<GridElement
+					link='/keramicka-dilna'
+					className='border-none'
+					title='Keramická dílna'
+				>
 					<PotteryIcon className='h-12 sm:h-14 md:h-16 text-secondary group-hover:text-secondaryAccent duration-300'></PotteryIcon>
 				</GridElement>
 			</div>

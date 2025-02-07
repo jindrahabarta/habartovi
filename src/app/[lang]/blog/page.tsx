@@ -16,7 +16,8 @@ interface IQuery {
 
 export const metadata: Metadata = {
 	title: 'Blog',
-	description: 'Stránka',
+	description:
+		'Zvu Tě k četbě mých pokusů o odhalení mého srdce. Co na srdci, to na jazyku. Bez přetvářky, klamu, studu. Čti to, co Tě zajímá.',
 }
 
 const BlogPage: NextPage<{ params: IParams; searchParams: IQuery }> = async ({

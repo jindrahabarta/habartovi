@@ -1,6 +1,5 @@
 import { getPost } from '@/_graphql/posts/getPost'
 import { NextPage } from 'next'
-import Image from 'next/image'
 import './wp-blog-content.css'
 import moment from 'moment'
 import BackLink from '../_components/BackLink'
@@ -10,12 +9,12 @@ interface IParams {
 	slug: string
 }
 
-export const generateMetadata = ({ params }: { params: IParams }) => {
+export const generateMetadata = async ({ params }: { params: IParams }) => {
 	const { slug } = params
+	const post = await getPost(slug)
 
 	return {
-		title: `Článek ${slug}`,
-		description: 'description',
+		title: `Článek: ${post?.title}`,
 	}
 }
 

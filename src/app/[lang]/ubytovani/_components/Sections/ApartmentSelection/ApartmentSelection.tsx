@@ -1,8 +1,6 @@
 import React from 'react'
-import Image from 'next/image'
 
 import Img from '@/../public/images/Ubytování.jpg'
-import Link from 'next/link'
 import ApartmentCard from './ApartmentCard'
 
 const ApartmentSelection = () => {
@@ -11,7 +9,7 @@ const ApartmentSelection = () => {
 			<ApartmentCard
 				title={'Malý apartmán'}
 				text={
-					'Lorem ipsum dolor sit amet, consectetur adipisicingelit. Impedit laboriosam provident commodi dicta nobisratione tempora possimus a consequatur rem eligendi oditaccusantium saepe maiores hic dolores, quas, dolor ad.'
+					'V prvním podlaží naší velké usedlosti z 19. století je pro vás připravený malý a útulný byt řešený formou studia. Jeho okna jsou orientovaná na západ a poskytují kouzelný výhled na celé údolí.'
 				}
 				image={Img}
 				link={'/ubytovani/maly-apartman'}
@@ -21,7 +19,7 @@ const ApartmentSelection = () => {
 			<ApartmentCard
 				title={'Velký apartmán'}
 				text={
-					'Lorem ipsum dolor sit amet, consectetur adipisicingelit. Impedit laboriosam provident commodi dicta nobisratione tempora possimus a consequatur rem eligendi oditaccusantium saepe maiores hic dolores, quas, dolor ad.'
+					'Velký podkrovní byt disponuje dvěmi ložnicemi, třílůžkovou a dvoulůžkovou. Prostorné obývací místnosti dominují kachlová kamna na dřevo, velká pohovka a kompletně vybavený kuchyňský kout.'
 				}
 				image={Img}
 				link={'/ubytovani/velky-apartman'}

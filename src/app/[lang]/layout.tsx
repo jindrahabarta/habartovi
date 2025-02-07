@@ -24,7 +24,8 @@ export const metadata: Metadata = {
 		template: '%s | Ubytování a Keramická dílna Habartovi',
 		default: 'Úvod',
 	},
-	description: 'Stránka',
+	description:
+		'Vítejte na stránkách našeho Ubytování a Keramické dílny v Moravském Karlově, vesničce nedaleko Červené Vody.',
 }
 
 export async function generateStaticParams() {

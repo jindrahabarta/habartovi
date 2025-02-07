@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-import ZdenekAHelenaImg from '@/../public/images/Zdenek_a_helena_split2.png'
+import ZdenekAHelenaImg from '@/../public/images/Homepage/ZdeněkAHelena.webp'
 
 const ZdenekAHelena = () => {
 	return (
@@ -16,7 +16,7 @@ const ZdenekAHelena = () => {
 						src={ZdenekAHelenaImg}
 						width={1500}
 						height={1000}
-						alt={'Zdeněk a Helena Obrázek'}
+						alt={'Zdeněk a Helena'}
 						className='h-fit md:h-full w-full object-cover'
 					></Image>
 				</div>
@@ -62,7 +62,7 @@ const ZdenekAHelena = () => {
 							nádherné řemeslo, které mě k sobě přitáhlo ve
 							chvíli, kdy jsem hledala své místo na světě. Práce s
 							mokrou hlínou ve mě probouzí fantazii a lásku k
-							přírodě
+							přírodě.
 						</p>
 					</div>
 				</div>

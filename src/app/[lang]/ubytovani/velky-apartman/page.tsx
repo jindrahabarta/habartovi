@@ -25,6 +25,8 @@ import image10 from '@/../public/images/velky-apartman/10.jpg'
 
 export const metadata: Metadata = {
 	title: 'Velký apartmán',
+	description:
+		'Velký podkrovní byt disponuje dvěmi ložnicemi, třílůžkovou a dvoulůžkovou. Prostorné obývací místnosti dominují kachlová kamna na dřevo.',
 }
 
 const features = [
@@ -33,7 +35,7 @@ const features = [
 		icon: <SizeIcon className='text-golden/80 w-6'></SizeIcon>,
 	},
 	{
-		text: '10 Lůžek',
+		text: '7 Lůžek, 2 přistýlky',
 		icon: <BedIcon className='text-golden/80 w-6'></BedIcon>,
 	},
 	{
@@ -45,6 +47,12 @@ const features = [
 		icon: <TVIcon className='text-golden/80 w-6'></TVIcon>,
 	},
 	{
+		text: 'Obytná kuchyň',
+		icon: (
+			<div className='text-golden/80 w-6 h-6 rounded-2xl bg-red-400'></div>
+		),
+	},
+	{
 		text: 'Parkování',
 		icon: <ParkingIcon className='text-golden/80 w-6'></ParkingIcon>,
 	},
@@ -53,7 +61,7 @@ const features = [
 		icon: <BicycleIcon className='text-golden/80 w-6'></BicycleIcon>,
 	},
 	{
-		text: 'Nekuřácký pokoj',
+		text: 'Nekuřácký prostor',
 		icon: <SmokingIcon className='text-golden/80 w-6'></SmokingIcon>,
 	},
 ]

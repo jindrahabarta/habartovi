@@ -7,7 +7,6 @@ import SizeIcon from '@/_components/Icons/SizeIcon'
 import SmokingIcon from '@/_components/Icons/SmokingIcon'
 import WifiIcon from '@/_components/Icons/WifiIcon'
 import BedIcon from '@/_components/Icons/BedIcon'
-import TVIcon from '@/_components/Icons/TVIcon'
 import BicycleIcon from '@/_components/Icons/BicycleIcon'
 import ParkingIcon from '@/_components/Icons/ParkingIcon'
 import { Metadata, NextPage } from 'next'
@@ -24,6 +23,8 @@ import image9 from '@/../public/images/maly-apartman/9.jpg'
 
 export const metadata: Metadata = {
 	title: 'Malý apartmán',
+	description:
+		'V prvním podlaží naší velké usedlosti z 19. století je pro vás připravený malý a útulný byt řešený formou studia.',
 }
 
 const features = [
@@ -32,7 +33,7 @@ const features = [
 		icon: <SizeIcon className='text-golden/80 w-6'></SizeIcon>,
 	},
 	{
-		text: '10 Lůžek',
+		text: '3 Lůžka, 2 přistýlky',
 		icon: <BedIcon className='text-golden/80 w-6'></BedIcon>,
 	},
 	{
@@ -40,8 +41,16 @@ const features = [
 		icon: <WifiIcon className='text-golden/80 w-6'></WifiIcon>,
 	},
 	{
-		text: 'Televize',
-		icon: <TVIcon className='text-golden/80 w-6'></TVIcon>,
+		text: 'Kuchyňský kout',
+		icon: (
+			<div className='text-golden/80 w-6 h-6 rounded-2xl bg-red-400'></div>
+		),
+	},
+	{
+		text: 'Samostatná koupelna',
+		icon: (
+			<div className='text-golden/80 w-6 h-6 rounded-2xl bg-red-400'></div>
+		),
 	},
 	{
 		text: 'Parkování',

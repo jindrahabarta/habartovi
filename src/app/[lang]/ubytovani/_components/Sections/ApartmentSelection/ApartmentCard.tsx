@@ -35,7 +35,7 @@ const ApartmentCard = ({ title, text, image, link, className }: props) => {
 					</h2>
 				</div>
 				<p className='text-white mt-4'>{text}</p>
-				<div className='flex justify-end mt-4'>
+				<div className='flex justify-end mt-6'>
 					<button className='bg-golden w-full sm:w-fit text-white hover:text-golden border-golden border-2 text-center sm:hover:bg-transparent py-3 px-4 sm:py-4 sm:px-8 inline-block font-bold duration-200 shadow-md'>
 						Zobrazit
 					</button>
