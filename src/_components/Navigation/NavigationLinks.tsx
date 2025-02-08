@@ -5,7 +5,7 @@ import { Link } from '@/_types/navigation'
 
 const NavigationLinks = ({ links }: { links: Link[] }) => {
 	return (
-		<div id='navUl' className='md:flex items-center gap-4 h-20 hidden'>
+		<div id='navUl' className='lg:flex items-center gap-4 h-20 hidden'>
 			<ul className='flex items-center gap-4 h-full'>
 				{links.map((link, i) => {
 					if (link.submenu) {

@@ -1,8 +1,6 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import React from 'react'
 
-import LogoImg from '@/../public/images/habartovi-logo.png'
 import PhoneIcon from '../Icons/PhoneIcon'
 import MailIcon from '../Icons/MailIcon'
 import MapPinIcon from '../Icons/MapPinIcon'
@@ -10,8 +8,12 @@ import InstagramIcon from '../Icons/InstagramIcon'
 import FacebookIcon from '../Icons/FacebookIcon'
 import MegaUbytkoIcon from '../Icons/MegaUbytkoIcon'
 import LogoOrangeBlack from '../Icons/Logos/LogoOrangeBlack'
+import { getTranslation } from '@/_i18n'
 
-const Footer = () => {
+const Footer = async ({ lang }: { lang: string }) => {
+	const { t } = await getTranslation(lang, 'navigation')
+	const { t: t2 } = await getTranslation(lang, 'footer')
+
 	return (
 		<footer
 			id='footer'
@@ -76,61 +78,62 @@ const Footer = () => {
 						<h3 className=' font-bold'>Menu</h3>
 
 						<ul className='max-w-xs mt-2'>
-							<li className='w-full  '>
+							<li className='w-fit'>
 								<Link
 									className='text-white py-0.5 text-lg hover:text-orange w-full inline-block font-bold'
 									href={'/'}
 								>
-									Domů
+									{t('home')}
 								</Link>
 							</li>
-							<li className='w-full  '>
+							<li className='w-fit  '>
 								<Link
-									className='text-white py-0.5 text-lg hover:text-orange w-full inline-block font-bold'
+									className='text-white py-0.5 text-lg hover:text-orange w-fit inline-block font-bold'
 									href={'/ubytovani'}
 								>
-									Ubytování
+									{t('accomodation')}
 								</Link>
 							</li>
-							<li className='w-full  '>
+							<li className='w-fit  '>
 								<Link
-									className='text-white py-0.5 text-lg hover:text-orange w-full inline-block font-bold'
+									className='text-white py-0.5 text-lg hover:text-orange w-fit inline-block font-bold'
 									href={'/keramicka-dilna'}
 								>
-									Keramická dílna
+									{t('pottery')}
 								</Link>
 							</li>
-							<li className='w-full  '>
+							<li className='w-fit  '>
 								<Link
-									className='text-white py-0.5 text-lg hover:text-orange w-full inline-block font-bold'
+									className='text-white py-0.5 text-lg hover:text-orange w-fit inline-block font-bold'
 									href={'/vylety-do-okoli'}
 								>
-									Okolí
+									{t('places_to_visit')}
 								</Link>
 							</li>
-							<li className='w-full  '>
+							<li className='w-fit  '>
 								<Link
-									className='text-white py-0.5 text-lg hover:text-orange w-full inline-block font-bold'
+									className='text-white py-0.5 text-lg hover:text-orange w-fit inline-block font-bold'
 									href={'/blog'}
 								>
-									Blog
+									{t('blog')}
 								</Link>
 							</li>
-							<li className='w-full  '>
+							<li className='w-fit  '>
 								<Link
-									className='text-white py-0.5 text-lg hover:text-orange w-full inline-block font-bold'
+									className='text-white py-0.5 text-lg hover:text-orange w-fit inline-block font-bold'
 									href={'/kontakt'}
 								>
-									Kontakt
+									{t('contact')}
 								</Link>
 							</li>
 						</ul>
 					</div>
 
 					<div className='w-full md:flex-1'>
-						<h3 className=' font-bold'>Mapa</h3>
+						<h3 className=' font-bold'>{t2('column3.title')}</h3>
 						<div className='rounded-2xl mt-2 bg-white overflow-hidden h-44 w-full'>
 							<iframe
+								title='Map'
 								width='100%'
 								height='100%'
 								src='https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Moravsk%C3%BD%20Karlov%20103+(Ubytov%C3%A1n%C3%AD%20a%20Keramick%C3%A1%20d%C3%ADlna%20Habartovi)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'
@@ -188,7 +191,7 @@ const Footer = () => {
 					</p>
 
 					<p className='text-base'>
-						Web vytvořilo studio{' '}
+						{t2('motionLabsTag')}{' '}
 						<Link
 							className='text-orange hover:text-orangeAccent duration-300 font-semibold hover:underline '
 							href='http://motionlabs.cz/'

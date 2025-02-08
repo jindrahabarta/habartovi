@@ -1,0 +1,41 @@
+{
+	"seo": {
+		"title": "Keramikwerkstatt",
+		"description": "Besuchen Sie unsere Töpferei in Moravský Karlov, in der Nähe von Červená Voda, wo Keramik für Haus und Garten hergestellt wird. Wir bieten auch individuelle Anfertigungen an."
+	},
+	"sections": {
+		"hero": {
+			"title": "Keramikwerkstatt",
+			"subtitle": "Probieren Sie sich als Keramiker aus oder genießen Sie einfach die fertigen Werke.",
+			"button1": "Kreative Treffen",
+			"button2": "Über mich"
+		},
+		"about": {
+			"p1": "Ich entdeckte die Keramik, als ich zwanzig Jahre alt war. Es ist ein wunderschönes Handwerk, das mich in einer Zeit anzog, als ich nach meinem Platz in der Welt suchte. In kleinen Prager Werkstätten lernte ich das Arbeiten an der Töpferscheibe. Ich hatte das Glück, ausgezeichnete Lehrer zu haben, denen ich mein heutiges Können verdanke. Die Arbeit mit feuchtem Ton weckt in mir Fantasie und Liebe zur Natur.",
+			"p2": "Obwohl Keramikton speziell für das Modellieren, Drehen und Brennen vorbereitet wird, bleibt er ein Stück Erde – ein natürlicher Werkstoff, den ich zu verstehen und mit dem ich zu arbeiten lerne. Es ist eine endlose Geschichte des gegenseitigen Kennenlernens und Reifens. Ständig entdecke ich neue Möglichkeiten, mit diesem schönen und lebendigen Material zu arbeiten."
+		},
+		"spiral": {
+			"title": "Spirale",
+			"p1": "Als dekoratives Element verwende ich oft das Mäander-Muster – eine spiralförmige Form, die den Fluss des Lebens, die natürlichen Rhythmen, die Energie des weiblichen Zyklus und den Wechsel der Jahreszeiten symbolisiert.",
+			"p2": "Ein Großteil meiner Arbeit besteht aus Gefäßen für den täglichen Gebrauch, die ich an der Töpferscheibe herstelle. Ich glasiere sie mit matten Glasuren oder lasse die Oberfläche roh – unglasiert –, da diese Struktur die lebendige Natur am besten nachahmt.",
+			"p3": "In letzter Zeit lasse ich mich auch von altertümlicher bäuerlicher Keramik inspirieren. Ich glasiere mit einer halbmatten braunen Glasur und verziere sie mit einfachen Stempelmustern."
+		},
+		"creativeMeetings": {
+			"title": "Kreative Treffen",
+			"p1": "Neben meiner eigenen Arbeit widme ich mich sehr gerne der Arbeit mit Menschen. Ich biete kreative Treffen an, bei denen Sie mit einfachen Modelliertechniken Ihr eigenes Werkstück herstellen oder sich an der Töpferscheibe ausprobieren können. Das Programm passe ich an die Möglichkeiten der Besucher an – sowohl für Anfänger als auch für Fortgeschrittene.",
+			"p2strong": "Stunde",
+			"p2": "mit fachkundiger Anleitung kostet",
+			"p3strong": "Fertigstellung und Brennen",
+			"p3": "eines Werkstücks bis zu 1 kg kostet",
+			"p4": "Ein Termin muss im Voraus telefonisch vereinbart werden unter:",
+			"p4-2": "oder per E-Mail:",
+			"p5": "Für Besucher von weiter her versende ich die fertigen Werke gut verpackt und bruchsicher.",
+			"p6": "Wenn Sie mehr Zeit bei uns verbringen möchten, können Sie die Möglichkeit der",
+			"p6strong": "privaten Unterkunft",
+			"p6-2": "im selben Haus wie die Werkstatt nutzen."
+		},
+		"eshop": {
+			"p1": "Meine fertigen Produkte können Sie im Keramik-Onlineshop kaufen."
+		}
+	}
+}

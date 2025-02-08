@@ -1,0 +1,41 @@
+{
+	"seo": {
+		"title": "Large Apartment",
+		"description": "The spacious attic apartment features two bedrooms, a triple and a double. The living room is dominated by a traditional wood-burning tiled stove."
+	},
+
+	"title": "Large Apartment",
+	"p1": "The spacious attic apartment features two bedrooms, a triple and a double. The living room is dominated by a traditional wood-burning tiled stove, a large sofa (2 extra beds), and a TV with satellite reception. The fully equipped kitchen with a cooking island, oven, dishwasher, and ample storage space offers plenty of room for communal cooking. Additional kitchen amenities include a kettle, glass-ceramic hob, fridge with freezer, cookware, and a dining set from our own ceramic workshop. A large dining table with a corner bench and chairs adjoins the kitchen area.",
+	"p2": "The bathroom is fitted with a built-in sink and a bathtub. The toilet is separate.",
+	"p3": "The two bedrooms are interconnected. The first bedroom features a double bed and a single bed, while the second has two single beds, which can be combined into another double bed. Both bedrooms offer ample storage space.",
+	"p4": "A baby crib is available upon request.",
+	"p5": "The entire apartment is furnished with wooden furniture in a simple country style. Most windows face southeast, offering views of the local church and the Březná River flowing through the valley.",
+
+	"featuresTitle": "Amenities",
+
+	"features": {
+		"f1": "Living kitchen",
+		"f2": "Bicycle/ski storage",
+		"f3": "7 beds, 2 extra beds",
+		"f4": "Television",
+		"f5": "Parking",
+		"f6": "Non-smoking area"
+	},
+
+	"pricelistTitle": "Price List",
+	"pricelistBottom": "Prices apply year-round.",
+
+	"pricelist": {
+		"p1": "per person per night.",
+		"p2": "per dog per night.",
+		"p3": "Recreational fee in the Červená Voda municipality per night for persons over 18 years old."
+	},
+
+	"rezervationTitle": "Reservation",
+
+	"rezervationText": {
+		"p1": "Upon a binding order, we will issue an invoice for bank transfer.",
+		"p2": "If you are unable to check in due to personal reasons, we will refund 70% of the invoiced amount.",
+		"p3": "If the stay is canceled due to government regulations, we will refund the full invoiced amount."
+	}
+}

@@ -1,0 +1,39 @@
+{
+	"seo": {
+		"title": "Studio",
+		"description": "Na pierwszym piętrze naszego dużego XIX-wiecznego gospodarstwa czeka na Ciebie małe i przytulne mieszkanie w stylu studia."
+	},
+
+	"title": "Studio",
+	"p1": "Na pierwszym piętrze naszego dużego XIX-wiecznego gospodarstwa czeka na Ciebie małe i przytulne mieszkanie w stylu studia. Jego okna wychodzą na zachód, oferując uroczy widok na całą dolinę.",
+	"p2": "Przestronny pokój urządzony w prostym rustykalnym stylu oferuje jedno łóżko małżeńskie, jedno pojedyncze łóżko oraz sofę, którą można rozłożyć (2 dodatkowe miejsca do spania).",
+	"p3": "Aneks kuchenny jest wyposażony w lodówkę, dwupalnikową kuchenkę elektryczną, czajnik, kuchenkę mikrofalową, mały piekarnik oraz naczynia do gotowania. Do dyspozycji są także podstawowe przyprawy. Ponadto znajduje się tu część jadalna, przeszklona witryna oraz przestrzeń do przechowywania.",
+
+	"featuresTitle": "Udogodnienia",
+
+	"features": {
+		"f1": "Prywatna łazienka",
+		"f2": "Przechowalnia rowerów/nart",
+		"f3": "3 łóżka, 2 dodatkowe miejsca",
+		"f4": "Aneks kuchenny",
+		"f5": "Parking",
+		"f6": "Pokój dla niepalących"
+	},
+
+	"pricelistTitle": "Cennik",
+	"pricelistBottom": "Ceny obowiązują przez cały rok.",
+
+	"pricelist": {
+		"p1": "za osobę za noc.",
+		"p2": "za psa za noc.",
+		"p3": "Opłata turystyczna w gminie Červená Voda za noc dla osób powyżej 18 roku życia."
+	},
+
+	"rezervationTitle": "Rezerwacja",
+
+	"rezervationText": {
+		"p1": "W celu dokonania rezerwacji wystawimy fakturę do przelewu bankowego.",
+		"p2": "Jeśli z własnych powodów nie będziesz mógł się zameldować, zwrócimy 70% kwoty z faktury.",
+		"p3": "W przypadku anulowania pobytu na skutek decyzji państwowych zwracamy pełną kwotę faktury."
+	}
+}

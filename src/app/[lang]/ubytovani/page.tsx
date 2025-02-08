@@ -1,24 +1,36 @@
 import React from 'react'
 import ApartmentSelection from './_components/Sections/ApartmentSelection/ApartmentSelection'
-import { Metadata } from 'next'
+import { getTranslation } from '@/_i18n'
+import { NextPage } from 'next'
 
-export const metadata: Metadata = {
-	title: 'Ubytování',
-	description:
-		'Nabízíme k pronájmu malý byt, který je součástí staré venkovské usedlosti postavené německou rodinou na přelomu 18. a 19. století',
+export const generateMetadata = async ({
+	params,
+}: {
+	params: { lang: string }
+}) => {
+	const { lang } = params
+
+	const { t } = await getTranslation(lang, 'accommodation')
+
+	return {
+		title: t('seo.title'),
+		description: t('seo.description'),
+	}
 }
 
-const Ubytovani = () => {
+const Ubytovani: NextPage<{ params: { lang: string } }> = async ({
+	params: { lang },
+}) => {
+	const { t } = await getTranslation(lang, 'accommodation')
+
 	return (
 		<div className='pt-32'>
 			<section className='container'>
 				<h1 className='font-oswald  md:text-[6rem] leading-tight text-golden/60'>
-					Ubytování
+					{t('title')}
 				</h1>
-
-				<p></p>
 			</section>
-			<ApartmentSelection></ApartmentSelection>
+			<ApartmentSelection lang={lang}></ApartmentSelection>
 		</div>
 	)
 }

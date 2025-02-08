@@ -7,6 +7,7 @@ interface IProps {
 const OrderForm: React.FC<IProps> = ({ lang }) => {
 	return (
 		<iframe
+			title='Reservation form'
 			id='embed-4pKpEM_bOPm67oIBNWVPI'
 			src={`https://${
 				lang === 'cs' ? 'www' : lang

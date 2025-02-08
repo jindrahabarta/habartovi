@@ -1,0 +1,41 @@
+{
+	"seo": {
+		"title": "Ceramics Workshop",
+		"description": "Visit our pottery workshop in Moravský Karlov, near Červená Voda, where ceramics for home and garden are made. We also offer custom creations."
+	},
+	"sections": {
+		"hero": {
+			"title": "Ceramics Workshop",
+			"subtitle": "Try working as a potter or simply enjoy the finished creations.",
+			"button1": "Creative Meetings",
+			"button2": "About Me"
+		},
+		"about": {
+			"p1": "I discovered ceramics when I was twenty. It is a beautiful craft that drew me in at a time when I was searching for my place in the world. In small Prague workshops, I learned to work on the potter's wheel. I was lucky to have excellent teachers, to whom I owe what I know today. Working with wet clay awakens my imagination and love for nature.",
+			"p2": "Even though ceramic clay is specially prepared for modeling, throwing, and firing, it is still a piece of earth – a natural material I am learning to understand and work with. It is an endless journey of mutual discovery and growth. I am constantly exploring new ways to work with this beautiful and living material."
+		},
+		"spiral": {
+			"title": "Spiral",
+			"p1": "As a decorative element, I often use the meander – a spiral shape symbolizing the flow of life, natural rhythms, the energy of the female cycle, and the changing seasons.",
+			"p2": "Much of my work consists of everyday-use vessels, which I create on the potter’s wheel. I glaze them with matte glazes or leave their surfaces unglazed – as their texture most resembles the living nature.",
+			"p3": "Recently, I have also been inspired by ancient rustic pottery, glazing with a semi-matte brown glaze and decorating with simple stamping."
+		},
+		"creativeMeetings": {
+			"title": "Creative Meetings",
+			"p1": "Alongside my own work, I enjoy working with people. I offer creative meetings where you can use simple modeling techniques to create your own piece or try pottery at the wheel. I adapt the program to the visitors' skill levels – from complete beginners to advanced participants.",
+			"p2strong": " hour",
+			"p2": "with expert guidance costs",
+			"p3strong": "Completion and firing",
+			"p3": "of one piece up to 1kg costs",
+			"p4": "Meeting appointments must be arranged in advance by phone at:",
+			"p4-2": "or via email:",
+			"p5": "For those coming from afar, I send finished pieces well-packed and secured against breakage.",
+			"p6": "If you would like to spend more time here, you can use the option of",
+			"p6strong": "private accommodation",
+			"p6-2": "in the same house as the workshop."
+		},
+		"eshop": {
+			"p1": "You can purchase my finished products in the ceramics e-shop."
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"seo": {
+		"title": "Home | Accommodation and Ceramic Workshop Habartovi",
+		"description": "Welcome to the website of our Accommodation and Ceramic Workshop in Moravský Karlov, near Červená Voda. The location offers many sports opportunities and relaxation."
+	},
+	"sections": {
+		"hero": {
+			"title": "Accommodation and Ceramic Workshop Habartovi",
+			"subtitle": "Come and relax in a private accommodation near Červená Voda.",
+			"button1": "About Us",
+			"button2": "Book a Date"
+		},
+		"about": {
+			"title": "About Us",
+			"subtitle": "Welcome to our website",
+			"text": "Rural-style living in a historic house with a ceramic workshop, where you can try being a potter for a while.",
+			"icons": {
+				"1": "Accommodation in nature",
+				"2": "Mountain hiking",
+				"3": "Family-friendly",
+				"4": "Ceramics"
+			}
+		},
+		"zdenekAndHelena": {
+			"ZdenekText": "Sometimes a boy, sometimes a man with a heart. Former locomotive assistant, missionary; now living off the results of his business activities. A lifelong seeker of joy, which I am finally beginning to live in my later years.",
+			"HelenaText": "I discovered ceramics when I was twenty. It is a beautiful craft that drew me in at a time when I was searching for my place in the world. Working with wet clay awakens my imagination and love for nature."
+		},
+		"services": {
+			"accommodation": {
+				"title": "Private Accommodation in Nature",
+				"description": "We offer a small apartment for rent, which is part of an old rural estate built by a German family at the turn of the 18th and 19th centuries.",
+				"button": "Go to Accommodation"
+			},
+			"ceramicsWorkshop": {
+				"title": "Ceramic Workshop",
+				"description": "Visit our pottery workshop, where ceramics for the home and garden are made. We also offer custom-made creations according to your wishes. Our workshop welcomes anyone who would like to try working with clay – modeling, wheel throwing, and relaxing creative activities.",
+				"button": "Go to Ceramic Workshop"
+			}
+		}
+	}
+}

@@ -2,8 +2,10 @@ import React from 'react'
 import Image from 'next/image'
 
 import ZdenekAHelenaImg from '@/../public/images/Homepage/ZdeněkAHelena.webp'
+import { getTranslation } from '@/_i18n'
 
-const ZdenekAHelena = () => {
+const ZdenekAHelena = async ({ lang }: { lang: string }) => {
+	const { t } = await getTranslation(lang, 'mainPage')
 	return (
 		<section
 			id='ZdenekAHelena'
@@ -16,7 +18,7 @@ const ZdenekAHelena = () => {
 						src={ZdenekAHelenaImg}
 						width={1500}
 						height={1000}
-						alt={'Zdeněk a Helena'}
+						alt={`Zdenek a Helena`}
 						className='h-fit md:h-full w-full object-cover'
 					></Image>
 				</div>
@@ -43,10 +45,7 @@ const ZdenekAHelena = () => {
 						</h1>
 
 						<p className='ZaHScrollSpeedLeft ZaHScrollSpeed md:opacity-0 md:translate-y-32 md:text-white italic text-lg mt-4 md:mt-8'>
-							Někdy kluk, někdy chlap se srdcem. Bývalý pomocník
-							strojvedoucího, misionář; nyní žijící z výsledků své
-							obchodní činnosti. Celoživotní hledač radosti,
-							kterou již ve svých letech začínám žít.
+							{t('sections.zdenekAndHelena.ZdenekText')}
 						</p>
 					</div>
 				</div>
@@ -58,11 +57,7 @@ const ZdenekAHelena = () => {
 						</h1>
 
 						<p className='ZaHScrollSpeedRight ZaHScrollSpeed md:opacity-0 md:translate-y-32 md:text-white italic text-lg mt-4 md:mt-8'>
-							Keramiku jsem poznala, když mi bylo dvacet. Je to
-							nádherné řemeslo, které mě k sobě přitáhlo ve
-							chvíli, kdy jsem hledala své místo na světě. Práce s
-							mokrou hlínou ve mě probouzí fantazii a lásku k
-							přírodě.
+							{t('sections.zdenekAndHelena.HelenaText')}
 						</p>
 					</div>
 				</div>

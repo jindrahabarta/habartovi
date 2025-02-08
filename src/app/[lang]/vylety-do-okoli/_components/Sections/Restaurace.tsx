@@ -2,23 +2,26 @@ import BallIcon from '@/_components/Icons/BallIcon'
 import CoffeeIcon from '@/_components/Icons/CoffeeIcon'
 import FoodIcon from '@/_components/Icons/FoodIcon'
 import LinkArrowIcon from '@/_components/Icons/LinkArrowIcon'
+import { getTranslation } from '@/_i18n'
 import Link from 'next/link'
 import React from 'react'
 
-const Restaurace = () => {
+const Restaurace = async ({ lang }: { lang: string }) => {
+	const { t } = await getTranslation(lang, 'trips')
+
 	return (
 		<section className='bg-green2 py-20'>
 			<div className='container'>
 				<h2 className='font-oswald sm:text-4xl leading-tight text-golden'>
-					Tipy na zařízení
+					{t('tips.title')}
 				</h2>
 
 				<div className='mt-16 flex flex-col sm:flex-row sm:flex-wrap gap-10'>
 					<div className='flex-1'>
 						<span className='flex items-center gap-2'>
-							<FoodIcon className='text-golden w-10'></FoodIcon>
+							<FoodIcon className='text-golden h-8'></FoodIcon>
 							<h3 className='font-oswald leading-tight text-golden'>
-								Restaurace
+								{t('tips.restaurants.title')}
 							</h3>
 						</span>
 
@@ -43,7 +46,7 @@ const Restaurace = () => {
 									target='_blank'
 								>
 									<span className='text-nowrap'>
-										Rezidence Rotter
+										{t('tips.restaurants.rezidence')} Rotter
 									</span>
 									<LinkArrowIcon className='w-4'></LinkArrowIcon>
 								</Link>
@@ -90,9 +93,9 @@ const Restaurace = () => {
 					</div>
 					<div className='flex-1'>
 						<span className='flex items-center gap-2'>
-							<CoffeeIcon className='text-golden w-10'></CoffeeIcon>
+							<CoffeeIcon className='text-golden h-8'></CoffeeIcon>
 							<h3 className='font-oswald leading-tight text-golden'>
-								Kavárny
+								{t('tips.cafe.title')}
 							</h3>
 						</span>
 
@@ -104,7 +107,7 @@ const Restaurace = () => {
 									target='_blank'
 								>
 									<span className='text-nowrap'>
-										Kavárna REICHL
+										{t('tips.cafe.kavarna')} REICHL
 									</span>
 									<LinkArrowIcon className='w-4'></LinkArrowIcon>
 								</Link>
@@ -132,7 +135,7 @@ const Restaurace = () => {
 									target='_blank'
 								>
 									<span className='text-nowrap'>
-										Kavárna Zuzana Vítková
+										{t('tips.cafe.kavarna')} Zuzana Vítková
 									</span>
 									<LinkArrowIcon className='w-4'></LinkArrowIcon>
 								</Link>
@@ -153,9 +156,9 @@ const Restaurace = () => {
 					</div>
 					<div className='flex-1'>
 						<span className='flex items-center gap-2'>
-							<BallIcon className='text-golden w-10'></BallIcon>
+							<BallIcon className='text-golden h-8'></BallIcon>
 							<h3 className='font-oswald leading-tight text-golden'>
-								Sport
+								{t('tips.sport.title')}
 							</h3>
 						</span>
 
@@ -167,7 +170,7 @@ const Restaurace = () => {
 									target='_blank'
 								>
 									<span className='text-nowrap'>
-										Horský resort Dolní Morava
+										{t('tips.sport.resort')} Dolní Morava
 									</span>
 									<LinkArrowIcon className='w-4'></LinkArrowIcon>
 								</Link>
@@ -179,7 +182,7 @@ const Restaurace = () => {
 									target='_blank'
 								>
 									<span className='text-nowrap'>
-										Horský resort Buková hora
+										{t('tips.sport.resort')} Buková hora
 									</span>
 									<LinkArrowIcon className='w-4'></LinkArrowIcon>
 								</Link>
@@ -193,7 +196,7 @@ const Restaurace = () => {
 									target='_blank'
 								>
 									<span className='text-nowrap'>
-										Aquacentrum Šumperk
+										{t('tips.sport.aqua')} Šumperk
 									</span>
 									<LinkArrowIcon className='w-4'></LinkArrowIcon>
 								</Link>
@@ -207,7 +210,7 @@ const Restaurace = () => {
 									target='_blank'
 								>
 									<span className='text-nowrap'>
-										Letní koupaliště Šumperk
+										{t('tips.sport.koupaliste')} Šumperk
 									</span>
 									<LinkArrowIcon className='w-4'></LinkArrowIcon>
 								</Link>
@@ -221,7 +224,7 @@ const Restaurace = () => {
 									target='_blank'
 								>
 									<span className='text-nowrap'>
-										Termály Losiny
+										{t('tips.sport.termal')} Velké Losiny
 									</span>
 									<LinkArrowIcon className='w-4'></LinkArrowIcon>
 								</Link>

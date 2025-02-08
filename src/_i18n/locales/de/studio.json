@@ -1,0 +1,39 @@
+{
+	"seo": {
+		"title": "Studio",
+		"description": "Im ersten Stock unseres großen Anwesens aus dem 19. Jahrhundert steht Ihnen ein kleines und gemütliches Studio-Apartment zur Verfügung."
+	},
+
+	"title": "Studio",
+	"p1": "Im ersten Stock unseres großen Anwesens aus dem 19. Jahrhundert steht Ihnen ein kleines und gemütliches Studio-Apartment zur Verfügung. Seine Fenster sind nach Westen ausgerichtet und bieten einen bezaubernden Blick über das gesamte Tal.",
+	"p2": "Das geräumige Zimmer im einfachen Landhausstil bietet ein Doppelbett, ein Einzelbett und ein Sofa, das ausgeklappt werden kann (2 Zustellbetten).",
+	"p3": "Die Küchenzeile ist ausgestattet mit einem Kühlschrank, einem zweiflammigen Elektroherd, einem Wasserkocher, einer Mikrowelle, einem kleinen Backofen und Kochgeschirr. Zudem stehen Ihnen grundlegende Gewürze zur Verfügung. Weiterhin gibt es einen Essbereich, eine Glasvitrine und Stauraum.",
+
+	"featuresTitle": "Ausstattung",
+
+	"features": {
+		"f1": "Eigenes Badezimmer",
+		"f2": "Fahrrad-/Skiraum",
+		"f3": "3 Betten, 2 Zustellbetten",
+		"f4": "Küchenzeile",
+		"f5": "Parkplatz",
+		"f6": "Nichtraucherzimmer"
+	},
+
+	"pricelistTitle": "Preisliste",
+	"pricelistBottom": "Preise gelten das ganze Jahr über.",
+
+	"pricelist": {
+		"p1": "pro Person und Nacht.",
+		"p2": "pro Hund und Nacht.",
+		"p3": "Kurtaxe in der Gemeinde Červená Voda pro Nacht für Personen über 18 Jahre."
+	},
+
+	"rezervationTitle": "Reservierung",
+
+	"rezervationText": {
+		"p1": "Für eine verbindliche Reservierung stellen wir eine Rechnung zur Banküberweisung aus.",
+		"p2": "Falls Sie aus persönlichen Gründen nicht anreisen können, erstatten wir 70 % des Rechnungsbetrags zurück.",
+		"p3": "Bei einer Stornierung aufgrund staatlicher Anordnungen erstatten wir den gesamten Rechnungsbetrag."
+	}
+}

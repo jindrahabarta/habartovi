@@ -1,0 +1,17 @@
+{
+	"seo": {
+		"title": "Ubytování",
+		"description": "Nabízíme k pronájmu malý byt, který je součástí staré venkovské usedlosti postavené německou rodinou na přelomu 18. a 19. století."
+	},
+
+	"title": "Ubytování",
+	"studio": {
+		"title": "Malý apartmán",
+		"description": "V prvním podlaží naší velké usedlosti z 19. století je pro vás připravený malý a útulný byt řešený formou studia. Jeho okna jsou orientovaná na západ a poskytují kouzelný výhled na celé údolí."
+	},
+	"biggerApartment": {
+		"title": "Velký apartmán",
+		"description": "Velký podkrovní byt disponuje dvěmi ložnicemi, třílůžkovou a dvoulůžkovou. Prostorné obývací místnosti dominují kachlová kamna na dřevo, velká pohovka a kompletně vybavený kuchyňský kout."
+	},
+	"button": "Zobrazit"
+}

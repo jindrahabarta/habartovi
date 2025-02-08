@@ -1,8 +1,9 @@
+'use client'
 import { StaticImageData } from 'next/image'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import Button from '@/_components/Buttons/Button'
+import { useParams } from 'next/navigation'
 
 const Trip = ({
 	title,
@@ -15,6 +16,8 @@ const Trip = ({
 	link: string
 	img: StaticImageData
 }) => {
+	const { lang } = useParams()
+
 	return (
 		<div className='perspective-800 group relative'>
 			<div className='absolute p-4 px-8 top-0 left-0 w-full h-full shadow-md bg-green1 rounded-2xl transform -rotate-x-180 group-hover:rotate-x-0 duration-300 flex flex-col gap-2 justify-center items-center'>
@@ -28,7 +31,7 @@ const Trip = ({
 					href={link}
 					target='_blank'
 				>
-					Číst více
+					{lang === 'cs' ? 'Číst více' : 'Read more'}
 				</Link>
 			</div>
 			<div className='shadow-md bg-green1 aspect-video relative rounded-2xl overflow-hidden transform duration-300 group-hover:rotate-x-180 opacity-100 group-hover:opacity-0 group-hover:pointer-events-none'>

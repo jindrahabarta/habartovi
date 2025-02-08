@@ -1,0 +1,17 @@
+{
+	"seo": {
+		"title": "Noclegi",
+		"description": "Oferujemy do wynajęcia małe mieszkanie, które jest częścią starego wiejskiego gospodarstwa zbudowanego przez niemiecką rodzinę na przełomie XVIII i XIX wieku."
+	},
+
+	"title": "Noclegi",
+	"studio": {
+		"title": "Mały apartament",
+		"description": "Na pierwszym piętrze naszego dużego XIX-wiecznego gospodarstwa przygotowaliśmy dla Ciebie małe i przytulne mieszkanie w stylu studia. Jego okna wychodzą na zachód, oferując magiczny widok na całą dolinę."
+	},
+	"biggerApartment": {
+		"title": "Duży apartament",
+		"description": "Przestronne mieszkanie na poddaszu posiada dwie sypialnie – jedną z trzema łóżkami i drugą z dwoma. W przestronnym salonie znajduje się kaflowy piec na drewno, duża sofa i w pełni wyposażony aneks kuchenny."
+	},
+	"button": "Zobacz"
+}

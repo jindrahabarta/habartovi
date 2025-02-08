@@ -1,0 +1,41 @@
+{
+	"seo": {
+		"title": "Strona główna | Noclegi i Pracownia Ceramiczna Habartovi",
+		"description": "Witamy na stronie naszego Noclegu i Pracowni Ceramicznej w Moravský Karlov, niedaleko Červená Voda. Lokalizacja oferuje wiele możliwości sportowych i relaksu."
+	},
+	"sections": {
+		"hero": {
+			"title": "Noclegi i Pracownia Ceramiczna Habartovi",
+			"subtitle": "Przyjedź i odpocznij w prywatnym noclegu niedaleko Červená Voda.",
+			"button1": "O nas",
+			"button2": "Zarezerwuj termin"
+		},
+		"about": {
+			"title": "O nas",
+			"subtitle": "Witamy na naszej stronie",
+			"text": "Wiejski styl życia w historycznym domu z pracownią ceramiczną, gdzie możesz na chwilę stać się garncarzem.",
+			"icons": {
+				"1": "Noclegi w naturze",
+				"2": "Wędrówki górskie",
+				"3": "Przyjazne dla rodzin",
+				"4": "Ceramika"
+			}
+		},
+		"zdenekAndHelena": {
+			"ZdenekText": "Czasem chłopak, czasem mężczyzna z sercem. Były pomocnik maszynisty, misjonarz; obecnie żyjący z efektów swojej działalności gospodarczej. Poszukiwacz radości przez całe życie, którą w moim wieku zaczynam wreszcie przeżywać.",
+			"HelenaText": "Ceramikę odkryłam, gdy miałam dwadzieścia lat. To wspaniałe rzemiosło, które przyciągnęło mnie w momencie, gdy szukałam swojego miejsca na świecie. Praca z mokrą gliną budzi moją wyobraźnię i miłość do natury."
+		},
+		"services": {
+			"accommodation": {
+				"title": "Prywatne noclegi w naturze",
+				"description": "Oferujemy do wynajęcia małe mieszkanie, które jest częścią starego wiejskiego gospodarstwa zbudowanego przez niemiecką rodzinę na przełomie XVIII i XIX wieku.",
+				"button": "Przejdź do noclegów"
+			},
+			"ceramicsWorkshop": {
+				"title": "Pracownia ceramiczna",
+				"description": "Odwiedź naszą pracownię garncarską, gdzie powstaje ceramika do domu i ogrodu. Oferujemy również możliwość tworzenia na zamówienie, według Twoich życzeń. W naszej pracowni witamy wszystkich, którzy chcieliby spróbować pracy z gliną – modelowania, toczenia na kole garncarskim i relaksacyjnej twórczości.",
+				"button": "Przejdź do pracowni ceramicznej"
+			}
+		}
+	}
+}

@@ -5,16 +5,18 @@ import InstagramIcon from '@/_components/Icons/InstagramIcon'
 import MailIcon from '@/_components/Icons/MailIcon'
 import MapPinIcon from '@/_components/Icons/MapPinIcon'
 import PhoneIcon from '@/_components/Icons/PhoneIcon'
+import { getTranslation } from '@/_i18n'
 import Link from 'next/link'
 import React from 'react'
 
-const ContactTable = () => {
+const ContactTable = async ({ lang }: { lang: string }) => {
+	const { t } = await getTranslation(lang, 'contact')
 	return (
 		<div className='py-20 flex-1 flex flex-col gap-4'>
 			<div className='flex flex-col md:flex-row gap-10'>
 				<div className='flex-1 '>
 					<h2 className='font-oswald opacity-60 text-3xl sm:text-4xl leading-tight text-golden'>
-						Kontaktní údaje
+						{t('heading1')}
 					</h2>
 					<ul className='gap-4 flex flex-col mt-8'>
 						<li className='flex items-center gap-4 group'>
@@ -70,7 +72,7 @@ const ContactTable = () => {
 					</ul>
 
 					<h2 className='mt-8 font-oswald opacity-60 text-3xl sm:text-4xl leading-tight text-golden'>
-						Sociální sítě
+						{t('heading2')}
 					</h2>
 					<ul className='gap-4 flex flex-col mt-8'>
 						<li className='flex items-center gap-4 group'>
@@ -117,10 +119,11 @@ const ContactTable = () => {
 
 				<div className='flex-1 lg:flex-[2] sm:flex sm:flex-col'>
 					<h2 className='font-oswald opacity-60 text-3xl sm:text-4xl leading-tight text-golden'>
-						Kde nás najdete
+						{t('heading3')}
 					</h2>
 					<div className='sm:flex-1 rounded-2xl bg-goldenAccent/10  overflow-hidden mt-8 h-full w-full'>
 						<iframe
+							title='Map'
 							className='min-h-96'
 							width='100%'
 							height='100%'

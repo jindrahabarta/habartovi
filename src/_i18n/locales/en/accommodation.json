@@ -1,0 +1,17 @@
+{
+	"seo": {
+		"title": "Accommodation",
+		"description": "We offer a small apartment for rent, which is part of an old rural estate built by a German family at the turn of the 18th and 19th centuries."
+	},
+
+	"title": "Accommodation",
+	"studio": {
+		"title": "Small Apartment",
+		"description": "On the first floor of our large 19th-century estate, we have prepared a small and cozy studio-style apartment for you. Its windows face west, offering a magical view of the entire valley."
+	},
+	"biggerApartment": {
+		"title": "Large Apartment",
+		"description": "The spacious attic apartment features two bedrooms—one with three beds and another with two. The living area is dominated by a wood-burning tiled stove, a large sofa, and a fully equipped kitchenette."
+	},
+	"button": "View"
+}

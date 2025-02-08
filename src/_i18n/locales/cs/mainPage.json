@@ -1,0 +1,41 @@
+{
+	"seo": {
+		"title": "Úvod | Ubytování a Keramická dílna Habartovi",
+		"description": "Vítejte na stránkách našeho Ubytování a Keramické dílny v Moravském Karlově, nedaleko Červené Vody. Lokalita nabízí mnoho sportovních příležitostí i oddychu."
+	},
+	"sections": {
+		"hero": {
+			"title": "Ubytování a Keramická dílna Habartovi",
+			"subtitle": "Přijeďte si odpočinout do soukromé ubytování nedaleko Červené Vody.",
+			"button1": "O nás",
+			"button2": "Rezervovat termín"
+		},
+		"about": {
+			"title": "O nás",
+			"subtitle": "Vítejte na našich stránkách",
+			"text": "Venkovský styl bydlení v historickém domě s keramickou dílnou, kde se můžete na chvíli stát hrnčířem.",
+			"icons": {
+				"1": "Ubytování v přírodě",
+				"2": "Horská turistika",
+				"3": "Rodinné zázemí",
+				"4": "Keramická"
+			}
+		},
+		"zdenekAndHelena": {
+			"ZdenekText": "Někdy kluk, někdy chlap se srdcem. Bývalý pomocník strojvedoucího, misionář; nyní žijící z výsledků své obchodní činnosti. Celoživotní hledač radosti, kterou již ve svých letech začínám žít.",
+			"HelenaText": "Keramiku jsem poznala, když mi bylo dvacet. Je to nádherné řemeslo, které mě k sobě přitáhlo ve chvíli, kdy jsem hledala své místo na světě. Práce s mokrou hlínou ve mě probouzí fantazii a lásku k přírodě."
+		},
+		"services": {
+			"accommodation": {
+				"title": "Soukromé ubytování v přírodě",
+				"description": "Nabízíme k pronájmu malý byt, který je součástí staré venkovské usedlosti postavené německou rodinou na přelomu 18. a 19. století",
+				"button": "Přejít na ubytování"
+			},
+			"ceramicsWorkshop": {
+				"title": "Keramická dílna",
+				"description": "Navštivte naši hrnčířskou dílnu, kde se vyrábí keramika pro dům i zahradu. Nabízíme také možnost tvorby na zakázku, podle vašeho přání. V naší dílně vítáme všechny, kteří by si rádi vyzkoušeli práci s hlínou – modelování, točení na hrnčířském kruhu a relaxační tvoření.",
+				"button": "Přejít na keramickou dílnu"
+			}
+		}
+	}
+}

@@ -1,0 +1,48 @@
+{
+	"seo": {
+		"title": "Keramická dílna",
+		"description": "Navštivte naši hrnčířskou dílnu v Moravském Karlově, nedaleko Červené Vody, kde se vyrábí keramika pro dům i zahradu. Nabízíme také možnost tvorby na zakázku."
+	},
+	"sections": {
+		"hero": {
+			"title": "Keramická dílna",
+			"subtitle": "Vyzkoušejte si práci jako keramik a nebo se prostě přijďte pokochat výrobkama.",
+			"button1": "Tvořivá setkání",
+			"button2": "O mně"
+		},
+		"about": {
+			"p1": "Keramiku jsem poznala, když mi bylo dvacet. Je to nádherné řemeslo, které mě k sobě přitáhlo ve chvíli, kdy jsem hledala své místo na světě. V malých pražských dílnách jsem se naučila pracovat na hrnčířském kruhu. Měla jsem štěstí na výborné učitele, jimž vděčím za to, co dnes umím. Práce s mokrou hlínou ve mě probouzí fantazii a lásku k přírodě.",
+			"p2": "I když je keramická hlína speciálně upravovaná pro modelování, točení i pálení - celý ten výrobní postup, kterým musí keramická nádoba projít, než-li se dostane do vašich rukou - je to stále kus země, přírodní materiál, kterému se učím rozumět a spolupracovat s ním. Je to nekonečný příběh vzájemného poznávání a zrání. Neustálé objevování nových možností, jak s tímto krásným a živým materiálem pracovat."
+		},
+		"spiral": {
+			"title": "Spirála",
+			"p1": "Jako dekorační prvek často používám meandr – spirálový tvar – symbolizující plynutí života, přírodní rytmy, energie ženského cyklu, střídání ročních dob…",
+			"p2": "Z velké části tvořím na hrnčířském kruhu nádoby určené pro každodenní užívání. Glazuji matnými glazurami nebo nechávám jejich povrch režný – bez glazury – právě ten svou strukturou nejvíce připomíná živou přírodu.",
+			"p3": "V poslední době se také nechávám inspirovat starobylou selskou keramikou, glazuji polomatnou hnědou glazurou a zdobím ji jednoduchým razítkováním."
+		},
+		"creativeMeetings": {
+			"title": "Tvořivá setkání",
+
+			"p1": "Vedle své vlastní tvorby se velmi ráda věnuji práci s lidmi. Nabízím možnost tvořivých setkání, kde si jednoduchými modelovacími technikami vyrobíte svůj vlastní výrobek anebo si za hrnčířským kruhen vyzkoušíte práci hrnčířů. Program přizpůsobuji možnostem návštěvníků - úplným začátečníkům i pokročilým.",
+
+			"p2strong": "hodina",
+			"p2": "s odborným vedením stojí",
+
+			"p3strong": "Dokončení a vypálení",
+			"p3": "jednoho výrobku o hmotnosti do 1kg stojí stojí",
+
+			"p4": "Termín setkání je nutné předem domluvit na tel. č.:",
+			"p4-2": "nebo přes email:",
+
+			"p5": "Těm, kteří jsou zdaleka, dokončené výrobky posílám, dobře zabalené a zajištěné proti rozbití.",
+
+			"p6": "Chcete-li u u nás strávit více času, můžete využít možnosti",
+			"p6strong": "ubytování v soukromí",
+			"p6-2": "ve stejném domě, kde je i dílna."
+		},
+
+		"eshop": {
+			"p1": "Nakoupit mé již hotové produkty můžete na E-shopu s keramikou"
+		}
+	}
+}

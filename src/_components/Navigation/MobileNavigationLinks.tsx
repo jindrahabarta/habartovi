@@ -23,7 +23,7 @@ const MobileNavigationLinks = ({
 	return (
 		<aside
 			id='mobileNav'
-			className={`absolute md:hidden z-40 opacity-0 top-0 right-0 w-full sm:w-2/3 h-dvh px-8 pt-32 bg-secondary flex flex-col gap-2 justify-between shadow-md border-l border-black/20 duration-300 overflow-y-auto ${
+			className={`absolute lg:hidden z-40 opacity-0 top-0 right-0 w-full sm:w-2/3 h-dvh px-8 pt-32 bg-secondary flex flex-col gap-2 justify-between shadow-md border-l border-black/20 duration-300 overflow-y-auto ${
 				isOpened
 					? 'mobileNavOpen opacity-100 translate-x-0'
 					: 'mobileNavClose opacity-0 translate-x-full'

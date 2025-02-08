@@ -1,0 +1,17 @@
+{
+	"seo": {
+		"title": "Unterkunft",
+		"description": "Wir bieten eine kleine Wohnung zur Miete an, die Teil eines alten Landguts ist, das von einer deutschen Familie an der Wende vom 18. zum 19. Jahrhundert erbaut wurde."
+	},
+
+	"title": "Unterkunft",
+	"studio": {
+		"title": "Kleines Apartment",
+		"description": "Im ersten Stock unseres großen Landguts aus dem 19. Jahrhundert haben wir für Sie ein kleines und gemütliches Studio-Apartment vorbereitet. Die Fenster sind nach Westen ausgerichtet und bieten einen zauberhaften Blick über das gesamte Tal."
+	},
+	"biggerApartment": {
+		"title": "Großes Apartment",
+		"description": "Das geräumige Dachgeschoss-Apartment verfügt über zwei Schlafzimmer – eines mit drei Betten und eines mit zwei. Das Wohnzimmer wird von einem holzbefeuerten Kachelofen, einem großen Sofa und einer voll ausgestatteten Küchenzeile dominiert."
+	},
+	"button": "Anzeigen"
+}

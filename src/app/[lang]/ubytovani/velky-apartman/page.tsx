@@ -10,7 +10,7 @@ import BedIcon from '@/_components/Icons/BedIcon'
 import TVIcon from '@/_components/Icons/TVIcon'
 import BicycleIcon from '@/_components/Icons/BicycleIcon'
 import ParkingIcon from '@/_components/Icons/ParkingIcon'
-import { Metadata, NextPage } from 'next'
+import { NextPage } from 'next'
 
 import image1 from '@/../public/images/velky-apartman/1.jpg'
 import image2 from '@/../public/images/velky-apartman/2.jpg'
@@ -22,64 +22,22 @@ import image7 from '@/../public/images/velky-apartman/7.jpg'
 import image8 from '@/../public/images/velky-apartman/8.jpg'
 import image9 from '@/../public/images/velky-apartman/9.jpg'
 import image10 from '@/../public/images/velky-apartman/10.jpg'
+import { getTranslation } from '@/_i18n'
 
-export const metadata: Metadata = {
-	title: 'Velký apartmán',
-	description:
-		'Velký podkrovní byt disponuje dvěmi ložnicemi, třílůžkovou a dvoulůžkovou. Prostorné obývací místnosti dominují kachlová kamna na dřevo.',
+export const generateMetadata = async ({
+	params,
+}: {
+	params: { lang: string }
+}) => {
+	const { lang } = params
+
+	const { t } = await getTranslation(lang, 'biggerApartment')
+
+	return {
+		title: t('seo.title'),
+		description: t('seo.description'),
+	}
 }
-
-const features = [
-	{
-		text: '30 m2',
-		icon: <SizeIcon className='text-golden/80 w-6'></SizeIcon>,
-	},
-	{
-		text: '7 Lůžek, 2 přistýlky',
-		icon: <BedIcon className='text-golden/80 w-6'></BedIcon>,
-	},
-	{
-		text: 'WiFi',
-		icon: <WifiIcon className='text-golden/80 w-6'></WifiIcon>,
-	},
-	{
-		text: 'Televize',
-		icon: <TVIcon className='text-golden/80 w-6'></TVIcon>,
-	},
-	{
-		text: 'Obytná kuchyň',
-		icon: (
-			<div className='text-golden/80 w-6 h-6 rounded-2xl bg-red-400'></div>
-		),
-	},
-	{
-		text: 'Parkování',
-		icon: <ParkingIcon className='text-golden/80 w-6'></ParkingIcon>,
-	},
-	{
-		text: 'Kolárna/lyžárna',
-		icon: <BicycleIcon className='text-golden/80 w-6'></BicycleIcon>,
-	},
-	{
-		text: 'Nekuřácký prostor',
-		icon: <SmokingIcon className='text-golden/80 w-6'></SmokingIcon>,
-	},
-]
-
-const prices = [
-	{
-		price: 450,
-		text: 'za osobu a noc.',
-	},
-	{
-		price: 50,
-		text: 'za jednoho psa a noc.',
-	},
-	{
-		price: 20,
-		text: 'Rekreační poplatek v obci Červená Voda na jednu noc pro osobu starší 18 let.',
-	},
-]
 
 const images = [
 	image1,
@@ -98,7 +56,62 @@ interface IParams {
 	lang: string
 }
 
-const VelkyByt: NextPage<{ params: IParams }> = ({ params: { lang } }) => {
+const VelkyByt: NextPage<{ params: IParams }> = async ({
+	params: { lang },
+}) => {
+	const { t } = await getTranslation(lang, 'biggerApartment')
+
+	const features = [
+		{
+			text: '30 m2',
+			icon: <SizeIcon className='text-golden/80 w-6'></SizeIcon>,
+		},
+		{
+			text: t('features.f3'),
+			icon: <BedIcon className='text-golden/80 w-6'></BedIcon>,
+		},
+		{
+			text: 'WiFi',
+			icon: <WifiIcon className='text-golden/80 w-6'></WifiIcon>,
+		},
+		{
+			text: t('features.f4'),
+			icon: <TVIcon className='text-golden/80 w-6'></TVIcon>,
+		},
+		{
+			text: t('features.f1'),
+			icon: (
+				<div className='text-golden/80 w-6 h-6 rounded-2xl bg-red-400'></div>
+			),
+		},
+		{
+			text: t('features.f5'),
+			icon: <ParkingIcon className='text-golden/80 w-6'></ParkingIcon>,
+		},
+		{
+			text: t('features.f2'),
+			icon: <BicycleIcon className='text-golden/80 w-6'></BicycleIcon>,
+		},
+		{
+			text: t('features.f6'),
+			icon: <SmokingIcon className='text-golden/80 w-6'></SmokingIcon>,
+		},
+	]
+
+	const prices = [
+		{
+			price: 450,
+			text: t('pricelist.p1'),
+		},
+		{
+			price: 50,
+			text: t('pricelist.p2'),
+		},
+		{
+			price: 20,
+			text: t('pricelist.p3'),
+		},
+	]
 	return (
 		<div className='pt-14'>
 			<Carousel images={images}></Carousel>
@@ -106,68 +119,40 @@ const VelkyByt: NextPage<{ params: IParams }> = ({ params: { lang } }) => {
 			<section className='container py-10 flex flex-col xl:flex-row gap-10'>
 				<div className='flex-[3] relative '>
 					<h1 className='font-oswald opacity-60  md:text-[6rem] leading-tight text-golden'>
-						Velký apartmán
+						{t('title')}
 					</h1>
 
-					<p className='mt-4'>
-						Velký podkrovní byt disponuje dvěmi ložnicemi,
-						třílůžkovou a dvoulůžkovou. Prostorné obývací místnosti
-						dominují kachlová kamna na dřevo, velká pohovka (2
-						přistýlky) a nachází se zde i televize se satelitním
-						příjmem. Kompletně vybavený kuchyňský kout s varným
-						ostrovem, pečící troubou, myčkou na nádobí a četnými
-						úložnými prostory nabízí dostatek místa pro společné
-						vaření. Dalším vybavením kuchyně je rychlovarná konvice,
-						sklokeramická varná deska, lednice s mrazákem, varné
-						nádobí a jídelní servis z naší keramické dílny. Na
-						kuchyňský kout navazuje velký jídelní stůl s rohovou
-						lavicí a židlemi.
-					</p>
+					<p className='mt-4'>{t('p1')}</p>
 
-					<p className='mt-4'>
-						Koupelna je vybavená vestavným umyvadlem a vanou.
-						Toaleta je oddělená.
-					</p>
-					<p className='mt-4'>
-						Dvě ložnice na sebe navazují. V první je manželská
-						postel a samostatné lůžko, ve druhé dvě samostatné
-						postele, které lze také sestavit na další manželskou
-						postel. Obě ložnice nabízí dostatek úložných prostor.
-					</p>
-					<p className='mt-4'>
-						Dětská postýlka je k dispozici na požádání.
-					</p>
-					<p className='mt-4'>
-						Celý byt je zařízený dřevěným nábytkem v jednoduchém
-						venkovském stylu. Většina oken je orientovaná na
-						jihovýchod, s výhledem na místní kostel a říčku Březnou,
-						protékající středem údolí.
-					</p>
+					<p className='mt-4'>{t('p2')}</p>
+					<p className='mt-4'>{t('p3')}</p>
+					<p className='mt-4'>{t('p4')}</p>
+					<p className='mt-4'>{t('p5')}</p>
 
 					<div className='w-full h-[1px] bg-golden/60 mt-8 mb-4'></div>
 
-					<Features features={features}></Features>
+					<Features
+						title={t('featuresTitle')}
+						features={features}
+					></Features>
 
 					<div className='w-full h-[1px] bg-golden/60 mt-8 mb-4'></div>
 
-					<Pricelist prices={prices}></Pricelist>
+					<Pricelist
+						title={t('pricelistTitle')}
+						bottomText={t('pricelistBottom')}
+						prices={prices}
+						lang={lang}
+					></Pricelist>
 
 					<div className='w-full h-[1px] bg-golden/60 mt-8 mb-4'></div>
 					<h2 className='font-oswald opacity-60 text-4xl leading-tight text-golden'>
-						Rezervace
+						{t('rezervationTitle')}
 					</h2>
 
-					<p className='mt-5'>
-						Na závaznou objednávku vystavíme fakturu převodem.
-					</p>
-					<p className='mt-2'>
-						Nebudete-li moci nastoupit na ubytování z Vaší příčiny,
-						vrátíme 70% fakturované částky zpět.
-					</p>
-					<p className='mt-2'>
-						Při zrušení pobytu z nařízení státu vracíme celou
-						fakturovanou částku.
-					</p>
+					<p className='mt-5'>{t('rezervationText.p1')}</p>
+					<p className='mt-2'>{t('rezervationText.p2')}</p>
+					<p className='mt-2'>{t('rezervationText.p3')}</p>
 				</div>
 
 				<div className='flex-[2] sticky top-10 h-full'>

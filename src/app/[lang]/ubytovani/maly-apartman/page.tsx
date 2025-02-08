@@ -9,7 +9,7 @@ import WifiIcon from '@/_components/Icons/WifiIcon'
 import BedIcon from '@/_components/Icons/BedIcon'
 import BicycleIcon from '@/_components/Icons/BicycleIcon'
 import ParkingIcon from '@/_components/Icons/ParkingIcon'
-import { Metadata, NextPage } from 'next'
+import { NextPage } from 'next'
 
 import image1 from '@/../public/images/maly-apartman/1.jpg'
 import image2 from '@/../public/images/maly-apartman/2.jpg'
@@ -20,67 +20,22 @@ import image6 from '@/../public/images/maly-apartman/6.jpg'
 import image7 from '@/../public/images/maly-apartman/7.jpg'
 import image8 from '@/../public/images/maly-apartman/8.jpg'
 import image9 from '@/../public/images/maly-apartman/9.jpg'
+import { getTranslation } from '@/_i18n'
 
-export const metadata: Metadata = {
-	title: 'Malý apartmán',
-	description:
-		'V prvním podlaží naší velké usedlosti z 19. století je pro vás připravený malý a útulný byt řešený formou studia.',
+export const generateMetadata = async ({
+	params,
+}: {
+	params: { lang: string }
+}) => {
+	const { lang } = params
+
+	const { t } = await getTranslation(lang, 'studio')
+
+	return {
+		title: t('seo.title'),
+		description: t('seo.description'),
+	}
 }
-
-const features = [
-	{
-		text: '30 m2',
-		icon: <SizeIcon className='text-golden/80 w-6'></SizeIcon>,
-	},
-	{
-		text: '3 Lůžka, 2 přistýlky',
-		icon: <BedIcon className='text-golden/80 w-6'></BedIcon>,
-	},
-	{
-		text: 'WiFi',
-		icon: <WifiIcon className='text-golden/80 w-6'></WifiIcon>,
-	},
-	{
-		text: 'Kuchyňský kout',
-		icon: (
-			<div className='text-golden/80 w-6 h-6 rounded-2xl bg-red-400'></div>
-		),
-	},
-	{
-		text: 'Samostatná koupelna',
-		icon: (
-			<div className='text-golden/80 w-6 h-6 rounded-2xl bg-red-400'></div>
-		),
-	},
-	{
-		text: 'Parkování',
-		icon: <ParkingIcon className='text-golden/80 w-6'></ParkingIcon>,
-	},
-	{
-		text: 'Kolárna/lyžárna',
-		icon: <BicycleIcon className='text-golden/80 w-6'></BicycleIcon>,
-	},
-	{
-		text: 'Nekuřácký pokoj',
-		icon: <SmokingIcon className='text-golden/80 w-6'></SmokingIcon>,
-	},
-]
-
-const prices = [
-	{
-		price: 350,
-		text: 'za osobu a noc.',
-	},
-
-	{
-		price: 50,
-		text: 'za jednoho psa a noc.',
-	},
-	{
-		price: 20,
-		text: 'Rekreační poplatek v obci Červená Voda na jednu noc pro osobu starší 18 let.',
-	},
-]
 
 const images = [
 	image1,
@@ -98,7 +53,63 @@ interface IParams {
 	lang: string
 }
 
-const MalyByt: NextPage<{ params: IParams }> = ({ params: { lang } }) => {
+const MalyByt: NextPage<{ params: IParams }> = async ({ params: { lang } }) => {
+	const { t } = await getTranslation(lang, 'studio')
+
+	const features = [
+		{
+			text: '30 m2',
+			icon: <SizeIcon className='text-golden/80 w-6'></SizeIcon>,
+		},
+		{
+			text: t('features.f3'),
+			icon: <BedIcon className='text-golden/80 w-6'></BedIcon>,
+		},
+		{
+			text: 'WiFi',
+			icon: <WifiIcon className='text-golden/80 w-6'></WifiIcon>,
+		},
+		{
+			text: t('features.f4'),
+			icon: (
+				<div className='text-golden/80 w-6 h-6 rounded-2xl bg-red-400'></div>
+			),
+		},
+		{
+			text: t('features.f1'),
+			icon: (
+				<div className='text-golden/80 w-6 h-6 rounded-2xl bg-red-400'></div>
+			),
+		},
+		{
+			text: t('features.f5'),
+			icon: <ParkingIcon className='text-golden/80 w-6'></ParkingIcon>,
+		},
+		{
+			text: t('features.f2'),
+			icon: <BicycleIcon className='text-golden/80 w-6'></BicycleIcon>,
+		},
+		{
+			text: t('features.f6'),
+			icon: <SmokingIcon className='text-golden/80 w-6'></SmokingIcon>,
+		},
+	]
+	const prices = [
+		{
+			price: 350,
+			text: t('pricelist.p1'),
+		},
+
+		{
+			price: 50,
+			text: t('pricelist.p2'),
+		},
+		{
+			price: 20,
+			text: t('pricelist.p3'),
+		},
+	]
+
 	return (
 		<div className='pt-14'>
 			<Carousel images={images}></Carousel>
@@ -106,54 +117,38 @@ const MalyByt: NextPage<{ params: IParams }> = ({ params: { lang } }) => {
 			<section className='container py-10 flex flex-col xl:flex-row gap-10'>
 				<div className='flex-[3] relative '>
 					<h1 className='font-oswald opacity-60  md:text-[6rem] leading-tight text-golden'>
-						Malý apartmán
+						{t('title')}
 					</h1>
 
-					<p className='mt-4'>
-						V prvním podlaží naší velké usedlosti z 19. století je
-						pro vás připravený malý a útulný byt řešený formou
-						studia. Jeho okna jsou orientovaná na západ a poskytují
-						kouzelný výhled na celé údolí.
-					</p>
+					<p className='mt-4'>{t('p1')}</p>
 
-					<p className='mt-4'>
-						Prostorná místnost zařízená v jednoduchém venkovském
-						stylu vám nabízí jednu manželskou postel, jedno
-						samostatné lůžko a pohovku, kterou lze rozložit (2
-						přistýlky).
-					</p>
-					<p className='mt-4'>
-						Kuchyňský kout je vybavený ledničkou, dvouplotýnkovým
-						el. vařičem, rychlovarnou konvicí, mikrovlnnou troubou,
-						pečící remoskou a varným nádobím. K dispozici máte také
-						základní koření. Dále tu jsou jídelní kout, skleník a
-						úložné prostory.
-					</p>
+					<p className='mt-4'>{t('p2')}</p>
+					<p className='mt-4'>{t('p3')}</p>
 
 					<div className='w-full h-[1px] bg-golden/60 mt-8 mb-4'></div>
 
-					<Features features={features}></Features>
+					<Features
+						title={t('featuresTitle')}
+						features={features}
+					></Features>
 
 					<div className='w-full h-[1px] bg-golden/60 mt-8 mb-4'></div>
 
-					<Pricelist prices={prices}></Pricelist>
+					<Pricelist
+						title={t('pricelistTitle')}
+						prices={prices}
+						bottomText={t('pricelistBottom')}
+						lang={lang}
+					></Pricelist>
 
 					<div className='w-full h-[1px] bg-golden/60 mt-8 mb-4'></div>
 					<h2 className='font-oswald opacity-60 text-4xl leading-tight text-golden'>
-						Rezervace
+						{t('rezervationTitle')}
 					</h2>
 
-					<p className='mt-5'>
-						Na závaznou objednávku vystavíme fakturu převodem.
-					</p>
-					<p className='mt-2'>
-						Nebudete-li moci nastoupit na ubytování z Vaší příčiny,
-						vrátíme 70% fakturované částky zpět.
-					</p>
-					<p className='mt-2'>
-						Při zrušení pobytu z nařízení státu vracíme celou
-						fakturovanou částku.
-					</p>
+					<p className='mt-5'>{t('rezervationText.p1')}</p>
+					<p className='mt-2'>{t('rezervationText.p2')}</p>
+					<p className='mt-2'>{t('rezervationText.p3')}</p>
 				</div>
 
 				<div className='flex-[2] sticky top-10 h-full'>

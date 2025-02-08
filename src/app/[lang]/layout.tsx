@@ -6,7 +6,7 @@ import './../globals.css'
 import Navigation from '@/_components/Navigation/Navigation'
 import Footer from '@/_components/Footer/Footer'
 import FooterEasterEgg from '@/_components/Footer/FooterEasterEgg'
-import { useTranslation } from '@/_i18n'
+import { getTranslation } from '@/_i18n'
 
 const openSans = Open_Sans({
 	subsets: ['latin'],
@@ -19,13 +19,22 @@ const oswald = Oswald({
 	variable: '--font-oswald',
 })
 
-export const metadata: Metadata = {
-	title: {
-		template: '%s | Ubytování a Keramická dílna Habartovi',
-		default: 'Úvod',
-	},
-	description:
-		'Vítejte na stránkách našeho Ubytování a Keramické dílny v Moravském Karlově, vesničce nedaleko Červené Vody.',
+export const generateMetadata = async ({
+	params,
+}: {
+	params: { lang: string }
+}) => {
+	const { lang } = params
+
+	const { t } = await getTranslation(lang, 'layout')
+
+	return {
+		title: {
+			template: `%s | ${t('seo.template')}`,
+			default: 'Úvod',
+		},
+		description: t('seo.description'),
+	}
 }
 
 export async function generateStaticParams() {
@@ -39,7 +48,7 @@ export default async function RootLayout({
 	children: React.ReactNode
 	params: { lang: string }
 }>) {
-	const { t } = await useTranslation(lang, 'navigation')
+	const { t } = await getTranslation(lang, 'navigation')
 
 	const links = [
 		{
@@ -101,7 +110,7 @@ export default async function RootLayout({
 				</main>
 
 				<FooterEasterEgg></FooterEasterEgg>
-				<Footer></Footer>
+				<Footer lang={lang}></Footer>
 			</body>
 		</html>
 	)

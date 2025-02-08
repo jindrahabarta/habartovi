@@ -3,8 +3,11 @@ import Image from 'next/image'
 
 import TvorivaSetkaniImg from '@/../public/images/Keramická dílna/TvorivaSetkani.webp'
 import Link from 'next/link'
+import { getTranslation } from '@/_i18n'
 
-const TvorivaSetkani = () => {
+const TvorivaSetkani = async ({ lang }: { lang: string }) => {
+	const { t } = await getTranslation(lang, 'ceramicsWorkshop')
+
 	return (
 		<section
 			id='tvoriva-setkani'
@@ -13,7 +16,7 @@ const TvorivaSetkani = () => {
 			<div className='flex-1'>
 				<Image
 					src={TvorivaSetkaniImg}
-					alt={'Tvořivá setkání v Moravském Karlově'}
+					alt={t('sections.creativeMeetings.title')}
 					width={800}
 					height={800}
 					className='rounded-2xl aspect-square md:aspect-[4/5] object-cover'
@@ -22,37 +25,31 @@ const TvorivaSetkani = () => {
 
 			<div className='flex-[2] relative'>
 				<h2 className='font-oswald text-[3rem] leading-none md:text-[6rem] text-golden md:text-[#f1d9a8]'>
-					Tvořivá setkání
+					{t('sections.creativeMeetings.title')}
 				</h2>
-				<p className='mt-10'>
-					Vedle své vlastní tvorby se velmi ráda věnuji práci s lidmi.
-					Nabízím možnost tvořivých setkání, kde si jednoduchými
-					modelovacími technikami vyrobíte svůj vlastní výrobek anebo
-					si za hrnčířským kruhen vyzkoušíte práci hrnčířů. Program
-					přizpůsobuji možnostem návštěvníků - úplným začátečníkům i
-					pokročilým.
-				</p>
+				<p className='mt-10'>{t('sections.creativeMeetings.p1')}</p>
 
 				<p className='mt-10'>
-					<strong>1 hodina</strong> s odborným vedením stojí
-					<strong> 400,-Kč</strong>
+					<strong>1 {t('sections.creativeMeetings.p2strong')}</strong>{' '}
+					{t('sections.creativeMeetings.p2')}
+					<strong> 400{lang !== 'cs' ? ' CZK' : ',-Kč'}</strong>
 				</p>
 
 				<p className='mt-4'>
-					<strong>Dokončení a vypálení</strong> jednoho výrobku o
-					hmotnosti do 1kg stojí stojí
-					<strong> 90,-Kč</strong>
+					<strong>{t('sections.creativeMeetings.p3strong')}</strong>{' '}
+					{t('sections.creativeMeetings.p3')}
+					<strong> 90{lang !== 'cs' ? ' CZK' : ',-Kč'}</strong>
 				</p>
 
 				<p className='mt-4'>
-					Termín setkání je nutné předem domluvit na tel. č.:{' '}
+					{t('sections.creativeMeetings.p4')}{' '}
 					<Link
 						className='text-black hover:text-secondary'
 						href={'tel:+420773206793'}
 					>
 						<strong>773 206 793</strong>
 					</Link>
-					, nebo přes email:{' '}
+					, {t('sections.creativeMeetings.p4-2')}{' '}
 					<Link
 						className='text-black hover:text-secondary'
 						href={'mailto:habartovi@email.cz'}
@@ -61,20 +58,19 @@ const TvorivaSetkani = () => {
 					</Link>
 				</p>
 
-				<p className='mt-4'>
-					Těm, kteří jsou zdaleka, dokončené výrobky posílám, dobře
-					zabalené a zajištěné proti rozbití.
-				</p>
+				<p className='mt-4'>{t('sections.creativeMeetings.p5')}</p>
 
 				<p className='mt-4'>
-					Chcete-li u u nás strávit více času, můžete využít možnosti{' '}
+					{t('sections.creativeMeetings.p6')}{' '}
 					<Link
 						className='text-black hover:text-secondary'
 						href={'/ubytovani'}
 					>
-						<strong>ubytování v soukromí</strong>
+						<strong>
+							{t('sections.creativeMeetings.p6strong')}
+						</strong>
 					</Link>{' '}
-					ve stejném domě, kde je i dílna.
+					{t('sections.creativeMeetings.p6-2')}
 				</p>
 			</div>
 		</section>

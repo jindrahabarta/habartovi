@@ -9,28 +9,45 @@ import React from 'react'
 
 import './style.css'
 import OrderForm from '../_components/Sections/OrderForm/OrderForm'
+import { getTranslation } from '@/_i18n'
 
-export const metadata: Metadata = {
-	title: 'Rezervace',
-	description:
-		'Zarezervujte si svůj termín v jednom za našich apartmánů v Moravském Karlově. Spolu s ubytováním nabízíme i keramickou dílnu, kde si můžete vyzkoušet řemeslo.',
+// export const metadata: Metadata = {
+// 	title: 'Rezervace',
+// 	description:
+// 		'Zarezervujte si svůj termín v jednom za našich apartmánů v Moravském Karlově. Spolu s ubytováním nabízíme i keramickou dílnu, kde si můžete vyzkoušet řemeslo.',
+// }
+
+export const generateMetadata = async ({
+	params,
+}: {
+	params: { lang: string }
+}) => {
+	const { lang } = params
+
+	const { t } = await getTranslation(lang, 'reservation')
+
+	return {
+		title: t('seo.title'),
+		description: t('seo.description'),
+	}
 }
 
 interface IParams {
 	lang: string
 }
 
-const Rezervace: NextPage<{ params: IParams }> = ({ params: { lang } }) => {
+const Rezervace: NextPage<{ params: IParams }> = async ({
+	params: { lang },
+}) => {
+	const { t } = await getTranslation(lang, 'reservation')
+
 	return (
 		<div className='pt-32'>
 			<section className='container'>
 				<h1 className='font-oswald text-center md:text-[6rem] leading-tight text-golden/60'>
-					Rezervace
+					{t('title')}
 				</h1>
-				<p className='text-center'>
-					Zarezervovat termín si můžete přes rezervační formulář, my
-					však preferujeme domluvu přes email, či telefon.
-				</p>
+				<p className='text-center mt-2'>{t('text')}</p>
 
 				<div className='flex flex-col md:flex-row gap-10 mt-10 md:mt-0'>
 					<div className='flex-1 flex flex-col gap-4'>
@@ -38,7 +55,7 @@ const Rezervace: NextPage<{ params: IParams }> = ({ params: { lang } }) => {
 
 						<div className='border-dotted border-2 rounded-2xl border-secondary p-4'>
 							<h2 className='font-oswald opacity-60 text-3xl sm:text-4xl leading-tight text-golden'>
-								Kontakt
+								{t('contactTitle')}
 							</h2>
 
 							<ul className='flex flex-col gap-4 mt-8'>
@@ -96,6 +113,7 @@ const Rezervace: NextPage<{ params: IParams }> = ({ params: { lang } }) => {
 
 							<div className='rounded-2xl bg-goldenAccent/10 overflow-hidden h-96 mt-8 w-full'>
 								<iframe
+									title='Map'
 									width='100%'
 									height='100%'
 									src='https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Moravsk%C3%BD%20Karlov%20103+(Ubytov%C3%A1n%C3%AD%20a%20Keramick%C3%A1%20d%C3%ADlna%20Habartovi)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'
@@ -105,7 +123,7 @@ const Rezervace: NextPage<{ params: IParams }> = ({ params: { lang } }) => {
 					</div>
 					<div className='flex-1 mt-10'>
 						<h2 className='font-oswald opacity-60 text-3xl sm:text-4xl leading-tight text-golden'>
-							Rezervační formulář
+							{t('formTitle')}
 						</h2>
 						<OrderForm lang={lang} />
 					</div>

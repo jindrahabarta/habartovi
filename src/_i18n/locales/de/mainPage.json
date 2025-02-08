@@ -1,0 +1,41 @@
+{
+	"seo": {
+		"title": "Startseite | Unterkunft und Keramikwerkstatt Habartovi",
+		"description": "Willkommen auf der Website unserer Unterkunft und Keramikwerkstatt in Moravský Karlov, nahe Červená Voda. Die Umgebung bietet viele Sportmöglichkeiten und Erholung."
+	},
+	"sections": {
+		"hero": {
+			"title": "Unterkunft und Keramikwerkstatt Habartovi",
+			"subtitle": "Kommen Sie und entspannen Sie sich in einer privaten Unterkunft nahe Červená Voda.",
+			"button1": "Über uns",
+			"button2": "Termin buchen"
+		},
+		"about": {
+			"title": "Über uns",
+			"subtitle": "Willkommen auf unserer Website",
+			"text": "Ländlicher Wohnstil in einem historischen Haus mit einer Keramikwerkstatt, in der Sie sich für eine Weile als Töpfer versuchen können.",
+			"icons": {
+				"1": "Unterkunft in der Natur",
+				"2": "Bergwandern",
+				"3": "Familienfreundlich",
+				"4": "Keramik"
+			}
+		},
+		"zdenekAndHelena": {
+			"ZdenekText": "Manchmal ein Junge, manchmal ein Mann mit Herz. Ehemaliger Lokomotivführer-Assistent, Missionar; heute lebt er von den Ergebnissen seiner geschäftlichen Tätigkeit. Ein lebenslanger Suchender nach Freude, die ich in meinem Alter nun endlich beginne zu leben.",
+			"HelenaText": "Ich habe die Keramik mit zwanzig Jahren entdeckt. Es ist ein wunderschönes Handwerk, das mich in einer Phase meines Lebens angezogen hat, als ich meinen Platz in der Welt suchte. Die Arbeit mit nassem Ton weckt meine Fantasie und meine Liebe zur Natur."
+		},
+		"services": {
+			"accommodation": {
+				"title": "Private Unterkunft in der Natur",
+				"description": "Wir vermieten eine kleine Wohnung, die Teil eines alten Landhauses ist, das von einer deutschen Familie Ende des 18. und Anfang des 19. Jahrhunderts erbaut wurde.",
+				"button": "Zur Unterkunft"
+			},
+			"ceramicsWorkshop": {
+				"title": "Keramikwerkstatt",
+				"description": "Besuchen Sie unsere Töpferwerkstatt, in der Keramik für Haus und Garten hergestellt wird. Wir bieten auch Auftragsarbeiten nach Ihren Wünschen an. In unserer Werkstatt sind alle willkommen, die das Arbeiten mit Ton ausprobieren möchten – Modellieren, Drehen auf der Töpferscheibe und entspannendes Gestalten.",
+				"button": "Zur Keramikwerkstatt"
+			}
+		}
+	}
+}

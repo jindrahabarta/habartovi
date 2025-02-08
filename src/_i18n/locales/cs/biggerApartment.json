@@ -1,0 +1,41 @@
+{
+	"seo": {
+		"title": "Velký apartmán",
+		"description": "Velký podkrovní byt disponuje dvěmi ložnicemi, třílůžkovou a dvoulůžkovou. Prostorné obývací místnosti dominují kachlová kamna na dřevo."
+	},
+
+	"title": "Malý apartmán",
+	"p1": "Velký podkrovní byt disponuje dvěmi ložnicemi, třílůžkovou a dvoulůžkovou. Prostorné obývací místnosti dominují kachlová kamna na dřevo, velká pohovka (2 přistýlky) a nachází se zde i televize se satelitním příjmem. Kompletně vybavený kuchyňský kout s varným ostrovem, pečící troubou, myčkou na nádobí a četnými úložnými prostory nabízí dostatek místa pro společné vaření. Dalším vybavením kuchyně je rychlovarná konvice, sklokeramická varná deska, lednice s mrazákem, varné nádobí a jídelní servis z naší keramické dílny. Na kuchyňský kout navazuje velký jídelní stůl s rohovou lavicí a židlemi.",
+	"p2": "Koupelna je vybavená vestavným umyvadlem a vanou. Toaleta je oddělená.",
+	"p3": "Dvě ložnice na sebe navazují. V první je manželská postel a samostatné lůžko, ve druhé dvě samostatné postele, které lze také sestavit na další manželskou postel. Obě ložnice nabízí dostatek úložných prostor.",
+	"p4": "Dětská postýlka je k dispozici na požádání.",
+	"p5": "Celý byt je zařízený dřevěným nábytkem v jednoduchém venkovském stylu. Většina oken je orientovaná na jihovýchod, s výhledem na místní kostel a říčku Březnou, protékající středem údolí.",
+
+	"featuresTitle": "Služby",
+
+	"features": {
+		"f1": "Obytná kuchyň",
+		"f2": "Kolárna/lyžárna",
+		"f3": "7 Lůžek, 2 přistýlky",
+		"f4": "Televize",
+		"f5": "Parkování",
+		"f6": "Nekuřácký prostor"
+	},
+
+	"pricelistTitle": "Ceník",
+	"pricelistBottom": "Ceny platí celoročně.",
+
+	"pricelist": {
+		"p1": "za osobu a noc.",
+		"p2": "za jednoho psa a noc.",
+		"p3": "Rekreační poplatek v obci Červená Voda na jednu noc pro osobu starší 18 let."
+	},
+
+	"rezervationTitle": "Rezervace",
+
+	"rezervationText": {
+		"p1": "Na závaznou objednávku vystavíme fakturu převodem.",
+		"p2": "Nebudete-li moci nastoupit na ubytování z Vaší příčiny, vrátíme 70% fakturované částky zpět.",
+		"p3": "Při zrušení pobytu z nařízení státu vracíme celou fakturovanou částku."
+	}
+}

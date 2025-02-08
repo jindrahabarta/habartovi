@@ -27,6 +27,7 @@ const LanguageSelector = () => {
 				<div className='relative inline-block text-left'>
 					<div>
 						<button
+							aria-label='Tlačítko výběru jazyku'
 							onClick={() => setIsOpen(!isOpen)}
 							type='button'
 							className='inline-flex gap-1 items-center justify-center w-full rounded-md  px-2 py-2  text-sm font-medium text-gray-700  focus:outline-none'

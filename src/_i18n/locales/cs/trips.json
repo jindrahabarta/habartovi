@@ -1,0 +1,42 @@
+{
+	"seo": {
+		"title": "Výlety do okolí"
+	},
+
+	"title": "Výlety do okolí",
+
+	"bestPlaces": {
+		"title": "Významná místa"
+	},
+
+	"tips": {
+		"title": "Tipy na zařízení",
+
+		"restaurants": {
+			"title": "Restaurace",
+			"rezidence": "Rezidence"
+		},
+
+		"cafe": {
+			"title": "Kavárny",
+
+			"kavarna": "Kavárna"
+		},
+
+		"sport": {
+			"title": "Sport",
+
+			"resort": "Horský resort",
+			"aqua": "Aquacentrum",
+			"koupaliste": "Letní koupaliště",
+			"termal": "Termály"
+		}
+	},
+
+	"dolniMorava": {
+		"p1": "Horský resort Dolní Morava nabízí, spoustu atrakcí pro děti i dospělé. Můžete zde navštívit Stezku v oblacích, která je přistupná jak v létě tak i v zimě, stejně tak Mamutí horskou bobovou dráhu, nejdelší v Česku. V zimě si zalyžujete na 8 sjezdovkách různé obtížnosti, milovníci snowboardu si mohou užít Fun Trail, Cross Trail či Jump Trail, samozřejmostí je i dětský skipark Amálka.",
+		"p2-1": "Najít zde také můžete nalézt jedinečné stavby jako",
+		"p2-2": "nebo",
+		"p2-3": "Stezku v oblacích"
+	}
+}

@@ -2,13 +2,19 @@ import React from 'react'
 
 const Pricelist = ({
 	prices,
+	title,
+	bottomText,
+	lang,
 }: {
 	prices: { price: number; text: string }[]
+	title: string
+	bottomText: string
+	lang: string
 }) => {
 	return (
 		<>
 			<h2 className='font-oswald opacity-60 text-4xl leading-tight text-golden'>
-				Ceník
+				{title}
 			</h2>
 
 			<div className='mt-5 p-8 bg-golden/30 rounded-lg border-black/15 border'>
@@ -16,7 +22,8 @@ const Pricelist = ({
 					{prices.map((price, i) => (
 						<li key={i} className=''>
 							<span className='font-oswald font-semibold text-lg  block'>
-								{price.price},- Kč
+								{price.price}
+								{lang !== 'cs' ? ' CZK' : ',- Kč'}
 							</span>
 							<span className='text-base sm:text-lg'>
 								{price.text}
@@ -25,7 +32,7 @@ const Pricelist = ({
 					))}
 				</ul>
 
-				<p className='mt-4 text-base'>*Ceny platí celoročně.</p>
+				<p className='mt-4 text-base'>*{bottomText}</p>
 			</div>
 		</>
 	)

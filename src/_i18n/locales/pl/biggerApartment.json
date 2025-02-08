@@ -1,0 +1,27 @@
+{
+	"seo": {
+		"title": "Duży apartament",
+		"description": "Przestronny apartament na poddaszu składa się z dwóch sypialni – trzyosobowej i dwuosobowej. W salonie dominuje tradycyjny piec kaflowy opalany drewnem."
+	},
+
+	"title": "Duży apartament",
+	"p1": "Przestronny apartament na poddaszu składa się z dwóch sypialni – trzyosobowej i dwuosobowej. W salonie dominuje tradycyjny piec kaflowy opalany drewnem, duża sofa (2 dodatkowe łóżka) oraz telewizor z odbiorem satelitarnym. W pełni wyposażony aneks kuchenny z wyspą kuchenną, piekarnikiem, zmywarką do naczyń i dużą ilością miejsca do przechowywania zapewnia komfortowe warunki do wspólnego gotowania. Dodatkowe wyposażenie kuchni obejmuje czajnik, płytę ceramiczną, lodówkę z zamrażarką, naczynia do gotowania oraz zastawę stołową z naszej pracowni ceramicznej. Do kuchni przylega duży stół jadalny z narożną ławką i krzesłami.",
+	"p2": "Łazienka wyposażona jest w zabudowaną umywalkę i wannę. Toaleta jest oddzielna.",
+	"p3": "Obie sypialnie są połączone. W pierwszej znajduje się łóżko małżeńskie i jedno łóżko pojedyncze, w drugiej dwa łóżka pojedyncze, które można połączyć w kolejne łóżko małżeńskie. Obie sypialnie oferują dużo miejsca do przechowywania.",
+	"p4": "Łóżeczko dziecięce dostępne na życzenie.",
+	"p5": "Cały apartament urządzony jest w prostym, rustykalnym stylu z drewnianymi meblami. Większość okien wychodzi na południowy wschód, oferując widok na lokalny kościół i rzekę Březná, płynącą przez dolinę.",
+
+	"featuresTitle": "Udogodnienia",
+
+	"features": {
+		"f1": "Kuchnia otwarta",
+		"f2": "Przechowalnia rowerów/nart",
+		"f3": "7 łóżek, 2 dodatkowe łóżka",
+		"f4": "Telewizor",
+		"f5": "Parking",
+		"f6": "Strefa dla niepalących"
+	},
+
+	"pricelistTitle": "Cennik",
+	"pricelistBottom": "Ceny obowiązują przez cały rok."
+}

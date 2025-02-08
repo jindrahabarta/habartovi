@@ -1,0 +1,39 @@
+{
+	"seo": {
+		"title": "Malý apartmán",
+		"description": "V prvním podlaží naší velké usedlosti z 19. století je pro vás připravený malý a útulný byt řešený formou studia."
+	},
+
+	"title": "Malý apartmán",
+	"p1": "V prvním podlaží naší velké usedlosti z 19. století je pro vás připravený malý a útulný byt řešený formou studia. Jeho okna jsou orientovaná na západ a poskytují kouzelný výhled na celé údolí.",
+	"p2": "Prostorná místnost zařízená v jednoduchém venkovském stylu vám nabízí jednu manželskou postel, jedno samostatné lůžko a pohovku, kterou lze rozložit (2 přistýlky).",
+	"p3": "Kuchyňský kout je vybavený ledničkou, dvouplotýnkovým el. vařičem, rychlovarnou konvicí, mikrovlnnou troubou, pečící remoskou a varným nádobím. K dispozici máte také základní koření. Dále tu jsou jídelní kout, skleník a úložné prostory.",
+
+	"featuresTitle": "Služby",
+
+	"features": {
+		"f1": "Samostatná koupelna",
+		"f2": "Kolárna/lyžárna",
+		"f3": "3 Lůžka, 2 přistýlky",
+		"f4": "Kuchyňský kout",
+		"f5": "Parkování",
+		"f6": "Nekuřácký pokoj"
+	},
+
+	"pricelistTitle": "Ceník",
+	"pricelistBottom": "Ceny platí celoročně.",
+
+	"pricelist": {
+		"p1": "za osobu a noc.",
+		"p2": "za jednoho psa a noc.",
+		"p3": "Rekreační poplatek v obci Červená Voda na jednu noc pro osobu starší 18 let."
+	},
+
+	"rezervationTitle": "Rezervace",
+
+	"rezervationText": {
+		"p1": "Na závaznou objednávku vystavíme fakturu převodem.",
+		"p2": "Nebudete-li moci nastoupit na ubytování z Vaší příčiny, vrátíme 70% fakturované částky zpět.",
+		"p3": "Při zrušení pobytu z nařízení státu vracíme celou fakturovanou částku."
+	}
+}

@@ -10,15 +10,22 @@ interface props {
 	image: StaticImageData
 	link: string
 	className?: string
+	btnText: string
 }
 
-const ApartmentCard = ({ title, text, image, link, className }: props) => {
+const ApartmentCard = ({
+	title,
+	text,
+	image,
+	link,
+	className,
+	btnText,
+}: props) => {
 	return (
-		<Link
-			href={link}
+		<div
 			className={`bg-green1 rounded-xl overflow-hidden shadow-md flex-1 group ${className}`}
 		>
-			<div className='overflow-hidden aspect-video'>
+			<Link href={link} className='overflow-hidden aspect-video'>
 				<Image
 					src={image}
 					width={800}
@@ -26,7 +33,7 @@ const ApartmentCard = ({ title, text, image, link, className }: props) => {
 					alt={'Výběr apartmánu'}
 					className='group-hover:scale-105 duration-300'
 				></Image>
-			</div>
+			</Link>
 
 			<div className='p-8'>
 				<div className='w-fit flex flex-col'>
@@ -36,12 +43,16 @@ const ApartmentCard = ({ title, text, image, link, className }: props) => {
 				</div>
 				<p className='text-white mt-4'>{text}</p>
 				<div className='flex justify-end mt-6'>
-					<button className='bg-golden w-full sm:w-fit text-white hover:text-golden border-golden border-2 text-center sm:hover:bg-transparent py-3 px-4 sm:py-4 sm:px-8 inline-block font-bold duration-200 shadow-md'>
-						Zobrazit
-					</button>
+					<Link
+						href={link}
+						aria-label='Apartment card button'
+						className='bg-golden w-full sm:w-fit text-white hover:text-golden border-golden border-2 text-center sm:hover:bg-transparent py-3 px-4 sm:py-4 sm:px-8 inline-block font-bold duration-200 shadow-md'
+					>
+						{btnText}
+					</Link>
 				</div>
 			</div>
-		</Link>
+		</div>
 	)
 }
 

@@ -4,8 +4,11 @@ import InstagramHabartovi from '@/_components/Instagram/InstagramHabartovi'
 
 import UbytovaniImg from '@/../public/images/Ubytování.jpg'
 import KeramickaDilnaImg from '@/../public/images/Homepage/KeramickáDílna.webp'
+import { getTranslation } from '@/_i18n'
 
-const Services = () => {
+const Services = async ({ lang }: { lang: string }) => {
+	const { t } = await getTranslation(lang, 'mainPage')
+
 	return (
 		<section
 			id='nase-sluzby'
@@ -18,25 +21,23 @@ const Services = () => {
 							src={UbytovaniImg}
 							width={700}
 							height={400}
-							alt={'Ubytování¨v Moravské Karlově'}
+							alt={t('sections.services.accommodation.title')}
 							className=' object-cover aspect-video '
 						></Image>
 					</div>
 
 					<div className='flex-1'>
 						<h2 className='font-oswald text-golden text-2xl sm:text-3xl uppercase font-bold'>
-							Soukromé ubytování v přírodě
+							{t('sections.services.accommodation.title')}
 						</h2>
 						<p className='mt-4 sm:mt-8 text-white'>
-							Nabízíme k pronájmu malý byt, který je součástí
-							staré venkovské usedlosti postavené německou rodinou
-							na přelomu 18. a 19. století
+							{t('sections.services.accommodation.description')}
 						</p>
 
 						<Button
 							className='bg-golden hover:bg-transparent border-2 border-golden hover:text-golden text-white mt-4 sm:mt-8'
 							link={'/ubytovani'}
-							text={'Přejít na ubytování'}
+							text={t('sections.services.accommodation.button')}
 						></Button>
 					</div>
 				</div>
@@ -46,21 +47,20 @@ const Services = () => {
 				<div className='container flex-col md:flex-row flex gap-5 sm:gap-10 items-center'>
 					<div className='flex-1'>
 						<h2 className='font-oswald text-golden text-2xl sm:text-3xl uppercase font-bold'>
-							Keramická dílna
+							{t('sections.services.ceramicsWorkshop.title')}
 						</h2>
 						<p className='mt-4 sm:mt-8 text-white'>
-							Navštivte naši hrnčířskou dílnu, kde se vyrábí
-							keramika pro dům i zahradu. Nabízíme také možnost
-							tvorby na zakázku, podle vašeho přání. V naší dílně
-							vítáme všechny, kteří by si rádi vyzkoušeli práci s
-							hlínou – modelování, točení na hrnčířském kruhu a
-							relaxační tvoření.
+							{t(
+								'sections.services.ceramicsWorkshop.description'
+							)}
 						</p>
 
 						<Button
 							className='bg-golden hover:bg-transparent border-2 border-golden hover:text-golden text-white mt-4 sm:mt-8'
 							link={'/keramicka-dilna'}
-							text={'Přejít na keramickou dílnu'}
+							text={t(
+								'sections.services.ceramicsWorkshop.button'
+							)}
 						></Button>
 					</div>
 					<div className='flex-1 '>
@@ -68,7 +68,7 @@ const Services = () => {
 							src={KeramickaDilnaImg}
 							width={700}
 							height={400}
-							alt={'Keramická dílna v Moravské Karlově'}
+							alt={t('sections.services.ceramicsWorkshop.title')}
 							className=' object-cover aspect-video'
 						></Image>
 					</div>

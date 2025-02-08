@@ -35,14 +35,16 @@ const Navigation: React.FC<{ links: LinkType[] }> = ({ links }) => {
 			<div className='container mx-auto'>
 				<div
 					id='navWrapper'
-					className='flex gap-2 items-center justify-between h-20 md:h-fit'
+					className='flex gap-2 items-center justify-between h-20 lg:h-fit'
 				>
 					<Link
 						href={'/'}
-						id='navLogo'
-						className='z-50 md:w-[170px] w-[150px] group'
+						className='z-50 lg:w-[170px] w-[150px] group'
 					>
-						<LogoGolden className=' w-full text-golden  group-hover:text-orange duration-300' />
+						<LogoGolden
+							id='navLogo'
+							className=' w-full text-golden  group-hover:text-orange duration-300'
+						/>
 					</Link>
 
 					<NavigationLinks links={links}></NavigationLinks>
@@ -57,11 +59,10 @@ const Navigation: React.FC<{ links: LinkType[] }> = ({ links }) => {
 
 						<Link
 							href={'tel:+420777815909'}
-							className='hidden sm:flex duration-300 px-4 justify-center items-center gap-2 h-12 rounded-lg shadow-md text-sm lg:text-base text-white text-nowrap font-semibold bg-secondary hover:bg-secondaryAccent'
+							className='hidden sm:flex duration-300 px-4 justify-center items-center gap-2 h-12 rounded-lg shadow-md text-base text-white text-nowrap font-semibold bg-secondary hover:bg-secondaryAccent'
 						>
-							<PhoneIcon className='w-6 text-white'></PhoneIcon>
-							<span className='hidden lg:block'>+ 420</span>
-							777 815 909
+							<PhoneIcon className='w-6 text-white'></PhoneIcon>+
+							420 777 815 909
 						</Link>
 
 						<HamburgerButton
