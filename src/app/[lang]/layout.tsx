@@ -8,6 +8,8 @@ import Footer from '@/_components/Footer/Footer'
 import FooterEasterEgg from '@/_components/Footer/FooterEasterEgg'
 import { getTranslation } from '@/_i18n'
 
+import openGraphImg from '@/../public/images/OpenGraphImage.webp'
+
 const openSans = Open_Sans({
 	subsets: ['latin'],
 	weight: ['400', '500', '600', '700'],
@@ -57,9 +59,7 @@ export const generateMetadata = async ({
 			title: 'Ubytování a Keramická dílna Habartovi',
 			description:
 				'Vítejte na stránkách našeho Ubytování a Keramické dílny v Moravském Karlově, nedaleko Červené Vody. Lokalita nabízí mnoho sportovních příležitostí i oddychu.',
-			images: [
-				'https://github.com/jindrahabarta/habartovi/blob/master/public/images/OpenGraphImage.webp',
-			],
+			images: [`${openGraphImg.src}`],
 		},
 	}
 }
