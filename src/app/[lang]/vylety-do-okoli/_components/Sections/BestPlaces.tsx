@@ -6,6 +6,8 @@ import KrizovaHora from '@/../public/images/okoli/vyznamna-mista/KrizovaHora.web
 import DolniMorava from '@/../public/images/okoli/vyznamna-mista/DM.webp'
 import Hurka from '@/../public/images/okoli/vyznamna-mista/TvrzHurka.webp'
 import Pastviny from '@/../public/images/okoli/vyznamna-mista/Pastviny.webp'
+import Bukovka from '@/../public/images/okoli/vyznamna-mista/BukovaHora.webp'
+import Hedec from '@/../public/images/okoli/vyznamna-mista/Hedec.webp'
 
 const BestPlaces = async ({ lang }: { lang: string }) => {
 	const { t } = await getTranslation(lang, 'trips')
@@ -14,26 +16,38 @@ const BestPlaces = async ({ lang }: { lang: string }) => {
 		{
 			title: 'Křížová hora',
 			link: 'https://www.kudyznudy.cz/aktivity/rozhledna-krizova-hora',
-			desc: 'Východně od Červené Vody na jednom z vrcholů Jeřábské vrchoviny v nadmořské výšce 735 m stojí na starobylém poutním místě věž s vyhlídkovým ochozem ve výšce 25 m. Z rozhledny se otevírají fantastické rozhledy.',
+			desc: t('bestPlaces.krizovaHora'),
 			img: KrizovaHora,
 		},
 		{
 			title: 'Dolní Morava',
 			link: 'https://www.dolnimorava.cz/',
-			desc: 'Užijte si s rodinou nejlepší den na českých horách s horami zážitků. V rámci resortu si užijete Sky Bridge 721, Stezku v oblacích, dětské parky i lanovku.',
+			desc: t('bestPlaces.dolniMorava'),
 			img: DolniMorava,
 		},
 		{
 			title: 'Tvrz Hůrka',
 			link: 'https://www.tvrzhurka.cz/',
-			desc: 'Dělostřelecká tvrz Hůrka je jednou z pěti stavebně dokončených tvrzí v České republice budovaných v rámci československého opevnění proti Německu.',
+			desc: t('bestPlaces.tvrzHurka'),
 			img: Hurka,
 		},
 		{
 			title: 'Přehrada Pastviny',
 			link: 'https://prehrada-pastviny.cz/cs/',
-			desc: 'Vítejte v jedné z nejkrásnějších lokalit Orlických hor, vítejte u Pastvinské přehrady. V letošním roce je tomu již 84 let, kdy voda řeky Orlice zalila malebné údolí obce Pastviny.',
+			desc: t('bestPlaces.pastviny'),
 			img: Pastviny,
+		},
+		{
+			title: 'Skiresort Buková Hora',
+			link: 'https://www.skibukovka.cz/cz/',
+			desc: t('bestPlaces.bukovka'),
+			img: Bukovka,
+		},
+		{
+			title: 'Hora Matky Boží (Hedeč)',
+			link: 'https://www.klasterkraliky.cz/',
+			desc: t('bestPlaces.hedec'),
+			img: Hedec,
 		},
 	]
 	return (

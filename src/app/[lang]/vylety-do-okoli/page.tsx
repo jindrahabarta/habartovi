@@ -4,6 +4,7 @@ import BestPlaces from './_components/Sections/BestPlaces'
 import DolniMorava from './_components/Sections/DolniMorava'
 import { getTranslation } from '@/_i18n'
 import { NextPage } from 'next'
+import KralickySneznik from './_components/Sections/KralickySneznik'
 
 export const generateMetadata = async ({
 	params,
@@ -32,8 +33,9 @@ const VyletyDoOkoli: NextPage<{ params: { lang: string } }> = async ({
 
 			<BestPlaces lang={lang}></BestPlaces>
 			<Restaurace lang={lang}></Restaurace>
-			<div className='bg-green2'>
+			<div className=''>
 				<DolniMorava lang={lang}></DolniMorava>
+				<KralickySneznik lang={lang}></KralickySneznik>
 			</div>
 		</div>
 	)

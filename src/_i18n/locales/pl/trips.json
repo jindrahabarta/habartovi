@@ -1,0 +1,52 @@
+{
+	"seo": {
+		"title": "Wycieczki po okolicy"
+	},
+
+	"title": "Wycieczki po okolicy",
+
+	"bestPlaces": {
+		"title": "Ważne miejsca",
+
+		"krizovaHora": "Na wschód od Červené Vody, na jednym ze szczytów pasma Jeřábská Vrchovina, na wysokości 735 m n.p.m. stoi wieża z tarasem widokowym na wysokości 25 m. Z wieży rozpościerają się fantastyczne widoki.",
+		"dolniMorava": "Spędź najlepszy dzień w czeskich górach z mnóstwem atrakcji dla całej rodziny. W ramach ośrodka można skorzystać z Sky Bridge 721, Ścieżki w Obłokach, parków dla dzieci oraz kolei linowej.",
+		"tvrzHurka": "Fort artyleryjski Hůrka jest jednym z pięciu ukończonych fortów w Czechach, które były budowane w ramach czechosłowackich umocnień przeciwko Niemcom.",
+		"pastviny": "Witamy w jednym z najpiękniejszych miejsc w Górach Orlickich, witamy nad Zbiornikiem Pastviny. W tym roku mija już 84 lata, odkąd woda rzeki Orlice zalała malowniczą dolinę w miejscowości Pastviny.",
+		"bukovka": "Jesteśmy nowoczesnym i dynamicznie rozwijającym się ośrodkiem górskim na pobyty letnie i zimowe w pięknym otoczeniu Gór Orlickich. Nasze trasy narciarskie spełniają standardy alpejskie. Buková hora łączy cztery trasy zjazdowe, prowadzące ze starego ośrodka w Čenkovicach oraz z nowoczesnego centrum w Červené Vodě.",
+		"hedec": "Nad miasteczkiem Králíky wznosi się na dużej wysokości kompleks pielgrzymkowy, połączony z miastem aleją z kapliczkami. W przeszłości dzieci pielgrzymowały na tę górę, odprawiały procesje i modliły się. Wśród nich był również mały Tobiáš Jan Becker (1646 - 1710), późniejszy biskup Hradec Králové, który zbudował kościół na ówczesnej Lysé hoře."
+	},
+
+	"tips": {
+		"title": "Wskazówki dotyczące obiektów",
+
+		"restaurants": {
+			"title": "Restauracje",
+			"rezidence": "Rezydencja"
+		},
+
+		"cafe": {
+			"title": "Kawiarnie",
+			"kavarna": "Kawiarnia"
+		},
+
+		"sport": {
+			"title": "Sport",
+
+			"resort": "Ośrodek górski",
+			"aqua": "Aqua Centrum",
+			"koupaliste": "Letnie kąpielisko",
+			"termal": "Termy"
+		}
+	},
+
+	"dolniMorava": {
+		"p1": "Ośrodek górski Dolní Morava oferuje wiele atrakcji dla dzieci i dorosłych. Można tu odwiedzić Ścieżkę w Obłokach, dostępną zarówno latem, jak i zimą, a także Mamutą Kolejkę Górską, najdłuższą w Czechach. Zimą można pojeździć na nartach na ośmiu trasach o różnym stopniu trudności, a miłośnicy snowboardu mogą skorzystać z Fun Trail, Cross Trail lub Jump Trail. Dla najmłodszych dostępny jest również skipark Amálka.",
+		"p2-1": "Można tu także znaleźć unikalne budowle, takie jak",
+		"p2-2": "lub",
+		"p2-3": "Ścieżka w Obłokach"
+	},
+	"kralickySneznik": {
+		"p1": "Králický Sněžník (1423 m) to najwyższy szczyt pasma górskiego o tej samej nazwie, trzeciego co do wysokości w Czechach. Znajduje się na granicy państwowej z Polską, około 20 km od miasta Králíky. Jest to wyraźny szczyt z płaskim wierzchołkiem, z którego roztacza się wyjątkowa, dalekosiężna panorama.",
+		"p2": "Dzika górska przyroda przypomina swoim charakterem Karkonosze, w tym formowanie hal z typową roślinnością subalpejską (łąki alpejskie, wrzosowiska, torfowiska wysokogórskie itp.). Najwyższe partie góry są bezleśne, pokryte alpejskimi łąkami, borówczyskami i paprociami alpejskimi."
+	}
+}

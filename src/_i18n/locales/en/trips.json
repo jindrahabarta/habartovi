@@ -1,0 +1,53 @@
+{
+	"seo": {
+		"title": "Trips in the Surroundings"
+	},
+
+	"title": "Trips in the Surroundings",
+
+	"bestPlaces": {
+		"title": "Significant Places",
+
+		"krizovaHora": "East of Červená Voda, on one of the peaks of the Jeřáb Highlands at an altitude of 735 m, stands a tower with a 25 m high observation deck on an ancient pilgrimage site. The lookout tower offers fantastic panoramic views.",
+		"dolniMorava": "Enjoy the best day in the Czech mountains with your family, full of exciting experiences. The resort offers Sky Bridge 721, the Sky Walk, children's parks, and a cable car.",
+		"tvrzHurka": "The Hůrka Artillery Fortress is one of the five fully constructed fortresses in the Czech Republic, built as part of Czechoslovak fortifications against Germany.",
+		"pastviny": "Welcome to one of the most beautiful locations in the Orlické Mountains, the Pastviny Reservoir. This year marks 84 years since the Orlice River flooded the picturesque valley of the village of Pastviny.",
+		"bukovka": "We are a modern and continuously developing mountain resort for summer and winter stays in the beautiful environment of the Orlické Mountains. Our resort meets 'Alpine standards'. The Buková hora mountain resort connects four ski slopes leading to Buková hora from the traditional Čenkovice resort and the newer, modern Červená Voda resort.",
+		"hedec": "Above the town of Králíky, at a great height, stands a pilgrimage site connected to the town by an alley with chapels. In the past, children would make pilgrimages here, hold processions, and pray. Among them was young Tobiáš Jan Becker (1646–1710), later the Bishop of Hradec Králové, who built a church on the then Lysá hora."
+	},
+
+	"tips": {
+		"title": "Tips for Places",
+
+		"restaurants": {
+			"title": "Restaurants",
+			"rezidence": "Rezidence"
+		},
+
+		"cafe": {
+			"title": "Cafés",
+
+			"kavarna": "Café"
+		},
+
+		"sport": {
+			"title": "Sport",
+
+			"resort": "Mountain Resort",
+			"aqua": "Aqua Center",
+			"koupaliste": "Outdoor Pool",
+			"termal": "Thermal Baths"
+		}
+	},
+
+	"dolniMorava": {
+		"p1": "The Dolní Morava mountain resort offers numerous attractions for both children and adults. You can visit the Sky Walk, accessible both in summer and winter, as well as the Mammoth Mountain Coaster, the longest in the Czech Republic. In winter, you can ski on 8 slopes of various difficulty levels, snowboarders can enjoy the Fun Trail, Cross Trail, or Jump Trail, and there's also a children's ski park, Amálka.",
+		"p2-1": "You can also find unique structures such as",
+		"p2-2": "or",
+		"p2-3": "the Sky Walk"
+	},
+	"kralickySneznik": {
+		"p1": "Králický Sněžník (1423 m) is the highest peak of the mountain range of the same name, the third highest in the Czech Republic. It is located on the state border with Poland, about 20 km from the town of Králíky. It is a distinct peak with a flat summit, offering a unique, far-reaching panoramic view.",
+		"p2": "The wild mountain nature strongly resembles the Krkonoše Mountains, including the formation of alpine meadows with typical subalpine vegetation (alpine grasslands and heaths, high-altitude peat bogs, etc.). The highest parts of the mountain are treeless, covered with alpine grasslands, blueberry shrubs, and alpine ferns."
+	}
+}
