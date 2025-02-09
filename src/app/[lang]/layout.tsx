@@ -34,6 +34,31 @@ export const generateMetadata = async ({
 			default: 'Úvod',
 		},
 		description: t('seo.description'),
+		authors: [
+			{
+				name: 'MotionLabs',
+				url: 'https://motionlabs.cz',
+			},
+		],
+		keywords: [
+			'Ubytování',
+			'Ubytování Červená Voda',
+			'Ubytování Moravský Karlov',
+			'Ubytování Habartovi',
+			'Keramika Červená Voda',
+			'Keramika Moravský Karlov',
+			'Keramika Habartovi',
+			'Keramická dílna',
+		],
+		twitter: {
+			card: 'summary_large_image',
+		},
+		openGraph: {
+			title: 'Ubytování a Keramická dílna Habartovi',
+			description:
+				'Vítejte na stránkách našeho Ubytování a Keramické dílny v Moravském Karlově, nedaleko Červené Vody. Lokalita nabízí mnoho sportovních příležitostí i oddychu.',
+			images: [''],
+		},
 	}
 }
 
