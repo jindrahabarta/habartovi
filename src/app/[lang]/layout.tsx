@@ -57,7 +57,9 @@ export const generateMetadata = async ({
 			title: 'Ubytování a Keramická dílna Habartovi',
 			description:
 				'Vítejte na stránkách našeho Ubytování a Keramické dílny v Moravském Karlově, nedaleko Červené Vody. Lokalita nabízí mnoho sportovních příležitostí i oddychu.',
-			images: [''],
+			images: [
+				'https://github.com/jindrahabarta/habartovi/blob/master/public/images/OpenGraphImage.webp',
+			],
 		},
 	}
 }
