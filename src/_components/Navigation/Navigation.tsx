@@ -28,11 +28,11 @@ const Navigation: React.FC<{ links: LinkType[] }> = ({ links }) => {
 	}
 
 	return (
-		<nav
+		<header
 			id='navigation'
 			className='z-50 shadow-lg border-b border-black/10 fixed w-screen bg-background'
 		>
-			<div className='container mx-auto'>
+			<nav className='container mx-auto'>
 				<div
 					id='navWrapper'
 					className='flex gap-2 items-center justify-between h-20 lg:h-fit'
@@ -71,8 +71,8 @@ const Navigation: React.FC<{ links: LinkType[] }> = ({ links }) => {
 						></HamburgerButton>
 					</div>
 				</div>
-			</div>
-		</nav>
+			</nav>
+		</header>
 	)
 }
 
