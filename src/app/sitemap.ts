@@ -18,7 +18,7 @@ function getAlternatesConfig(url: string, path: string) {
 function getSiteConfig(
 	url: string,
 	path: string,
-	priority: number = 10
+	priority: number = 1
 ): ArrayElement<MetadataRoute.Sitemap> {
 	return {
 		url: `${url}/cs${path}`,
@@ -52,7 +52,9 @@ export default async function sitemap() {
 	const posts = await getPosts(1, 100)
 	if (posts) {
 		for (let i = 0; i < posts.nodes.length; i++) {
-			map.push(getSiteConfig(BASE_URL, `/blog/${posts.nodes[i].slug}`, 8))
+			map.push(
+				getSiteConfig(BASE_URL, `/blog/${posts.nodes[i].slug}`, 0.8)
+			)
 		}
 	}
 
@@ -63,7 +65,7 @@ export default async function sitemap() {
 				getSiteConfig(
 					BASE_URL,
 					`/blog/rubriky/${categories.nodes[i].slug}`,
-					6
+					0.6
 				)
 			)
 		}
