@@ -87,7 +87,7 @@ const gsapInit = (path: string) => {
 					trigger: 'footer',
 					start: 'bottom-=10px bottom',
 					end: 'bottom-=10px bottom',
-					markers: true,
+				
 
 					onEnter: () => {
 						gsap.set('#footerEasterEgg', {
