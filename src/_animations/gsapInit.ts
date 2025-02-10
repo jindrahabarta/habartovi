@@ -44,6 +44,7 @@ const gsapInit = (path: string) => {
 		})
 	} else {
 		//MOBILE Navigation
+
 		ScrollTrigger.create({
 			trigger: document.body,
 			start: 'top+=10px top',
@@ -79,22 +80,27 @@ const gsapInit = (path: string) => {
 				display: 'none',
 			})
 
-			ScrollTrigger.create({
-				trigger: 'footer',
-				start: 'bottom-=10px bottom',
-				end: 'bottom-=10px bottom',
+			console.log(pathWithoutLang)
 
-				onEnter: () => {
-					gsap.set('#footerEasterEgg', {
-						display: 'flex',
-					})
-				},
-				onEnterBack: () => {
-					gsap.set('#footerEasterEgg', {
-						display: 'none',
-					})
-				},
-			})
+			if (pathWithoutLang !== '/blog') {
+				ScrollTrigger.create({
+					trigger: 'footer',
+					start: 'bottom-=10px bottom',
+					end: 'bottom-=10px bottom',
+					markers: true,
+
+					onEnter: () => {
+						gsap.set('#footerEasterEgg', {
+							display: 'flex',
+						})
+					},
+					onEnterBack: () => {
+						gsap.set('#footerEasterEgg', {
+							display: 'none',
+						})
+					},
+				})
+			}
 		})
 	}
 
