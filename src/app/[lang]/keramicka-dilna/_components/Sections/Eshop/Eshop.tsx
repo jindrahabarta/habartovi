@@ -6,7 +6,7 @@ const Eshop = async ({ lang }: { lang: string }) => {
 	const { t } = await getTranslation(lang, 'ceramicsWorkshop')
 
 	return (
-		<section className=' container relative'>
+		<section className='container relative pb-10 md:pb-20'>
 			<h2 className='font-oswald text-[3rem] leading-none md:text-[6rem] text-golden md:text-[#f1d9a8]'>
 				Eshop
 			</h2>

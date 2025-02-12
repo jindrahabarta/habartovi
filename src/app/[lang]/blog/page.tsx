@@ -22,7 +22,7 @@ const BlogPage: NextPage<{ params: IParams; searchParams: IQuery }> = async ({
 	const { lang } = params
 	const { page } = searchParams
 
-	const pageInt = parseInt(page ?? '1', 10)
+	const pageInt = parseInt(page ?? '1', 10) || 1
 
 	return (
 		<div className='flex-1 flex flex-col pt-32'>

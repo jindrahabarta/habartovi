@@ -28,7 +28,7 @@ const InstagramPottery = () => {
 	if (error) return null
 
 	return (
-		<section className='py-20 container'>
+		<section className='pb-10 md:pb-20 container'>
 			<h2 className='font-oswald text-golden text-2xl sm:text-3xl uppercase font-bold'>
 				Instagram
 			</h2>
