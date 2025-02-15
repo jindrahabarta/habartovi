@@ -21,6 +21,8 @@ import image7 from '@/../public/images/maly-apartman/7.jpg'
 import image8 from '@/../public/images/maly-apartman/8.jpg'
 import image9 from '@/../public/images/maly-apartman/9.jpg'
 import { getTranslation } from '@/_i18n'
+import KitchenIcon from '@/_components/Icons/KitchenIcon'
+import ShowerIcon from '@/_components/Icons/ShowerIcon'
 
 export const generateMetadata = async ({
 	params,
@@ -71,15 +73,11 @@ const MalyByt: NextPage<{ params: IParams }> = async ({ params: { lang } }) => {
 		},
 		{
 			text: t('features.f4'),
-			icon: (
-				<div className='text-golden/80 w-6 h-6 rounded-2xl bg-red-400'></div>
-			),
+			icon: <KitchenIcon className='text-golden/80 w-6'></KitchenIcon>,
 		},
 		{
 			text: t('features.f1'),
-			icon: (
-				<div className='text-golden/80 w-6 h-6 rounded-2xl bg-red-400'></div>
-			),
+			icon: <ShowerIcon className='text-golden/80 w-6'></ShowerIcon>,
 		},
 		{
 			text: t('features.f5'),

@@ -23,6 +23,7 @@ import image8 from '@/../public/images/velky-apartman/8.jpg'
 import image9 from '@/../public/images/velky-apartman/9.jpg'
 import image10 from '@/../public/images/velky-apartman/10.jpg'
 import { getTranslation } from '@/_i18n'
+import KitchenIcon from '@/_components/Icons/KitchenIcon'
 
 export const generateMetadata = async ({
 	params,
@@ -80,9 +81,7 @@ const VelkyByt: NextPage<{ params: IParams }> = async ({
 		},
 		{
 			text: t('features.f1'),
-			icon: (
-				<div className='text-golden/80 w-6 h-6 rounded-2xl bg-red-400'></div>
-			),
+			icon: <KitchenIcon className='text-golden/80 w-6'></KitchenIcon>,
 		},
 		{
 			text: t('features.f5'),
