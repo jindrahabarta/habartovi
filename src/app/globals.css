@@ -43,5 +43,18 @@ h3 {
 	@apply text-2xl font-semibold;
 }
 
-h4 {
+#cookiesBar {
+	animation-name: cookiesBar;
+	animation-delay: 3s;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes cookiesBar {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 100;
+	}
 }
