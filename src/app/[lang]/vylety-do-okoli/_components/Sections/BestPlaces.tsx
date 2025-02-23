@@ -3,7 +3,7 @@ import TripsGrid from '../TripsGrid'
 import { getTranslation } from '@/_i18n'
 
 import KrizovaHora from '@/../public/images/okoli/vyznamna-mista/KrizovaHora.webp'
-import DolniMorava from '@/../public/images/okoli/vyznamna-mista/DM.webp'
+import Klepac from '@/../public/images/okoli/vyznamna-mista/klepac.webp'
 import Hurka from '@/../public/images/okoli/vyznamna-mista/TvrzHurka.webp'
 import Pastviny from '@/../public/images/okoli/vyznamna-mista/Pastviny.webp'
 import Bukovka from '@/../public/images/okoli/vyznamna-mista/BukovaHora.webp'
@@ -20,10 +20,10 @@ const BestPlaces = async ({ lang }: { lang: string }) => {
 			img: KrizovaHora,
 		},
 		{
-			title: 'Dolní Morava',
-			link: 'https://www.dolnimorava.cz/',
-			desc: t('bestPlaces.dolniMorava'),
-			img: DolniMorava,
+			title: 'Klepáč',
+			link: 'https://www.kudyznudy.cz/aktivity/rozhledna-klepy',
+			desc: t('bestPlaces.klepac'),
+			img: Klepac,
 		},
 		{
 			title: 'Tvrz Hůrka',

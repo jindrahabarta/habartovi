@@ -2,8 +2,10 @@
 import React, { useEffect, useState } from 'react'
 import Script from 'next/script'
 
-const CookiesBar = () => {
+const CookiesBar = ({ lang }: { lang: string }) => {
 	const [isAgreed, setIsAgreed] = useState<null | boolean>()
+
+	let t
 
 	useEffect(() => {
 		const cookies = localStorage.getItem('cookies')

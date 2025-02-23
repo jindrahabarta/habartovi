@@ -3,5 +3,11 @@
 		"template": "Unterkunft und Keramikwerkstatt Habartovi",
 		"default": "Startseite",
 		"description": "Willkommen auf der Website unserer Unterkunft und Keramikwerkstatt in Moravský Karlov, nahe Červená Voda. Die Umgebung bietet viele Sportmöglichkeiten und Erholung."
+	},
+	"cookies:": {
+		"title": "Cookie-Einstellungen",
+		"description": "Unsere Website verwendet Cookies zur Analyse des Verkehrs und zur Ermittlung der Herkunft der Besuche.",
+		"agree": "Stimme zu",
+		"disagree": "Stimme nicht zu"
 	}
 }

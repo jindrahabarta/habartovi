@@ -3,5 +3,11 @@
 		"template": "Ubytování a Keramická dílna Habartovi",
 		"default": "Úvod",
 		"description": "Vítejte na stránkách našeho Ubytování a Keramické dílny v Moravském Karlově, nedaleko Červené Vody. Lokalita nabízí mnoho sportovních příležitostí i oddychu."
+	},
+	"cookies:": {
+		"title": "Nastavení cookies",
+		"description": "Naše webové stránky používají soubory cookies pro analýzu návštěvnosti a zjištění zdroje návštěvnosti.",
+		"agree": "Souhlasím",
+		"disagree": "Nesouhlasím"
 	}
 }

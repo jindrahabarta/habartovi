@@ -1,11 +1,10 @@
-import type { Metadata } from 'next'
 import { dir } from 'i18next'
 import { languages } from '@/_i18n/settings'
 import { Open_Sans, Oswald } from 'next/font/google'
 import './../globals.css'
 import Navigation from '@/_components/Navigation/Navigation'
 import Footer from '@/_components/Footer/Footer'
-import FooterEasterEgg from '@/_components/Footer/FooterEasterEgg'
+// import FooterEasterEgg from '@/_components/Footer/FooterEasterEgg'
 import { getTranslation } from '@/_i18n'
 import CookiesBar from '@/_components/CookiesBar/CookiesBar'
 
@@ -138,8 +137,8 @@ export default async function RootLayout({
 					{children}
 				</main>
 
-				<FooterEasterEgg></FooterEasterEgg>
-				<CookiesBar></CookiesBar>
+				<CookiesBar lang={lang}></CookiesBar>
+				{/* <FooterEasterEgg></FooterEasterEgg> */}
 				<Footer lang={lang}></Footer>
 			</body>
 		</html>

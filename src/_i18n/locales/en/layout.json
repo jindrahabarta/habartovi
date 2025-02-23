@@ -3,5 +3,11 @@
 		"template": "Accommodation and Ceramic Workshop Habartovi",
 		"default": "Home",
 		"description": "Welcome to the website of our Accommodation and Ceramic Workshop in Moravský Karlov, near Červená Voda. The location offers many sports opportunities and relaxation."
+	},
+	"cookies:": {
+		"title": "Ustawienia plików cookie",
+		"description": "Nasza strona internetowa używa plików cookie do analizy ruchu i określenia źródła wizyt.",
+		"agree": "Zgadzam się",
+		"disagree": "Nie zgadzam się"
 	}
 }
