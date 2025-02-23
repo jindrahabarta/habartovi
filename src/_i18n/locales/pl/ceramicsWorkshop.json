@@ -6,7 +6,7 @@
 	"sections": {
 		"hero": {
 			"title": "Pracownia ceramiczna",
-			"subtitle": "Spróbuj pracy jako garncarz lub po prostu przyjdź i podziwiaj nasze wyroby.",
+			"subtitle": "Twórcze spotkania w pracowni to okazja, by spróbować pracy z gliną. Na chwilę staniesz się garncarzem, rzeźbiarzem, twórcą…",
 			"button1": "Twórcze spotkania",
 			"button2": "O mnie"
 		},
@@ -35,7 +35,7 @@
 			"p6-2": "w tym samym domu, w którym znajduje się pracownia."
 		},
 		"eshop": {
-			"p1": "Gotowe produkty można kupić w sklepie internetowym z ceramiką"
+			"p1": "Gotową ceramikę można kupić bezpośrednio w pracowni oraz w sklepie internetowym"
 		}
 	}
 }

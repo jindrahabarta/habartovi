@@ -31,7 +31,7 @@ const Hero = async ({ lang }: { lang: string }) => {
 						{t('sections.hero.title')}
 					</h1>
 
-					<p className='heroPart opacity-0 -translate-x-20 mt-4 text-xl sm:text-2xl max-w-[500px] '>
+					<p className='heroPart opacity-0 -translate-x-20 mt-4 text-xl sm:text-2xl max-w-[800px] '>
 						{t('sections.hero.subtitle')}
 					</p>
 					<div className='heroPart opacity-0 -translate-x-20 mt-4 flex flex-wrap items-center gap-4'>

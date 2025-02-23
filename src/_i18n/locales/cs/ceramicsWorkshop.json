@@ -6,7 +6,7 @@
 	"sections": {
 		"hero": {
 			"title": "Keramická dílna",
-			"subtitle": "Vyzkoušejte si práci jako keramik a nebo se prostě přijďte pokochat výrobkama.",
+			"subtitle": "Tvořivá setkání v dílně jsou příležitostí jak si vyzkoušet práci s hlínou. Na chvíli se stanete hrnčířem, sochařem, tvůrcem…",
 			"button1": "Tvořivá setkání",
 			"button2": "O mně"
 		},
@@ -42,7 +42,7 @@
 		},
 
 		"eshop": {
-			"p1": "Nakoupit mé již hotové produkty můžete na E-shopu s keramikou"
+			"p1": "Hotovou keramiku si můžete nakoupit přímo v dílně a také na eshopu"
 		}
 	}
 }

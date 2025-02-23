@@ -6,7 +6,7 @@
 	"sections": {
 		"hero": {
 			"title": "Ubytování a Keramická dílna Habartovi",
-			"subtitle": "Přijeďte si odpočinout do soukromé ubytování nedaleko Červené Vody.",
+			"subtitle": "Dům s velkou zahradou a lesem vám nabízí úzký kontakt s přírodou. Vyměňte každodenní spěch za malé zastavení a vnímejte přírodní rytmy.",
 			"button1": "O nás",
 			"button2": "Rezervovat termín"
 		},
@@ -22,7 +22,7 @@
 			}
 		},
 		"zdenekAndHelena": {
-			"ZdenekText": "Někdy kluk, někdy chlap se srdcem. Bývalý pomocník strojvedoucího, misionář; nyní žijící z výsledků své obchodní činnosti. Celoživotní hledač radosti, kterou již ve svých letech začínám žít.",
+			"ZdenekText": "Celoživotní hledač radosti, kterou již ve svých letech začínám žít.",
 			"HelenaText": "Keramiku jsem poznala, když mi bylo dvacet. Je to nádherné řemeslo, které mě k sobě přitáhlo ve chvíli, kdy jsem hledala své místo na světě. Práce s mokrou hlínou ve mě probouzí fantazii a lásku k přírodě."
 		},
 		"services": {

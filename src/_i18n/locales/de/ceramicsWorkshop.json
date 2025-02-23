@@ -6,7 +6,7 @@
 	"sections": {
 		"hero": {
 			"title": "Keramikwerkstatt",
-			"subtitle": "Probieren Sie sich als Keramiker aus oder genießen Sie einfach die fertigen Werke.",
+			"subtitle": "Kreative Treffen in der Werkstatt sind eine Gelegenheit, das Arbeiten mit Ton auszuprobieren. Für einen Moment werden Sie zum Töpfer, Bildhauer, Schöpfer…",
 			"button1": "Kreative Treffen",
 			"button2": "Über mich"
 		},
@@ -35,7 +35,7 @@
 			"p6-2": "im selben Haus wie die Werkstatt nutzen."
 		},
 		"eshop": {
-			"p1": "Meine fertigen Produkte können Sie im Keramik-Onlineshop kaufen."
+			"p1": "Fertige Keramik können Sie direkt in der Werkstatt und auch im Online-Shop kaufen"
 		}
 	}
 }

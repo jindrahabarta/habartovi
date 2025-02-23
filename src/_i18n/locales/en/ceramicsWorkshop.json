@@ -6,7 +6,7 @@
 	"sections": {
 		"hero": {
 			"title": "Ceramics Workshop",
-			"subtitle": "Try working as a potter or simply enjoy the finished creations.",
+			"subtitle": "Creative workshops in the studio are an opportunity to try working with clay. For a moment, you will become a potter, a sculptor, a creator…",
 			"button1": "Creative Meetings",
 			"button2": "About Me"
 		},
@@ -35,7 +35,7 @@
 			"p6-2": "in the same house as the workshop."
 		},
 		"eshop": {
-			"p1": "You can purchase my finished products in the ceramics e-shop."
+			"p1": "You can buy finished ceramics directly in the workshop and also in the online store"
 		}
 	}
 }
