@@ -24,7 +24,8 @@
 	"pricelistBottom": "Prices apply year-round.",
 
 	"pricelist": {
-		"p1": "per person per night.",
+		"p01": "for 2 people and night.",
+		"p1": "per person and night. For groups of 3 or more people.",
 		"p2": "per dog per night.",
 		"p3": "Recreational fee in the municipality of Červená Voda per night for a person over 18 years old."
 	},

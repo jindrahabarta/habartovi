@@ -24,7 +24,8 @@
 	"pricelistBottom": "Ceny obowiązują przez cały rok.",
 
 	"pricelist": {
-		"p1": "za osobę za noc.",
+		"p01": "dla 2 osób i noc.",
+		"p1": "za osobę i noc. Przy liczbie 3 lub więcej osób.",
 		"p2": "za psa za noc.",
 		"p3": "Opłata turystyczna w gminie Červená Voda za noc dla osób powyżej 18 roku życia."
 	},

@@ -97,9 +97,12 @@ const MalyByt: NextPage<{ params: IParams }> = async ({ params: { lang } }) => {
 			price: 350,
 			text: t('pricelist.p1'),
 		},
-
 		{
-			price: 50,
+			price: 450,
+			text: t('pricelist.p01'),
+		},
+		{
+			price: 100,
 			text: t('pricelist.p2'),
 		},
 		{

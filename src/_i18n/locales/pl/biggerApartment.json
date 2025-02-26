@@ -22,6 +22,12 @@
 		"f6": "Strefa dla niepalących"
 	},
 
+	"pricelist": {
+		"p1": "Za osobę i noc.",
+		"p2": "Za jednego psa i noc.",
+		"p3": "Opłata rekreacyjna w gminie Červená Voda za jedną noc dla osoby powyżej 18 roku życia."
+	},
+
 	"pricelistTitle": "Cennik",
 	"pricelistBottom": "Ceny obowiązują przez cały rok."
 }

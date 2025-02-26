@@ -24,7 +24,8 @@
 	"pricelistBottom": "Ceny platí celoročně.",
 
 	"pricelist": {
-		"p1": "za osobu a noc.",
+		"p01": "za 2 osoby a noc.",
+		"p1": "za osobu a noc. Při počtu 3 a více osob.",
 		"p2": "za jednoho psa a noc.",
 		"p3": "Rekreační poplatek v obci Červená Voda na jednu noc pro osobu starší 18 let."
 	},

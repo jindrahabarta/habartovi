@@ -24,7 +24,8 @@
 	"pricelistBottom": "Preise gelten das ganze Jahr über.",
 
 	"pricelist": {
-		"p1": "pro Person und Nacht.",
+		"p01": "für 2 Personen und Nacht.",
+		"p1": "pro Person und Nacht. Bei einer Anzahl von 3 oder mehr Personen.",
 		"p2": "pro Hund und Nacht.",
 		"p3": "Kurtaxe in der Gemeinde Červená Voda pro Nacht für Personen über 18 Jahre."
 	},

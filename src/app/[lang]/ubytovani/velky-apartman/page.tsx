@@ -103,7 +103,7 @@ const VelkyByt: NextPage<{ params: IParams }> = async ({
 			text: t('pricelist.p1'),
 		},
 		{
-			price: 50,
+			price: 100,
 			text: t('pricelist.p2'),
 		},
 		{
