@@ -52,9 +52,13 @@ const TvorivaSetkani = async ({ lang }: { lang: string }) => {
 					, {t('sections.creativeMeetings.p4-2')}{' '}
 					<Link
 						className='text-black hover:text-secondary'
-						href={'mailto:habartovi@email.cz'}
+						href={
+							'mailto:&#104;&#97;&#98;&#97;&#114;&#116;&#111;&#118;&#105;&#64;&#101;&#109;&#97;&#105;&#108;&#46;&#99;&#122;'
+						}
 					>
-						<strong>habartovi@email.cz</strong>
+						<strong>
+							&#104;&#97;&#98;&#97;&#114;&#116;&#111;&#118;&#105;&#64;&#101;&#109;&#97;&#105;&#108;&#46;&#99;&#122;
+						</strong>
 					</Link>
 				</p>
 

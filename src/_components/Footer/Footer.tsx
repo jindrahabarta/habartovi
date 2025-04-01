@@ -44,13 +44,15 @@ const Footer = async ({ lang }: { lang: string }) => {
 								<li className='flex gap-2 items-center mt-2'>
 									<Link
 										className='flex gap-2 items-center group'
-										href={'mailto:habartovi@email.cz'}
+										href={
+											'mailto:&#104;&#97;&#98;&#97;&#114;&#116;&#111;&#118;&#105;&#64;&#101;&#109;&#97;&#105;&#108;&#46;&#99;&#122;'
+										}
 									>
 										<div className='duration-300 flex justify-center items-center w-8 h-8 rounded-lg bg-secondaryAccent group-hover:bg-goldenAccent shadow-md'>
 											<MailIcon className='w-5 text-white'></MailIcon>
 										</div>
 										<span className='text-white group-hover:text-orange duration-300 font-bold'>
-											habartovi@email.cz
+											&#104;&#97;&#98;&#97;&#114;&#116;&#111;&#118;&#105;&#64;&#101;&#109;&#97;&#105;&#108;&#46;&#99;&#122;
 										</span>
 									</Link>
 								</li>

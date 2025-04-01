@@ -53,7 +53,10 @@ export const generateMetadata = async ({
 		twitter: {
 			card: 'summary_large_image',
 		},
-
+		icons: {
+			icon: '/favicon.ico',
+			apple: '/apple-touch-icon.png',
+		},
 		openGraph: {
 			title: 'Ubytování a Keramická dílna Habartovi',
 			description:

@@ -76,16 +76,21 @@ const Rezervace: NextPage<{ params: IParams }> = async ({
 
 								<li className='flex items-center gap-4 group'>
 									<IconButton
-										link={'mailto:habartovi@email.cz'}
+										link={
+											'mailto:&#104;&#97;&#98;&#97;&#114;&#116;&#111;&#118;&#105;&#64;&#101;&#109;&#97;&#105;&#108;&#46;&#99;&#122;'
+										}
 										className='bg-secondary group-hover:bg-golden duration-300'
 									>
 										<MailIcon className='w-8 text-white'></MailIcon>
 									</IconButton>
 									<Link
 										className='text-lg sm:text-xl font-bold font-oswald group-hover:text-golden duration-300'
-										href={'mailto:habartovi@email.cz'}
+										href={
+											'mailto:&#104;&#97;&#98;&#97;&#114;&#116;&#111;&#118;&#105;&#64;&#101;&#109;&#97;&#105;&#108;&#46;&#99;&#122;'
+										}
 									>
-										Email: habartovi@email.cz
+										Email:
+										&#104;&#97;&#98;&#97;&#114;&#116;&#111;&#118;&#105;&#64;&#101;&#109;&#97;&#105;&#108;&#46;&#99;&#122;
 									</Link>
 								</li>
 
