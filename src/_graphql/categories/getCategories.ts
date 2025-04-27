@@ -1,6 +1,5 @@
 import { gql } from '@apollo/client'
 import { categoryAttributes, ICategory } from './category.interface'
-import { unstable_cache } from 'next/cache'
 import { wpClient } from '../apollo'
 
 interface ICategoriesResponse {
@@ -19,28 +18,24 @@ const categoriesQuery = gql`
 	}
 `
 
-export const getCategories = unstable_cache(
-	async () => {
-		try {
-			const data = await wpClient.query<ICategoriesResponse>({
-				query: categoriesQuery,
-			})
+export const getCategories = async () => {
+	try {
+		const data = await wpClient.query<ICategoriesResponse>({
+			query: categoriesQuery,
+		})
 
-			if (
-				!data ||
-				!data.data ||
-				!data.data.categories ||
-				!data.data.categories.nodes
-			) {
-				return null
-			}
-
-			return data.data.categories
-		} catch (err) {
-			console.error('Error fetching categories', err)
+		if (
+			!data ||
+			!data.data ||
+			!data.data.categories ||
+			!data.data.categories.nodes
+		) {
 			return null
 		}
-	},
-	['categories'],
-	{ revalidate: 600, tags: ['categories'] }
-)
+
+		return data.data.categories
+	} catch (err) {
+		console.error('Error fetching categories', err)
+		return null
+	}
+}

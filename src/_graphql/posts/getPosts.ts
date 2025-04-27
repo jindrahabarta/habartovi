@@ -1,4 +1,3 @@
-import { unstable_cache } from 'next/cache'
 import { wpClient } from '@/_graphql/apollo'
 import { gql } from '@apollo/client'
 import { IPost, postAttributes } from './post.interface'
@@ -41,29 +40,25 @@ function getPostsQuery(page?: number, size?: number) {
 	`
 }
 
-export const getPosts = unstable_cache(
-	async (page?: number, size?: number) => {
-		try {
-			const data = await wpClient.query<IPostsResponse>({
-				query: getPostsQuery(page, size),
-			})
+export const getPosts = async (page?: number, size?: number) => {
+	try {
+		const data = await wpClient.query<IPostsResponse>({
+			query: getPostsQuery(page, size),
+		})
 
-			if (
-				!data ||
-				!data.data ||
-				!data.data.posts ||
-				!data.data.posts.nodes ||
-				!data.data.posts.pageInfo
-			) {
-				return null
-			}
-
-			return data.data.posts
-		} catch (err) {
-			console.error('Error fetching posts', err)
+		if (
+			!data ||
+			!data.data ||
+			!data.data.posts ||
+			!data.data.posts.nodes ||
+			!data.data.posts.pageInfo
+		) {
 			return null
 		}
-	},
-	['posts'],
-	{ revalidate: 600, tags: ['posts'] } // 10 minutes
-)
+
+		return data.data.posts
+	} catch (err) {
+		console.error('Error fetching posts', err)
+		return null
+	}
+}

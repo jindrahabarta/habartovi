@@ -1,4 +1,3 @@
-import { unstable_cache } from 'next/cache'
 import { IInstagramPost, MediaType } from './instagram.interface'
 import { igClient } from '../axios'
 
@@ -8,8 +7,6 @@ export interface IInstagramResponse {
 		data: IInstagramPost[]
 	}
 }
-
-const revalidate = 60 * 60 // 1h
 
 const getInstagramPosts = async (APP_ID: string, ACCESS_TOKEN: string) => {
 	try {
@@ -35,28 +32,20 @@ const getInstagramPosts = async (APP_ID: string, ACCESS_TOKEN: string) => {
 	}
 }
 
-export const getInstagramHabartoviPosts = unstable_cache(
-	async () => {
-		const data = await getInstagramPosts(
-			process.env.HABARTOVI_IG_APP_ID!,
-			process.env.HABARTOVI_IG_ACCESS_TOKEN!
-		)
+export const getInstagramHabartoviPosts = async () => {
+	const data = await getInstagramPosts(
+		process.env.HABARTOVI_IG_APP_ID!,
+		process.env.HABARTOVI_IG_ACCESS_TOKEN!
+	)
 
-		return data
-	},
-	['instagramHabartoviPosts'],
-	{ revalidate, tags: ['instagramHabartoviPosts'] }
-)
+	return data
+}
 
-export const getInstagramPotteryPosts = unstable_cache(
-	async () => {
-		const data = await getInstagramPosts(
-			process.env.POTTERY_IG_APP_ID!,
-			process.env.POTTERY_IG_ACCESS_TOKEN!
-		)
+export const getInstagramPotteryPosts = async () => {
+	const data = await getInstagramPosts(
+		process.env.POTTERY_IG_APP_ID!,
+		process.env.POTTERY_IG_ACCESS_TOKEN!
+	)
 
-		return data
-	},
-	['instagramPotteryPosts'],
-	{ revalidate, tags: ['instagramPotteryPosts'] }
-)
+	return data
+}

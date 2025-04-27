@@ -1,7 +1,6 @@
 import { gql } from '@apollo/client'
 import { IPost, postAttributes } from '../posts/post.interface'
 import { categoryAttributes, ICategory } from './category.interface'
-import { unstable_cache } from 'next/cache'
 import { wpClient } from '../apollo'
 
 export interface ICategoryResponse {
@@ -27,22 +26,18 @@ function getCategoryQuery(slug: string) {
     `
 }
 
-export const getCategory = unstable_cache(
-	async (slug: string) => {
-		try {
-			const data = await wpClient.query<ICategoryResponse>({
-				query: getCategoryQuery(slug),
-			})
-			if (!data || !data.data || !data.data.category) {
-				return null
-			}
-
-			return data.data.category
-		} catch (err) {
-			console.error('Error fetching posts', err)
+export const getCategory = async (slug: string) => {
+	try {
+		const data = await wpClient.query<ICategoryResponse>({
+			query: getCategoryQuery(slug),
+		})
+		if (!data || !data.data || !data.data.category) {
 			return null
 		}
-	},
-	['category'],
-	{ revalidate: 600, tags: ['category'] }
-)
+
+		return data.data.category
+	} catch (err) {
+		console.error('Error fetching posts', err)
+		return null
+	}
+}
