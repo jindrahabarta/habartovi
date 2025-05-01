@@ -36,5 +36,7 @@
 		"p1": "Na závaznou objednávku vystavíme fakturu převodem.",
 		"p2": "Nebudete-li moci nastoupit na ubytování z Vaší příčiny, vrátíme 70% fakturované částky zpět.",
 		"p3": "Při zrušení pobytu z nařízení státu vracíme celou fakturovanou částku."
-	}
+	},
+
+	"interior": "Interiér"
 }

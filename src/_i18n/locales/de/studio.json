@@ -36,5 +36,7 @@
 		"p1": "Für eine verbindliche Reservierung stellen wir eine Rechnung zur Banküberweisung aus.",
 		"p2": "Falls Sie aus persönlichen Gründen nicht anreisen können, erstatten wir 70 % des Rechnungsbetrags zurück.",
 		"p3": "Bei einer Stornierung aufgrund staatlicher Anordnungen erstatten wir den gesamten Rechnungsbetrag."
-	}
+	},
+
+	"interior": "Innere"
 }

@@ -37,5 +37,7 @@
 		"p1": "Upon a binding order, we will issue an invoice for bank transfer.",
 		"p2": "If you are unable to check in due to personal reasons, we will refund 70% of the invoiced amount.",
 		"p3": "If the stay is canceled due to government regulations, we will refund the full invoiced amount."
-	}
+	},
+
+	"Interior": "Interior"
 }

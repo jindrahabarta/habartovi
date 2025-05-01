@@ -36,5 +36,7 @@
 		"p1": "For a binding reservation, we will issue an invoice for bank transfer payment.",
 		"p2": "If you are unable to check in due to your own reasons, we will refund 70% of the invoiced amount.",
 		"p3": "In case of cancellation due to government regulations, we will refund the full invoiced amount."
-	}
+	},
+
+	"Interior": "Interior"
 }

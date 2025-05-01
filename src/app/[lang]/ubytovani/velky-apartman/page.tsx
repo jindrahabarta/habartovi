@@ -24,6 +24,7 @@ import image9 from '@/../public/images/velky-apartman/9.jpg'
 import image10 from '@/../public/images/velky-apartman/10.jpg'
 import { getTranslation } from '@/_i18n'
 import KitchenIcon from '@/_components/Icons/KitchenIcon'
+import Gallery from '../_components/Gallery/Gallery'
 
 export const generateMetadata = async ({
 	params,
@@ -157,6 +158,13 @@ const VelkyByt: NextPage<{ params: IParams }> = async ({
 				<div className='flex-[2] sticky top-10 h-full'>
 					<OrderForm lang={lang}></OrderForm>
 				</div>
+			</section>
+
+			<section className='container'>
+				<h2 className='font-oswald opacity-60 text-4xl leading-tight text-golden'>
+					{t('interior')}
+				</h2>
+				<Gallery images={images} />
 			</section>
 		</div>
 	)

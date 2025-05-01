@@ -37,5 +37,7 @@
 		"p1": "Nach einer verbindlichen Bestellung stellen wir eine Rechnung zur Überweisung aus.",
 		"p2": "Sollten Sie Ihre Unterkunft aus persönlichen Gründen nicht antreten können, erstatten wir 70 % des Rechnungsbetrags zurück.",
 		"p3": "Bei einer Stornierung aufgrund staatlicher Anordnung erstatten wir den gesamten Rechnungsbetrag."
-	}
+	},
+
+	"interior": "Innere"
 }

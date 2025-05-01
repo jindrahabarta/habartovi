@@ -36,5 +36,7 @@
 		"p1": "W celu dokonania rezerwacji wystawimy fakturę do przelewu bankowego.",
 		"p2": "Jeśli z własnych powodów nie będziesz mógł się zameldować, zwrócimy 70% kwoty z faktury.",
 		"p3": "W przypadku anulowania pobytu na skutek decyzji państwowych zwracamy pełną kwotę faktury."
-	}
+	},
+
+	"interior": "Wnętrze"
 }

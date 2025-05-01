@@ -19,7 +19,7 @@ const Carousel = ({ images }: { images: StaticImageData[] }) => {
 				className='embla overflow-hidden h-[380px] w-full hover:cursor-grab'
 				ref={emblaRef}
 			>
-				<div className='embla__container w-full h-full flex'>
+				<div className='embla__container w-full h-full flex gap-1 pl-1'>
 					{images.map((image, i) => (
 						<div key={i} className='embla__slide'>
 							<Image
