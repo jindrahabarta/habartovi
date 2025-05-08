@@ -18,7 +18,7 @@ const Overlay: React.FC<{
 		>
 			<button
 				type='button'
-				className='absolute top-5 right-5 text-white'
+				className='absolute top-5 right-5 w-10 aspect-square flex items-center justify-center rounded-lg text-white bg-black bg-opacity-0 hover:bg-opacity-25 duration-300'
 				aria-label='Close'
 				onClick={onClose}
 			>
@@ -38,17 +38,17 @@ const Overlay: React.FC<{
 			<div className='flex gap-4'>
 				<button
 					type='button'
-					className='text-white'
 					aria-label='Previous'
 					onClick={onPrevClick}
+					className='w-10 aspect-square flex justify-center items-center rounded-lg text-white bg-black bg-opacity-0 hover:bg-opacity-25 duration-300'
 				>
 					<FiChevronLeft className='text-3xl' />
 				</button>
 				<button
 					type='button'
-					className='text-white'
 					aria-label='Next'
 					onClick={onNextClick}
+					className='w-10 aspect-square flex justify-center items-center rounded-lg text-white bg-black bg-opacity-0 hover:bg-opacity-25 duration-300'
 				>
 					<FiChevronRight className='text-3xl' />
 				</button>
