@@ -2,7 +2,9 @@ import React from 'react'
 import ApartmentCard from './ApartmentCard'
 import { getTranslation } from '@/_i18n'
 
-import Img from '@/../public/images/Ubytování.jpg'
+// import Img from '@/../public/images/Ubytování.jpg'
+import SmallerCover from '@/../public/images/maly-apartman/1.jpg'
+import BiggerCover from '@/../public/images/velky-apartman/3.jpg'
 
 const ApartmentSelection = async ({ lang }: { lang: string }) => {
 	const { t } = await getTranslation(lang, 'accommodation')
@@ -11,7 +13,7 @@ const ApartmentSelection = async ({ lang }: { lang: string }) => {
 			<ApartmentCard
 				title={t('studio.title')}
 				text={t('studio.description')}
-				image={Img}
+				image={SmallerCover}
 				link={'/ubytovani/maly-apartman'}
 				className='bg-green1'
 				btnText={t('button')}
@@ -20,7 +22,7 @@ const ApartmentSelection = async ({ lang }: { lang: string }) => {
 			<ApartmentCard
 				title={t('biggerApartment.title')}
 				text={t('biggerApartment.description')}
-				image={Img}
+				image={BiggerCover}
 				link={'/ubytovani/velky-apartman'}
 				className='bg-green2'
 				btnText={t('button')}

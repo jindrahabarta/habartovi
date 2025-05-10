@@ -16,7 +16,7 @@ const Hero = async ({ lang }: { lang: string }) => {
 					alt={`${t('sections.hero.title')}`}
 					width={1500}
 					height={1000}
-					className='w-full h-full object-cover'
+					className='w-full h-full object-cover object-top'
 					id='heroImage'
 				></Image>
 				<div

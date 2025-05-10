@@ -117,10 +117,10 @@ export default async function RootLayout({
 			text: t('places_to_visit'),
 		},
 
-		{
-			link: `/blog`,
-			text: t('blog'),
-		},
+		// {
+		// 	link: `/blog`,
+		// 	text: t('blog'),
+		// },
 		{
 			link: `/kontakt`,
 			text: t('contact'),
