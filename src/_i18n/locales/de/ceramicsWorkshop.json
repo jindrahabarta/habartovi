@@ -25,6 +25,10 @@
 			"p1": "Neben meiner eigenen Arbeit widme ich mich sehr gerne der Arbeit mit Menschen. Ich biete kreative Treffen an, bei denen Sie mit einfachen Modelliertechniken Ihr eigenes Werkstück herstellen oder sich an der Töpferscheibe ausprobieren können. Das Programm passe ich an die Möglichkeiten der Besucher an – sowohl für Anfänger als auch für Fortgeschrittene.",
 			"p2strong": "Stunde",
 			"p2": "mit fachkundiger Anleitung kostet",
+			"ul": {
+				"li1": "für 1 – 2 Teilnehmer",
+				"li2": "für 3 und mehr"
+			},
 			"p3strong": "Fertigstellung und Brennen",
 			"p3": "eines Werkstücks bis zu 1 kg kostet",
 			"p4": "Ein Termin muss im Voraus telefonisch vereinbart werden unter:",

@@ -32,8 +32,17 @@ const TvorivaSetkani = async ({ lang }: { lang: string }) => {
 				<p className='mt-10'>
 					<strong>1 {t('sections.creativeMeetings.p2strong')}</strong>{' '}
 					{t('sections.creativeMeetings.p2')}
-					<strong> 400{lang !== 'cs' ? ' CZK' : ',-Kč'}</strong>
 				</p>
+				<ul className='list-disc ml-6 mt-2'>
+					<li>
+						{t('sections.creativeMeetings.ul.li1')}{' '}
+						<strong>400{lang !== 'cs' ? ' CZK' : ',-Kč'}</strong>
+					</li>
+					<li>
+						{t('sections.creativeMeetings.ul.li2')}{' '}
+						<strong> 600{lang !== 'cs' ? ' CZK' : ',-Kč'}</strong>
+					</li>
+				</ul>
 
 				<p className='mt-4'>
 					<strong>{t('sections.creativeMeetings.p3strong')}</strong>{' '}

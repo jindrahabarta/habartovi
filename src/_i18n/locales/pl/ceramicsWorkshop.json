@@ -25,6 +25,10 @@
 			"p1": "Oprócz własnej twórczości bardzo lubię pracę z ludźmi. Oferuję możliwość twórczych spotkań, podczas których prostymi technikami modelowania wykonasz swój własny wyrób lub spróbujesz pracy garncarza na kole garncarskim. Program dostosowuję do możliwości odwiedzających – zarówno dla początkujących, jak i zaawansowanych.",
 			"p2strong": "godzina",
 			"p2": "z profesjonalnym prowadzeniem kosztuje",
+			"ul": {
+				"li1": "dla 1 – 2 uczestników",
+				"li2": "dla 3 i więcej"
+			},
 			"p3strong": "Wykończenie i wypalenie",
 			"p3": "jednego wyrobu o wadze do 1 kg kosztuje",
 			"p4": "Termin spotkania należy wcześniej ustalić telefonicznie:",

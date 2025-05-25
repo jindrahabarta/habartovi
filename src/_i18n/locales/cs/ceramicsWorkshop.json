@@ -26,7 +26,11 @@
 			"p1": "Vedle své vlastní tvorby se velmi ráda věnuji práci s lidmi. Nabízím možnost tvořivých setkání, kde si jednoduchými modelovacími technikami vyrobíte svůj vlastní výrobek anebo si za hrnčířským kruhem vyzkoušíte práci hrnčířů. Program přizpůsobuji možnostem návštěvníků - úplným začátečníkům i pokročilým.",
 
 			"p2strong": "hodina",
-			"p2": "s odborným vedením stojí",
+			"p2": "s odborným vedením",
+			"ul": {
+				"li1": "pro 1 – 2 účastníky",
+				"li2": "pro 3 a více"
+			},
 
 			"p3strong": "Dokončení a vypálení",
 			"p3": "jednoho výrobku o hmotnosti do 1kg stojí stojí",
