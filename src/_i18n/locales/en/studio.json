@@ -3,14 +3,11 @@
 		"title": "Studio",
 		"description": "On the first floor of our large 19th-century estate, a small and cozy studio-style apartment is ready for you."
 	},
-
 	"title": "Studio",
 	"p1": "On the first floor of our large 19th-century estate, a small and cozy studio-style apartment is ready for you. Its windows face west and offer a charming view of the entire valley.",
-	"p2": "The spacious room, furnished in a simple rustic style, offers a double bed, a single bed, and a sofa that can be unfolded (2 extra beds).",
-	"p3": "The kitchenette is equipped with a refrigerator, a two-burner electric stove, a kettle, a microwave, a small baking oven, and cooking utensils. Basic spices are also available. Additionally, there is a dining area, a glass cabinet, and storage space.",
-
+	"p2": "The spacious room, furnished in a simple rustic style, offers a double bed, a single bed, and a large fold out couch that can be converted into  an extra double bed.",
+	"p3": "The kitchenette is equipped with a friger, a two-plate electric stove, a kettle, a microwave, a mini electric oven, and cookware. Basic spices are available. There is also a dining table, a glass cabinet, a wardrobe, and a chest of drawers.",
 	"featuresTitle": "Amenities",
-
 	"features": {
 		"f1": "Private bathroom",
 		"f2": "Bike/ski storage",
@@ -19,24 +16,19 @@
 		"f5": "Parking",
 		"f6": "Non-smoking room"
 	},
-
 	"pricelistTitle": "Price List",
 	"pricelistBottom": "Prices apply year-round.",
-
 	"pricelist": {
 		"p01": "for 2 people and night.",
 		"p1": "per person and night. For groups of 3 or more people.",
 		"p2": "per dog per night.",
 		"p3": "Recreational fee in the municipality of Červená Voda per night for a person over 18 years old."
 	},
-
 	"rezervationTitle": "Reservation",
-
 	"rezervationText": {
 		"p1": "For a binding reservation, we will issue an invoice for bank transfer payment.",
 		"p2": "If you are unable to check in due to your own reasons, we will refund 70% of the invoiced amount.",
 		"p3": "In case of cancellation due to government regulations, we will refund the full invoiced amount."
 	},
-
 	"Interior": "Interior"
 }

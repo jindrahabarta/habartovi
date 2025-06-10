@@ -4,6 +4,7 @@ import { NextRequest, NextResponse } from 'next/server'
 export async function GET() {
 	try {
 		const data = await getCategories()
+
 		if (!data) {
 			return NextResponse.json([], { status: 404 })
 		}

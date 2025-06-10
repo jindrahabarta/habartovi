@@ -5,12 +5,11 @@ import Script from 'next/script'
 const CookiesBar = ({ lang }: { lang: string }) => {
 	const [isAgreed, setIsAgreed] = useState<null | boolean>()
 
-	let t
+
 
 	useEffect(() => {
 		const cookies = localStorage.getItem('cookies')
 
-		console.log(cookies)
 
 		if (cookies === null) {
 			setIsAgreed(cookies)

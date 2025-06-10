@@ -3,11 +3,10 @@
 		"title": "Accommodation",
 		"description": "We offer a small apartment for rent, which is part of an old rural estate built by a German family at the turn of the 18th and 19th centuries."
 	},
-
 	"title": "Accommodation",
 	"studio": {
-		"title": "Small Apartment",
-		"description": "On the first floor of our large 19th-century estate, we have prepared a small and cozy studio-style apartment for you. Its windows face west, offering a magical view of the entire valley."
+		"title": "Studio Apartment",
+		"description": "On the first floor of our large 19th-century house, we have prepared a small and cozy studio-style apartment for you. Its windows face west, offering a magical view of the entire valley."
 	},
 	"biggerApartment": {
 		"title": "Large Apartment",
