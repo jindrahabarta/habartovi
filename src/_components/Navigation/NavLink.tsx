@@ -8,7 +8,11 @@ interface Props {
 
 const NavLink = ({ link, text }: Props) => {
 	return (
-		<Link href={link} className='flex flex-col w-fit group'>
+		<Link
+			aria-label='Navigation link'
+			href={link}
+			className='flex flex-col w-fit group'
+		>
 			<li
 				data-custom
 				className='text-sm sm:text-sm md:text-base text-black group-hover:text-secondary duration-200 font-bold text-nowrap'

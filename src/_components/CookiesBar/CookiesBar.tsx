@@ -5,11 +5,8 @@ import Script from 'next/script'
 const CookiesBar = ({ lang }: { lang: string }) => {
 	const [isAgreed, setIsAgreed] = useState<null | boolean>()
 
-
-
 	useEffect(() => {
 		const cookies = localStorage.getItem('cookies')
-
 
 		if (cookies === null) {
 			setIsAgreed(cookies)
@@ -69,12 +66,16 @@ const CookiesBar = ({ lang }: { lang: string }) => {
 
 					<div className='flex gap-4 mt-4 flex-wrap'>
 						<button
+							type='button'
+							aria-label='Agree with cookies'
 							onClick={agreeCookies}
 							className={`bg-golden border-2 border-golden py-3 px-4 sm:py-3 sm:px-4 inline-block font-bold duration-200 hover:bg-goldenAccent hover:border-goldenAccent shadow-md text-sm text-white`}
 						>
 							Souhlasím
 						</button>
 						<button
+							type='button'
+							aria-label='Disagree with cookies'
 							onClick={disagreeCookies}
 							className={`bg-transparent border-2 border-golden py-3 px-4  sm:py-3 sm:px-4 inline-block font-bold duration-200 shadow-md text-sm text-white hover:bg-goldenAccent `}
 						>

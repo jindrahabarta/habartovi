@@ -33,6 +33,7 @@ const CategoryBlog: React.FC<IParams> = ({ lang, slug }) => {
 		<>
 			<h1 className='font-oswald opacity-60 text-5xl leading-tight text-golden'>
 				<Link
+					aria-label='Navigation link - blog'
 					className='text-golden hover:text-goldenAccent'
 					href={'/blog'}
 				>

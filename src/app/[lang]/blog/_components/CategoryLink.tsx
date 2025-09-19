@@ -10,7 +10,10 @@ const CategoryLink: React.FC<{
 }> = ({ lang, category, selected }) => {
 	return (
 		<li className='blogCategoryLink opacity-0'>
-			<Link href={`/${lang}/blog/rubriky/${category.slug}`}>
+			<Link
+				aria-label={`Blog category ${category}`}
+				href={`/${lang}/blog/rubriky/${category.slug}`}
+			>
 				<h3
 					className={`font-oswald text-2xl leading-tight ${
 						selected

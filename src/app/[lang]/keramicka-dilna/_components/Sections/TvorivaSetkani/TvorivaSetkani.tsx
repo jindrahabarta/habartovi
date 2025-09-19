@@ -53,6 +53,7 @@ const TvorivaSetkani = async ({ lang }: { lang: string }) => {
 				<p className='mt-4'>
 					{t('sections.creativeMeetings.p4')}{' '}
 					<Link
+						aria-label='Phone link'
 						className='text-black hover:text-secondary'
 						href={'tel:+420773206793'}
 					>
@@ -60,6 +61,7 @@ const TvorivaSetkani = async ({ lang }: { lang: string }) => {
 					</Link>
 					, {t('sections.creativeMeetings.p4-2')}{' '}
 					<Link
+						aria-label='Email link'
 						className='text-black hover:text-secondary'
 						href={
 							'mailto:&#104;&#97;&#98;&#97;&#114;&#116;&#111;&#118;&#105;&#64;&#101;&#109;&#97;&#105;&#108;&#46;&#99;&#122;'
@@ -76,6 +78,7 @@ const TvorivaSetkani = async ({ lang }: { lang: string }) => {
 				<p className='mt-4'>
 					{t('sections.creativeMeetings.p6')}{' '}
 					<Link
+						aria-label='Navigation link - accommodation'
 						className='text-black hover:text-secondary'
 						href={'/ubytovani'}
 					>

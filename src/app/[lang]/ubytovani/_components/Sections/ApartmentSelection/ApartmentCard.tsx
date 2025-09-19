@@ -1,8 +1,6 @@
 import React from 'react'
 import Image, { StaticImageData } from 'next/image'
-
 import Link from 'next/link'
-import Button from '@/_components/Buttons/Button'
 
 interface props {
 	title: string
@@ -25,7 +23,11 @@ const ApartmentCard = ({
 		<div
 			className={`bg-green1 rounded-xl overflow-hidden shadow-md flex-1 group ${className}`}
 		>
-			<Link href={link} className='overflow-hidden aspect-video'>
+			<Link
+				aria-label={`Apartment link ${title}`}
+				href={link}
+				className='overflow-hidden aspect-video'
+			>
 				<Image
 					src={image}
 					width={800}

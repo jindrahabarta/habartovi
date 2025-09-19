@@ -21,6 +21,7 @@ const DolniMorava = async ({ lang }: { lang: string }) => {
 						<p className='mt-4 sm:mt-8 '>
 							{t('dolniMorava.p2-1')}{' '}
 							<Link
+								aria-label='Dolni morava'
 								target='_blank'
 								className='font-semibold'
 								href={
@@ -31,6 +32,7 @@ const DolniMorava = async ({ lang }: { lang: string }) => {
 							</Link>
 							, {t('dolniMorava.p2-2')}{' '}
 							<Link
+								aria-label='Dolni morava'
 								target='_blank'
 								className='font-semibold'
 								href={

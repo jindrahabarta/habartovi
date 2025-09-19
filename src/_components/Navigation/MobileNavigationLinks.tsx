@@ -51,6 +51,7 @@ const MobileNavigationLinks = ({
 						return (
 							<div className='flex flex-col' key={i}>
 								<Link
+									aria-label='Navigation link'
 									className='text-2xl py-2 mt-2 text-white hover:text-white hover:underline flex justify-between items-center select-none'
 									href={link.link}
 								>

@@ -27,6 +27,7 @@ const Trip = ({
 				</p>
 
 				<Link
+					aria-label='See more'
 					className='bg-secondary py-2 px-3 text-md mt-2 border-2 font-semibold hover:border-secondaryAccent border-secondary sm:hover:bg-secondaryAccent text-white'
 					href={link}
 					target='_blank'

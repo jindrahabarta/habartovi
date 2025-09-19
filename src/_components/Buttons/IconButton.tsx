@@ -11,6 +11,7 @@ interface props {
 const IconButton = ({ children, link, className, target }: props) => {
 	return (
 		<Link
+			aria-label='Navigation link'
 			href={link}
 			className={`duration-300 flex justify-center items-center w-12 h-12 min-w-12 rounded-lg shadow-md ${className}`}
 			target={`${target ? '_self' : target}`}

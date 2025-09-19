@@ -28,6 +28,7 @@ const Restaurace = async ({ lang }: { lang: string }) => {
 						<ul className='mt-8'>
 							<li>
 								<Link
+									aria-label='Navigation link'
 									className='text-white w-fit mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
 									href={'https://www.ucmelaku.cz/'}
 									target='_blank'
@@ -41,6 +42,7 @@ const Restaurace = async ({ lang }: { lang: string }) => {
 
 							<li>
 								<Link
+									aria-label='Navigation link'
 									className='text-white w-fit mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
 									href={'https://www.drhermann.cz/'}
 									target='_blank'
@@ -53,6 +55,7 @@ const Restaurace = async ({ lang }: { lang: string }) => {
 							</li>
 							<li>
 								<Link
+									aria-label='Navigation link'
 									className='text-white w-fit mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
 									href={
 										'https://www.facebook.com/p/Restaurace-u-Trojice-100057167811453/'
@@ -67,6 +70,7 @@ const Restaurace = async ({ lang }: { lang: string }) => {
 							</li>
 							<li>
 								<Link
+									aria-label='Navigation link'
 									className='text-white w-fit mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
 									href={'https://www.nacertovce.eu/'}
 									target='_blank'
@@ -79,6 +83,7 @@ const Restaurace = async ({ lang }: { lang: string }) => {
 							</li>
 							<li>
 								<Link
+									aria-label='Navigation link'
 									className='text-white w-fit mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
 									href={'https://www.penzionkocanda.cz/'}
 									target='_blank'
@@ -102,6 +107,7 @@ const Restaurace = async ({ lang }: { lang: string }) => {
 						<ul className='mt-8'>
 							<li>
 								<Link
+									aria-label='Navigation link'
 									className='text-white w-fit mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
 									href={'https://www.reichlkraliky.cz/'}
 									target='_blank'
@@ -114,6 +120,7 @@ const Restaurace = async ({ lang }: { lang: string }) => {
 							</li>
 							<li>
 								<Link
+									aria-label='Navigation link'
 									className='text-white w-fit mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
 									href={
 										'https://www.facebook.com/dvurnebes/?locale=cs_CZ'
@@ -128,6 +135,7 @@ const Restaurace = async ({ lang }: { lang: string }) => {
 							</li>
 							<li>
 								<Link
+									aria-label='Navigation link'
 									className='text-white w-fit mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
 									href={
 										'https://www.facebook.com/p/Kav%C3%A1rna-Zuzana-V%C3%ADtkov%C3%A1-100095196322904/?_rdr'
@@ -142,6 +150,7 @@ const Restaurace = async ({ lang }: { lang: string }) => {
 							</li>
 							<li>
 								<Link
+									aria-label='Navigation link'
 									className='text-white w-fit mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
 									href={'https://velkolosinskepralinky.cz/'}
 									target='_blank'
@@ -165,6 +174,7 @@ const Restaurace = async ({ lang }: { lang: string }) => {
 						<ul className='mt-8'>
 							<li>
 								<Link
+									aria-label='Navigation link'
 									className='text-white w-fit mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
 									href={'https://www.dolnimorava.cz/'}
 									target='_blank'
@@ -177,6 +187,7 @@ const Restaurace = async ({ lang }: { lang: string }) => {
 							</li>
 							<li>
 								<Link
+									aria-label='Navigation link'
 									className='text-white w-fit mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
 									href={'https://www.skibukovka.cz/cz/'}
 									target='_blank'
@@ -189,6 +200,7 @@ const Restaurace = async ({ lang }: { lang: string }) => {
 							</li>
 							<li>
 								<Link
+									aria-label='Navigation link'
 									className='text-white w-fit mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
 									href={
 										'https://www.sumperksportuje.cz/aquacentrum/kryty-bazen'
@@ -203,6 +215,7 @@ const Restaurace = async ({ lang }: { lang: string }) => {
 							</li>
 							<li>
 								<Link
+									aria-label='Navigation link'
 									className='text-white w-fit mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
 									href={
 										'https://www.sumperksportuje.cz/bratrusovske-koupaliste/venkovni-bazen-s-toboganem'
@@ -217,6 +230,7 @@ const Restaurace = async ({ lang }: { lang: string }) => {
 							</li>
 							<li>
 								<Link
+									aria-label='Navigation link'
 									className='text-white w-fit mb-2 font-semibold text-xl flex gap-2 items-center hover:gap-3 duration-300 hover:text-goldenAccent'
 									href={
 										'https://www.termaly-losiny.cz/?page=3&date=1983-4&gad_source=1&gclid=Cj0KCQiA-5a9BhCBARIsACwMkJ63bTRLff7V4MVwE7IgqDVLfJ3tZ5khcl0CM2Po_q_-nk4yffHLv1IaApkVEALw_wcB'

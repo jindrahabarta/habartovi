@@ -67,6 +67,7 @@ const Rezervace: NextPage<{ params: IParams }> = async ({
 										<PhoneIcon className='w-8 text-white'></PhoneIcon>
 									</IconButton>
 									<Link
+										aria-label='Phone link'
 										className='text-lg sm:text-xl font-bold font-oswald group-hover:text-golden duration-300'
 										href={'tel:777815909'}
 									>
@@ -84,6 +85,7 @@ const Rezervace: NextPage<{ params: IParams }> = async ({
 										<MailIcon className='w-8 text-white'></MailIcon>
 									</IconButton>
 									<Link
+										aria-label='Email link'
 										className='text-lg sm:text-xl font-bold font-oswald group-hover:text-golden duration-300'
 										href={
 											'mailto:&#104;&#97;&#98;&#97;&#114;&#116;&#111;&#118;&#105;&#64;&#101;&#109;&#97;&#105;&#108;&#46;&#99;&#122;'
@@ -105,6 +107,7 @@ const Rezervace: NextPage<{ params: IParams }> = async ({
 										<MapPinIcon className='w-8 text-white'></MapPinIcon>
 									</IconButton>
 									<Link
+										aria-label='Map location link'
 										className='text-lg sm:text-xl font-bold font-oswald group-hover:text-golden duration-300'
 										href={
 											'https://www.google.com/maps/place/Ubytov%C3%A1n%C3%AD+a+Keramick%C3%A1+d%C3%ADlna+Habartovi/@50.0283912,16.7724516,17z/data=!3m1!4b1!4m6!3m5!1s0x471206db20b953a9:0xc2a7d302ae1b4e1d!8m2!3d50.0283878!4d16.7750265!16s%2Fg%2F11ggs8kp5l?entry=ttu&g_ep=EgoyMDI1MDEyNi4wIKXMDSoASAFQAw%3D%3D'

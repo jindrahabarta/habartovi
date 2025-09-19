@@ -14,6 +14,7 @@ const GridElement = ({
 }) => {
 	return (
 		<Link
+			aria-label='Navigation link'
 			className={`flex flex-col items-center  py-2 px-8  group border-golden/60 border-r ${className}`}
 			href={link}
 		>

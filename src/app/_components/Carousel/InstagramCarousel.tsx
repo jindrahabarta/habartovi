@@ -41,7 +41,11 @@ const InstagramCarousel: React.FC<{
 									key={post.id}
 									className='embla__slide instagram p-1'
 								>
-									<Link href={post.permalink} target='_blank'>
+									<Link
+										aria-label='Instagram image link'
+										href={post.permalink}
+										target='_blank'
+									>
 										<figure>
 											<Image
 												key={post.id}

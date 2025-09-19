@@ -13,6 +13,7 @@ const Eshop = async ({ lang }: { lang: string }) => {
 			<p className='mt-10'>
 				{t('sections.eshop.p1')}{' '}
 				<Link
+					aria-label='Navigation link - eshop'
 					className='text-black hover:text-secondary'
 					target='_blank'
 					href={'https://www.helenpottery.cz/'}

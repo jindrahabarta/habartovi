@@ -8,7 +8,7 @@ import ImgPlaceholder from '@/../public/images/BlogPlaceholderImage.webp'
 const BlogCard: React.FC<{ lang: string; post: IPost }> = ({ lang, post }) => {
 	return (
 		<li key={post.id} className='w-full h-full blogCard opacity-0'>
-			<Link href={`/${lang}/blog/${post.slug}`}>
+			<Link aria-label='Blog post' href={`/${lang}/blog/${post.slug}`}>
 				<article className='w-full h-full flex flex-col overflow-hidden group'>
 					<section className='overflow-hidden'>
 						{post.featuredImage ? (

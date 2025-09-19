@@ -4,7 +4,7 @@ import { getTranslation } from '@/_i18n'
 
 // import Img from '@/../public/images/Ubytování.jpg'
 import SmallerCover from '@/../public/images/maly-apartman/1.jpg'
-import BiggerCover from '@/../public/images/velky-apartman/3.jpg'
+import BiggerCover from '@/../public/images/velky-apartman/1.webp'
 
 const ApartmentSelection = async ({ lang }: { lang: string }) => {
 	const { t } = await getTranslation(lang, 'accommodation')

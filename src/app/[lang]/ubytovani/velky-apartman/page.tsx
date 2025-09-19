@@ -12,16 +12,21 @@ import BicycleIcon from '@/_components/Icons/BicycleIcon'
 import ParkingIcon from '@/_components/Icons/ParkingIcon'
 import { NextPage } from 'next'
 
-import image1 from '@/../public/images/velky-apartman/1.jpg'
-import image2 from '@/../public/images/velky-apartman/2.jpg'
-import image3 from '@/../public/images/velky-apartman/3.jpg'
-import image4 from '@/../public/images/velky-apartman/4.jpg'
-import image5 from '@/../public/images/velky-apartman/5.jpg'
-import image6 from '@/../public/images/velky-apartman/6.jpg'
-import image7 from '@/../public/images/velky-apartman/7.jpg'
-import image8 from '@/../public/images/velky-apartman/8.jpg'
-import image9 from '@/../public/images/velky-apartman/9.jpg'
-import image10 from '@/../public/images/velky-apartman/10.jpg'
+import image1 from '@/../public/images/velky-apartman/1.webp'
+import image2 from '@/../public/images/velky-apartman/2.webp'
+import image3 from '@/../public/images/velky-apartman/3.webp'
+import image4 from '@/../public/images/velky-apartman/4.webp'
+import image5 from '@/../public/images/velky-apartman/5.webp'
+import image6 from '@/../public/images/velky-apartman/6.webp'
+import image7 from '@/../public/images/velky-apartman/7.webp'
+import image8 from '@/../public/images/velky-apartman/8.webp'
+import image9 from '@/../public/images/velky-apartman/9.webp'
+import image10 from '@/../public/images/velky-apartman/10.webp'
+import image11 from '@/../public/images/velky-apartman/11.webp'
+import image12 from '@/../public/images/velky-apartman/12.webp'
+import image13 from '@/../public/images/velky-apartman/13.webp'
+import image14 from '@/../public/images/velky-apartman/14.webp'
+import image15 from '@/../public/images/velky-apartman/15.webp'
 import { getTranslation } from '@/_i18n'
 import KitchenIcon from '@/_components/Icons/KitchenIcon'
 import Gallery from '../_components/Gallery/Gallery'
@@ -52,6 +57,11 @@ const images = [
 	image8,
 	image9,
 	image10,
+	image11,
+	image12,
+	image13,
+	image14,
+	image15,
 ]
 
 interface IParams {

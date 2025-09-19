@@ -38,6 +38,7 @@ const Navigation: React.FC<{ links: LinkType[] }> = ({ links }) => {
 					className='flex gap-2 items-center justify-between h-20 lg:h-fit'
 				>
 					<Link
+						aria-label='Navigation link'
 						href={'/'}
 						className='z-50 lg:w-[170px] w-[150px] group'
 					>
@@ -58,6 +59,7 @@ const Navigation: React.FC<{ links: LinkType[] }> = ({ links }) => {
 						<LanguageSelector></LanguageSelector>
 
 						<Link
+							aria-label='Phone link'
 							href={'tel:+420777815909'}
 							className='hidden sm:flex duration-300 px-4 justify-center items-center gap-2 h-12 rounded-lg shadow-md text-base text-white text-nowrap font-semibold bg-secondary hover:bg-secondaryAccent'
 						>

@@ -9,6 +9,7 @@ const GalleryImage: React.FC<{
 	<li key={index.toString()} className='w-full aspect-square'>
 		<button
 			type='button'
+			aria-label='Gallery image'
 			onClick={() => onClick(index)}
 			className='w-full h-full'
 		>

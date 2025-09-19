@@ -9,6 +9,7 @@ const HamburgerButton = ({
 }) => {
 	return (
 		<button
+			type='button'
 			onClick={handleClick}
 			aria-label='Otevírání mobilního menu'
 			className='w-12 h-12 px-2 relative z-50 lg:hidden flex flex-col justify-center items-center gap-[7px] bg-secondary rounded-lg'

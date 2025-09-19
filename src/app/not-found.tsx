@@ -7,6 +7,7 @@ import './globals.css'
 import Image from 'next/image'
 import NotFoundImage from '@/../public/images/404.png'
 import { getTranslation } from '@/_i18n'
+import Link from 'next/link'
 
 acceptLanguage.languages(languages)
 
@@ -62,12 +63,13 @@ const NotFound = async () => {
 							<p className='mt-6'>{t('subTitle')}</p>
 							<p className='mt-2'>
 								{t('backTo')}
-								<a
+								<Link
+									aria-label='Navigation link go to home'
 									href='/'
 									className='inline-flex items-center w-fit font-semibold text-base group hover:underline'
 								>
 									{t('link')}
-								</a>
+								</Link>
 								.
 							</p>
 						</section>

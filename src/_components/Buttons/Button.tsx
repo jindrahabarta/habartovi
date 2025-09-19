@@ -11,6 +11,7 @@ interface props {
 const Button = ({ link, target, text, className }: props) => {
 	return (
 		<Link
+			aria-label={`Navigation button ${text}`}
 			href={link}
 			target={target ? target : '_self'}
 			className={`${className} py-3 px-4 sm:py-4 sm:px-8 inline-block font-bold duration-200 shadow-md`}

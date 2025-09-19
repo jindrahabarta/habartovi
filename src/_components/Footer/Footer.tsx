@@ -22,7 +22,7 @@ const Footer = async ({ lang }: { lang: string }) => {
 			<div className='container w-full'>
 				<div className='flex flex-col md:flex-wrap sm:flex-row gap-6 sm:gap-10 justify-between'>
 					<div className='flex-1 flex flex-col justify-between gap-8'>
-						<Link href={'/'}>
+						<Link href={'/'} aria-label='Navigation link'>
 							<LogoOrangeBlack className='w-2/3 sm:w-4/5 lg:w-2/3 text-white' />
 						</Link>
 
@@ -30,6 +30,7 @@ const Footer = async ({ lang }: { lang: string }) => {
 							<ul>
 								<li className='flex  gap-2 items-center'>
 									<Link
+										aria-label='Phone number link'
 										className='flex gap-2 items-center group'
 										href={'tel:+420777815909'}
 									>
@@ -43,6 +44,7 @@ const Footer = async ({ lang }: { lang: string }) => {
 								</li>
 								<li className='flex gap-2 items-center mt-2'>
 									<Link
+										aria-label='Email link'
 										className='flex gap-2 items-center group'
 										href={
 											'mailto:&#104;&#97;&#98;&#97;&#114;&#116;&#111;&#118;&#105;&#64;&#101;&#109;&#97;&#105;&#108;&#46;&#99;&#122;'
@@ -58,6 +60,7 @@ const Footer = async ({ lang }: { lang: string }) => {
 								</li>
 								<li className='flex gap-2 items-center mt-2'>
 									<Link
+										aria-label='Navigation link'
 										className='flex gap-2 items-center group'
 										href={
 											'https://www.google.com/maps/place/Ubytov%C3%A1n%C3%AD+a+Keramick%C3%A1+d%C3%ADlna+Habartovi/@50.0283912,16.7724516,17z/data=!3m1!4b1!4m6!3m5!1s0x471206db20b953a9:0xc2a7d302ae1b4e1d!8m2!3d50.0283878!4d16.7750265!16s%2Fg%2F11ggs8kp5l?entry=ttu&g_ep=EgoyMDI1MDEyNi4wIKXMDSoASAFQAw%3D%3D'
@@ -82,6 +85,7 @@ const Footer = async ({ lang }: { lang: string }) => {
 						<ul className='max-w-xs mt-2'>
 							<li className='w-fit'>
 								<Link
+									aria-label='Navigation link'
 									className='text-white py-0.5 text-lg hover:text-orange w-full inline-block font-bold'
 									href={'/'}
 								>
@@ -90,6 +94,7 @@ const Footer = async ({ lang }: { lang: string }) => {
 							</li>
 							<li className='w-fit  '>
 								<Link
+									aria-label='Navigation link'
 									className='text-white py-0.5 text-lg hover:text-orange w-fit inline-block font-bold'
 									href={'/ubytovani'}
 								>
@@ -98,6 +103,7 @@ const Footer = async ({ lang }: { lang: string }) => {
 							</li>
 							<li className='w-fit  '>
 								<Link
+									aria-label='Navigation link'
 									className='text-white py-0.5 text-lg hover:text-orange w-fit inline-block font-bold'
 									href={'/keramicka-dilna'}
 								>
@@ -106,6 +112,7 @@ const Footer = async ({ lang }: { lang: string }) => {
 							</li>
 							<li className='w-fit  '>
 								<Link
+									aria-label='Navigation link'
 									className='text-white py-0.5 text-lg hover:text-orange w-fit inline-block font-bold'
 									href={'/vylety-do-okoli'}
 								>
@@ -114,6 +121,7 @@ const Footer = async ({ lang }: { lang: string }) => {
 							</li>
 							<li className='w-fit  '>
 								<Link
+									aria-label='Navigation link'
 									className='text-white py-0.5 text-lg hover:text-orange w-fit inline-block font-bold'
 									href={'/blog'}
 								>
@@ -122,6 +130,7 @@ const Footer = async ({ lang }: { lang: string }) => {
 							</li>
 							<li className='w-fit  '>
 								<Link
+									aria-label='Navigation link'
 									className='text-white py-0.5 text-lg hover:text-orange w-fit inline-block font-bold'
 									href={'/kontakt'}
 								>
@@ -144,6 +153,7 @@ const Footer = async ({ lang }: { lang: string }) => {
 
 						<div className='flex justify-end gap-2 items-center mt-4'>
 							<Link
+								aria-label='Navigation link'
 								className='flex gap-2 items-center group'
 								href={
 									'https://www.instagram.com/ubytovani_habartovi/'
@@ -156,6 +166,7 @@ const Footer = async ({ lang }: { lang: string }) => {
 							</Link>
 
 							<Link
+								aria-label='Navigation link'
 								className='flex gap-2 items-center group'
 								href={
 									'https://www.facebook.com/profile.php?id=61562748149456'
@@ -167,6 +178,7 @@ const Footer = async ({ lang }: { lang: string }) => {
 								</div>
 							</Link>
 							<Link
+								aria-label='Navigation link'
 								className='flex gap-2 items-center group '
 								href={
 									'https://www.megaubytko.cz/ubytovani-a-keramicka-dilna-habartovi'
@@ -185,6 +197,7 @@ const Footer = async ({ lang }: { lang: string }) => {
 					<p className='text-base'>
 						&copy; {new Date().getFullYear()} |{' '}
 						<Link
+							aria-label='Navigation link'
 							className='text-orange hover:text-orangeAccent duration-300 font-semibold hover:underline '
 							href='/'
 						>
@@ -195,6 +208,7 @@ const Footer = async ({ lang }: { lang: string }) => {
 					<p className='text-base'>
 						{t2('motionLabsTag')}{' '}
 						<Link
+							aria-label='Navigation link'
 							className='text-orange hover:text-orangeAccent duration-300 font-semibold hover:underline '
 							href='http://motionlabs.cz/'
 							target='_blank'

@@ -9,6 +9,7 @@ const PageLink: React.FC<{
 }> = ({ href, children, active = false, page, setPage }) => {
 	return (
 		<Link
+			aria-label='Navigation link'
 			href={href}
 			className={`w-8 h-8 flex justify-center items-center rounded-md font-bold text-black ${
 				active

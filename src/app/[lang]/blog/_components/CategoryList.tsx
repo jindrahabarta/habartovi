@@ -25,7 +25,7 @@ const CategoryList: React.FC<{
 	return (
 		<ul className='flex flex-col gap-2 mt-4'>
 			<li className='blogCategoryLink opacity-0'>
-				<Link href={`/blog`}>
+				<Link aria-label='Blog category all' href={`/blog`}>
 					<h3
 						className={`font-oswald text-2xl leading-tight ${
 							blogPath === 'blog'
