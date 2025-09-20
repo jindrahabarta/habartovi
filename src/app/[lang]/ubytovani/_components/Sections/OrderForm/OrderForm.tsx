@@ -1,22 +1,42 @@
-import React from 'react'
+'use client'
+import Script from 'next/script'
+import React, { useEffect } from 'react'
 
 interface IProps {
 	lang: string
 }
 
 const OrderForm: React.FC<IProps> = ({ lang }) => {
+	const initWidget = () => {
+		if (typeof window !== 'undefined' && (window as any).muEmbed) {
+			;(window as any).muEmbed(
+				{
+					embedType: 'reservation-widget',
+					accommodationId: 8116,
+					token: 'd0070ef1fbc3e4f77e88b77bb1ba53b7',
+					settings: {
+						primary_color: 'rgba(221,167,83,1)',
+						secondary_color: '#efc583',
+						text_color: 'rgba(24,29,34,1)',
+					},
+				},
+				'embed-Qjws-WgAbaV5QCXFiUhMm'
+			)
+		}
+	}
+
 	return (
-		<iframe
-			title='Reservation form'
-			id='embed-4pKpEM_bOPm67oIBNWVPI'
-			src={`https://${
-				lang === 'cs' ? 'www' : lang
-			}.megaubytko.cz/embed/booking?id=embed-4pKpEM_bOPm67oIBNWVPI&amp;accommodationId=8116&amp;token=4f03dee24d9dcfadc8403440fbfffef7&amp;primary_color=rgba%28166%2C179%2C125%2C1%29&amp;secondary_color=%23f0a559&amp;background_color=rgba%28255%2C255%2C255%2C1%29&amp;text_color=rgba%2824%2C29%2C34%2C1%29`}
-			width='100%'
-			height='900px'
-			scrolling='no'
-			className='mt-10'
-		></iframe>
+		<div
+			id='embed-Qjws-WgAbaV5QCXFiUhMm'
+			data-mu-embed-origin='https://www.megaubytko.cz'
+			className='w-full h-[200px]'
+		>
+			<Script
+				src='https://www.megaubytko.cz/muEmbed.js'
+				strategy='afterInteractive'
+				onLoad={initWidget}
+			/>
+		</div>
 	)
 }
 
