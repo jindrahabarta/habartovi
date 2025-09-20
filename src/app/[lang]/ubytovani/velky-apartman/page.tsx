@@ -27,6 +27,7 @@ import image12 from '@/../public/images/velky-apartman/12.webp'
 import image13 from '@/../public/images/velky-apartman/13.webp'
 import image14 from '@/../public/images/velky-apartman/14.webp'
 import image15 from '@/../public/images/velky-apartman/15.webp'
+import image16 from '@/../public/images/velky-apartman/15.webp'
 import { getTranslation } from '@/_i18n'
 import KitchenIcon from '@/_components/Icons/KitchenIcon'
 import Gallery from '../_components/Gallery/Gallery'
@@ -62,6 +63,7 @@ const images = [
 	image13,
 	image14,
 	image15,
+	image16,
 ]
 
 interface IParams {
