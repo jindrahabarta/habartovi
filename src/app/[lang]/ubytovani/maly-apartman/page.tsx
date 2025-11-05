@@ -153,7 +153,7 @@ const MalyByt: NextPage<{ params: IParams }> = async ({ params: { lang } }) => {
 					<p className='mt-2'>{t('rezervationText.p3')}</p>
 				</div>
 
-				<div className='flex-[2] sticky top-10 h-full'>
+				<div className='flex-[2] sticky top-20 h-full'>
 					<OrderForm lang={lang}></OrderForm>
 				</div>
 			</section>

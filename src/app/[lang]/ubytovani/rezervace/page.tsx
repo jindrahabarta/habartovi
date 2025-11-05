@@ -42,7 +42,7 @@ const Rezervace: NextPage<{ params: IParams }> = async ({
 	const { t } = await getTranslation(lang, 'reservation')
 
 	return (
-		<div className='pt-32'>
+		<div className='pt-32 pb-12'>
 			<section className='container'>
 				<h1 className='font-oswald text-center md:text-[6rem] leading-tight text-golden/60'>
 					{t('title')}
@@ -130,7 +130,7 @@ const Rezervace: NextPage<{ params: IParams }> = async ({
 						</div>
 					</div>
 					<div className='flex-1 mt-10'>
-						<h2 className='font-oswald opacity-60 text-3xl sm:text-4xl leading-tight text-golden'>
+						<h2 className='font-oswald pb-4 opacity-60 text-3xl sm:text-4xl leading-tight text-golden'>
 							{t('formTitle')}
 						</h2>
 						<OrderForm lang={lang} />

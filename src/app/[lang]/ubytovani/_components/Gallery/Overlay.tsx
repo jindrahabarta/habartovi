@@ -30,7 +30,7 @@ const Overlay: React.FC<{
 					src={activeImage.src}
 					width={activeImage.width}
 					height={activeImage.height}
-					alt={''}
+					alt={'Obrázek galerie'}
 					className='max-w-[90%] max-h-[90%] object-contain'
 				/>
 			)}
@@ -40,7 +40,7 @@ const Overlay: React.FC<{
 					type='button'
 					aria-label='Previous'
 					onClick={onPrevClick}
-					className='w-10 aspect-square flex justify-center items-center rounded-lg text-white bg-black bg-opacity-0 hover:bg-opacity-25 duration-300'
+					className='w-10 pr-0.5 aspect-square flex justify-center items-center rounded-lg text-white bg-black bg-opacity-0 hover:bg-opacity-25 duration-300'
 				>
 					<FiChevronLeft className='text-3xl' />
 				</button>
@@ -48,7 +48,7 @@ const Overlay: React.FC<{
 					type='button'
 					aria-label='Next'
 					onClick={onNextClick}
-					className='w-10 aspect-square flex justify-center items-center rounded-lg text-white bg-black bg-opacity-0 hover:bg-opacity-25 duration-300'
+					className='w-10 pl-0.5 aspect-square flex justify-center items-center rounded-lg text-white bg-black bg-opacity-0 hover:bg-opacity-25 duration-300'
 				>
 					<FiChevronRight className='text-3xl' />
 				</button>

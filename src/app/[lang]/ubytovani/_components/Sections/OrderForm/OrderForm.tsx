@@ -1,4 +1,5 @@
 'use client'
+import { usePathname } from 'next/navigation'
 import Script from 'next/script'
 import React, { useEffect } from 'react'
 
@@ -7,6 +8,8 @@ interface IProps {
 }
 
 const OrderForm: React.FC<IProps> = ({ lang }) => {
+	const path = usePathname()
+
 	const initWidget = () => {
 		if (typeof window !== 'undefined' && (window as any).muEmbed) {
 			;(window as any).muEmbed(
@@ -25,16 +28,20 @@ const OrderForm: React.FC<IProps> = ({ lang }) => {
 		}
 	}
 
+	useEffect(() => {
+		const timer = setTimeout(() => initWidget(), 300)
+		return () => clearTimeout(timer)
+	}, [path])
+
 	return (
 		<div
 			id='embed-Qjws-WgAbaV5QCXFiUhMm'
 			data-mu-embed-origin='https://www.megaubytko.cz'
-			className='w-full h-[200px]'
+			className='w-full'
 		>
 			<Script
 				src='https://www.megaubytko.cz/muEmbed.js'
 				strategy='afterInteractive'
-				onLoad={initWidget}
 			/>
 		</div>
 	)
