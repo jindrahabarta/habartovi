@@ -2,8 +2,7 @@ import React from 'react'
 import ApartmentCard from './ApartmentCard'
 import { getTranslation } from '@/_i18n'
 
-// import Img from '@/../public/images/Ubytování.jpg'
-import SmallerCover from '@/../public/images/maly-apartman/1.jpg'
+import SmallerCover from '@/../public/images/maly-apartman/1.webp'
 import BiggerCover from '@/../public/images/velky-apartman/1.webp'
 
 const ApartmentSelection = async ({ lang }: { lang: string }) => {

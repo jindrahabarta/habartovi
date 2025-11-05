@@ -11,15 +11,15 @@ import BicycleIcon from '@/_components/Icons/BicycleIcon'
 import ParkingIcon from '@/_components/Icons/ParkingIcon'
 import { NextPage } from 'next'
 
-import image1 from '@/../public/images/maly-apartman/1.jpg'
-import image2 from '@/../public/images/maly-apartman/2.jpg'
-import image3 from '@/../public/images/maly-apartman/3.jpg'
-import image4 from '@/../public/images/maly-apartman/4.jpg'
-import image5 from '@/../public/images/maly-apartman/5.jpg'
-import image6 from '@/../public/images/maly-apartman/6.jpg'
-import image7 from '@/../public/images/maly-apartman/7.jpg'
-import image8 from '@/../public/images/maly-apartman/8.jpg'
-import image9 from '@/../public/images/maly-apartman/9.jpg'
+import image1 from '@/../public/images/maly-apartman/1.webp'
+import image2 from '@/../public/images/maly-apartman/2.webp'
+import image3 from '@/../public/images/maly-apartman/3.webp'
+import image4 from '@/../public/images/maly-apartman/4.webp'
+import image5 from '@/../public/images/maly-apartman/5.webp'
+import image6 from '@/../public/images/maly-apartman/6.webp'
+import image7 from '@/../public/images/maly-apartman/7.webp'
+import image8 from '@/../public/images/maly-apartman/8.webp'
+
 import { getTranslation } from '@/_i18n'
 import KitchenIcon from '@/_components/Icons/KitchenIcon'
 import ShowerIcon from '@/_components/Icons/ShowerIcon'
@@ -40,17 +40,7 @@ export const generateMetadata = async ({
 	}
 }
 
-const images = [
-	image1,
-	image2,
-	image3,
-	image4,
-	image5,
-	image6,
-	image7,
-	image8,
-	image9,
-]
+const images = [image1, image2, image3, image4, image5, image6, image7, image8]
 
 interface IParams {
 	lang: string
