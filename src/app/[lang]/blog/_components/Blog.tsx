@@ -31,6 +31,7 @@ const Blog: React.FC<IParams> = ({ lang, defaultPage }) => {
 			)
 			.then((res) => {
 				setPostData(res.data)
+				console.log(res.data)
 			})
 			.catch(() => setError(true))
 			.finally(() => {
