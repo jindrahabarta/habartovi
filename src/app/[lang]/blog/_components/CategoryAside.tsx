@@ -17,7 +17,9 @@ const CategoryAside: React.FC<IParams> = ({ lang }) => {
 	useEffect(() => {
 		nextClient
 			.get<ICategory[]>(`/category`)
-			.then((res) => setCategoryData(res.data))
+			.then((res) => {
+				setCategoryData(res.data)
+			})
 			.catch(() => setError(true))
 			.finally(() => setLoading(false))
 	}, [])

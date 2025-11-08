@@ -29,7 +29,9 @@ const Blog: React.FC<IParams> = ({ lang, defaultPage }) => {
 			.get<IPostsResponse['posts'] | null>(
 				`/post?page=${page}&size=${size}`
 			)
-			.then((res) => setPostData(res.data))
+			.then((res) => {
+				setPostData(res.data)
+			})
 			.catch(() => setError(true))
 			.finally(() => {
 				setLoading(false)
