@@ -37,7 +37,7 @@ const ZdenekAHelena = async ({ lang }: { lang: string }) => {
 			<div className='container h-full relative md:py-20'>
 				<div
 					id='ZaHLeft'
-					className='md:h-1/2 flex justify-end py-8 md:py-0'
+					className='md:h-1/2 flex md:justify-end py-8 md:py-0'
 				>
 					<div className='md:w-1/3'>
 						<h1 className='ZaHScrollSpeedLeft ZaHScrollSpeed md:opacity-0 md:translate-y-20 font-oswald text-5xl sm:text-6xl leading-tight text-golden'>
