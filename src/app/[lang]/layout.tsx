@@ -7,6 +7,7 @@ import Footer from '@/_components/Footer/Footer'
 // import FooterEasterEgg from '@/_components/Footer/FooterEasterEgg'
 import { getTranslation } from '@/_i18n'
 import CookiesBar from '@/_components/CookiesBar/CookiesBar'
+import CookiesBarProvider from '@/_components/CookiesBar/CookiesBarProvider'
 
 const openSans = Open_Sans({
 	subsets: ['latin'],
@@ -140,7 +141,8 @@ export default async function RootLayout({
 					{children}
 				</main>
 
-				<CookiesBar lang={lang}></CookiesBar>
+				<CookiesBarProvider lang={lang} />
+
 				{/* <FooterEasterEgg></FooterEasterEgg> */}
 				<Footer lang={lang}></Footer>
 			</body>

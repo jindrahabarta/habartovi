@@ -2,7 +2,17 @@
 import React, { useEffect, useState } from 'react'
 import Script from 'next/script'
 
-const CookiesBar = ({ lang }: { lang: string }) => {
+const CookiesBar = ({
+	title,
+	description,
+	agree,
+	disagree,
+}: {
+	title: string
+	description: string
+	agree: string
+	disagree: string
+}) => {
 	const [isAgreed, setIsAgreed] = useState<null | boolean>()
 
 	useEffect(() => {
@@ -57,12 +67,9 @@ const CookiesBar = ({ lang }: { lang: string }) => {
 					className='opacity-0 w-full sm:w-96 h-full p-4 bg-green1/70 backdrop-blur-sm border border-black/80'
 				>
 					<h3 className='font-oswald text-2xl leading-tight text-golden opacity-60'>
-						Nastavení cookies
+						{title}
 					</h3>
-					<p className='text-white pt-2'>
-						Naše webové stránky používají soubory cookies pro
-						analýzu návštěvnosti a zjištění zdroje návštěvnosti.
-					</p>
+					<p className='text-white pt-2'>{description}</p>
 
 					<div className='flex gap-4 mt-4 flex-wrap'>
 						<button
@@ -71,7 +78,7 @@ const CookiesBar = ({ lang }: { lang: string }) => {
 							onClick={agreeCookies}
 							className={`bg-golden border-2 border-golden py-3 px-4 sm:py-3 sm:px-4 inline-block font-bold duration-200 hover:bg-goldenAccent hover:border-goldenAccent shadow-md text-sm text-white`}
 						>
-							Souhlasím
+							{agree}
 						</button>
 						<button
 							type='button'
@@ -79,7 +86,7 @@ const CookiesBar = ({ lang }: { lang: string }) => {
 							onClick={disagreeCookies}
 							className={`bg-transparent border-2 border-golden py-3 px-4  sm:py-3 sm:px-4 inline-block font-bold duration-200 shadow-md text-sm text-white hover:bg-goldenAccent `}
 						>
-							Nesouhlasím
+							{disagree}
 						</button>
 					</div>
 				</div>
