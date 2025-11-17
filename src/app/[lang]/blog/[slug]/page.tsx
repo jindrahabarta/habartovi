@@ -23,6 +23,8 @@ const Post: NextPage<{ params: IParams }> = async ({ params }) => {
 
 	const post = await getPost(slug)
 
+	console.log(post)
+
 	return (
 		<div className='pt-28'>
 			<section className='container flex flex-col items-center'>
@@ -35,7 +37,7 @@ const Post: NextPage<{ params: IParams }> = async ({ params }) => {
 						<h1 className='font-oswald sm:text-5xl leading-tight text-golden/60 mt-4'>
 							{post.title}
 						</h1>
-						<time className='text-gray-400 italic text-sm'>
+						<time className='text-gray-400 italic text-sm block mt-4'>
 							{moment(post.date).format('DD. MM. YYYY')}
 						</time>
 						{post.blog.introduction && (
