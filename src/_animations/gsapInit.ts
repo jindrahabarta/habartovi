@@ -80,14 +80,11 @@ const gsapInit = (path: string) => {
 				display: 'none',
 			})
 
-			console.log(pathWithoutLang)
-
 			if (pathWithoutLang !== '/blog') {
 				ScrollTrigger.create({
 					trigger: 'footer',
 					start: 'bottom-=10px bottom',
 					end: 'bottom-=10px bottom',
-				
 
 					onEnter: () => {
 						gsap.set('#footerEasterEgg', {

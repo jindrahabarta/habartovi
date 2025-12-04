@@ -23,8 +23,6 @@ const Post: NextPage<{ params: IParams }> = async ({ params }) => {
 
 	const post = await getPost(slug)
 
-	console.log(post)
-
 	return (
 		<div className='pt-28'>
 			<section className='container flex flex-col items-center'>

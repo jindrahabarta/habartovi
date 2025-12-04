@@ -9,8 +9,6 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>) => {
 		let path = svg?.querySelector('path')
 		const pathLength = path?.getTotalLength()
 
-		console.log(pathLength)
-
 		if (!path) return
 
 		gsap.set(path, {

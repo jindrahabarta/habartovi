@@ -5,8 +5,6 @@ import { getTranslation } from '@/_i18n'
 const CookiesBarProvider = async ({ lang }: { lang: string }) => {
 	const { t } = await getTranslation(lang, 'cookieBar')
 
-	console.log(t('title'))
-
 	return (
 		<CookiesBar
 			title={t('title')}

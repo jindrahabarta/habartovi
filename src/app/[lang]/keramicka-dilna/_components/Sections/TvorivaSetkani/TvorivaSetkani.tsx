@@ -47,7 +47,7 @@ const TvorivaSetkani = async ({ lang }: { lang: string }) => {
 				<p className='mt-4'>
 					<strong>{t('sections.creativeMeetings.p3strong')}</strong>{' '}
 					{t('sections.creativeMeetings.p3')}
-					<strong> 90{lang !== 'cs' ? ' CZK' : ',-Kč'}</strong>
+					<strong> 120{lang !== 'cs' ? ' CZK' : ',-Kč'}</strong>
 				</p>
 
 				<p className='mt-4'>

@@ -6,6 +6,10 @@ html {
 	scroll-behavior: smooth;
 }
 
+.text-nowrap {
+	white-space: nowrap;
+}
+
 .container {
 	max-width: 1350px;
 	padding-left: 1rem;
