@@ -3,7 +3,8 @@ import Image from 'next/image'
 import Button from '@/_components/Buttons/Button'
 import { getTranslation } from '@/_i18n'
 
-import HeroImage from '@/../public/images/Keramická dílna/HeroImage.webp'
+// import HeroImage from '@/../public/images/Keramická dílna/HeroImage.webp'
+import HeroImage from '@/../public/images/Homepage/HeroImage.webp'
 
 const Hero = async ({ lang }: { lang: string }) => {
 	const { t } = await getTranslation(lang, 'mainPage')
@@ -16,7 +17,7 @@ const Hero = async ({ lang }: { lang: string }) => {
 					alt={`${t('sections.hero.title')}`}
 					width={1500}
 					height={1000}
-					className='w-full h-full object-cover object-top'
+					className='w-full h-full object-cover'
 					id='heroImage'
 				></Image>
 				<div
